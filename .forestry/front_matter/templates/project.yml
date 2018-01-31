@@ -11,17 +11,22 @@ fields:
     name: headings
     label: Headings
     fields:
-    - type: text
-      name: font_family
-      label: Font Family
-    - type: number
-      name: font_size
-      label: Font Size
-    - type: text
-      name: color
-      label: Color
-      description: Use HEX codes
-      default: "#000"
+    - type: field_group
+      name: h1
+      label: H1
+      fields:
+      - type: text
+        name: font_family
+        label: Font Family
+      - type: number
+        name: font_size
+        label: Font Size
+        description: Use 'px' units
+      - type: text
+        name: color
+        label: Color
+        description: Use HEX codes
+        default: "#000"
   - type: field_group
     name: body_text
     label: Body Text
