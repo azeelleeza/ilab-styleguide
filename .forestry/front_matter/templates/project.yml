@@ -47,3 +47,11 @@ fields:
         type: datafiles
     label: Font Family
     name: font_family
+- type: field_group_list
+  name: primary_colors
+  label: Primary Colors
+  fields:
+  - type: text
+    name: color
+    label: Color
+    description: hex
