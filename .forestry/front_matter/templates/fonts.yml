@@ -1,6 +1,6 @@
 ---
 hide_body: false
 fields:
-- type: field_group_list
-  label: Font Name
-  name: font_name
+- type: textarea
+  name: font_families
+  label: Font families
