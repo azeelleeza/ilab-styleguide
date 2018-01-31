@@ -32,3 +32,18 @@ fields:
       description: Use 'px' units
       config:
         required: true
+- type: field_group
+  name: body_text
+  label: Body Text
+  fields:
+  - type: text
+    name: color
+    label: Color
+    default: "#000"
+    description: hex
+  - type: select
+    config:
+      source:
+        type: datafiles
+    label: Font Family
+    name: font_family
