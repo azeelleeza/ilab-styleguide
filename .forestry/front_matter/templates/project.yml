@@ -5,18 +5,30 @@ fields:
   label: Headings
   name: headings
   fields:
-  - type: number
-    name: font-size
-    label: font-size
-    config:
-      required: true
-  - type: select
-    name: font-family
-    config:
-      source:
-        type: simple
-      required: true
-      options:
-      - Expo Serif
-      - Museo Sans
-    label: font-family
+  - type: field_group
+    name: h1
+    label: H1
+    fields:
+    - type: text
+      name: color
+      label: color
+      description: hex codes
+      default: "#000"
+    - type: select
+      name: font-family
+      config:
+        source:
+          type: simple
+        options:
+        - Expo Serif
+        - Museo Sans
+        - Georgia
+        required: true
+      label: Font-Family
+      default: Georgia
+    - type: number
+      name: font_size
+      label: Font Size
+      description: Use 'px' units
+      config:
+        required: true
