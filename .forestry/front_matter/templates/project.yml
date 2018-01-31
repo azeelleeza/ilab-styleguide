@@ -27,6 +27,70 @@ fields:
         label: Color
         description: Use HEX codes
         default: "#000"
+    - type: field_group
+      name: h2
+      label: H2
+      fields:
+      - type: text
+        name: font_family
+        label: Font Family
+      - type: number
+        name: font_size
+        label: Font Size
+        description: Use 'px' units
+      - type: text
+        name: color
+        label: Color
+        description: Use HEX codes
+        default: "#000"
+    - type: field_group
+      name: h3
+      label: H3
+      fields:
+      - type: text
+        name: font_family
+        label: Font Family
+      - type: number
+        name: font_size
+        label: Font Size
+        description: Use 'px' units
+      - type: text
+        name: color
+        label: Color
+        description: Use HEX codes
+        default: "#000"
+    - type: field_group
+      name: h4
+      label: H4
+      fields:
+      - type: text
+        name: font_family
+        label: Font Family
+      - type: number
+        name: font_size
+        label: Font Size
+        description: Use 'px' units
+      - type: text
+        name: color
+        label: Color
+        description: Use HEX codes
+        default: "#000"
+    - type: field_group
+      name: h5
+      label: H5
+      fields:
+      - type: text
+        name: font_family
+        label: Font Family
+      - type: number
+        name: font_size
+        label: Font Size
+        description: Use 'px' units
+      - type: text
+        name: color
+        label: Color
+        description: Use HEX codes
+        default: "#000"
   - type: field_group
     name: body_text
     label: Body Text
