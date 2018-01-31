@@ -7,6 +7,22 @@ typography:
       font_family: Expo serif
       font_size: 40
       color: "#555"
+    h2:
+      font_family: Source Sans Pro
+      font_size: 20
+      color: "#000"
+    h3:
+      font_family: Source Sans Pro
+      font_size: 20
+      color: "#196c94"
+    h4:
+      font_family: ''
+      font_size: ''
+      color: "#000"
+    h5:
+      font_family: ''
+      font_size: ''
+      color: "#000"
   body_text:
     font_family: Expo Serif
     font_size: 18
