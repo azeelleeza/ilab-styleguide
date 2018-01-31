@@ -1,0 +1,98 @@
+---
+hide_body: false
+fields:
+- type: field_group
+  name: typography
+  label: Typography
+  fields:
+  - type: field_group
+    name: headings
+    label: Headings
+    fields:
+    - type: text
+      name: font_family
+      label: Font Family
+    - type: number
+      name: font_size
+      label: Font Size
+    - type: text
+      name: color
+      label: Color
+      description: Use HEX codes
+      default: "#000"
+  - type: field_group
+    name: body_text
+    label: Body Text
+    fields:
+    - type: text
+      name: font_family
+      label: Font Family
+    - type: number
+      name: font_size
+      label: Font Size
+      description: Use 'px' units
+      default: '18'
+    - type: text
+      name: color
+      label: Color
+      description: Use HEX codes
+      default: "#000"
+    - type: number
+      name: line_height
+      label: Line Height
+      default: '1.5'
+- type: field_group
+  name: colors
+  label: Colors
+  fields:
+  - type: field_group
+    name: primary_colors
+    label: Primary Colors
+    fields:
+    - type: field_group_list
+      name: color
+      label: Color
+      fields:
+      - type: text
+        name: hex_code
+        label: Hex code
+      config:
+        labelField: hex_code
+  - type: field_group
+    name: secondary_colors
+    label: Secondary Colors
+    fields:
+    - type: field_group_list
+      label: Color
+      name: color
+      fields:
+      - type: text
+        name: hex_code
+        label: Hex code
+      config:
+        labelField: hex_code
+  - type: field_group
+    name: interactive_pallettes
+    label: Interactive Pallettes
+    fields:
+    - type: field_group_list
+      fields:
+      - type: text
+        name: palette_name
+        label: Palette Name
+        config:
+          required: true
+      - type: field_group_list
+        name: colors
+        label: Colors
+        fields:
+        - type: text
+          name: color
+          label: Color
+          description: Use HEX codes
+          config:
+            required: true
+      label: Palette Group
+      name: palette_group
+      config:
+        labelField: palette_name
