@@ -1,6 +1,23 @@
 ---
 layout: page
 title: Elements
+typography:
+  headings:
+    font_family: ''
+    font_size: ''
+    color: "#000"
+  body_text:
+    font_family: ''
+    font_size: 18
+    color: "#000"
+    line_height: 1.5
+colors:
+  primary_colors:
+    color: []
+  secondary_colors:
+    color: []
+  interactive_pallettes:
+    palette_group: []
 ---
 
 <!-- Main -->
