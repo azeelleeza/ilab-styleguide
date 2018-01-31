@@ -1,6 +1,6 @@
 ---
 title: Aerospace
-date: 2018-01-31 18:17:00 Z
+date: 2018-01-31 18:17:00 +0000
 asset: 
 headings:
 - font-family: 
