@@ -6,12 +6,14 @@ fields:
   name: headings
   fields:
   - type: number
-    label: font-family
-    name: font-family
-    config:
-      required: true
-  - type: number
     name: font-size
     label: font-size
     config:
       required: true
+  - type: select
+    name: font-family
+    config:
+      source:
+        type: simple
+      required: true
+    label: font-family
