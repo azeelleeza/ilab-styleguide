@@ -16,4 +16,7 @@ fields:
       source:
         type: simple
       required: true
+      options:
+      - Expo Serif
+      - Museo Sans
     label: font-family
