@@ -3,17 +3,22 @@ layout: page
 title: Elements
 typography:
   headings:
-    font_family: ''
-    font_size: ''
-    color: "#000"
+    h1:
+      font_family: Expo serif
+      font_size: 40
+      color: "#555"
   body_text:
-    font_family: ''
+    font_family: Expo Serif
     font_size: 18
     color: "#000"
     line_height: 1.5
 colors:
   primary_colors:
-    color: []
+    color:
+    - hex_code: "#d66e42"
+    - hex_code: "#196c94"
+    - hex_code: "#185271"
+    - hex_code: "#18384f"
   secondary_colors:
     color: []
   interactive_pallettes:
