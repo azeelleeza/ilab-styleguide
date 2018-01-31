@@ -10,3 +10,8 @@ fields:
     name: font-family
     config:
       required: true
+  - type: number
+    name: font-size
+    label: font-size
+    config:
+      required: true
