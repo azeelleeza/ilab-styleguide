@@ -188,13 +188,13 @@ fields:
       label: Link
       fields:
       - type: field_group
-        label: Hover
-        name: hover
+        label: Base
+        name: base
         fields:
         - type: text
           name: font_family
           label: Font Family
-          default: Georgia
+          default: Roboto
         - type: number
           name: font_size
           label: Font Size
@@ -207,6 +207,7 @@ fields:
         - type: text
           name: letter_spacing
           label: Letter Spacing
+          default: normal
         - type: text
           name: color
           label: Color
@@ -215,17 +216,18 @@ fields:
         - type: boolean
           name: underline
           label: Default underline
+          default: true
         - type: textarea
           name: extra_css
           label: Extra CSS
       - type: field_group
-        label: Base
-        name: base
+        label: Hover
+        name: hover
         fields:
         - type: text
           name: font_family
           label: Font Family
-          default: Georgia
+          default: Roboto
         - type: number
           name: font_size
           label: Font Size
@@ -238,11 +240,12 @@ fields:
         - type: text
           name: letter_spacing
           label: Letter Spacing
+          default: normal
         - type: text
           name: color
           label: Color
           description: Use HEX code
-          default: "#000"
+          default: "#377E91"
         - type: boolean
           name: underline
           label: Default underline
@@ -256,7 +259,7 @@ fields:
         - type: text
           name: font_family
           label: Font Family
-          default: Georgia
+          default: Roboto
         - type: number
           name: font_size
           label: Font Size
@@ -273,10 +276,11 @@ fields:
           name: color
           label: Color
           description: Use HEX code
-          default: "#000"
+          default: "#4CB5B9"
         - type: boolean
           name: underline
           label: Default underline
+          default: true
         - type: textarea
           name: extra_css
           label: Extra CSS
