@@ -144,7 +144,7 @@ fields:
         labelField: hex_code
   - type: field_group
     name: interactive_pallettes
-    label: Interactive Pallettes
+    label: Interactive Palettes
     fields:
     - type: field_group_list
       fields:
