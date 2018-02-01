@@ -208,6 +208,7 @@ fields:
       - type: field_group
         label: Base
         name: base
+        fields:
         - type: text
           name: font_family
           label: Font Family
@@ -266,6 +267,7 @@ fields:
       - type: field_group
         name: hover
         label: Hover
+        fields:
         - type: text
           name: font_family
           label: Font Family
