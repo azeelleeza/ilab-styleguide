@@ -287,6 +287,10 @@ fields:
           description: Use HEX code
           default: "#000"
         - type: text
+          name: background_color
+          label: Background Color
+          description: Use HEX code
+        - type: text
           name: line_height
           label: Line Height
           default: '1.5'
