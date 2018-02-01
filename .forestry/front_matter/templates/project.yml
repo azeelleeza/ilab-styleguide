@@ -180,9 +180,11 @@ fields:
     - type: text
       name: group_name
       label: Group Name
+      default: Body Links
     - type: text
       name: group_description
       label: Description
+      default: Default links in the post body
     - type: field_group_list
       name: link
       label: Link
@@ -284,6 +286,8 @@ fields:
         - type: textarea
           name: extra_css
           label: Extra CSS
+    config:
+      labelField: group_name
 - type: field_group
   name: buttons
   label: Buttons
