@@ -3,31 +3,9 @@ layout: page
 title: Elements
 typography:
   headings:
-    h1:
-      font_family: Expo serif
-      font_size: 40
-      color: "#555"
-    h2:
-      font_family: Source Sans Pro
-      font_size: 20
-      color: "#000"
-    h3:
-      font_family: Source Sans Pro
-      font_size: 20
-      color: "#196c94"
-    h4:
-      font_family: ''
-      font_size: ''
-      color: "#000"
-    h5:
-      font_family: ''
-      font_size: ''
-      color: "#000"
-  body_text:
-    font_family: Expo Serif
-    font_size: 18
-    color: "#000"
-    line_height: 1.5
+    heading: []
+  type:
+    element: []
 colors:
   primary_colors:
     color:
@@ -39,5 +17,17 @@ colors:
     color: []
   interactive_pallettes:
     palette_group: []
+links:
+  link: []
+buttons:
+  button_group: []
+logos:
+  logo:
+  - logo_name: Test
+    upload_logo: "/uploads/2018/02/01/aircraft-icon.svg"
+tables:
+  table: []
+form_elements:
+  form_element: []
 ---
 
