@@ -15,10 +15,10 @@ colors:
     - hex_code: "#18384f"
   secondary_colors:
     color: []
-  interactive_pallettes:
+  interactive_palettes:
     palette_group: []
 links:
-  link: []
+  link_group: []
 buttons:
   button_group: []
 logos:
