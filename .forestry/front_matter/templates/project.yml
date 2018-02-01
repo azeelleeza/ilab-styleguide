@@ -208,17 +208,9 @@ fields:
       - type: field_group
         label: Base
         name: base
-        fields:
-        - type: field_group
-          name: text
-          label: Text
-        - type: field_group
-          name: background
-          label: Background
-          fields:
-          - type: text
-            name: color
-            label: Color
+      - type: field_group
+        name: hover
+        label: Hover
 - type: field_group
   name: logos
   label: Logos
