@@ -157,8 +157,6 @@ fields:
       - type: text
         name: palette_name
         label: Palette Name
-        config:
-          required: true
       - type: field_group_list
         name: colors
         label: Colors
@@ -167,8 +165,6 @@ fields:
           name: color
           label: Color
           description: Use HEX codes
-          config:
-            required: true
       label: Palette Group
       name: palette_group
       config:
@@ -178,15 +174,112 @@ fields:
   label: Links
   fields:
   - type: field_group_list
-    name: link
-    label: Link
+    name: link_group
+    label: Link Group
     fields:
     - type: text
-      name: link_name
-      label: Link Name
+      name: group_name
+      label: Group Name
     - type: text
-      name: description
+      name: group_description
       label: Description
+    - type: field_group_list
+      name: link
+      label: Link
+      fields:
+      - type: field_group
+        label: Hover
+        name: hover
+        fields:
+        - type: text
+          name: font_family
+          label: Font Family
+          default: Georgia
+        - type: number
+          name: font_size
+          label: Font Size
+          description: Use 'px' units
+          default: '18'
+        - type: text
+          name: font_weight
+          label: Font Weight
+          default: normal
+        - type: text
+          name: letter_spacing
+          label: Letter Spacing
+        - type: text
+          name: color
+          label: Color
+          description: Use HEX code
+          default: "#000"
+        - type: boolean
+          name: underline
+          label: Default underline
+        - type: textarea
+          name: extra_css
+          label: Extra CSS
+      - type: field_group
+        label: Base
+        name: base
+        fields:
+        - type: text
+          name: font_family
+          label: Font Family
+          default: Georgia
+        - type: number
+          name: font_size
+          label: Font Size
+          description: Use 'px' units
+          default: '18'
+        - type: text
+          name: font_weight
+          label: Font Weight
+          default: normal
+        - type: text
+          name: letter_spacing
+          label: Letter Spacing
+        - type: text
+          name: color
+          label: Color
+          description: Use HEX code
+          default: "#000"
+        - type: boolean
+          name: underline
+          label: Default underline
+        - type: textarea
+          name: extra_css
+          label: Extra CSS
+      - type: field_group
+        label: Visited
+        name: visited
+        fields:
+        - type: text
+          name: font_family
+          label: Font Family
+          default: Georgia
+        - type: number
+          name: font_size
+          label: Font Size
+          description: Use 'px' units
+          default: '18'
+        - type: text
+          name: font_weight
+          label: Font Weight
+          default: normal
+        - type: text
+          name: letter_spacing
+          label: Letter Spacing
+        - type: text
+          name: color
+          label: Color
+          description: Use HEX code
+          default: "#000"
+        - type: boolean
+          name: underline
+          label: Default underline
+        - type: textarea
+          name: extra_css
+          label: Extra CSS
 - type: field_group
   name: buttons
   label: Buttons
@@ -226,6 +319,20 @@ fields:
           name: line_height
           label: Line Height
           default: '1.5'
+        - type: text
+          name: letter_spacing
+          label: Letter Spacing
+        - type: select
+          name: align
+          config:
+            source:
+              type: simple
+            options:
+            - Left
+            - Right
+            - Center
+          label: Text Align
+          default: Center
         - type: text
           name: color
           label: Color
@@ -285,6 +392,20 @@ fields:
           name: line_height
           label: Line Height
           default: '1.5'
+        - type: text
+          name: letter_spacing
+          label: Letter Spacing
+        - type: select
+          name: align
+          config:
+            source:
+              type: simple
+            options:
+            - Left
+            - Right
+            - Center
+          label: Text Align
+          default: Center
         - type: text
           name: color
           label: Color
