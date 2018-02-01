@@ -282,6 +282,10 @@ fields:
           label: Font Weight
           default: normal
         - type: text
+          name: line_height
+          label: Line Height
+          default: '1.5'
+        - type: text
           name: color
           label: Color
           description: Use HEX code
@@ -290,10 +294,6 @@ fields:
           name: background_color
           label: Background Color
           description: Use HEX code
-        - type: text
-          name: line_height
-          label: Line Height
-          default: '1.5'
         - type: text
           name: margins
           label: Margins
