@@ -8,110 +8,50 @@ fields:
   label: Typography
   fields:
   - type: field_group
-    name: headings
-    label: Headings
+    name: ''
+    label: ''
     fields:
-    - type: field_group
-      name: h1
-      label: H1
+    - type: field_group_list
+      name: heading
+      label: Heading
       fields:
+      - type: select
+        name: heading_name
+        config:
+          source:
+            type: simple
+          options:
+          - H1
+          - H2
+          - H3
+          - H4
+          - H5
+          - H6
+        label: Heading Name
       - type: text
         name: font_family
         label: Font Family
+        default: Open Sans
       - type: number
         name: font_size
         label: Font Size
         description: Use 'px' units
+        default: '16'
+      - type: text
+        name: font_weight
+        label: Font Weight
+        default: normal
       - type: text
         name: color
         label: Color
-        description: Use HEX codes
+        description: Use HEX code
         default: "#000"
-    - type: field_group
-      name: h2
-      label: H2
-      fields:
       - type: text
-        name: font_family
-        label: Font Family
-      - type: number
-        name: font_size
-        label: Font Size
-        description: Use 'px' units
+        name: letter_spacing
+        label: Letter Spacing
       - type: text
-        name: color
-        label: Color
-        description: Use HEX codes
-        default: "#000"
-    - type: field_group
-      name: h3
-      label: H3
-      fields:
-      - type: text
-        name: font_family
-        label: Font Family
-      - type: number
-        name: font_size
-        label: Font Size
-        description: Use 'px' units
-      - type: text
-        name: color
-        label: Color
-        description: Use HEX codes
-        default: "#000"
-    - type: field_group
-      name: h4
-      label: H4
-      fields:
-      - type: text
-        name: font_family
-        label: Font Family
-      - type: number
-        name: font_size
-        label: Font Size
-        description: Use 'px' units
-      - type: text
-        name: color
-        label: Color
-        description: Use HEX codes
-        default: "#000"
-    - type: field_group
-      name: h5
-      label: H5
-      fields:
-      - type: text
-        name: font_family
-        label: Font Family
-      - type: number
-        name: font_size
-        label: Font Size
-        description: Use 'px' units
-      - type: text
-        name: color
-        label: Color
-        description: Use HEX codes
-        default: "#000"
-  - type: field_group
-    name: body_text
-    label: Body Text
-    fields:
-    - type: text
-      name: font_family
-      label: Font Family
-    - type: number
-      name: font_size
-      label: Font Size
-      description: Use 'px' units
-      default: '18'
-    - type: text
-      name: color
-      label: Color
-      description: Use HEX codes
-      default: "#000"
-    - type: number
-      name: line_height
-      label: Line Height
-      default: '1.5'
+        name: notes
+        label: Notes
 - type: field_group
   name: colors
   label: Colors
