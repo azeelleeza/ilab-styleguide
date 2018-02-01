@@ -10,14 +10,7 @@ title-bold: Forty
 title-normal: by HTML5 UP
 email: youremailaddress@gmail.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-url: "https://tuckabelle.github.io" # the base hostname & protocol for your site
-author: 
-street_address: 
-city: 
-state: 
-zip_code: 
-country: 
-phone: 
+baseurl: /ilab-styleguide
 
 
 sass:  
