@@ -223,21 +223,21 @@ fields:
           label: Font Weight
           default: normal
         - type: text
+          name: line_height
+          label: Line Height
+          default: '1.5'
+        - type: text
           name: color
           label: Color
           description: Use HEX code
           default: "#000"
         - type: text
-          name: line_height
-          label: Line Height
-          default: '1.5'
+          name: background_color
+          label: Background Color
+          description: Use HEX code
         - type: text
           name: margins
           label: Margins
-          description: 'Separate with commas in order: Top, Right, Bottom, Left'
-        - type: text
-          name: padding
-          label: Padding
           description: 'Separate with commas in order: Top, Right, Bottom, Left'
         - type: field_group_list
           name: Borders
