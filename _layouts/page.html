@@ -5,13 +5,36 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	{% include head.html %}
 
-{% include head.html %}
+	<body>
+		{% include sidebar.html %}
 
-<body>
+		<div class="content-wrapper">
+			{{ content }}
 
-    {% include header.html %} {{ content }} {% include footer.html %}
+			<h1>{{ page.title }}</h1>
+			<div id="typography">
+				<div class="section-header">
+					<h2>Typography</h2></div>
+				{% include heading.html %} {% include type.html %}
+			</div>
+			<div id="colors">
+				<div class="section-header">
+					<h2>Colors</h2></div>
+				<section class="colorrow row">
+					{% for color in page.colors.primary_colors.color %} {% assign size = page.colors.primary_colors.color | size %} {% include swatch.html %} {% endfor %}
+				</section>
+				<section class="colorrow row">
+					{% for color in page.colors.secondary_colors.color %} {% assign size = page.colors.secondary_colors.color | size %} {% include swatch.html %} {% endfor %}
+				</section>
+				<section class="interswatches row">
+					{% for color in page.colors.interactive_pallettes.color %} {% assign size = page.colors.interactive_pallettes.color | size %} {% include interswatch.html %} {% endfor %}
+				</section>
+			</div>
+		</div>
+		{% include footer.html %}
 
-</body>
+	</body>
 
 </html>

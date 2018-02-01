@@ -1,0 +1,65 @@
+/*==============================
+=            Colors            =
+==============================*/
+
+$color-dkblue: #004165;
+$color-blue: #0065A4;
+
+$color-text-gray: #8C898C;
+
+$color__sidebar: #39464F;
+$color__footer: #F2EEE6;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__link: black;
+$color__link-underline: #1782A9;
+$color__link-visited: gray;
+$color__link-hover: #1782A9;
+
+$color__link-sidebar: white;
+
+
+
+/*==================================
+=            Typography            =
+==================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300, 400');
+
+
+$font__roboto: 'Roboto',
+sans-serif;
+$font__main: $font__roboto;
+$font__code: Monaco,
+Consolas,
+"Andale Mono",
+"DejaVu Sans Mono",
+monospace;
+$font__pre: "Courier 10 Pitch",
+Courier,
+monospace;
+
+$font__line-height-body: 1.8;
+$font__line-height-pre: 1.6;
+
+
+
+
+
+/*=================================
+=            Structure            =
+=================================*/
+
+$size__container-max-width: 1400px;
+$margin__sides: 20px;
+$margin__sides-mobile: 1.5rem;
+
+$size__sidebar-sm: 300px;
+$size__sidebar-md: 350px;
+$size__sidebar-lg: 400px;

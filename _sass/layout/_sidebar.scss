@@ -1,0 +1,19 @@
+/*===============================================
+=            Sidebar           =
+===============================================*/
+
+aside#sidebar {
+	display: block;
+	position: fixed;
+	float: left;
+	width: $size__sidebar-sm;
+	height: 100vh;
+	padding: 2em 2em;
+	background-color: $color__sidebar;
+	@include breakpoint("medium") {
+		width: $size__sidebar-md;
+	}
+	@include breakpoint("large") {
+		width: $size__sidebar-lg;
+	}
+}

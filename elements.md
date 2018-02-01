@@ -41,11 +41,3 @@ colors:
     palette_group: []
 ---
 
-<!-- Main -->
-<div id="main" class="alt">
-
-{{ page.title }}
-
-{{ page.typography.headings.h1.font_family }}
-
-</div>

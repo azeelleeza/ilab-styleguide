@@ -3,14 +3,7 @@
 ===============================================*/
 
 @import "sanitize";
+@import "variables";
 @import "mixins";
 @import "typography";
-@import "variables";
 
-h1 {
-	color: red;
-}
-
-a {
-  color: #42b983 !important;
-}

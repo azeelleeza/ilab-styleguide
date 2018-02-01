@@ -2,6 +2,55 @@
 =            		Typography      	      =
 ===============================================*/
 
-html, body {
-	
-}
+ body {
+ 	font-family: $font__main;
+ 	font-weight: 300;
+ }
+
+ body,
+ button,
+ input,
+ select,
+ textarea {
+ 	font-family: $font__main;
+ 	@include fontSize(16px);
+ 	line-height: 1.5;
+
+ 	@include breakpoint("medium") {
+ 		@include fontSize(18px);
+ 		line-height: $font__line-height-body;
+ 	}
+ }
+
+ .note {
+ 	color: dark-gray;
+ 	font-family: $font__main;
+ 	@include fontSize(16px);
+ 	line-height: 1.5;
+ }
+
+
+
+ //Sidebar
+ #sidebar {
+ 	ul.links {
+ 		padding-left: 0px;
+ 		a {
+ 			color: $color__link-sidebar;
+ 			text-decoration: none;
+
+ 			&:hover {}
+ 			&:visited {}
+ 		}
+ 		li.selected {
+ 			border-bottom: 1px solid #6C7A7F;
+ 			a {
+ 				font-weight: bold;
+ 			}
+ 		}
+ 		ul#subitems {
+ 			padding-left: 1rem;
+ 			padding-bottom: 1rem;
+ 		}
+ 	}
+ }

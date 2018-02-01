@@ -1,0 +1,21 @@
+{% for i in page.typography %} {% assign type = i | split: ", " %}
+{% for m in i %}
+{% m[0] %}  {% endif %} 
+<div class="heading row">
+	<div class="col-sm-12 col-md-8">
+		The quick brown fox jumps over the lazy dog
+	</div>
+	<div class="col-sm-12 col-md-2">
+		<div class="section-heading">
+			{{ i[0] | upcase}}
+		</div>
+		<div class="section-data">
+			{% for t in i %} {% if t.font_family %} {{ t.font_family }}, {% endif %} {% if t.font_size %} {{ t.font_size }}px, {% endif %} {% if t.color %} {{ t.color }} {% endif %} {% endfor %}
+		</div>
+		<div class="section-notes notes">
+			{% for t in i %} {% if t.font_family %} {{ t.notes }} {% endif %} {% endfor %}
+		</div>
+	</div>
+</div>
+
+{% endfor %}
