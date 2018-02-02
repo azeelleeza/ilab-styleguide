@@ -1,10 +1,10 @@
 
-{% for color in i.colors.color %} 
-<div class="swatch" data-copy="{{ i.colors.color }}">
-	<div class="swatch-color" style="background-color: {{ color }}">
+{% for color in i.colors %} 
+<div class="swatch swatchsquare" data-copy="{{ color.hex_code }}">
+	<div class="swatch-color" style="background-color: {{ color.hex_code }}">
 	</div>
 	<div class="swatch-info">
-		<span class="hex">{{ color }}</span>
+		<span class="hex">{{ color.hex_code }}</span>
 		<span class="rgb"></span>
 	</div>
 </div>

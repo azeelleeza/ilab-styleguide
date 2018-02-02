@@ -1,23 +1,21 @@
  {% for i in page.typography.elements %}
-{% assign my_array = "" | split: ',' %}
-			 {% for t in i %}
+	{% assign my_array = "" | split: ',' %}
+	{% for t in i %}
 			 
 		 {% if t[0] != "element_name" and t[0] != "notes" and t[0] != "html_text" and t[0] != "extra_css" %}
 		
 		 {% assign my_array = my_array | push: t %}
 	
-		  	 {% endif %}
-		 {% endfor %}
+		{% endif %}
+	{% endfor %}
 <article class="heading row">
 	<div class="col-sm-12 col-md-8">
 	<div class="html-item" style="
-{% for item in my_array %}
-{% if forloop.last == false %}
-{{ item[0] }}: {{ item[1] }};
-{% else %}
-{{ item[0] }}: {{ item[1] }};
-{% endif %}
-{% endfor %}">
+	{% for item in my_array %}
+		
+			{{ item[0] }}: {{ item[1] }};
+		
+	{% endfor %}">
 		{{ i.html_text }}
 	</div>
 	</div>

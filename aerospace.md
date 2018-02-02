@@ -64,19 +64,6 @@ colors:
     - hex_code: "#a483a8"
     - hex_code: "#7a6796"
     - hex_code: "#69518d"
-    colors:
-    - hex_code: "#69518d"
-    - hex_code: "#7a6796"
-    - hex_code: "#a483a8"
-  - palette_name: Bar Chart 1
-    colors:
-    - hex_code: "#8cc4b4"
-    - hex_code: "#58a897"
-    - hex_code: "#459178"
-    colors:
-    - color: "#459178"
-    - color: "#58a897"
-    - color: "#8cc4b4"
 links:
 - group_name: Body Links
   description: Default links in the post body

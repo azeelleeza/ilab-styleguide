@@ -17,52 +17,66 @@
 			<section id="typography">
 				<div class="section-title">
 					<h2>Typography</h2></div>
-				{% include heading.html %} 
-				{% include type.html %} 
+				{% include heading.html %} {% include type.html %}
 			</section>
 
 			<section id="colors">
 				<div class="section-title">
 					<h2>Colors</h2></div>
-				<article">
-				<div class="section-subtitle">Primary Colors</div>
-					<div class="colorrow row">
+				<article ">
+				<div class="section-subtitle ">Primary Colors</div>
+					<div class="colorrow row ">
 					{% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch.html %} {% endfor %}
 				</div>
 				</article>
 
 				<article">
-				<div class="section-subtitle">Secondary Colors</div>
+					<div class="section-subtitle">Secondary Colors</div>
 					<div class="colorrow row">
-					{% for color in page.colors.secondary_color %} {% assign size = page.colors.secondary_color | size %} {% include swatch.html %} {% endfor %}
-				</div>
+						{% for color in page.colors.secondary_color %} {% assign size = page.colors.secondary_color | size %} {% include swatch.html %} {% endfor %}
+					</div>
+
 				</article>
 				<article>
 					<div class="section-subtitle">Interactive Color Palettes</div>
 					<div class="interswatches row">
-					{% for i in page.colors.interactive_palettes %} 
-					<div class="color-group">
-						{% for i in page.colors.interactive_palettes %} 
-					<div>{{ i.palette_name }}</div>
-					
-					 {% include interswatch.html %} 
-				</div>{% endfor %}{% endfor %}
-				</div>
+						{% for i in page.colors.interactive_palettes %}
+						<div class="color-group">
+
+							<div>{{ i.palette_name }}</div>
+							<div class="swatch-group">
+								{% include interswatch.html %}
+							</div>
+						</div>
+						{% endfor %}
+					</div>
 				</article>
 			</section>
 			<section id="links">
 				<div class="section-title">
 					<h2>Links</h2></div>
 				<article class="links row">
-					<p>This is a <span class="link-base">text link</span>. Hover of it to see it in action!</p>
-					<p>This is what a <span class="link-hover">text link</span> looks like when you hover over it.</p>
-					<p>The <span class="link-visited">text link</span> looks like this.</p>
+
+						{% for i in page.links %}
+						{% include links.html %}
+
+						{% endfor %}
+				
+					
 				</article>
 			</section>
 			<section id="buttons">
-				<div class="section-header">
+				<div class="section-title">
 					<h2>Buttons</h2></div>
+<article class="buttons row">
 
+						{% for i in page.buttons %}
+						{% include buttons.html %}
+
+						{% endfor %}
+				
+					
+				</article>
 			</section>
 			<section id="logos">
 				<div class="section-title">
@@ -78,12 +92,12 @@
 				<div class="section-title">
 					<h2>Forms</h2></div>
 
-					<article>
+				<article>
 					<div class="section-header">
 
 					</div>
 					<div class="section-notes">
-						
+
 					</div>
 
 				</article>

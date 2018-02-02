@@ -1,0 +1,44 @@
+
+
+<div class="section-subtitle"> {{ i.group_name }} </div>
+<div class="links-group">
+	{% assign my_array = "" | split: ',' %}
+{% for t in i.link %}
+{% for x in t %}
+
+	{% if forloop.index0 == 0 %}
+
+<p>This is a <span class="link-base" style="
+{% for y in x %}
+{% for item in y %}
+			{{ item[0] }}: {{ item[1] }};
+	{% endfor %}{% endfor %}">text link</span>. </p>
+
+
+{% elsif forloop.index0 == 1 %}
+
+
+<p>This is what a <span class="link-hover"  style="
+{% for y in x %}
+{% for item in y %}
+			{{ item[0] }}: {{ item[1] }};
+	{% endfor %}{% endfor %}">text link</span> looks like when you hover over it.</p>
+
+
+
+{% elsif forloop.index0 == 2 %}
+
+<p>The <span class="link-visited"  style="
+{% for y in x %}
+{% for item in y %}
+			{{ item[0] }}: {{ item[1] }};
+	{% endfor %}{% endfor %}">text link</span> looks like this.</p>
+
+{% endif %}
+
+
+		{% endfor %}
+		{% endfor %}
+	
+ 
+</div>
