@@ -376,7 +376,7 @@ fields:
         name: hover
         label: Hover
         fields:
-         type: text
+        - type: text
           name: font_family
           label: Font Family
           default: Georgia
