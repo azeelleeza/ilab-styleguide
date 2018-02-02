@@ -76,11 +76,27 @@ links:
       background-size: 4px 4px
       color: gray
 buttons:
-- group_name: Colored Button
+- group_name: Orange Button
   button:
   - {}
   base:
     font-family: Roboto
+    letter-spacing: 1px
+    line-height: 1
+    font-size: 18
+    text-transform: uppercase
+    text-align: Center
+    color: white
+    background-color: "#d66e42"
+    padding: 1rem 2rem 1rem 2rem
+  hover:
+    font-family: Roboto
+    font-size: 18
+    line-height: 1
+    letter-spacing: 1px
+    text-transform: uppercase
+    text-align: Center
+    background-color: "#B25B36"
 logos:
 - logo_name: Header logo, small, dark bg
 - logo_name: Header logo, small, dark bg
