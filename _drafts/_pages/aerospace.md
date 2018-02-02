@@ -98,10 +98,19 @@ buttons:
     text-align: Center
     background-color: "#B25B36"
 logos:
-- logo_name: Header logo, small, dark bg
-- logo_name: Header logo, small, dark bg
-- logo_name: Header logo, large, light bg
-- logo_name: Header logo, large, dark bg
-tables: []
+- logo_name: Favicon
+  upload_logo: "/uploads/2018/02/02/logo-favicon.svg"
+  height: 20px
+- logo_name: Header logo, large
+  upload_logo: "/uploads/2018/02/02/logo-large-light.svg"
+  dark_background: "/uploads/2018/02/02/logo-large-dark-1.svg"
+  height: 150px
+- logo_name: Header logo, small
+  logo_description: Next to navigation on scroll
+  upload_logo: "/uploads/2018/02/02/logo-small-light.svg"
+  dark_background: "/uploads/2018/02/02/logo-small-dark.svg"
+  height: 40px
+tables:
+- table_name: Basic table
 form_elements: []
 ---
