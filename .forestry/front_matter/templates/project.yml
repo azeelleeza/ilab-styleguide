@@ -345,9 +345,8 @@ fields:
           label: Background Color
           description: Use HEX code
         - type: text
-          name: margins
-          label: Margins
-          description: 'Separate with commas in order: Top, Right, Bottom, Left'
+          name: padding
+          label: Padding
         - type: field_group_list
           name: Borders
           fields:
