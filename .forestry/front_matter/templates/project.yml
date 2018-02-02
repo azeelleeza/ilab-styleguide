@@ -15,19 +15,11 @@ fields:
       name: heading
       label: Heading
       fields:
-      - type: select
+      - type: text
         name: heading_name
-        config:
-          source:
-            type: simple
-          options:
-          - H1
-          - H2
-          - H3
-          - H4
-          - H5
-          - H6
         label: Heading Name
+        config:
+          required: true
       - type: text
         name: font_family
         label: Font Family
