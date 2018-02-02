@@ -62,6 +62,15 @@ fields:
     - type: text
       name: element_name
       label: Element Name
+    - type: textarea
+      default: ''
+      name: html_text
+      label: HTML text
+      config:
+        wysiwyg: true
+    - type: textarea
+      label: Notes
+      name: notes
     - type: text
       name: font-family
       label: Font Family
