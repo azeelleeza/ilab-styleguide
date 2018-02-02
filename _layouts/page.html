@@ -14,81 +14,53 @@
 			{{ content }}
 
 			<h1>{{ page.title }}</h1>
-			<div id="typography">
+			<section id="typography">
 				<div class="section-title">
 					<h2>Typography</h2></div>
 				{% include heading.html %} 
-			</div>
-			<div id="colors">
+			</section>
+			<section id="colors">
 				<div class="section-title">
 					<h2>Colors</h2></div>
-				<section class="colorrow row">
+				<article class="colorrow row">
 					{% for color in page.colors.primary_colors.color %} {% assign size = page.colors.primary_colors.color | size %} {% include swatch.html %} {% endfor %}
-				</section>
-				<section class="colorrow row">
+				</article>
+				<article class="colorrow row">
 					{% for color in page.colors.secondary_colors.color %} {% assign size = page.colors.secondary_colors.color | size %} {% include swatch.html %} {% endfor %}
-				</section>
-				<section class="interswatches row">
+				</article>
+				<article class="interswatches row">
 					{% for color in page.colors.interactive_pallettes.color %} {% assign size = page.colors.interactive_pallettes.color | size %} {% include interswatch.html %} {% endfor %}
-				</section>
-			</div>
-			<div id="links">
+				</article>
+			</section>
+			<section id="links">
 				<div class="section-title">
 					<h2>Links</h2></div>
-				<section class="links row">
+				<article class="links row">
 					<p>This is a <span class="link-base">text link</span>. Hover of it to see it in action!</p>
 					<p>This is what a <span class="link-hover">text link</span> looks like when you hover over it.</p>
 					<p>The <span class="link-visited">text link</span> looks like this.</p>
-				</section>
-			</div>
-			<div id="buttons">
+				</article>
+			</section>
+			<section id="buttons">
 				<div class="section-header">
 					<h2>Buttons</h2></div>
 
-				<section>
-					<div class="section-header">
-
-					</div>
-					<div class="section-notes">
-						
-					</div>
-
-				</section>
-
-			</div>
-			<div id="logos">
+			</section>
+			<section id="logos">
 				<div class="section-title">
 					<h2>Logos</h2></div>
 
-					<section>
-					<div class="section-header">
-
-					</div>
-					<div class="section-notes">
-						
-					</div>
-
-				</section>
-			</div>
-			<div id="tables">
+			</section>
+			<section id="tables">
 				<div class="section-title">
 					<h2>Tables</h2></div>
 
-					<section>
-					<div class="section-header">
-
-					</div>
-					<div class="section-notes">
-						
-					</div>
-
-				</section>
-			</div>
-			<div id="forms">
+			</section>
+			<section id="forms">
 				<div class="section-title">
 					<h2>Forms</h2></div>
 
-					<section>
+					<article>
 					<div class="section-header">
 
 					</div>
@@ -96,8 +68,8 @@
 						
 					</div>
 
-				</section>
-			</div>
+				</article>
+			</section>
 		</div>
 		{% include footer.html %}
 
