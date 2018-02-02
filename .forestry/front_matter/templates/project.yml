@@ -18,7 +18,7 @@ fields:
     - type: text
       name: font_family
       label: Font Family
-      default: Open Sans
+      default: Roboto
     - type: number
       name: font_size
       label: Font Size
