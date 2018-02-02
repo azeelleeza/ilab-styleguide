@@ -39,7 +39,7 @@ typography:
     font-weight: normal
     color: "#000"
     line-height: 1.5
-    padding: "0 0 0 1rem"
+    padding: ".5 0 1rem 1rem"
     border-left: '2px solid #b5bdc1'
     html_text: This is an image caption.&nbsp;(BIJU BORO/AFP/Getty Images)
 colors:
@@ -64,11 +64,19 @@ colors:
     - color: "#a483a8"
     - color: "#7a6796"
     - color: "#69518d"
+    hex_code:
+    - color: "#69518d"
+    - color: "#7a6796"
+    - color: "#a483a8"
   - palette_name: Bar Chart 1
     colors:
     - color: "#8cc4b4"
     - color: "#58a897"
     - color: "#459178"
+    hex_code:
+    - color: "#459178"
+    - color: "#58a897"
+    - color: "#8cc4b4"
 links:
 - group_name: Body Links
   description: Default links in the post body
