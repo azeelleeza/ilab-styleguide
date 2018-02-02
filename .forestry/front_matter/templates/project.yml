@@ -32,11 +32,9 @@ fields:
       name: font-family
       label: Font Family
       default: Roboto
-    - type: number
+    - type: text
       name: font-size
       label: Font Size
-      description: Use 'px' units
-      default: '16'
     - type: text
       name: font-weight
       label: Font Weight
@@ -65,11 +63,9 @@ fields:
       name: font-family
       label: Font Family
       default: Georgia
-    - type: number
+    - type: text
       name: font-size
       label: Font Size
-      description: Use 'px' units
-      default: '18'
     - type: text
       name: font-weight
       label: Font Weight
