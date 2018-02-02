@@ -27,6 +27,12 @@ typography:
     font-weight: normal
     color: "#000"
     line-height: 1.5
+    notes: This is a note
+    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua.
   - element_name: Caption
     font-family: Roboto
     font-size: 15px
@@ -35,6 +41,7 @@ typography:
     line-height: 1.5
     padding: ".5 0 1rem 1rem"
     border-left: '2px solid #b5bdc1'
+    html_text: This is an image caption.&nbsp;(BIJU BORO/AFP/Getty Images)
 colors:
   primary_colors:
   - hex_code: "#d66e42"
