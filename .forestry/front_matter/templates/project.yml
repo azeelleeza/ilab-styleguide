@@ -309,6 +309,9 @@ fields:
       name: letter-spacing
       label: Letter Spacing
       default: normal
+    - type: text
+      name: text-transform
+      label: Text Transform
     - type: select
       name: text-align
       config:
@@ -381,6 +384,9 @@ fields:
       name: letter-spacing
       label: Letter Spacing
       default: normal
+    - type: text
+      name: text-transform
+      label: Text Transform
     - type: select
       name: text-align
       config:
