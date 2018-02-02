@@ -142,382 +142,356 @@ fields:
         label: Hex code
       config:
         labelField: hex_code
-  - type: field_group
-    name: interactive_palettes
+  - type: field_group_list
     label: Interactive Palettes
+    name: interactive_palettes
     fields:
+    - type: text
+      name: palette_name
+      label: Palette Name
     - type: field_group_list
+      name: colors
+      label: Colors
       fields:
       - type: text
-        name: palette_name
-        label: Palette Name
-      - type: field_group_list
-        name: colors
-        label: Colors
-        fields:
-        - type: text
-          name: color
-          label: Color
-          description: Use HEX codes
-      label: Palette Group
-      name: palette_group
-      config:
-        labelField: palette_name
-- type: field_group
+        name: color
+        label: Color
+        description: Use HEX codes
+    config:
+      labelField: palette_name
+- type: field_group_list
   name: links
   label: Links
   fields:
-  - type: field_group_list
-    name: link_group
-    label: Link Group
+  - type: text
+    name: group_name
+    label: Group Name
+    default: Body Links
+  - type: text
+    name: description
+    label: Description
+    default: Default links in the post body
+  - type: field_group
+    label: Base
+    name: base
     fields:
     - type: text
-      name: group_name
-      label: Group Name
-      default: Body Links
+      name: font-family
+      label: Font Family
+      default: Roboto
+    - type: number
+      name: font-size
+      label: Font Size
+      description: Use 'px' units
+      default: '18'
     - type: text
-      name: description
-      label: Description
-      default: Default links in the post body
-    - type: field_group_list
-      name: link
-      label: Link
-      fields:
-      - type: field_group
-        label: Base
-        name: base
-        fields:
-        - type: text
-          name: font-family
-          label: Font Family
-          default: Roboto
-        - type: number
-          name: font-size
-          label: Font Size
-          description: Use 'px' units
-          default: '18'
-        - type: text
-          name: font-weight
-          label: Font Weight
-          default: normal
-        - type: text
-          name: color
-          label: Color
-          description: Use HEX code
-          default: "#000"
-        - type: text
-          name: text-decoration
-          label: Text Decoration
-        - type: text
-          name: background
-          label: Background
-          description: 'Use background shorthand: background-color background-image
-            background-repeat background-position. (ex: #fff linear-gradient(#fff 50%, #B5BDC1 50%)
-            repeat-x 0 100%) '
-        - type: text
-          name: background-size
-          label: Background Size
-        - type: textarea
-          name: extra_css
-          label: Extra CSS
-          default: ''
-      - type: field_group
-        label: Hover
-        name: hover
-        fields:
-        - type: text
-          name: font_family
-          label: Font Family
-          default: Roboto
-        - type: number
-          name: font_size
-          label: Font Size
-          description: Use 'px' units
-          default: '18'
-        - type: text
-          name: font_weight
-          label: Font Weight
-          default: normal
-        - type: text
-          name: letter_spacing
-          label: Letter Spacing
-          default: normal
-        - type: text
-          name: color
-          label: Color
-          description: Use HEX code
-          default: "#377E91"
-        - type: boolean
-          name: underline
-          label: Default underline
-        - type: textarea
-          name: extra_css
-          label: Extra CSS
-      - type: field_group
-        label: Visited
-        name: visited
-        fields:
-        - type: text
-          name: font-family
-          label: Font Family
-          default: Roboto
-        - type: number
-          name: font-size
-          label: Font Size
-          description: Use 'px' units
-          default: '18'
-        - type: text
-          name: font-weight
-          label: Font Weight
-          default: normal
-        - type: text
-          name: color
-          label: Color
-          description: Use HEX code
-          default: "#000"
-        - type: text
-          name: text-decoration
-          label: Text Decoration
-        - type: text
-          name: background
-          label: Background
-          description: 'Use background shorthand: background-color background-image
-            background-repeat background-position. (ex: #fff linear-gradient(#fff 50%, #B5BDC1 50%)
-            repeat-x 0 100%) '
-        - type: text
-          name: background-size
-          label: Background Size
-        - type: textarea
-          name: extra_css
-          label: Extra CSS
-          default: ''
-    config:
-      labelField: group_name
-- type: field_group
+      name: font-weight
+      label: Font Weight
+      default: normal
+    - type: text
+      name: color
+      label: Color
+      description: Use HEX code
+      default: "#000"
+    - type: text
+      name: text-decoration
+      label: Text Decoration
+    - type: text
+      name: background
+      label: Background
+      description: 'Use background shorthand: background-color background-image
+        background-repeat background-position. (ex: #fff linear-gradient(#fff 50%, #B5BDC1 50%)
+        repeat-x 0 100%) '
+    - type: text
+      name: background-size
+      label: Background Size
+    - type: textarea
+      name: extra_css
+      label: Extra CSS
+      default: ''
+  - type: field_group
+    label: Hover
+    name: hover
+    fields:
+    - type: text
+      name: font-family
+      label: Font Family
+      default: Roboto
+    - type: number
+      name: font-size
+      label: Font Size
+      description: Use 'px' units
+      default: '18'
+    - type: text
+      name: font-weight
+      label: Font Weight
+      default: normal
+    - type: text
+      name: color
+      label: Color
+      description: Use HEX code
+      default: "#000"
+    - type: text
+      name: text-decoration
+      label: Text Decoration
+    - type: text
+      name: background
+      label: Background
+      description: 'Use background shorthand: background-color background-image
+        background-repeat background-position. (ex: #fff linear-gradient(#fff 50%, #B5BDC1 50%)
+        repeat-x 0 100%) '
+    - type: text
+      name: background-size
+      label: Background Size
+    - type: textarea
+      name: extra_css
+      label: Extra CSS
+      default: ''
+  - type: field_group
+    label: Visited
+    name: visited
+    fields:
+    - type: text
+      name: font-family
+      label: Font Family
+      default: Roboto
+    - type: number
+      name: font-size
+      label: Font Size
+      description: Use 'px' units
+      default: '18'
+    - type: text
+      name: font-weight
+      label: Font Weight
+      default: normal
+    - type: text
+      name: color
+      label: Color
+      description: Use HEX code
+      default: "#000"
+    - type: text
+      name: text-decoration
+      label: Text Decoration
+    - type: text
+      name: background
+      label: Background
+      description: 'Use background shorthand: background-color background-image
+        background-repeat background-position. (ex: #fff linear-gradient(#fff 50%, #B5BDC1 50%)
+        repeat-x 0 100%) '
+    - type: text
+      name: background-size
+      label: Background Size
+    - type: textarea
+      name: extra_css
+      label: Extra CSS
+      default: ''
+  config:
+    labelField: group_name
+- type: field_group_list
   name: buttons
   label: Buttons
   fields:
-  - type: field_group_list
-    name: button_group
-    label: Button Group
+  - type: text
+    name: group_name
+    label: Group Name
+  - type: text
+    name: description
+    label: Description
+  - type: field_group
+    label: Base
+    name: base
     fields:
     - type: text
-      name: group_name
-      label: Group Name
+      name: font-family
+      label: Font Family
+      default: Georgia
+    - type: number
+      name: font-size
+      label: Font Size
+      description: Use 'px' units
+      default: '18'
     - type: text
-      name: description
-      label: Description
-    - type: field_group_list
-      name: button
-      label: Button
-      fields:
-      - type: field_group
-        label: Base
-        name: base
-        fields:
-        - type: text
-          name: font-family
-          label: Font Family
-          default: Georgia
-        - type: number
-          name: font-size
-          label: Font Size
-          description: Use 'px' units
-          default: '18'
-        - type: text
-          name: font-weight
-          label: Font Weight
-          default: normal
-        - type: text
-          name: line-height
-          label: Line Height
-          default: '1.5'
-        - type: text
-          name: letter-spacing
-          label: Letter Spacing
-          default: normal
-        - type: select
-          name: text-align
-          config:
-            source:
-              type: simple
-            options:
-            - Left
-            - Right
-            - Center
-          label: Text Align
-          default: Center
-        - type: text
-          name: color
-          label: Color
-          description: Use HEX code
-          default: "#000"
-        - type: text
-          name: background-color
-          label: Background Color
-          description: Use HEX code
-        - type: text
-          name: padding
-          label: Padding
-          description: 'Padding shorthand: top right bottom left'
-        - type: text
-          name: border-top
-          label: Top Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: text
-          name: border-right
-          label: Right Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: text
-          name: border-bottom
-          label: Bottom Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: text
-          name: border-left
-          label: Left Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: textarea
-          name: extra_css
-          label: Extra CSS
-      - type: field_group
-        name: hover
-        label: Hover
-        fields:
-        - type: text
-          name: font-family
-          label: Font Family
-          default: Georgia
-        - type: number
-          name: font-size
-          label: Font Size
-          description: Use 'px' units
-          default: '18'
-        - type: text
-          name: font-weight
-          label: Font Weight
-          default: normal
-        - type: text
-          name: line-height
-          label: Line Height
-          default: '1.5'
-        - type: text
-          name: letter-spacing
-          label: Letter Spacing
-          default: normal
-        - type: select
-          name: text-align
-          config:
-            source:
-              type: simple
-            options:
-            - Left
-            - Right
-            - Center
-          label: Text Align
-          default: Center
-        - type: text
-          name: color
-          label: Color
-          description: Use HEX code
-          default: "#000"
-        - type: text
-          name: background-color
-          label: Background Color
-          description: Use HEX code
-        - type: text
-          name: padding
-          label: Padding
-          description: 'Padding shorthand: top right bottom left'
-        - type: text
-          name: border-top
-          label: Top Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: text
-          name: border-right
-          label: Right Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: text
-          name: border-bottom
-          label: Bottom Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: text
-          name: border-left
-          label: Left Border
-          description: 'Please use border shorthand: border-width border-style border-color.
-            (ex: 1px solid #4CB5B9)'
-        - type: textarea
-          name: extra_css
-          label: Extra CSS
-- type: field_group
+      name: font-weight
+      label: Font Weight
+      default: normal
+    - type: text
+      name: line-height
+      label: Line Height
+      default: '1.5'
+    - type: text
+      name: letter-spacing
+      label: Letter Spacing
+      default: normal
+    - type: select
+      name: text-align
+      config:
+        source:
+          type: simple
+        options:
+        - Left
+        - Right
+        - Center
+      label: Text Align
+      default: Center
+    - type: text
+      name: color
+      label: Color
+      description: Use HEX code
+      default: "#000"
+    - type: text
+      name: background-color
+      label: Background Color
+      description: Use HEX code
+    - type: text
+      name: padding
+      label: Padding
+      description: 'Padding shorthand: top right bottom left'
+    - type: text
+      name: border-top
+      label: Top Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: text
+      name: border-right
+      label: Right Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: text
+      name: border-bottom
+      label: Bottom Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: text
+      name: border-left
+      label: Left Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: textarea
+      name: extra_css
+      label: Extra CSS
+  - type: field_group
+    name: hover
+    label: Hover
+    fields:
+    - type: text
+      name: font-family
+      label: Font Family
+      default: Georgia
+    - type: number
+      name: font-size
+      label: Font Size
+      description: Use 'px' units
+      default: '18'
+    - type: text
+      name: font-weight
+      label: Font Weight
+      default: normal
+    - type: text
+      name: line-height
+      label: Line Height
+      default: '1.5'
+    - type: text
+      name: letter-spacing
+      label: Letter Spacing
+      default: normal
+    - type: select
+      name: text-align
+      config:
+        source:
+          type: simple
+        options:
+        - Left
+        - Right
+        - Center
+      label: Text Align
+      default: Center
+    - type: text
+      name: color
+      label: Color
+      description: Use HEX code
+      default: "#000"
+    - type: text
+      name: background-color
+      label: Background Color
+      description: Use HEX code
+    - type: text
+      name: padding
+      label: Padding
+      description: 'Padding shorthand: top right bottom left'
+    - type: text
+      name: border-top
+      label: Top Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: text
+      name: border-right
+      label: Right Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: text
+      name: border-bottom
+      label: Bottom Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: text
+      name: border-left
+      label: Left Border
+      description: 'Please use border shorthand: border-width border-style border-color.
+        (ex: 1px solid #4CB5B9)'
+    - type: textarea
+      name: extra_css
+      label: Extra CSS
+- type: field_group_list
   name: logos
   label: Logos
   fields:
-  - type: field_group_list
-    name: logo
-    label: Logo
-    fields:
-    - type: text
-      name: logo_name
-      label: Logo Name
-    - type: text
-      name: logo_description
-      label: Logo Description
-    - type: file
-      name: upload_logo
-      label: Upload logo
-    - type: boolean
-      name: background_color
-      label: Dark Background
-    - type: text
-      name: height
-      label: Height
-      description: For stylesheet only
-    - type: text
-      name: width
-      label: Width
-      description: For stylesheet only
-- type: field_group
+  - type: text
+    name: logo_name
+    label: Logo Name
+  - type: text
+    name: logo_description
+    label: Logo Description
+  - type: file
+    name: upload_logo
+    label: Upload logo
+  - type: boolean
+    name: background_color
+    label: Dark Background
+  - type: text
+    name: height
+    label: Height
+    description: For stylesheet only
+  - type: text
+    name: width
+    label: Width
+    description: For stylesheet only
+- type: field_group_list
   name: tables
   label: Tables
   fields:
-  - type: field_group_list
-    name: table
-    label: Table
-    fields:
-    - type: text
-      name: table_name
-      label: Table Name
-    - type: text
-      name: table_description
-      label: Table Description
-    - type: file
-      label: Image
-      name: image
-    config:
-      labelField: table_name
-- type: field_group
+  - type: text
+    name: table_name
+    label: Table Name
+  - type: text
+    name: table_description
+    label: Table Description
+  - type: file
+    label: Image
+    name: image
+  config:
+    labelField: table_name
+- type: field_group_list
   name: form_elements
   label: Form Elements
   fields:
-  - type: field_group_list
-    name: form_element
-    label: Form Element
-    fields:
-    - type: text
-      name: form_element_name
-      label: Form Element Name
-    - type: text
-      name: form_element_description
-      label: Form Element Description
-    - type: file
-      name: image
-      label: Image
-    config:
-      labelField: form_element_name
+  - type: text
+    name: form_element_name
+    label: Form Element Name
+  - type: text
+    name: form_element_description
+    label: Form Element Description
+  - type: file
+    name: image
+    label: Image
+  config:
+    labelField: form_element_name
