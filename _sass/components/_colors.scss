@@ -1,16 +1,26 @@
 #colors {
-	.swatch {
+	.colorrow {
+		display: flex;
+		flex-direction: row;
 		position: relative;
+		align-items: stretch;
+	}
+	.swatch {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1rem;
+	}
+	.swatchround .swatch-color {
+border-radius: 50%;
 	}
 	.swatch-color {
 		display: block;
 		height: 100px;
 		width: 100px;
-		border-radius: 50%;
-
+	
 		&:after {
 			opacity: 0;
-			position: absolute;
+			//position: absolute;
 			display: block;
 			content: 'COPY';
 			z-index: 3;
@@ -18,8 +28,8 @@
 			width: 100px;
 			text-align: center;
 			display: block;
-			top: 0%;
-			padding-top: 15%;
+
+			padding-top: 30%;
 		}
 		&:hover:after {
 			opacity: 1;

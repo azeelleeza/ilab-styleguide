@@ -39,7 +39,7 @@ typography:
     font-weight: normal
     color: "#000"
     line-height: 1.5
-    padding: ".5 0 1rem 1rem"
+    padding: "0 0 0 1rem"
     border-left: '2px solid #b5bdc1'
     html_text: This is an image caption.&nbsp;(BIJU BORO/AFP/Getty Images)
 colors:

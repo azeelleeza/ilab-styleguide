@@ -1,19 +1,42 @@
-{% for i in page.typography %} {% assign type = i | split: ", " %}
-<div class="heading row">
+ {% for i in page.typography.elements %}
+{% assign my_array = "" | split: ',' %}
+			 {% for t in i %}
+			 
+		 {% if t[0] != "element_name" and t[0] != "notes" and t[0] != "html_text" and t[0] != "extra_css" %}
+		
+		 {% assign my_array = my_array | push: t %}
+	
+		  	 {% endif %}
+		 {% endfor %}
+<article class="heading row">
 	<div class="col-sm-12 col-md-8">
-		The quick brown fox jumps over the lazy dog
+	<div class="html-item" style="
+{% for item in my_array %}
+{% if forloop.last == false %}
+{{ item[0] }}: {{ item[1] }};
+{% else %}
+{{ item[0] }}: {{ item[1] }};
+{% endif %}
+{% endfor %}">
+		{{ i.html_text }}
+	</div>
 	</div>
 	<div class="col-sm-12 col-md-2">
 		<div class="section-heading">
-			{{ i[0] | upcase}}
-		</div>
-		<div class="section-data">
-			{% for t in i %} {% if t.font_family %} {{ t.font_family }}, {% endif %} {% if t.font_size %} {{ t.font_size }}px, {% endif %} {% if t.color %} {{ t.color }} {% endif %} {% endfor %}
+			{{ i.element_name }}
 		</div>
 		<div class="section-notes notes">
-			{% for t in i %} {% if t.font_family %} {{ t.notes }} {% endif %} {% endfor %}
+			{{ i.notes }}
 		</div>
+		<div class="section-data">
+
+
+{{ i.font-family }}, {{ i.font-size }}, {{ i.line-height }}, {{ i.color}}
+
+
+		</div>
+			
 	</div>
-</div>
+</article>
 
 {% endfor %}

@@ -18,18 +18,36 @@
 				<div class="section-title">
 					<h2>Typography</h2></div>
 				{% include heading.html %} 
+				{% include type.html %} 
 			</section>
+
 			<section id="colors">
 				<div class="section-title">
 					<h2>Colors</h2></div>
-				<article class="colorrow row">
-					{% for color in page.colors.primary_colors.color %} {% assign size = page.colors.primary_colors.color | size %} {% include swatch.html %} {% endfor %}
+				<article">
+				<div class="section-subtitle">Primary Colors</div>
+					<div class="colorrow row">
+					{% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch.html %} {% endfor %}
+				</div>
 				</article>
-				<article class="colorrow row">
-					{% for color in page.colors.secondary_colors.color %} {% assign size = page.colors.secondary_colors.color | size %} {% include swatch.html %} {% endfor %}
+
+				<article">
+				<div class="section-subtitle">Secondary Colors</div>
+					<div class="colorrow row">
+					{% for color in page.colors.secondary_color %} {% assign size = page.colors.secondary_color | size %} {% include swatch.html %} {% endfor %}
+				</div>
 				</article>
-				<article class="interswatches row">
-					{% for color in page.colors.interactive_pallettes.color %} {% assign size = page.colors.interactive_pallettes.color | size %} {% include interswatch.html %} {% endfor %}
+				<article>
+					<div class="section-subtitle">Interactive Color Palettes</div>
+					<div class="interswatches row">
+					{% for i in page.colors.interactive_palettes %} 
+					<div class="color-group">
+						{% for i in page.colors.interactive_palettes %} 
+					<div>{{ i.palette_name }}</div>
+					
+					 {% include interswatch.html %} 
+				</div>{% endfor %}{% endfor %}
+				</div>
 				</article>
 			</section>
 			<section id="links">
