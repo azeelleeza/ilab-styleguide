@@ -2,7 +2,7 @@
 pages:
 - aerospace.md
 - china-power.md
-hide_body: false
+hide_body: true
 fields:
 - type: field_group
   name: typography
