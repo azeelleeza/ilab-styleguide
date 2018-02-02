@@ -79,6 +79,8 @@ buttons:
 - group_name: Colored Button
   button:
   - {}
+  base:
+    font-family: Roboto
 logos:
 - logo_name: Header logo, small, dark bg
 - logo_name: Header logo, small, dark bg
