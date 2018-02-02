@@ -19,6 +19,7 @@ typography:
     font-size: 24px
     font-weight: bold
     color: "#000"
+    text-transform: uppercase
   elements:
   - element_name: Body Text
     font-family: Georgia
