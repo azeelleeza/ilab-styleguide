@@ -154,12 +154,12 @@ fields:
       name: palette_name
       label: Palette Name
     - type: field_group_list
-      name: hex_code
-      label: Hex Code
+      name: colors
+      label: Colors
       fields:
       - type: text
-        name: color
-        label: Color
+        name: hex_code
+        label: Hex Code
         description: Use HEX codes
     config:
       labelField: palette_name

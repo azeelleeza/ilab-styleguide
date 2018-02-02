@@ -61,19 +61,19 @@ colors:
   interactive_palettes:
   - palette_name: Bar Chart 2
     colors:
-    - color: "#a483a8"
-    - color: "#7a6796"
-    - color: "#69518d"
-    hex_code:
-    - color: "#69518d"
-    - color: "#7a6796"
-    - color: "#a483a8"
+    - hex_code: "#a483a8"
+    - hex_code: "#7a6796"
+    - hex_code: "#69518d"
+    colors:
+    - hex_code: "#69518d"
+    - hex_code: "#7a6796"
+    - hex_code: "#a483a8"
   - palette_name: Bar Chart 1
     colors:
-    - color: "#8cc4b4"
-    - color: "#58a897"
-    - color: "#459178"
-    hex_code:
+    - hex_code: "#8cc4b4"
+    - hex_code: "#58a897"
+    - hex_code: "#459178"
+    colors:
     - color: "#459178"
     - color: "#58a897"
     - color: "#8cc4b4"
