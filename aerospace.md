@@ -20,6 +20,14 @@ typography:
     font-weight: bold
     color: "#000"
   elements:
+  - element_name: Caption
+    font-family: Roboto
+    font-size: 15
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
+    padding: ".5 0 1rem 1rem"
+    border-left: '2px solid #b5bdc1'
   - element_name: Body Text
     font_family: Georgia
     font_size: 18
@@ -29,16 +37,6 @@ typography:
     font-family: Georgia
     font-size: 18
     line-height: 1.5
-  - element_name: Caption
-    font_family: Georgia
-    font_size: 16
-    font_weight: normal
-    color: gray
-    line_height: 1.3
-    border-left: '2px solid #b5bdc1'
-    padding: ".5rem, 0, 1rem, 1rem"
-    font-family: Roboto
-    font-size: 15
 colors:
   primary_colors:
   - hex_code: "#d66e42"
