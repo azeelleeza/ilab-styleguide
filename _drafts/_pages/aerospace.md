@@ -9,16 +9,24 @@ typography:
     font_weight: normal
     color: "#000"
   - heading_name: H2
-    font_family: Open Sans
-    font_size: 16
-    font_weight: normal
-    color: "#000"
+    font_family: Roboto
+    font_size: 30
+    font_weight: bold
+    color: "#185271"
+    notes: This is a note
   - heading_name: H3
-    font_family: Open Sans
-    font_size: 16
+    font_family: Roboto
+    font_size: 24
     font_weight: normal
     color: "#000"
-  elements: []
+    letter_spacing: 1px
+  elements:
+  - element_name: Body Text
+    font_family: Georgia
+    font_size: 18
+    font_weight: normal
+    color: "#000"
+    line_height: 1.5
 colors:
   primary_colors: []
   secondary_color: []
