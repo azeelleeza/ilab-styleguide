@@ -109,32 +109,24 @@ fields:
   name: colors
   label: Colors
   fields:
-  - type: field_group
+  - type: field_group_list
     name: primary_colors
     label: Primary Colors
     fields:
-    - type: field_group_list
-      name: color
-      label: Color
-      fields:
-      - type: text
-        name: hex_code
-        label: Hex code
-      config:
-        labelField: hex_code
-  - type: field_group
-    name: secondary_colors
+    - type: text
+      name: hex_code
+      label: Hex code
+    config:
+      labelField: hex_code
+  - type: field_group_list
     label: Secondary Colors
+    name: secondary_color
     fields:
-    - type: field_group_list
-      label: Color
-      name: color
-      fields:
-      - type: text
-        name: hex_code
-        label: Hex code
-      config:
-        labelField: hex_code
+    - type: text
+      name: hex_code
+      label: Hex code
+    config:
+      labelField: hex_code
   - type: field_group_list
     label: Interactive Palettes
     name: interactive_palettes
