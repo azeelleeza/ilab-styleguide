@@ -294,8 +294,8 @@ fields:
       name: group_name
       label: Group Name
     - type: text
-      name: group_description
-      label: Group Description
+      name: description
+      label: Description
     - type: field_group_list
       name: button
       label: Button
@@ -305,28 +305,28 @@ fields:
         name: base
         fields:
         - type: text
-          name: font_family
+          name: font-family
           label: Font Family
           default: Georgia
         - type: number
-          name: font_size
+          name: font-size
           label: Font Size
           description: Use 'px' units
           default: '18'
         - type: text
-          name: font_weight
+          name: font-weight
           label: Font Weight
           default: normal
         - type: text
-          name: line_height
+          name: line-height
           label: Line Height
           default: '1.5'
         - type: text
-          name: letter_spacing
+          name: letter-spacing
           label: Letter Spacing
           default: normal
         - type: select
-          name: align
+          name: text-align
           config:
             source:
               type: simple
@@ -342,7 +342,7 @@ fields:
           description: Use HEX code
           default: "#000"
         - type: text
-          name: background_color
+          name: background-color
           label: Background Color
           description: Use HEX code
         - type: text
@@ -377,28 +377,28 @@ fields:
         label: Hover
         fields:
         - type: text
-          name: font_family
+          name: font-family
           label: Font Family
           default: Georgia
         - type: number
-          name: font_size
+          name: font-size
           label: Font Size
           description: Use 'px' units
           default: '18'
         - type: text
-          name: font_weight
+          name: font-weight
           label: Font Weight
           default: normal
         - type: text
-          name: line_height
+          name: line-height
           label: Line Height
           default: '1.5'
         - type: text
-          name: letter_spacing
+          name: letter-spacing
           label: Letter Spacing
           default: normal
         - type: select
-          name: align
+          name: text-align
           config:
             source:
               type: simple
@@ -414,7 +414,7 @@ fields:
           description: Use HEX code
           default: "#000"
         - type: text
-          name: background_color
+          name: background-color
           label: Background Color
           description: Use HEX code
         - type: text
