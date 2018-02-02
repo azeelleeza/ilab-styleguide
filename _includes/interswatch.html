@@ -1,4 +1,9 @@
-
 <div class="col-sm-{{ 12 | divided_by: size | floor }}">
-	{{ color.hex_code }}
+	<div class="swatch-color" style="background-color: {{ color.hex_code }}">
+		<div class="copy-link">COPY</div>
+	</div>
+	<div class="swatch-info">
+		<span class="hex">{{ color.hex_code }}</span>
+		<span class="rgb"></span>
+	</div>
 </div>
