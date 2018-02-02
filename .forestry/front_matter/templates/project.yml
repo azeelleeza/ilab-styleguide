@@ -417,10 +417,6 @@ fields:
           label: Background Color
           description: Use HEX code
         - type: text
-          name: margins
-          label: Margins
-          description: 'Separate with commas in order: Top, Right, Bottom, Left'
-        - type: text
           name: padding
           label: Padding
           description: 'Separate with commas in order: Top, Right, Bottom, Left'
