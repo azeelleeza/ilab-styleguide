@@ -21,6 +21,14 @@ typography:
     color: "#000"
     letter_spacing: 1px
   elements:
+  - element_name: Caption
+    font_family: Georgia
+    font_size: 16
+    font_weight: normal
+    color: gray
+    line_height: 1.3
+    border-left: '2px solid #b5bdc1'
+    padding: ".5rem, 0, 1rem, 1rem"
   - element_name: Body Text
     font_family: Georgia
     font_size: 18
