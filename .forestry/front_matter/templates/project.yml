@@ -44,6 +44,8 @@ fields:
       - type: text
         name: notes
         label: Notes
+      config:
+        labelField: heading_name
   - type: field_group
     name: type
     label: Type
