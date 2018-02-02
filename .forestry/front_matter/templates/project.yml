@@ -4,6 +4,17 @@ pages:
 - china-power.md
 hide_body: true
 fields:
+- type: select
+  config:
+    source:
+      type: simple
+      section: pages
+    options:
+    - page
+    - project
+    required: true
+  hidden: true
+  default: page
 - type: field_group
   name: typography
   label: Typography
