@@ -447,9 +447,10 @@ fields:
   - type: file
     name: upload_logo
     label: Upload logo
-  - type: boolean
-    name: background_color
-    label: Dark Background
+  - type: file
+    name: dark_background
+    label: Optional Dark Background
+    description: Include a version of the logo with a dark background
   - type: text
     name: height
     label: Height
