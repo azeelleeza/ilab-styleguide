@@ -1,5 +1,6 @@
 ---
 pages:
+- china-power.md
 - aerospace.md
 hide_body: false
 fields:
@@ -38,6 +39,8 @@ fields:
     - type: text
       name: notes
       label: Notes
+    config:
+      labelField: heading_name
   - type: field_group_list
     name: elements
     label: Elements
@@ -100,24 +103,38 @@ fields:
     - type: textarea
       name: extra_css
       label: Extra CSS
+    config:
+      labelField: element_name
 - type: field_group
   name: colors
   label: Colors
   fields:
-  - type: field_group_list
+  - type: field_group
     name: primary_colors
     label: Primary Colors
     fields:
-    - type: text
-      name: hex_code
-      label: Hex code
+    - type: field_group_list
+      name: color
+      label: Color
+      fields:
+      - type: text
+        name: hex_code
+        label: Hex code
+      config:
+        labelField: hex_code
   - type: field_group
     name: secondary_colors
     label: Secondary Colors
     fields:
-    - type: text
-      name: hex_code
-      label: Hex code
+    - type: field_group_list
+      label: Color
+      name: color
+      fields:
+      - type: text
+        name: hex_code
+        label: Hex code
+      config:
+        labelField: hex_code
   - type: field_group_list
     label: Interactive Palettes
     name: interactive_palettes
