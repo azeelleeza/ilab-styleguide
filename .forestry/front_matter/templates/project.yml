@@ -14,8 +14,6 @@ fields:
     - type: text
       name: heading_name
       label: Heading Name
-      config:
-        required: true
     - type: text
       name: font_family
       label: Font Family
@@ -40,11 +38,9 @@ fields:
     - type: text
       name: notes
       label: Notes
-    config:
-      labelField: heading_name
   - type: field_group_list
-    name: element
-    label: Element
+    name: elements
+    label: Elements
     fields:
     - type: text
       name: element_name
