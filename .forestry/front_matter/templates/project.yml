@@ -258,33 +258,39 @@ fields:
         name: visited
         fields:
         - type: text
-          name: font_family
+          name: font-family
           label: Font Family
           default: Roboto
         - type: number
-          name: font_size
+          name: font-size
           label: Font Size
           description: Use 'px' units
           default: '18'
         - type: text
-          name: font_weight
+          name: font-weight
           label: Font Weight
           default: normal
-        - type: text
-          name: letter_spacing
-          label: Letter Spacing
         - type: text
           name: color
           label: Color
           description: Use HEX code
-          default: "#4CB5B9"
-        - type: boolean
-          name: underline
-          label: Default underline
-          default: true
+          default: "#000"
+        - type: text
+          name: text-decoration
+          label: Text Decoration
+        - type: text
+          name: background
+          label: Background
+          description: 'Use background shorthand: background-color background-image
+            background-repeat background-position. (ex: #fff linear-gradient(#fff 50%, #B5BDC1 50%)
+            repeat-x 0 100%) '
+        - type: text
+          name: background-size
+          label: Background Size
         - type: textarea
           name: extra_css
           label: Extra CSS
+          default: ''
     config:
       labelField: group_name
 - type: field_group
