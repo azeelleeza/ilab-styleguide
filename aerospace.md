@@ -4,32 +4,21 @@ date: 2018-02-02 10:38:17 +0000
 typography:
   headings:
   - heading_name: H1
-    font_family: Roboto
-    font_size: 40
-    font_weight: normal
-    color: "#000"
     font-family: Roboto
     font-size: 48
-    font-weight: bold
-  - heading_name: H2
-    font_family: Roboto
-    font_size: 30
-    font_weight: bold
-    color: "#185271"
-    notes: This is a note
-    font-family: Roboto
-    font-size: 30
     font-weight: normal
+    color: "#000"
+  - heading_name: H2
+    font-family: Roboto
+    font-size: 36
+    font-weight: normal
+    color: "#185271"
     letter-spacing: 1px
   - heading_name: H3
-    font_family: Roboto
-    font_size: 24
-    font_weight: normal
-    color: "#000"
-    letter_spacing: 1px
     font-family: Roboto
     font-size: 24
     font-weight: bold
+    color: "#000"
   elements:
   - element_name: Body Text
     font_family: Georgia
