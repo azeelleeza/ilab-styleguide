@@ -3,17 +3,17 @@ title: Aerospace
 date: 2018-02-02 10:38:17 +0000
 typography:
   headings:
-  - heading_name: H3
-    font_family: Open Sans
-    font_size: 16
-    font_weight: normal
-    color: "#000"
   - heading_name: H1
-    font_family: Open Sans
-    font_size: 16
+    font_family: Roboto
+    font_size: 40
     font_weight: normal
     color: "#000"
   - heading_name: H2
+    font_family: Open Sans
+    font_size: 16
+    font_weight: normal
+    color: "#000"
+  - heading_name: H3
     font_family: Open Sans
     font_size: 16
     font_weight: normal
