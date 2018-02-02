@@ -80,6 +80,7 @@ buttons:
         color: "#fff"
         background_color: "#196c95"
         margins: ".5rem, 1rem, .5rem, 1rem"
+        padding: ".5rem, 1rem, .5rem, 1rem"
       hover:
         font_family: Roboto
         font_size: 15
