@@ -38,6 +38,9 @@ fields:
     - type: text
       name: font-weight
       label: Font Weight
+    - type: text
+      name: text-transform
+      label: Text Transform
       default: normal
     - type: text
       name: color
@@ -175,7 +178,7 @@ fields:
         name: font-family
         label: Font Family
         default: Roboto
-      - type: number
+      - type: text
         name: font-size
         label: Font Size
         description: Use 'px' units
@@ -213,7 +216,7 @@ fields:
         name: font-family
         label: Font Family
         default: Roboto
-      - type: number
+      - type: text
         name: font-size
         label: Font Size
         description: Use 'px' units
@@ -251,7 +254,7 @@ fields:
         name: font-family
         label: Font Family
         default: Roboto
-      - type: number
+      - type: text
         name: font-size
         label: Font Size
         description: Use 'px' units
@@ -301,7 +304,7 @@ fields:
       name: font-family
       label: Font Family
       default: Georgia
-    - type: number
+    - type: text
       name: font-size
       label: Font Size
       description: Use 'px' units
@@ -376,7 +379,7 @@ fields:
       name: font-family
       label: Font Family
       default: Georgia
-    - type: number
+    - type: text
       name: font-size
       label: Font Size
       description: Use 'px' units
