@@ -154,8 +154,8 @@ fields:
       name: palette_name
       label: Palette Name
     - type: field_group_list
-      name: colors
-      label: Colors
+      name: hex_code
+      label: Hex Code
       fields:
       - type: text
         name: color
