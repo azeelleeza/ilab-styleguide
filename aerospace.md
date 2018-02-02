@@ -5,30 +5,30 @@ typography:
   headings:
   - heading_name: H1
     font-family: Roboto
-    font-size: 48
+    font-size: 48px
     font-weight: normal
     color: "#000"
   - heading_name: H2
     font-family: Roboto
-    font-size: 36
+    font-size: 36px
     font-weight: normal
     color: "#185271"
     letter-spacing: 1px
   - heading_name: H3
     font-family: Roboto
-    font-size: 24
+    font-size: 24px
     font-weight: bold
     color: "#000"
   elements:
   - element_name: Body Text
     font-family: Georgia
-    font-size: 18
+    font-size: 18px
     font-weight: normal
     color: "#000"
     line-height: 1.5
   - element_name: Caption
     font-family: Roboto
-    font-size: 15
+    font-size: 15px
     font-weight: normal
     color: "#000"
     line-height: 1.5
