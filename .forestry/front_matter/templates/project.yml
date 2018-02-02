@@ -376,7 +376,7 @@ fields:
         name: hover
         label: Hover
         fields:
-        - type: text
+         type: text
           name: font_family
           label: Font Family
           default: Georgia
@@ -396,6 +396,7 @@ fields:
         - type: text
           name: letter_spacing
           label: Letter Spacing
+          default: normal
         - type: select
           name: align
           config:
@@ -419,29 +420,27 @@ fields:
         - type: text
           name: padding
           label: Padding
-          description: 'Separate with commas in order: Top, Right, Bottom, Left'
-        - type: field_group_list
-          name: Borders
-          fields:
-          - type: select
-            name: position
-            config:
-              source:
-                type: simple
-              options:
-              - Top
-              - Right
-              - Left
-              - Bottom
-              - All
-            label: Position
-            default: Top
-          - type: text
-            name: color
-            label: Color
-          - type: number
-            name: weight
-            label: Weight
+          description: 'Padding shorthand: top right bottom left'
+        - type: text
+          name: border-top
+          label: Top Border
+          description: 'Please use border shorthand: border-width border-style border-color.
+            (ex: 1px solid #4CB5B9)'
+        - type: text
+          name: border-right
+          label: Right Border
+          description: 'Please use border shorthand: border-width border-style border-color.
+            (ex: 1px solid #4CB5B9)'
+        - type: text
+          name: border-bottom
+          label: Bottom Border
+          description: 'Please use border shorthand: border-width border-style border-color.
+            (ex: 1px solid #4CB5B9)'
+        - type: text
+          name: border-left
+          label: Left Border
+          description: 'Please use border shorthand: border-width border-style border-color.
+            (ex: 1px solid #4CB5B9)'
         - type: textarea
           name: extra_css
           label: Extra CSS
