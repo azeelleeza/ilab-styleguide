@@ -3,7 +3,24 @@ layout: page
 title: Elements
 typography:
   headings:
-    heading: []
+    heading:
+    - font_family: Roboto
+      font_size: 48
+      font_weight: normal
+      color: "#000"
+      heading_name: H1
+    - heading_name: H2
+      font_family: Roboto
+      font_size: 30
+      font_weight: bold
+      color: "#000"
+      notes: Here are notes
+    - heading_name: H3
+      font_family: Roboto
+      font_size: 24
+      font_weight: normal
+      color: "#000"
+      letter_spacing: 1px
   type:
     element: []
 colors:
