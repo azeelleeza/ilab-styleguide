@@ -62,9 +62,28 @@ colors:
     - color: "#8cc4b4"
     - color: "#58a897"
     - color: "#459178"
-links: []
-buttons: []
-logos: []
+links:
+- group_name: Body Links
+  description: Default links in the post body
+  link:
+  - base:
+      background: "#fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%"
+      background-size: 4px 4px
+    hover:
+      color: "#d66e42"
+    visited:
+      background: "#fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%"
+      background-size: 4px 4px
+      color: gray
+buttons:
+- group_name: Colored Button
+  button:
+  - {}
+logos:
+- logo_name: Header logo, small, dark bg
+- logo_name: Header logo, small, dark bg
+- logo_name: Header logo, large, light bg
+- logo_name: Header logo, large, dark bg
 tables: []
 form_elements: []
 ---
