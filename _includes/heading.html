@@ -1,6 +1,15 @@
  {% for i in page.typography.headings %}
+<style>
+
+</style>
+
+
 <article class="heading row">
-	<div class="col-sm-12 col-md-8">
+	<div class="col-sm-12 col-md-8" style=" {% for t in i %}
+		 {% if t[0] != "heading_name" %}
+		  {{ t[0] }}: {{t[1] }};
+		  	 {% endif %}
+		 {% endfor %}">
 		The quick brown fox jumps over the lazy dog
 	</div>
 	<div class="col-sm-12 col-md-2">
@@ -11,12 +20,19 @@
 			{{ i.notes }}
 		</div>
 		<div class="section-data">
-			{% if i.font-family %}
-{{ i.font-family }}
-{% endif %}
-		
+			 {% for t in i %}
+		 {% if t[0] != "heading_name" %}
+		  {{ t[1] }}
+		  	 {% endif %}
+		 {% endfor %}
+
 		</div>
+
+
+
+
 		
+			
 	</div>
 </article>
 
