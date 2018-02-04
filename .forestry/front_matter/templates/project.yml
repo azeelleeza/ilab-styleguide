@@ -475,7 +475,7 @@ fields:
   - type: text
     name: bg-color
     label: Background Color
-    description: Use HEX code
+    description: For stylesheet only.
   - type: text
     name: height
     label: Height
