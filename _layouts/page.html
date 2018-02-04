@@ -81,7 +81,9 @@
 			<section id="logos">
 				<div class="section-title">
 					<h2>Logos</h2></div>
-
+					{% for i in page.logos %}
+					{% include logos.html %}
+					{% endfor %}
 			</section>
 			<section id="tables">
 				<div class="section-title">

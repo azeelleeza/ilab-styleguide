@@ -1,0 +1,21 @@
+
+{% if i.height %}
+{% assign height = i.height %}
+{% endif %}
+
+
+{% if i.width %}
+{% assign width = i.width %}
+{% endif %}
+
+{{ i.logo_name }}
+<img src="{{ i.upload_logo | relative_url }}" height="{{ height }}" width="{{ width }}">
+
+
+{% if i.dark_background %}
+<div class="darklogo" class="background-color:">
+<img src="{{ i.dark_background | relative_url }}" height="{{ height }}" width="{{ width }}">
+
+</div>
+{{ i.bg_color }}
+{% endif %}

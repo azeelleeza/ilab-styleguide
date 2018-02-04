@@ -473,6 +473,10 @@ fields:
     label: Optional Dark Background
     description: Include a version of the logo with a dark background
   - type: text
+    name: bg-color
+    label: Background Color
+    description: Use HEX code
+  - type: text
     name: height
     label: Height
     description: For stylesheet only
