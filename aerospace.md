@@ -61,9 +61,22 @@ colors:
   interactive_palettes:
   - palette_name: Bar Chart 2
     colors:
-    - hex_code: "#a483a8"
-    - hex_code: "#7a6796"
-    - hex_code: "#69518d"
+    - color: "#a483a8"
+    - color: "#7a6796"
+    - color: "#69518d"
+    hex_code:
+    - color: "#69518d"
+    - color: "#7a6796"
+    - color: "#a483a8"
+  - palette_name: Bar Chart 1
+    colors:
+    - color: "#8cc4b4"
+    - color: "#58a897"
+    - color: "#459178"
+    hex_code:
+    - color: "#459178"
+    - color: "#58a897"
+    - color: "#8cc4b4"
 links:
 - group_name: Body Links
   description: Default links in the post body
@@ -107,11 +120,13 @@ logos:
   upload_logo: "/uploads/2018/02/02/logo-large-light.svg"
   dark_background: "/uploads/2018/02/02/logo-large-dark-1.svg"
   height: 150px
+  bg-color: "#18384f"
 - logo_name: Header logo, small
   logo_description: Next to navigation on scroll
   upload_logo: "/uploads/2018/02/02/logo-small-light.svg"
   dark_background: "/uploads/2018/02/02/logo-small-dark.svg"
   height: 40px
+  bg-color: "#18384f"
 tables:
 - table_name: Basic table
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.18 AM.png"
