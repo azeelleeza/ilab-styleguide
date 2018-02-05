@@ -2,7 +2,7 @@
 title: Aerospace
 date: 2018-02-02 10:38:17 +0000
 typography:
-  fonts: []
+  import_fonts: ''
   headings:
   - heading_name: H1
     font-family: Roboto
@@ -143,9 +143,30 @@ form_elements:
 undefined: page
 layout: page
 initial_styles:
-  fonts:
-  - heading_font: fonts
-  colors: []
-  logos: []
-  show_this_section: false
+  import_fonts: <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"><link
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700"
+    rel="stylesheet"><link rel="stylesheet" href="https://use.typekit.net/ith5zhm.css">
+  typography:
+  - heading_font: "'alternate-gothic-no-3-d', sans-serif"
+    body_font: Source Sans Pro', sans-serif
+    optional_font: "'Abel', sans-serif"
+  - heading_font: "'Abel', sans-serif"
+    body_font: "'Source Sans Pro', sans-serif"
+  colors:
+  - hex_code1: "#728c99"
+    hex_code2: "#f1f1f1"
+    hex_code3: "#dbd9d7"
+    hex_code4: "#455a64"
+    hex_code5: "#ed392a"
+  - hex_code1: "#18384f"
+    hex_code2: "#185271"
+    hex_code3: "#196c94"
+    hex_code4: "#f5f5f2"
+    hex_code5: "#d66e42"
+  logos:
+  - notes: This is a note
+    upload_file: "/uploads/2018/02/05/logo-large-light.svg"
+    dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
+    height: 100px
+  show_this_section: true
 ---
