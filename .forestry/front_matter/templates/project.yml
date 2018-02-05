@@ -21,7 +21,7 @@ fields:
   name: initial_styles
   label: Initial Styles
   description: Only for use during project development
-  hidden: true
+  hidden: false
   fields:
   - type: field_group_list
     name: fonts
