@@ -2,6 +2,7 @@
 title: Aerospace
 date: 2018-02-02 10:38:17 +0000
 typography:
+  fonts: []
   headings:
   - heading_name: H1
     font-family: Roboto
@@ -128,16 +129,16 @@ logos:
   height: 40px
   bg-color: "#18384f"
 tables:
-- element_name: Basic table
+- table_name: Basic table
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.18 AM.png"
 form_elements:
-- element_name: Radios
+- form_element_name: Radios
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.12 AM.png"
-- element_name: Checkboxes
+- form_element_name: Checkboxes
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.09 AM.png"
-- element_name: Dropdown
+- form_element_name: Dropdown
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.05 AM.png"
-- element_name: Text Input
+- form_element_name: Text Input
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.55 AM.png"
 undefined: page
 layout: page
