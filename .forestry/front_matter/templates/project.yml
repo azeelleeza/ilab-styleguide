@@ -24,6 +24,35 @@ fields:
   hidden: true
   fields:
   - type: field_group_list
+    name: fonts
+    label: Fonts
+    fields:
+    - type: select
+      name: heading_font
+      config:
+        source:
+          type: datafiles
+          file: _data-fonts-yml
+      label: Heading Font
+    - type: select
+      name: body_font
+      config:
+        source:
+          type: datafiles
+          file: _data-fonts-yml
+      label: Body Font
+    - type: select
+      name: optional
+      config:
+        source:
+          type: datafiles
+          file: _data-fonts-yml
+      label: Optional extra
+    - type: boolean
+      name: discard
+      label: Discard
+      description: This will blur out the option
+  - type: field_group_list
     name: colors
     label: Colors
     fields:
@@ -31,19 +60,37 @@ fields:
       name: color_group
       label: Color Group
       fields:
-      - type: text
-        name: hex_code
-        label: Hex Code
-  - type: field_group_list
-    name: fonts
-    label: Fonts
-    fields:
-    - type: text
-      name: ''
-      label: ''
+      - type: field_group_list
+        name: colors
+        label: Colors
+        fields:
+        - type: text
+          name: hex_code
+          label: Hex Code
+      - type: boolean
+        name: discard
+        label: Discard
+        description: This will blur out the group
   - type: field_group_list
     name: logos
     label: Logos
+    fields:
+    - type: text
+      name: notes
+      label: Notes
+    - type: file
+      name: upload_file
+      label: Upload file
+    - type: file
+      name: dark_bg_logo
+      label: Dark Background Logo
+      description: Optional
+    - type: text
+      name: height
+      label: Height
+  - type: boolean
+    name: show_this_section
+    label: Show this section
 - type: field_group
   name: typography
   label: Typography
