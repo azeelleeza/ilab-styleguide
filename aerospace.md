@@ -143,7 +143,8 @@ form_elements:
 undefined: page
 layout: page
 initial_styles:
-  colors: []
   fonts: []
+  colors: []
   logos: []
+  show_this_section: false
 ---
