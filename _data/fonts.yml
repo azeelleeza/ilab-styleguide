@@ -1,4 +1,32 @@
-- name: ''
-  embed: ''
-  sans-serif or serif: ''
-
+---
+- name: Open Sans
+  embed: <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+    rel="stylesheet">
+  sans-serif or serif: sans-serif
+- name: Source Sans Pro
+  embed: <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700"
+    rel="stylesheet">
+  sans-serif or serif: sans-serif
+- name: Roboto
+  embed: <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
+    rel="stylesheet">
+  sans-serif or serif: sans-serif
+- name: Hind
+  embed: <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
+  sans-serif or serif: sans-serif
+- name: Merriweather
+  embed: <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i"
+    rel="stylesheet">
+  sans-serif or serif: serif
+- name: Lato
+  embed: <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+  sans-serif or serif: sans-serif
+- name: PT Sans
+  embed: <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i"
+    rel="stylesheet">
+  sans-serif or serif: sans-serif
+- name: PT Sans Narrow
+  embed: <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
+    rel="stylesheet">
+  sans-serif or serif: sans
