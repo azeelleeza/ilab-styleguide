@@ -142,4 +142,8 @@ form_elements:
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.55 AM.png"
 undefined: page
 layout: page
+initial_styles:
+  colors: []
+  fonts: []
+  logos: []
 ---
