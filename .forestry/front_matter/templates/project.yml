@@ -54,6 +54,9 @@ fields:
       - type: text
         name: letter-spacing
         label: Letter Spacing
+      - type: text
+        name: text-transform
+        label: Text Transform
     - type: field_group
       name: heading_2
       label: Heading 2
@@ -74,6 +77,9 @@ fields:
       - type: text
         name: letter-spacing
         label: Letter Spacing
+      - type: text
+        name: text_transform
+        label: Text Transform
     - type: field_group
       name: heading_3
       label: Heading 3
@@ -94,6 +100,9 @@ fields:
       - type: text
         name: letter-spacing
         label: Letter Spacing
+      - type: text
+        name: text_transform
+        label: Text Transform
     - type: field_group
       name: body_text
       label: Body Text
