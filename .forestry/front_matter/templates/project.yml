@@ -22,6 +22,26 @@ fields:
   label: Typography
   fields:
   - type: field_group_list
+    name: fonts
+    label: Fonts
+    fields:
+    - type: select
+      name: font_family
+      config:
+        source:
+          type: datafiles
+      label: Font Family
+    - type: text
+      name: font_name
+      label: "(If not on list above): Font Name"
+      default: ''
+    - type: text
+      name: import_code
+      label: "(If not on list above): Import Code"
+      default: ''
+      description: 'Example: <link href="https://fonts.googleapis.com/css?family=Roboto"
+        rel="stylesheet">'
+  - type: field_group_list
     name: headings
     label: Headings
     fields:
