@@ -1,7 +1,7 @@
 ---
 pages:
-- aerospace.md
 - china-power.md
+- aerospace.md
 hide_body: true
 fields:
 - type: select
