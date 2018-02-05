@@ -52,32 +52,27 @@ fields:
     name: colors
     label: Colors
     fields:
-    - type: field_group_list
-      name: color_group
-      label: Color Group
-      fields:
-      - type: boolean
-        name: discard
-        label: Discard
-        description: This will blur out the group
-      - type: text
-        name: hex_code1
-        label: Hex code
-      - type: text
-        name: hex_code2
-        label: Hex Code
-      - type: text
-        name: hex_code3
-        label: Hex Code
-      - type: text
-        name: hex_code4
-        label: Hex code
-      - type: text
-        name: hex_code5
-        label: Hex Code
-      - type: text
-        name: hex_code6
-        label: Hex Code
+    - type: boolean
+      name: discard
+      label: Discard
+    - type: text
+      name: hex_code1
+      label: Hex Code
+    - type: text
+      name: hex_code2
+      label: Hex Code
+    - type: text
+      name: hex_code3
+      label: Hex Code
+    - type: text
+      name: hex_code4
+      label: Hex Code
+    - type: text
+      name: hex_code5
+      label: Hex Code
+    - type: text
+      name: hex_code6
+      label: Hex Code6
   - type: field_group_list
     name: logos
     label: Logos
