@@ -9,15 +9,30 @@
 		display: flex;
 		flex-direction: column;
 		padding: 0 1rem;
+		margin-bottom: 2rem;
+
+		&.swatchsquare {
+			padding: 0 0;
+		}
 	}
+}
+
+
+
+.swatch-container {
+	width: 120px;
+	height: 120px;
 }
 
 .swatch-color {
 	display: block;
 	height: 100px;
 	width: 100px;
+	margin: 0 auto;
+	@include transition(height 0.3s ease-in-out, width 0.3s ease-in-out);
 
-	&:after {
+
+	.copybutton {
 		opacity: 0; //position: absolute;
 		display: block;
 		content: 'COPY';
@@ -27,15 +42,38 @@
 		text-align: center;
 		display: block;
 		padding-top: 30%;
+		@include transition(opacity 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out);
 	}
-	&:hover:after {
-		opacity: 1;
-		background-color: rgba(255, 255, 255, .4);
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-		-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-		-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-		-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-	}
+}
+
+
+.copyview .copybutton {
+	opacity: 1; //position: absolute;
+}
+
+.copyview .swatch-color,
+.copyview .copybutton {
+	height: 110px;
+	width: 110px;
+	@include transition(height 0.3s ease-in-out, width 0.3s ease-in-out);
+}
+
+.darktext {
+	color: black;
+}
+
+.lighttext {
+	color: white;
+}
+
+.swatch-info {
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+
+.swatchsquare .swatch-color {
+	width: 100% !important;
 }
 
 .swatchround .swatch-color {
@@ -43,13 +81,25 @@
 	&:hover:after {
 		border-radius: 50%;
 	}
-	.interswatches {
-		display: flex;
-		flex-direction: column;
-	}
+}
+
+.interswatches {
+	display: flex;
+	flex-direction: column;
+
 	.swatch-group {
 		display: flex;
 		flex-direction: row;
 	}
-	.swatchsquare {}
 }
+
+.swatchsquare {
+	display: flex;
+	flex-direction: row;
+}
+
+.color-group{
+	display: block;
+	width: 100%;
+}
+

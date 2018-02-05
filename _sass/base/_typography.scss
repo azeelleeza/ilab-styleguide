@@ -27,11 +27,7 @@
  	font-family: $font__main;
  	@include fontSize(16px);
  	line-height: 1.5;
- }
-
-
-
- //Sidebar
+ } //Sidebar
  #sidebar {
  	ul.links {
  		padding-left: 0px;
@@ -53,21 +49,68 @@
  			padding-bottom: 1rem;
  		}
  	}
+ } //Gen Headings
+ .section-title {
+ 	font-size: 30px;
+ 	border-bottom: 1px solid black;
+ 	line-height: 1;
+ 	display: block;
+ 	h2 {
+ 		margin-bottom: 0;
+ 	}
+ 	.sec-num {
+ 		text-align: right;
+ 		color: $color-text-numbers;
+ 	}
  }
 
+ .article-ex {
+ 	margin-right: 2rem;
+ 	display: block;
+ }
 
- //Gen Headings
  .section-heading {
-
+ 	font-weight: bold;
  }
-.section-title {
 
-}
+ .section-data {
+ 	margin-top: .5rem;
+ }
 
- .section-subtitle{}
+ .section-subtitle {
+ 	text-transform: uppercase;
+ 	margin: 0rem 0 1rem;
+ 	font-size: 24px;
+ 	font-weight: bold;
+ 	color: #004165;
+ }
 
-.section-notes {
+ .section-notes {
+ 	font-size: 14px;
+ }
 
-}
+ .heading {
+ 	line-height: 1.3;
+ }
 
-
+ #fonts {
+ 	.font {
+ 		display: flex;
+ 		flex-direction: row;
+ 	}
+ 	.letters{
+ 		display: inline-flex;
+ 	
+ 		font-size: 100px;
+ 		padding-right: 2rem;
+ 		line-height: 1;
+ 		
+ 	}
+ 	.alphabet {
+ 		display: inline-flex;
+ 		flex: grow;	
+ 		font-size: 24px;
+ 		letter-spacing: 1px;
+ 		line-height: 1.3;
+ 	}
+ }

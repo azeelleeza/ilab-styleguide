@@ -8,6 +8,10 @@
 
 html{
 	overflow-x: hidden;
+
+}
+body{
+
 }
 
 .content-wrapper {
@@ -15,16 +19,18 @@ html{
 	margin-left: $size__sidebar-sm;
 	padding: 2rem 2rem;
 	clear: both;
-	width: 100%;
+		background-color: $color__background-body;
+
+
 	@include breakpoint("medium") {
 		margin-left: $size__sidebar-md;
 		padding: 2rem 3rem;
-
+		
 	}
 	@include breakpoint("large") {
 		margin-left: $size__sidebar-lg;
 		padding: 2rem 4rem;
-		max-width: $size__container-max-width;
+		
 	}
 }
 
@@ -32,6 +38,19 @@ html{
 display: block;
 }
 
-/* article {
+
+section {
+	padding: 1rem 2rem;
+}
+
+.subsection {
+	display: block;
+	padding: 2rem;
+	margin: 2rem 0rem;
+		background-color: $color__background-section;
+
+}
+ article {
 	border-bottom: 1px solid lightgray;
-} */
+	padding: 2rem 0;
+} 

@@ -489,10 +489,10 @@ fields:
   label: Tables
   fields:
   - type: text
-    name: table_name
+    name: element_name
     label: Table Name
   - type: text
-    name: table_description
+    name: element_description
     label: Table Description
   - type: file
     label: Image
@@ -504,10 +504,10 @@ fields:
   label: Form Elements
   fields:
   - type: text
-    name: form_element_name
+    name: element_name
     label: Form Element Name
   - type: text
-    name: form_element_description
+    name: element_description
     label: Form Element Description
   - type: file
     name: image

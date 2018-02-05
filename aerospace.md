@@ -128,16 +128,16 @@ logos:
   height: 40px
   bg-color: "#18384f"
 tables:
-- table_name: Basic table
+- element_name: Basic table
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.18 AM.png"
 form_elements:
-- form_element_name: Radios
+- element_name: Radios
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.12 AM.png"
-- form_element_name: Checkboxes
+- element_name: Checkboxes
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.09 AM.png"
-- form_element_name: Dropdown
+- element_name: Dropdown
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.05 AM.png"
-- form_element_name: Text Input
+- element_name: Text Input
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.55 AM.png"
 undefined: page
 layout: page
