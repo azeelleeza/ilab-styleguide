@@ -150,6 +150,23 @@ initial_styles:
   - heading_font: "'alternate-gothic-no-3-d', sans-serif"
     body_font: Source Sans Pro', sans-serif
     optional_font: "'Abel', sans-serif"
+    body_text:
+      font-family: "'Source Sans Pro', sans-serif"
+      font-size: 18px
+      line-height: 1.5
+    meta_data:
+      font-family: "'Source Sans Pro', sans-serif"
+      font-size: 14px
+      font-weight: 300
+    heading_2:
+      font-family: "'Abel', sans-serif"
+      font-size: 30px
+      letter-spacing: 1px
+    heading_3:
+      font-family: "'Abel', sans-serif"
+      font-size: 24px
+    heading_1:
+      font-size: 43px
   - heading_font: "'Abel', sans-serif"
     body_font: "'Source Sans Pro', sans-serif"
   colors:
