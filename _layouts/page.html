@@ -46,7 +46,20 @@
 					<div class="sec-num col-sm-2">
 						<h2>02</h2></div>
 				</div>
-				<article ">
+				 <h6>Colorblind Filter</h6>
+            <input type="radio" id="colorblind1" name="colorblind" value="Normal" checked>Normal
+            <br>
+            <input type="radio" id="colorblind2" name="colorblind" value="Deuteranomaly">Deuteranomaly
+            <br>
+            <input type="radio" id="colorblind3" name="colorblind" value="Protanomaly">Protanomaly
+            <br>
+            <input type="radio" id="colorblind4" name="colorblind" value="Protanopia">Protanopia
+            <br>
+            <input type="radio" id="colorblind5" name="colorblind" value="Deuteranopia">Deuteranopia
+            <br>
+            <input type="radio" id="colorblind6" name="colorblind" value="Grayscale">Grayscale
+            <br>
+				<article >
 				<div class="section-subtitle ">Primary Colors</div>
 					<div class="colorrow row ">
 					{% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch.html %} {% endfor %}
