@@ -18,6 +18,33 @@ fields:
   label: Layout
   name: layout
 - type: field_group
+  name: initial_styles
+  label: Initial Styles
+  description: Only for use during project development
+  hidden: true
+  fields:
+  - type: field_group_list
+    name: colors
+    label: Colors
+    fields:
+    - type: field_group_list
+      name: color_group
+      label: Color Group
+      fields:
+      - type: text
+        name: hex_code
+        label: Hex Code
+  - type: field_group_list
+    name: fonts
+    label: Fonts
+    fields:
+    - type: text
+      name: ''
+      label: ''
+  - type: field_group_list
+    name: logos
+    label: Logos
+- type: field_group
   name: typography
   label: Typography
   fields:
@@ -31,6 +58,7 @@ fields:
         source:
           type: datafiles
           file: _data-fonts-yml
+          path: 
       label: Font Family
   - type: field_group_list
     name: headings
