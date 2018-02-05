@@ -1,9 +1,11 @@
+---
 - name: ''
   embed: ''
-  sans-serif or serif: sans-serif
 - name: PT Sans Narrow
-  embed: <link href=https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet>
+  embed: <link href=https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700
+    rel="stylesheet>
   sans-serif or serif: sans-serif
 - name: PT Sans
-  embed: <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+  embed: <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i"
+    rel="stylesheet">
   sans-serif or serif: sans-serif
