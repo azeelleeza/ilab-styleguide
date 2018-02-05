@@ -1,6 +1,6 @@
----
 - name: ''
   embed: ''
+  sans-serif or serif: ''
 - name: PT Sans Narrow
   embed: <link href=https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700
     rel="stylesheet>
