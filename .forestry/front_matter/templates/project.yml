@@ -1,6 +1,5 @@
 ---
 pages:
-- china-power.md
 - aerospace.md
 hide_body: true
 fields:
@@ -31,23 +30,42 @@ fields:
     name: typography
     label: Typography
     fields:
-    - type: text
-      name: heading_font
-      label: Heading Font Family
-      description: Use CSS layout (ex. "alternate-gothic-no-3-d", serif)
-    - type: text
-      name: body_font
-      label: Body Font Family
-      description: Use CSS layout (ex. "alternate-gothic-no-3-d", serif)
-    - type: text
-      name: optional_font
-      label: Optional Font Family
-      description: For captions, buttons, or subheadings. Use CSS layout (ex. "alternate-gothic-no-3-d",
-        serif)
     - type: boolean
       name: discard
       label: Discard
       description: This will blur out the option
+    - type: field_group
+      name: heading_1
+      label: Heading 1
+      fields:
+      - type: text
+        name: font-family
+        label: Font Family
+        description: Use CSS format
+      - type: text
+        name: font-size
+        label: Font Size
+      - type: text
+        name: font-weight
+        label: Font Weight
+      - type: text
+        name: line-height
+        label: Line Height
+      - type: text
+        name: letter-spacing
+        label: Letter Spacing
+    - type: field_group
+      name: heading_2
+      label: Heading 2
+    - type: field_group
+      name: heading_3
+      label: Heading 3
+    - type: field_group
+      name: body_text
+      label: Body Text
+    - type: field_group
+      name: meta_data
+      label: Meta Data
   - type: field_group_list
     name: colors
     label: Colors
