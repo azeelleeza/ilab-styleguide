@@ -1,6 +1,6 @@
  {% for i in page.typography.elements %} {% assign my_array = "" | split: ',' %} {% for t in i %} {% if t[0] != "element_name" and t[0] != "notes" and t[0] != "html_text" and t[0] != "extra_css" %} {% assign my_array = my_array | push: t %} {% endif %} {% endfor %}
 <article class="heading row">
-	<div class="col-sm-12 col-md-9 article-ex">
+	<div class="col-sm-12 col-md-8 article-ex">
 		<div class="html-item" style="
 	{% for item in my_array %}
 		
@@ -10,20 +10,22 @@
 			{{ i.html_text }}
 		</div>
 	</div>
-	<div class="col-sm-12 col-md-2 ">
+	<div class="col-sm-12 col-md-3 ">
+		<div class="article-info-left">
 		<div class="section-heading">
 			{{ i.element_name }}
 		</div>
 		<div class="section-notes notes">
 			{{ i.notes }}
 		</div>
-		<div class="section-data">
-
-
-			{{ i.font-family }}, {{ i.font-size }}, {{ i.line-height }}, {{ i.color}}
+		<div class="section-data meta">
+			<span class="label">Font Family:</span> {{ i.font-family }}<br> 
+			<span class="label">Font Size:</span> {{ i.font-size }}<br> 
+			<span class="label">Line Height:</span> {{ i.line-height }}<br> 
+			<span class="label">Color:</span> {{ i.color}}<br> 
 		</div>
 
-
+</div>
 	</div>
 </article>
 

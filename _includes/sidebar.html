@@ -12,6 +12,15 @@
 			{% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout != "home" %} {% if page.title == current_page %}
 			<li class="selected"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 			<ul id="subitems">
+
+			{% if page.initial_styles.show_this_section == true %}
+			
+			
+				<li><a href="#typography">Typography</a></li>
+				<li><a href="#colors">Colors</a></li>
+				<li><a href="#logos">Logos</a></li>
+				
+			{% else %}
 				{% if page.typography %}
 				<li><a href="#typography">Typography</a></li>
 				{% endif %} {% if page.colors %}
@@ -24,6 +33,7 @@
 				<li><a href="#tables">Tables</a></li>
 				{% endif %} {% if page.logos %}
 				<li><a href="#forms">Form Elements</a></li>
+				{% endif %}
 				{% endif %}
 			</ul>
 			{% else %}

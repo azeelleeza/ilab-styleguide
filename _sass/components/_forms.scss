@@ -1,0 +1,129 @@
+
+
+ul{
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+
+  }
+
+} 
+
+$radioColor: $color-blue;
+$circleSize: 16px;
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.radiopair {
+  display: block;
+  float: left;
+  padding-right: 1rem;
+}
+.colorblind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+
+  input {
+    margin: 0 5px 0 0;
+    padding: 0;
+
+  }
+}
+
+.radio[type="radio"] {
+
+  &:checked,
+  &:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  &:checked+label,
+  &:not(:checked)+label {
+    position: relative;
+    padding-left: 21px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  } 
+  // Border
+  &:checked+label:before,
+  &:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid $radioColor;
+    border-radius: 100%;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  &:not(:checked)+label:before {
+    border-color: #cbcbcb;
+  }
+  &:not(:checked)+label:hover:before {
+    border-color: #a7a7a7;
+  } 
+  // Circle
+  &:checked+label:after,
+  &:not(:checked)+label:after {
+    content: '';
+    width: $circleSize;
+    height: $circleSize;
+    background: radial-gradient(ellipse at center,
+      rgba($radioColor, 1) 0%,
+      rgba($radioColor, 1) 38%,
+      rgba(255, 255, 255, 0) 44%,
+      rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 0;
+    transition: all .2s ease;
+    z-index: 1;
+    box-sizing: border-box;
+    transform-origin: 50% 1%;
+  }
+  &:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0) translateY(-50%);
+  }
+  &:checked+label:after {
+    opacity: 1;
+    transform: scale(1) translateY(-50%);
+  }
+  //  Disabled
+  &:disabled:checked+label:before {
+    border-color: #cbcbcb;
+  }
+  &:disabled:checked+label:after {
+    background: radial-gradient(ellipse at center,
+      rgba(#cbcbcb, 1) 0%,
+      rgba(#cbcbcb, 1) 43%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  }
+  &:disabled+label {
+    cursor: not-allowed;
+    color: #cbcbcb;
+  }
+  &:disabled+label:hover:before {
+    border-color: #cbcbcb;
+  }
+  &:disabled:not(:checked)+label:before {
+    background: rgba(243, 243, 243, 1);
+  }
+}
+
+.clearfix {
+  clear: both;
+}

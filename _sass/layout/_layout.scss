@@ -19,7 +19,7 @@ body{
 	margin-left: $size__sidebar-sm;
 	padding: 2rem 2rem;
 	clear: both;
-		background-color: $color__background-body;
+	background-color: $color__background-body;
 
 
 	@include breakpoint("medium") {
@@ -41,16 +41,74 @@ display: block;
 
 section {
 	padding: 1rem 2rem;
+	margin-bottom: 6rem;
 }
 
 .subsection {
 	display: block;
-	padding: 2rem;
-	margin: 2rem 0rem;
+	//padding: 2rem 4rem;
+	margin: 2rem 0rem 4rem;
 		background-color: $color__background-section;
 
 }
  article {
-	border-bottom: 1px solid lightgray;
+	//border-bottom: 1px solid lightgray;
 	padding: 2rem 0;
+	&:first-of-type {
+		margin-top: 0px;
+	}
 } 
+
+
+.article-info-left {
+	height: 100%;
+	display: block;
+	border-left: 2px solid $color__background-pre;
+	padding-left: 1rem;
+}
+
+
+.article-info-right {
+	border-right: 2px solid $color__background-pre;
+	padding-right: 1rem;
+	height: 100%;
+	margin-right: 2rem;
+}
+
+.discard {
+	opacity: .2;
+}
+
+.meta {
+	//color: $color-text-gray;
+	font-size: 16px;
+	.label {
+
+	}
+}
+
+#fonts {
+	background-color: $color__background-box;
+	padding: 2rem 4rem;
+}
+
+
+.initial-styles {
+	article {
+			border-bottom: 1px solid lightgray;
+			padding: 0;
+
+	}
+	.article-ex {
+		padding: 2rem 0;
+	}
+	.section-title {
+		margin-bottom: 0;
+	}
+	.initial-info {
+		background-color:  $color__background-box;
+		padding: 3rem 2rem;
+
+	}
+}
+

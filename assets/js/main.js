@@ -75,7 +75,7 @@
 	function hexToRgb(h)
 {
     var r = parseInt((cutHex(h)).substring(0,2),16), g = ((cutHex(h)).substring(2,4),16), b = parseInt((cutHex(h)).substring(4,6),16)
-    return "rgb(" + r+','+b+','+b+")";
+    return  + r+', '+b+', '+b;
 }
 function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
 

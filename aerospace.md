@@ -120,25 +120,25 @@ logos:
 - logo_name: Header logo, large
   upload_logo: "/uploads/2018/02/02/logo-large-light.svg"
   dark_background: "/uploads/2018/02/02/logo-large-dark-1.svg"
-  height: 150px
   bg-color: "#18384f"
 - logo_name: Header logo, small
   logo_description: Next to navigation on scroll
   upload_logo: "/uploads/2018/02/02/logo-small-light.svg"
   dark_background: "/uploads/2018/02/02/logo-small-dark.svg"
-  height: 40px
   bg-color: "#18384f"
 tables:
-- table_name: Basic table
+- element_name: Basic table
+  element_description: This is a very important description
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.18 AM.png"
 form_elements:
-- form_element_name: Radios
+- element_name: Radios
+  element_description: This is a very important description
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.12 AM.png"
-- form_element_name: Checkboxes
+- element_name: Checkboxes
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.09 AM.png"
-- form_element_name: Dropdown
+- element_name: Dropdown
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.05 AM.png"
-- form_element_name: Text Input
+- element_name: Text Input
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.55 AM.png"
 undefined: page
 layout: page
@@ -162,7 +162,7 @@ initial_styles:
       font-family: "'Abel', sans-serif"
       font-size: 30px
       letter-spacing: 1px
-      text_transform: uppercase
+      text-transform: uppercase
     heading_3:
       font-family: "'Abel', sans-serif"
       font-size: 24px
@@ -194,13 +194,14 @@ initial_styles:
       font-weight: 300
       line-height: 1.4
       letter-spacing: 1px
-    discard: false
+    discard: true
   colors:
   - hex_code1: "#728c99"
     hex_code2: "#f1f1f1"
     hex_code3: "#dbd9d7"
     hex_code4: "#455a64"
     hex_code5: "#ed392a"
+    discard: true
   - hex_code1: "#18384f"
     hex_code2: "#185271"
     hex_code3: "#196c94"
@@ -210,6 +211,7 @@ initial_styles:
   - notes: This is a note
     upload_file: "/uploads/2018/02/05/logo-large-light.svg"
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
+    bg-color: "#18384f"
     height: 100px
   show_this_section: true
 ---

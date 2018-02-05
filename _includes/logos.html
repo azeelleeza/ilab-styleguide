@@ -5,13 +5,20 @@
 
 
 
+<div class="section-subtitle">
 {{ i.logo_name }}
-<div>
-<img src="{{ i.upload_logo | relative_url }}" height="{{ height }}">
+</div>
+<div class="row {% if i.dark_background %}
+padded
+{% endif %}">
+<div class="col-sm-12 col-md-6 logo">
+<img src="{{ i.upload_logo | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %}>
 </div>
 
 {% if i.dark_background %}
-<div>
-<img src="{{ i.dark_background | relative_url }}" height="{{ height | plus: 40 }}" style="background-color: {{ i.bg-color }}; padding: 40px;">
+<div class="col-sm-12 col-md-6 logo">
+<img src="{{ i.dark_background | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %} style="background-color: {{ i.bg-color }};">
+
 </div>
 {% endif %}
+</div>

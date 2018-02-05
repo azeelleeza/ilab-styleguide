@@ -1,0 +1,28 @@
+<article>
+	<div class="row">
+		<div class="col-sm-12 col-md-9 article-ex row">
+			{% for t in i %}
+			{% if t[0] != 'discard' && if t[0] != 'notes' %}
+			<div class="swatch swatchround" data-copy="{{ t[1] }}">
+				<div class="swatch-container">
+					<div class="swatch-color" style="background-color: {{ t[1] }}">
+						<div class="copybutton">Copy HEX</div>
+					</div>
+
+				</div>
+				<div class="swatch-info">
+					<span class="hex">{{ t[1] }}</span>
+					<br>
+					<span class="rgb"></span>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+		<div class="col-sm-12 col-md-3 initial-info">
+			<div class="section-heading">Color Group {{ forloop.index }}</div>
+			<div class="notes">{{ i.notes }}</div>
+
+		</div>
+	</div>
+</article>

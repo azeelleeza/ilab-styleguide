@@ -78,7 +78,7 @@ fields:
         name: letter-spacing
         label: Letter Spacing
       - type: text
-        name: text_transform
+        name: text-transform
         label: Text Transform
     - type: field_group
       name: heading_3
@@ -101,7 +101,7 @@ fields:
         name: letter-spacing
         label: Letter Spacing
       - type: text
-        name: text_transform
+        name: text-transform
         label: Text Transform
     - type: field_group
       name: body_text
@@ -182,6 +182,10 @@ fields:
       name: dark_bg_logo
       label: Dark Background Logo
       description: Optional
+    - type: text
+      name: bg-color
+      label: Background Color
+      description: For stylesheet only.
     - type: text
       name: height
       label: Height

@@ -1,3 +1,4 @@
+<div class="initial-styles">
 <section id="typography">
 	<div class="section-title row">
 		<div class="col-sm-10">
@@ -12,15 +13,28 @@
 
 </section>
 <section id="colors">
-	<div class="section-title row">
+	<div class="section-title row ">
 		<div class="col-sm-10">
 			<h2>Colors</h2></div>
 		<div class="sec-num col-sm-2">
 			<h2>02</h2></div>
 	</div>
+	{% include colorblindfilter.html %}
 	{% for i in page.initial_styles.colors %}
 	{% include newsitecolors.html %}
 
 	{% endfor %}
-
 </section>
+<section id="logos">
+	<div class="section-title row ">
+		<div class="col-sm-10">
+			<h2>Logos</h2></div>
+		<div class="sec-num col-sm-2">
+			<h2>03</h2></div>
+	</div>
+	{% for i in page.initial_styles.logos %}
+	{% include newsitelogos.html %}
+
+	{% endfor %}
+</section>
+</div>

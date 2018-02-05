@@ -1,0 +1,22 @@
+
+
+<article class="subsection">
+<div class="section-subtitle">
+{{ i.logo_name }}
+</div>
+<div class="notes">{{ i.notes }}</div>
+<div class="row {% if i.dark_bg_logo %}
+padded
+{% endif %}">
+<div class="col-sm-12 col-md-6 logo">
+<img src="{{ i.upload_file| relative_url }}" {% if i.height %}height="{{ height }}"{% endif %}>
+</div>
+
+{% if i.dark_bg_logo %}
+<div class="col-sm-12 col-md-6 logo">
+<img src="{{ i.dark_bg_logo | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %} style="background-color: {{ i.bg-color }};">
+
+</div>
+{% endif %}
+</div>
+</article>

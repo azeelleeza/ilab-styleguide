@@ -51,12 +51,16 @@
  	}
  } //Gen Headings
  .section-title {
- 	font-size: 30px;
- 	border-bottom: 1px solid black;
+ 	font-size: 25px;
+ 	//border-top: 2px solid $color__background-hr;
+ 	border-bottom: 2px solid $color__background-pre;
  	line-height: 1;
  	display: block;
+ 	margin: .5rem;
  	h2 {
- 		margin-bottom: 0;
+ 		margin: .5rem 0;
+ 		 	font-family: $font__roboto;
+ 	text-transform: uppercase;
  	}
  	.sec-num {
  		text-align: right;
@@ -70,7 +74,8 @@
  }
 
  .section-heading {
- 	font-weight: bold;
+ 	font-family: $font__roboto;
+ 	font-weight: 400;
  }
 
  .section-data {
@@ -80,8 +85,10 @@
  .section-subtitle {
  	text-transform: uppercase;
  	margin: 0rem 0 1rem;
- 	font-size: 24px;
- 	font-weight: bold;
+ 	font-size: 18px;
+ 	font-weight: 400;
+ 	border-bottom: 1px solid $color__background-hr;
+ 	margin-bottom: 2rem;
  	color: #004165;
  }
 
@@ -113,4 +120,8 @@
  		letter-spacing: 1px;
  		line-height: 1.3;
  	}
+ }
+
+ .initial-headings {
+ 	margin-bottom: 1rem;
  }

@@ -1,8 +1,6 @@
-<article class="row">
-	<div class="col-sm-12 col-md-8">
-		<img src="{{ i.image | relative_url }}">
-	</div>
-	<div class="col-sm-12 col-md-2">
+<article class="row subsection ">
+		<div class="col-sm-12 col-md-3">
+			<div class="article-info-right">
 		<div class="section-heading">
 			{{ i.element_name }}
 		</div>
@@ -10,6 +8,10 @@
 			{{ i.element_description }}
 		</div>
 
-
+</div>
+	</div>
+	<div class="col-sm-12 col-md-8">
+		<img src="{{ i.image | relative_url }}">
 	</div>
 </article>
+

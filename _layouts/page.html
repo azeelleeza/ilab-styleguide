@@ -35,12 +35,9 @@
 				</div>
 				<!-- fonts -->
 				<div class="subsection">
-					<div class="section-subtitle">Headings</div>
+					
 					{% include heading.html %}
-				</div>
-				<!-- headings -->
-				<div class="subsection">
-					<div class="section-subtitle">Text Elements</div>
+				
 					{% include type.html %}
 				</div>
 				<!-- text elements -->
@@ -54,40 +51,28 @@
 					<div class="sec-num col-sm-2">
 						<h2>02</h2></div>
 				</div>
-				 <h6>Colorblind Filter</h6>
-            <input type="radio" id="colorblind1" name="colorblind" value="Normal" checked>Normal
-            <br>
-            <input type="radio" id="colorblind2" name="colorblind" value="Deuteranomaly">Deuteranomaly
-            <br>
-            <input type="radio" id="colorblind3" name="colorblind" value="Protanomaly">Protanomaly
-            <br>
-            <input type="radio" id="colorblind4" name="colorblind" value="Protanopia">Protanopia
-            <br>
-            <input type="radio" id="colorblind5" name="colorblind" value="Deuteranopia">Deuteranopia
-            <br>
-            <input type="radio" id="colorblind6" name="colorblind" value="Grayscale">Grayscale
-            <br>
-				<article >
+				 {% include colorblindfilter.html %}
+				<div class="subsection">
 				<div class="section-subtitle ">Primary Colors</div>
 					<div class="colorrow row ">
 					{% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch.html %} {% endfor %}
 				</div>
-				</article>
+				</div>
 
-				<article">
+				<div  class="subsection">
 					<div class="section-subtitle">Secondary Colors</div>
 					<div class="colorrow row">
 						{% for color in page.colors.secondary_color %} {% assign size = page.colors.secondary_color | size %} {% include swatch.html %} {% endfor %}
 					</div>
 
-				</article>
-				<article>
+				</div>
+				<div  class="subsection">
 					<div class="section-subtitle">Interactive Color Palettes</div>
 					<div class="interswatches row">
 						{% for i in page.colors.interactive_palettes %}
 						<div class="color-group">
 
-							<div>{{ i.palette_name }}</div>
+							<div class="section-heading">{{ i.palette_name }}</div>
 							<div class="swatch-group">
 								{% include interswatch.html %}
 							</div>
@@ -103,7 +88,7 @@
 					<div class="sec-num col-sm-2">
 						<h2>03</h2></div>
 				</div>
-				<article class="links row">
+				<article class="links row subsection">
 
 					{% for i in page.links %} {% include links.html %} {% endfor %}
 
@@ -117,7 +102,7 @@
 					<div class="sec-num col-sm-2">
 						<h2>04</h2></div>
 				</div>
-				<article class="buttons row">
+				<article class="buttons row subsection">
 
 					{% for i in page.buttons %} {% include buttons.html %} {% endfor %}
 
@@ -131,14 +116,17 @@
 					<div class="sec-num col-sm-2">
 						<h2>05</h2></div>
 				</div>
+				<div class="subsection"
 				{% for i in page.logos %}
-				<article>
+				<article >
 					{% include logos.html %}
 				</article>
+
 				{% endfor %}
+			</div>
 			</section>
 			<section id="tables">
-				<div class="section-title row">
+				<div class="section-title row ">
 					<div class="col-sm-10">
 						<h2>Tables</h2></div>
 					<div class="sec-num col-sm-2">

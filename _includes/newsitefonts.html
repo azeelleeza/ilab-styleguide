@@ -1,6 +1,43 @@
+<article class="heading row ">
+<div class="{% if i.discard == true %}
+	discard
+	{% endif %} row">
+	<div class="col-sm-12 col-md-8 article-ex">
+		<div class="initial-headings">
+			<div class="heading1" style="{% for t in i.heading_1 %}
+{{ t[0] }}: {{ t[1] }};
+{% endfor %}">
+				The Quick Brown Fox Jumps
+			</div>
+			<div class="heading2" style="{% for t in i.heading_2 %}
+{{ t[0] }}: {{ t[1] }};
+{% endfor %}">
+				The Quick Brown Fox Jumps
+			</div>
+			<div class="heading3" style="{% for t in i.heading_3 %}
+{{ t[0] }}: {{ t[1] }};
+{% endfor %}">
+				The Quick Brown Fox Jumps
+			</div>
+			<div class="bodytext" style="{% for t in i.body_text %}
+{{ t[0] }}: {{ t[1] }};
+{% endfor %}">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-<article class="heading row">
-	<div class="col-sm-12 col-md-9 article-ex">
-<div class="heading1">{{ i.heading_font }}</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="bodytext" style="{% for t in i.meta_data %}
+{{ t[0] }}: {{ t[1] }};
+{% endfor %}">
+				Posted February 30, 2018
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-3 initial-info">
+		<div class="section-heading">Font Group {{ forloop.index }}</div>
+		<div class="notes">{{ i.notes }}</div>
+
+	</div>
+</div>
 
 </article>

@@ -12,7 +12,8 @@ $color-text-numbers: lightgray;
 $color__sidebar: #39464F;
 $color__footer: #F2EEE6;
 
-$color__background-body: #ecf0f3;
+$color__background-box: #ecf0f3;
+$color__background-body: #fff;
 $color__background-section: #fff;
 
 $color__background-screen: #f1f1f1;
@@ -34,7 +35,7 @@ $color__link-sidebar: white;
 =            Typography            =
 ==================================*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300, 400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 
 $font__roboto: 'Roboto',
