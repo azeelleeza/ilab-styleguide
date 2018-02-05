@@ -57,15 +57,83 @@ fields:
     - type: field_group
       name: heading_2
       label: Heading 2
+      fields:
+      - type: text
+        name: font-family
+        label: Font Family
+        description: Use CSS format
+      - type: text
+        name: font-size
+        label: Font Size
+      - type: text
+        name: font-weight
+        label: Font Weight
+      - type: text
+        name: line-height
+        label: Line Height
+      - type: text
+        name: letter-spacing
+        label: Letter Spacing
     - type: field_group
       name: heading_3
       label: Heading 3
+      fields:
+      - type: text
+        name: font-family
+        label: Font Family
+        description: Use CSS format
+      - type: text
+        name: font-size
+        label: Font Size
+      - type: text
+        name: font-weight
+        label: Font Weight
+      - type: text
+        name: line-height
+        label: Line Height
+      - type: text
+        name: letter-spacing
+        label: Letter Spacing
     - type: field_group
       name: body_text
       label: Body Text
+      fields:
+      - type: text
+        name: font-family
+        label: Font Family
+        description: Use CSS format
+      - type: text
+        name: font-size
+        label: Font Size
+      - type: text
+        name: font-weight
+        label: Font Weight
+      - type: text
+        name: line-height
+        label: Line Height
+      - type: text
+        name: letter-spacing
+        label: Letter Spacing
     - type: field_group
       name: meta_data
       label: Meta Data
+      fields:
+      - type: text
+        name: font-family
+        label: Font Family
+        description: Use CSS format
+      - type: text
+        name: font-size
+        label: Font Size
+      - type: text
+        name: font-weight
+        label: Font Weight
+      - type: text
+        name: line-height
+        label: Line Height
+      - type: text
+        name: letter-spacing
+        label: Letter Spacing
   - type: field_group_list
     name: colors
     label: Colors
