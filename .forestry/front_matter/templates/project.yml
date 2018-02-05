@@ -23,31 +23,27 @@ fields:
   description: Only for use during project development
   hidden: false
   fields:
+  - type: text
+    name: import_fonts
+    label: Import Fonts
+    description: Use standard HTML embed layout
   - type: field_group_list
-    name: fonts
-    label: Fonts
+    name: typography
+    label: Typography
     fields:
-    - type: select
+    - type: text
       name: heading_font
-      config:
-        source:
-          type: datafiles
-          file: _data-fonts-yml
-      label: Heading Font
-    - type: select
+      label: Heading Font Family
+      description: Use CSS layout (ex. "alternate-gothic-no-3-d", serif)
+    - type: text
       name: body_font
-      config:
-        source:
-          type: datafiles
-          file: _data-fonts-yml
-      label: Body Font
-    - type: select
-      name: optional
-      config:
-        source:
-          type: datafiles
-          file: _data-fonts-yml
-      label: Optional extra
+      label: Body Font Family
+      description: Use CSS layout (ex. "alternate-gothic-no-3-d", serif)
+    - type: text
+      name: optional_font
+      label: Optional Font Family
+      description: For captions, buttons, or subheadings. Use CSS layout (ex. "alternate-gothic-no-3-d",
+        serif)
     - type: boolean
       name: discard
       label: Discard
@@ -95,18 +91,10 @@ fields:
   name: typography
   label: Typography
   fields:
-  - type: field_group_list
-    name: fonts
-    label: Fonts
-    fields:
-    - type: select
-      name: font_family
-      config:
-        source:
-          type: datafiles
-          file: _data-fonts-yml
-          path: 
-      label: Font Family
+  - type: text
+    label: Import Fonts
+    name: import_fonts
+    description: Use standard HTML embed layout
   - type: field_group_list
     name: headings
     label: Headings
