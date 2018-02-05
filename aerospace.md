@@ -162,13 +162,39 @@ initial_styles:
       font-family: "'Abel', sans-serif"
       font-size: 30px
       letter-spacing: 1px
+      text_transform: uppercase
     heading_3:
       font-family: "'Abel', sans-serif"
       font-size: 24px
     heading_1:
       font-size: 43px
+      font-family: "'Abel', sans-serif"
   - heading_font: "'Abel', sans-serif"
     body_font: "'Source Sans Pro', sans-serif"
+    heading_1:
+      font-family: "'alternate-gothic-no-3-d', serif"
+      font-size: 48px
+      font-weight: bold
+    heading_3:
+      font-family: "'alternate-gothic-no-3-d', serif"
+      font-size: 28px
+    heading_2:
+      font-family: "'museo-sans', sans-serif"
+      font-size: 30px
+      letter-spacing: 1px
+      font-weight: 100
+    body_text:
+      font-family: "'museo-sans', sans-serif"
+      font-size: 20px
+      line-height: 1.4
+      font-weight: 100
+    meta_data:
+      font-family: "'alternate-gothic-no-3-d', serif"
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.4
+      letter-spacing: 1px
+    discard: false
   colors:
   - hex_code1: "#728c99"
     hex_code2: "#f1f1f1"
