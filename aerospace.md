@@ -213,5 +213,6 @@ initial_styles:
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
     bg-color: "#18384f"
     height: 100px
-  show_this_section: true
+    discard: true
+  show_this_section: false
 ---

@@ -4,30 +4,31 @@
 		flex-direction: row;
 		position: relative;
 		align-items: stretch;
+
 	}
 	.swatch {
 		display: flex;
 		flex-direction: column;
 		padding: 0 1rem;
-		
+		    align-items: stretch;
 
 		&.swatchsquare {
 			padding: 0 0;
 		}
 	}
+
 }
 
 
 
 .swatch-container {
-	width: 120px;
-	height: 120px;
+	//width: 20%
 }
 
 .swatch-color {
 	display: block;
-	height: 120px;
-	width: 120px;
+	//height: 120px;
+	//max-width: 120px;
 	margin: 0 auto;
 	@include transition(height 0.3s ease-in-out, width 0.3s ease-in-out);
 
@@ -37,8 +38,7 @@
 		display: block;
 		content: 'COPY';
 		z-index: 3;
-		height: 120px;
-		width: 120px;
+		//max-width: 120px;
 		font-family: $font__roboto;
 		text-align: center;
 		display: block;
@@ -80,9 +80,39 @@
 }
 
 .swatchround .swatch-color {
-	border-radius: 50%;
+	font-size: 12px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+    width: 100%;
+
+    &:after {
+    	
+    content: "";
+    display: block;
+    height: 0;
+    margin-bottom: 20px;
+    padding-bottom: 100%;
+    width: 100%;
+    //background-color: red;
+      position: relative;
+  background: -webkit-radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
+  background: -moz-radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
+  background: radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
+  margin: 0 auto;
+    }
+
+div {
+
+    float: left;
+    line-height: 1em;
+    margin-top: -0.5em;
+    padding-top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
 	&:hover:after {
-		border-radius: 50%;
+		//border-radius: 50%;
 	}
 }
 

@@ -151,6 +151,9 @@ fields:
       name: discard
       label: Discard
     - type: text
+      name: notes
+      label: Notes
+    - type: text
       name: hex_code1
       label: Hex Code
     - type: text
@@ -172,6 +175,9 @@ fields:
     name: logos
     label: Logos
     fields:
+    - type: boolean
+      name: discard
+      label: Discard
     - type: text
       name: notes
       label: Notes
