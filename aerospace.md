@@ -6,6 +6,9 @@ typography:
     rel="stylesheet">
   fonts:
   - name: Roboto
+    notes: This is a note
+    css_input: "'Roboto', sans-serif"
+    link_to_homepage: https://fonts.google.com/specimen/Roboto?selection.family=Roboto
   headings:
   - heading_name: H1
     font-family: Roboto
