@@ -145,4 +145,12 @@ function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
         } // End if
 });
 
+
+
+    // Toggle Color Blind Filters
+    $(".colorblindbutton").on('click', function(event) {
+    	$('#colorblindradios').toggleClass('open');
+//console.log();
+    	});
+
 })(jQuery);

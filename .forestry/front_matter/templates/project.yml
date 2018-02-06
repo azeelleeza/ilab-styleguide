@@ -699,7 +699,7 @@ fields:
     label: Image
     name: image
   config:
-    labelField: table_name
+    labelField: element_name
 - type: field_group_list
   name: form_elements
   label: Form Elements
@@ -714,4 +714,4 @@ fields:
     name: image
     label: Image
   config:
-    labelField: form_element_name
+    labelField: element_name

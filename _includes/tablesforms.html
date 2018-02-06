@@ -1,17 +1,12 @@
-<article class="row subsection ">
-		<div class="col-sm-12 col-md-3">
-			<div class="article-info-right">
-		<div class="section-heading">
+<article class="">
+	<div class="section-notes">
+		<div class="section-subtitle">
 			{{ i.element_name }}
 		</div>
 		<div class="section-notes notes">
 			{{ i.element_description }}
 		</div>
+	</div>
+	<img src="{{ i.image | relative_url }}">
 
-</div>
-	</div>
-	<div class="col-sm-12 col-md-8">
-		<img src="{{ i.image | relative_url }}">
-	</div>
 </article>
-

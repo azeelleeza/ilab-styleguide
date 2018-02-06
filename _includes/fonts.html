@@ -1,19 +1,29 @@
-<article class="row">
-	<div class="col-sm-12 col-md-2 fontdesc">
-		Testing
+ {% for i in page.typography.fonts %}
+<article>
+	<div class="section-heading">
+		{{ i.name }} <a href="{{ i.link_to_homepage }}" alt="{{ i.name }} homepage"><i class="icon-external-open"></i></a>
 	</div>
-	<div class="col-sm-12 col-md-9 article-ex">
-		<div class="row">
-			<div class="font">
-				<div class="letters">
-					<span>Aa</span>
-				</div>
-				<div class="alphabet">
-					<span>ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br>1234567890!@#$%^&*()</span>
+	<div class="row">
 
+		<div class="col-sm-12 col-md-4 fontdesc">
+
+			<div class="section-notes notes">
+				{{ i.notes }}
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-8">
+		
+				<div class="font">
+					<div class="letters">
+						<span>Aa</span>
+					</div>
+					<div class="alphabet">
+						ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br>1234567890!@#$%^&*()
+
+					
 				</div>
 			</div>
 		</div>
 	</div>
-	
-</article>
+</article>{% endfor %}

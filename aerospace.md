@@ -6,7 +6,11 @@ typography:
     rel="stylesheet">
   fonts:
   - name: Roboto
-    notes: This is a note
+    notes: Roboto has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. 
+    css_input: "'Roboto', sans-serif"
+    link_to_homepage: https://fonts.google.com/specimen/Roboto?selection.family=Roboto
+  - name: Roboto
+    notes: Roboto has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. 
     css_input: "'Roboto', sans-serif"
     link_to_homepage: https://fonts.google.com/specimen/Roboto?selection.family=Roboto
   headings:
@@ -135,16 +139,17 @@ logos:
   height: 40px
   bg-color: "#18384f"
 tables:
-- table_name: Basic table
+- element_name: Basic table
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.18 AM.png"
 form_elements:
-- form_element_name: Radios
+- element_name: Radios
+  element_description: Radios
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.12 AM.png"
-- form_element_name: Checkboxes
+- element_name: Checkboxes
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.09 AM.png"
-- form_element_name: Dropdown
+- element_name: Dropdown
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.24.05 AM.png"
-- form_element_name: Text Input
+- element_name: Text Input
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.55 AM.png"
 undefined: page
 layout: page
@@ -217,5 +222,5 @@ initial_styles:
     upload_file: "/uploads/2018/02/05/logo-large-light.svg"
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
     height: 100px
-  show_this_section: true
+  show_this_section: false
 ---

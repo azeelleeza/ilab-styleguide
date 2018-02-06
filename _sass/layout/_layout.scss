@@ -20,7 +20,7 @@ body{
 	padding: 2rem 2rem;
 	clear: both;
 	background-color: $color__background-body;
-
+	max-width:$size__container-max-width;
 
 	@include breakpoint("medium") {
 		margin-left: $size__sidebar-md;
@@ -32,6 +32,7 @@ body{
 		padding: 2rem 4rem;
 		
 	}
+
 }
 
 .html-item {
@@ -113,5 +114,13 @@ section {
 }
 
 .fontdesc {
-	
+	.section-notes {
+		padding-right: 1rem;
+	}
+}
+
+.barcontainer {
+	display: flex;
+	flex-direction: row;
+	 align-items: stretch;
 }

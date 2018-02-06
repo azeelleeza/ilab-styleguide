@@ -51,16 +51,16 @@
  	}
  } //Gen Headings
  .section-title {
- 	font-size: 25px;
- 	//border-top: 2px solid $color__background-hr;
+ 	font-size: 25px; //border-top: 2px solid $color__background-hr;
  	border-bottom: 2px solid $color__background-pre;
  	line-height: 1;
  	display: block;
  	margin: .5rem;
  	h2 {
  		margin: .5rem 0;
- 		 	font-family: $font__roboto;
- 	text-transform: uppercase;
+ 		font-family: $font__roboto;
+ 		text-transform: uppercase;
+ 		font-weight: 300;
  	}
  	.sec-num {
  		text-align: right;
@@ -93,6 +93,13 @@
  }
 
  .section-notes {
+ 	margin-bottom: 2rem;
+ 	.section-subtitle {
+ 		margin-bottom: 0rem;
+ 	}
+ }
+
+ .section-notes {
  	font-size: 14px;
  }
 
@@ -101,27 +108,62 @@
  }
 
  #fonts {
- 	.font {
- 		display: flex;
- 		flex-direction: row;
- 	}
- 	.letters{
- 		display: inline-flex;
- 	
+ 	.font {}
+ 	.letters {
+
+ 		display: block;
+ 		float: left;
  		font-size: 100px;
  		padding-right: 2rem;
  		line-height: 1;
- 		
  	}
  	.alphabet {
- 		display: inline-flex;
- 		flex: grow;	
- 		font-size: 24px;
+ 		word-wrap: break-word;
+
+ 		flex: grow;
+ 		font-size: 18px;
  		letter-spacing: 1px;
  		line-height: 1.3;
+ 		@include breakpoint("medium") {
+ 			font-size: 20px;
+ 		}
+ 		@include breakpoint("large") {
+ 			font-size: 20px;
+ 		}
  	}
  }
 
  .initial-headings {
  	margin-bottom: 1rem;
+ }
+ /* Tooltip container */
+
+ .tooltip {
+ 	position: relative;
+ 	display: inline-block;
+ }
+ /* Tooltip text */
+
+ .tooltip .tooltiptext {
+ 	visibility: hidden;
+ 	width: 150px;
+ 	background-color: $color__background-box;
+ 	font-size: 16px;
+ 	text-align: center;
+ 	padding: 5px 0;
+ 	border-radius: 6px;
+
+ 	/* Position the tooltip text - see examples below! */
+ 	position: absolute;
+ 	z-index: 1;
+
+
+
+ 	top: 50%;
+ 	left: 100%;
+ }
+ /* Show the tooltip text when you mouse over the tooltip container */
+
+ .tooltip:hover .tooltiptext {
+ 	visibility: visible;
  }

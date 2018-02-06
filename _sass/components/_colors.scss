@@ -4,30 +4,35 @@
 		flex-direction: row;
 		position: relative;
 		align-items: stretch;
-
 	}
 	.swatch {
 		display: flex;
 		flex-direction: column;
-		padding: 0 1rem;
-		    align-items: stretch;
+		//padding: 0 1rem;
+		align-items: stretch;
 
 		&.swatchsquare {
 			padding: 0 0;
 		}
 	}
+}
 
+.barcontainer {
+	display: flex;
+	flex-direction: row;
+	 align-items: stretch;
+	     flex-grow: 1;
 }
 
 
 
 .swatch-container {
 	//width: 20%
+	    flex-grow: 1;
 }
 
 .swatch-color {
-	display: block;
-	//height: 120px;
+	display: block; //height: 120px;
 	//max-width: 120px;
 	margin: 0 auto;
 	@include transition(height 0.3s ease-in-out, width 0.3s ease-in-out);
@@ -37,8 +42,7 @@
 		opacity: 0; //position: absolute;
 		display: block;
 		content: 'COPY';
-		z-index: 3;
-		//max-width: 120px;
+		z-index: 3; //max-width: 120px;
 		font-family: $font__roboto;
 		text-align: center;
 		display: block;
@@ -56,7 +60,7 @@
 
 .copyview .swatch-color,
 .copyview .copybutton {
-	
+
 	@include transition(height 0.3s ease-in-out, width 0.3s ease-in-out);
 }
 
@@ -71,7 +75,7 @@
 .swatch-info {
 	font-size: 14px;
 	line-height: 1.3;
-	margin-top: .5rem;
+	margin: .5rem 0 2rem; 
 }
 
 
@@ -81,35 +85,34 @@
 
 .swatchround .swatch-color {
 	font-size: 12px;
-    font-weight: 700;
-    margin: 0 auto 20px;
-    width: 100%;
+	font-weight: 700;
+	
+	width: 100%;
 
-    &:after {
-    	
-    content: "";
-    display: block;
-    height: 0;
-    margin-bottom: 20px;
-    padding-bottom: 100%;
-    width: 100%;
-    //background-color: red;
-      position: relative;
-  background: -webkit-radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
-  background: -moz-radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
-  background: radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
-  margin: 0 auto;
-    }
+	&:after {
 
-div {
+		content: "";
+		display: block;
+		height: 0;
+		margin-bottom: 20px;
+		padding-bottom: 100%;
+		width: 100%; //background-color: red;
+		position: relative;
+		background: -webkit-radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
+		background: -moz-radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
+		background: radial-gradient(50% 50%, circle, transparent 70%, #fff 10%);
+		margin: 0 auto;
+	}
 
-    float: left;
-    line-height: 1em;
-    margin-top: -0.5em;
-    padding-top: 50%;
-    text-align: center;
-    width: 100%;
-}
+	div {
+
+		float: left;
+		line-height: 1em;
+		margin-top: -0.5em;
+		padding-top: 50%;
+		text-align: center;
+		width: 100%;
+	}
 
 	&:hover:after {
 		//border-radius: 50%;
@@ -129,12 +132,49 @@ div {
 .swatchsquare {
 	display: flex;
 	flex-direction: row;
-	width: 150px;
+	//width: 150px;
+
+	&.swatch {
+		    flex-grow: 1;
+	}
 }
 
-.color-group{
+.color-group {
 	display: block;
 	width: 100%;
 	margin-bottom: 2rem;
 }
 
+
+
+#colorblindradios {
+
+i {
+	font-size: 2rem;
+	color: $color-text-gray;
+
+	&:before{margin-left: 0;}
+}
+
+.colorblindbutton {
+	line-height: 1.5rem;
+}
+	.radio-group {
+		height: 0px;
+		overflow: hidden;
+		display: block;
+		float: left;
+		@include transition(height 250ms);
+	}
+
+	&.open {
+		.radio-group {
+			height: 2rem;
+			@include transition(height 250ms);
+		}
+		i {
+
+			color: $color-blue;
+		}
+	}
+}
