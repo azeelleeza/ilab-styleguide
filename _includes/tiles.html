@@ -1,9 +1,11 @@
 <section id="one" class="tiles">
-        {% for post in site.pages %}
+        {% for page in site.pages | sort  %}
+        {% if page.title != "Home" and page.title != "" %}
         <article>
-                <h3><a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></h3>
-                <p>{{ page.description }}</p>
-                <p>{{ page.date }}</p>
+                <h2><a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ page.title }}</a></h2>
+                <div>{{ page.description }}</div>
+                <div class="meta"><span class="label">LAST UPDATED: </span>{{ page.date | date: "%B %-d, %Y" }}</div>
         </article>
+         {% endif %}
         {% endfor %}
 </section>

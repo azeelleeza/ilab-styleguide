@@ -5,6 +5,7 @@
 @import "header";
 @import "footer";
 @import "sidebar";
+@import "home";
 
 html{
 	overflow-x: hidden;
@@ -119,8 +120,3 @@ section {
 	}
 }
 
-.barcontainer {
-	display: flex;
-	flex-direction: row;
-	 align-items: stretch;
-}

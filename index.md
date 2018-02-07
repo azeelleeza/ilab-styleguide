@@ -11,7 +11,7 @@ nav-menu:
 
 <!-- Main -->
 <div id="main">
-<h1>{{ page.title }}</h1>
+<h1>iLab Style Guides</h1>
 <!-- One -->
 {% include tiles.html %}
 
