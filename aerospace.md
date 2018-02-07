@@ -130,13 +130,11 @@ logos:
 - logo_name: Header logo, large
   upload_logo: "/uploads/2018/02/02/logo-large-light.svg"
   dark_background: "/uploads/2018/02/02/logo-large-dark-1.svg"
-  height: 150px
   bg-color: "#18384f"
 - logo_name: Header logo, small
   logo_description: Next to navigation on scroll
   upload_logo: "/uploads/2018/02/02/logo-small-light.svg"
   dark_background: "/uploads/2018/02/02/logo-small-dark.svg"
-  height: 40px
   bg-color: "#18384f"
 tables:
 - element_name: Basic table

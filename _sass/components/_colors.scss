@@ -24,7 +24,11 @@
 	     flex-grow: 1;
 }
 
-
+.copybutton {
+		i {
+			font-size: 2rem;
+		}
+	}
 
 .swatch-container {
 	//width: 20%
@@ -166,6 +170,8 @@ i {
 		float: left;
 		@include transition(height 250ms);
 	}
+
+
 
 	&.open {
 		.radio-group {

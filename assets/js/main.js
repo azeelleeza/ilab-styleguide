@@ -50,16 +50,16 @@
 			var text = $(this).attr('data-copy');
 			var el = $(this);
 			copyToClipboard(text, el);
-			$('.copybutton', this).text("Copied!");
+			$('.copybutton', this).html("<i class='icon-icon_check'></i>");
 		});
 		$('.swatch').mouseenter(function() {
 			$(this).addClass('copyview');
+			$('.copybutton', this).html("<i class='icon-docs'></i>");
 
 
 		});
 		$('.swatch').mouseleave(function() {
 			$(this).removeClass('copyview');
-			$('.copybutton', this).text("Copy HEX");
 		});
 	});
 
