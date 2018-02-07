@@ -153,4 +153,21 @@ function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
 //console.log();
     	});
 
+
+
+
+    $(document).ready(function(){
+
+
+
+	 /* Menu fade/in out on mobile */
+    $(".open-button").click(function(e){
+        e.preventDefault();
+        $("#sidebar, .content-wrapper").toggleClass('mobile-open');
+    });
+	
+});
+
+
+
 })(jQuery);

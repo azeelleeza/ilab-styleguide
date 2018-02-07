@@ -11,18 +11,17 @@
 	<body>
 		{% include sidebar.html %}
 
-		<div class="content-wrapper">
-			{{ content }}
-
-			<h1>{{ page.title }}</h1>
-			<p class="meta"><span class="label">LAST UPDATED: </span>{{ page.date | date: "%B %-d, %Y" }}</p>
-			<p class="meta"><span class="label">LAST UPDATED: </span>{{ page.date | date: "%B %-d, %Y" }}</p>
-
-			{% if page.initial_styles.show_this_section == true %}
+		
 			
-			{% include initialstyles.html %}
-			
-			{% else %}
+			<section id="page-header">
+				<div class="content-wrapper">
+				<h1>{{ page.title }}</h1>
+				<div class="program-name">{{ page.program_partners }}</div>
+				<div class="meta"><span class="label">Last Updated </span>{{ page.date | date: "%B %-d, %Y" }}</div>
+			</div>
+			</section>
+			<div class="content-wrapper">
+			{% if page.initial_styles.show_this_section == true %} {% include initialstyles.html %} {% else %}
 
 			<section id="typography">
 				<div class="section-title row">
@@ -32,18 +31,16 @@
 						<h2>01</h2></div>
 				</div>
 				<div class="subsection" id="fonts">
-				
+
 					{% include fonts.html %}
 				</div>
 				<!-- fonts -->
 				<div class="subsection">
-					
-					{% include heading.html %}
-				
-					{% include type.html %}
+
+					{% include heading.html %} {% include type.html %}
 				</div>
 				<!-- text elements -->
-				
+
 			</section>
 
 			<section id="colors">
@@ -53,22 +50,22 @@
 					<div class="sec-num col-sm-2">
 						<h2>02</h2></div>
 				</div>
-				 {% include colorblindfilter.html %}
+				{% include colorblindfilter.html %}
 				<div class="subsection">
-				<div class="section-subtitle ">Primary Colors</div>
+					<div class="section-subtitle ">Primary Colors</div>
 					<div class="colorrow row ">
-					{% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch.html %} {% endfor %}
-				</div>
+						{% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch.html %} {% endfor %}
+					</div>
 				</div>
 
-				<div  class="subsection">
+				<div class="subsection">
 					<div class="section-subtitle">Secondary Colors</div>
 					<div class="colorrow row">
 						{% for color in page.colors.secondary_color %} {% assign size = page.colors.secondary_color | size %} {% include swatch.html %} {% endfor %}
 					</div>
 
 				</div>
-				<div  class="subsection">
+				<div class="subsection">
 					<div class="section-subtitle">Interactive Color Palettes</div>
 					<div class="interswatches row">
 						{% for i in page.colors.interactive_palettes %}
@@ -81,7 +78,7 @@
 						</div>
 						{% endfor %}
 					</div>
-				</article>
+					</article>
 			</section>
 			<section id="links">
 				<div class="section-title row">
@@ -118,14 +115,12 @@
 					<div class="sec-num col-sm-2">
 						<h2>05</h2></div>
 				</div>
-				<div class="subsection"
-				{% for i in page.logos %}
-				<article >
+				<div class="subsection" {% for i in page.logos %} <article>
 					{% include logos.html %}
-				</article>
+					</article>
 
-				{% endfor %}
-			</div>
+					{% endfor %}
+				</div>
 			</section>
 			<section id="tables">
 				<div class="section-title row ">
@@ -149,8 +144,8 @@
 
 			</section>
 			{% endif %}
-		</div>
-		{% include footer.html %}
+			</div>
+			{% include footer.html %}
 
 	</body>
 

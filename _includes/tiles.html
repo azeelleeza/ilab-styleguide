@@ -1,11 +1,20 @@
 <section id="one" class="tiles">
         {% for page in site.pages | sort  %}
         {% if page.title != "Home" and page.title != "" %}
-        <article>
-                <h2><a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ page.title }}</a></h2>
-                <div>{{ page.description }}</div>
+        <a href="{{ site.baseurl }}{{ page.url }}" class="link"><article>
+                <h2>{{ page.title }}</h2>
+                <hr>
+                <div class="clearfix"></div>
+                <div class="meta">{{ page.program_partners }}</div>
                 <div class="meta"><span class="label">LAST UPDATED: </span>{{ page.date | date: "%B %-d, %Y" }}</div>
+                {% if page.initial_styles.show_this_section == true %}
+			<div class="show-initial-styles">
+				In Development
+			</div>
+			
+		{% endif %}
         </article>
+        </a>
          {% endif %}
         {% endfor %}
 </section>

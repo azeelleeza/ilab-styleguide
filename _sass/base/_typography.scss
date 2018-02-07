@@ -22,34 +22,25 @@
  	}
  }
 
+h1 {
+	font-size: 2rem;
+	margin-bottom: 0;
+	@include breakpoint("medium") {
+	font-size: 3rem;
+}
+}
+
+.program-name {
+	font-size: 1.4rem;
+}
+
  .note {
  	color: dark-gray;
  	font-family: $font__main;
  	@include fontSize(16px);
  	line-height: 1.5;
  } //Sidebar
- #sidebar {
- 	ul.links {
- 		padding-left: 0px;
- 		a {
- 			color: $color__link-sidebar;
- 			text-decoration: none;
-
- 			&:hover {}
- 			&:visited {}
- 		}
- 		li.selected {
- 			border-bottom: 1px solid #6C7A7F;
- 			a {
- 				font-weight: bold;
- 			}
- 		}
- 		ul#subitems {
- 			padding-left: 1rem;
- 			padding-bottom: 1rem;
- 		}
- 	}
- } //Gen Headings
+ 
  .section-title {
  	font-size: 25px; //border-top: 2px solid $color__background-hr;
  	border-bottom: 2px solid $color__background-pre;
@@ -93,7 +84,10 @@
  }
 
  .section-notes {
- 	margin-bottom: 2rem;
+ 	margin-bottom: .5rem;
+ 	@include breakpoint("medium") {
+margin-bottom: 1rem;
+ }
  	.section-subtitle {
  		margin-bottom: 0rem;
  	}
@@ -173,3 +167,4 @@
  	margin-right:2rem;
  }
  }
+

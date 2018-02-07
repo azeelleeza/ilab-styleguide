@@ -15,9 +15,11 @@
 		<div class="section-heading">
 			{{ i.element_name }}
 		</div>
+		{% if i.notes %}
 		<div class="section-notes notes">
 			{{ i.notes }}
 		</div>
+		{% endif %}
 		<div class="section-data meta">
 			<span class="label">Font Family:</span> {{ i.font-family }}<br> 
 			<span class="label">Font Size:</span> {{ i.font-size }}<br> 

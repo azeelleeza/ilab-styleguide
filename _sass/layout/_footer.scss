@@ -7,7 +7,7 @@ footer {
 	display: block;
 	clear: both;
 	@include fullWidthBackground($color__footer);
-		margin-left: $size__sidebar-sm;
+		margin-left: 0%;
 	padding: 2rem 2rem;
 	@include breakpoint("medium") {
 		margin-left: $size__sidebar-md;

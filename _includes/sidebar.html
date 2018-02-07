@@ -1,27 +1,37 @@
 <aside id="sidebar">
+	<div class="open-button">
+		<span> </span>
+		<span> </span>
+		<span> </span>
+	</div>
+	<nav id="menu" class="mobile-menu">
+		<!-- List of Pages -->
 
-	<!-- List of Pages -->
-	<nav id="menu">
+		<div class="sidebar-title"><span>iIdeas Lab</span>
+			<br> Style Guides</div>
 		{% assign current_page = page.title %}
 
-		<ul class="links">
+		<ul id="sidebarlinks">
 			{% for page in site.pages %} {% if page.layout == "home" %}
 
-			<li><a href="{{ page.url | prepend: site.baseurl | remove: " index.html " }}">{{ page.title }}</a></li>
+			<a href="{{ page.url | prepend: site.baseurl | remove: " index.html " }}">
+				<li class="page-links">{{ page.title }}</li>
+			</a>
 
 			{% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout != "home" %} {% if page.title == current_page %}
-			<li class="selected"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+			<a href="{{ page.url | prepend: site.baseurl }}">
+				<li ><span class="class="selected">{{ page.title }}</span></li>
+			</a>
 			<ul id="subitems">
 
-			{% if page.initial_styles.show_this_section == true %}
-			
-			
+				{% if page.initial_styles.show_this_section == true %}
+
+
 				<li><a href="#typography">Typography</a></li>
 				<li><a href="#colors">Colors</a></li>
 				<li><a href="#logos">Logos</a></li>
-				
-			{% else %}
-				{% if page.typography %}
+
+				{% else %} {% if page.typography %}
 				<li><a href="#typography">Typography</a></li>
 				{% endif %} {% if page.colors %}
 				<li><a href="#colors">Colors</a></li>
@@ -33,11 +43,10 @@
 				<li><a href="#tables">Tables</a></li>
 				{% endif %} {% if page.logos %}
 				<li><a href="#forms">Form Elements</a></li>
-				{% endif %}
-				{% endif %}
+				{% endif %} {% endif %}
 			</ul>
 			{% else %}
-			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+			<li class="page-links"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 			{% endif %}{% endif %} {% endfor %}
 		</ul>
 
