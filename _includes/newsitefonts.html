@@ -2,7 +2,8 @@
 <div class="{% if i.discard == true %}
 	discard
 	{% endif %} row">
-	<div class="col-sm-12 col-md-8 article-ex">
+	<div class="col-sm-12 col-md-9 article-ex row">
+		<div class="col-xs-12">
 		<div class="initial-headings">
 			<div class="heading1" style="{% for t in i.heading_1 %}
 {{ t[0] }}: {{ t[1] }};
@@ -31,6 +32,7 @@
 {% endfor %}">
 				Posted February 30, 2018
 			</div>
+		</div>
 		</div>
 	</div>
 	<div class="col-sm-12 col-md-3 initial-info">

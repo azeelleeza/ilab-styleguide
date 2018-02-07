@@ -10,10 +10,12 @@ padded
 <div class="col-sm-12 col-md-9 logo">
 
 <img src="{{ i.upload_file| relative_url }}" {% if i.height 
-
+ 
 {% if i.dark_bg_logo %}>
 
-<img src="{{ i.dark_bg_logo | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %} style="background-color: {{ i.bg-color }};">
+<div style="background-color: {{ i.bg-color }};">
+<img src="{{ i.dark_bg_logo | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %} >
+</div>
 </div>
 <div class="col-sm-12 col-md-3 initial-info">
 	<div class="section-heading">

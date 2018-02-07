@@ -75,10 +75,12 @@ colors:
     - color: "#a483a8"
     - color: "#7a6796"
     - color: "#69518d"
+    - color: "#7a6796"
     hex_code:
     - color: "#69518d"
     - color: "#7a6796"
     - color: "#a483a8"
+    - color: "#7a6796"
   - palette_name: Bar Chart 1
     colors:
     - color: "#8cc4b4"
@@ -219,6 +221,7 @@ initial_styles:
   - notes: This is a note
     upload_file: "/uploads/2018/02/05/logo-large-light.svg"
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
+    bg-color: "#18384f"
     height: 100px
   show_this_section: false
 ---

@@ -167,3 +167,9 @@
  .tooltip:hover .tooltiptext {
  	visibility: visible;
  }
+
+ .initial-headings {
+ 	@include breakpoint("medium") {
+ 	margin-right:2rem;
+ }
+ }

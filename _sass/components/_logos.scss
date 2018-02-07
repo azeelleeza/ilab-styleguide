@@ -4,7 +4,7 @@
 		position: relative;
 		width: 100%;
 	}
-	div:after {
+	.download-capable:after {
 		width: 100%;
 		display: block;
 		line-height: 100%;
@@ -19,11 +19,11 @@
 		vertical-align: baseline;
 		@include transition(opacity 250ms);
 	}
-	div:hover:before, div:hover:after {
+	.download-capable:hover:before, .download-capable:hover:after {
 		opacity: .9;
 	}
 
-div:before {
+.download-capable:before {
 		background-color: $color-bluegray;
 		width:100%;
 		height:100%;

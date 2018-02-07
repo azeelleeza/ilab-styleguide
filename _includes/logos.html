@@ -12,7 +12,7 @@
 padded
 {% endif %}">
 <div class="col-sm-12 col-md-12 col-lg-6 logo"><a href="{{ i.upload_logo | relative_url }}" download="{{ i.logo_name }}">
-	<div>
+	<div class="download-capable">
 <img src="{{ i.upload_logo | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %}></div></a>
 </div>
 
@@ -20,7 +20,7 @@ padded
 <div class="col-sm-12 col-md-12 col-lg-6 logo">
 	
 	<a href="{{ i.dark_background | relative_url }}" download="{{ i.logo_name }}">
-<div style="background-color: {{ i.bg-color }};">
+<div style="background-color: {{ i.bg-color }};" class="download-capable">
 <img src="{{ i.dark_background | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %} >
 </div></a>
 </div>
