@@ -16,6 +16,9 @@ fields:
   default: page
   label: Layout
   name: layout
+- type: text
+  name: program_partners
+  label: Program Partners
 - type: field_group
   name: initial_styles
   label: Initial Styles
