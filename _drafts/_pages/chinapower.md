@@ -13,12 +13,12 @@ typography:
   import_fonts: <link href="https://fonts.googleapis.com/css?family=Hind|Roboto:400,600,700"
     rel="stylesheet">
   fonts:
-  - name: Hind
-    link_to_homepage: https://fonts.google.com/specimen/Hind
-    css_input: "'Hind', sans-serif"
   - name: Roboto
     css_input: "'Roboto', sans-serif"
     link_to_homepage: https://fonts.google.com/specimen/Roboto
+  - name: Hind
+    link_to_homepage: https://fonts.google.com/specimen/Hind
+    css_input: "'Hind', sans-serif"
   headings:
   - font-family: Roboto
     font-size: 48px
