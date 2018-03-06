@@ -49,6 +49,12 @@ typography:
     color: "#000"
     heading_name: Heading 5
     font-size: 22px
+  - heading_name: Heading 6
+    font-family: Roboto
+    font-size: 18px
+    font-weight: 600
+    color: "#1c2e36"
+    text-transform: uppercase
   elements: []
 colors:
   primary_colors: []
