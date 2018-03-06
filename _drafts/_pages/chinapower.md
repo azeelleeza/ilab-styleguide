@@ -89,6 +89,7 @@ typography:
     element_name: Author
     font-size: 16px
     extra_css: 'text-align: right;'
+    border-bottom: '2px solid #ed392a'
   - html_text: ''
     font-family: Georgia
     font-weight: normal
