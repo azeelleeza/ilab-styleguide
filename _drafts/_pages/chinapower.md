@@ -72,11 +72,14 @@ typography:
     font-size: 14px
     color: "#808081"
     line-height: 1.5
-  - html_text: ''
-    font-family: Georgia
-    font-weight: normal
-    color: "#000"
+  - html_text: "&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/blockquote&gt;"
+    font-family: Hind, sans-serif
+    font-weight: ''
+    color: "#333333"
     line-height: 1.5
+    element_name: Blockquote
+    font-size: 18px
   - html_text: ''
     font-family: Georgia
     font-weight: normal
