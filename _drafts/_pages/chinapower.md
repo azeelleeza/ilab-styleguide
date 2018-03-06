@@ -33,7 +33,7 @@ typography:
     color: "#728c99"
     font-weight: 400
   - font-family: Roboto
-    text-transform: Bold 700
+    text-transform: Bold
     color: "#000"
     heading_name: Heading 3
     font-size: 25px
