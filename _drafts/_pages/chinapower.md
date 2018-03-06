@@ -38,8 +38,11 @@ typography:
     font-size: 25px
     font-weight: Bold 700
   - font-family: Roboto
-    text-transform: normal
+    text-transform: ''
     color: "#000"
+    heading_name: Heading 4
+    font-size: 22px
+    font-weight: Bold 600
   - font-family: Roboto
     text-transform: normal
     color: "#000"
