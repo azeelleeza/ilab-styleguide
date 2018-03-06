@@ -23,7 +23,7 @@ typography:
   - font-family: Roboto
     font-size: 48px
     color: "#000"
-    heading_name: H1
+    heading_name: Heading 1
     font-weight: Bold 700
   - heading_name: Heading 2
     font-family: Roboto
