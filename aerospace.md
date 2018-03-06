@@ -14,14 +14,14 @@ typography:
     css_input: "'Roboto', sans-serif"
     link_to_homepage: https://fonts.google.com/specimen/Roboto?selection.family=Roboto
   headings:
-  - heading_name: H1
+  - heading_name: Heading 1
     font-family: Roboto
     font-size: 48px
     font-weight: normal
     color: "#000"
-  - heading_name: H2
+  - heading_name: Heading 2
     font-family: Roboto
-    font-size: 36px
+    font-size: 30px
     font-weight: normal
     color: "#185271"
     letter-spacing: 1px
@@ -36,7 +36,7 @@ typography:
     font-family: Georgia
     font-size: 18px
     font-weight: normal
-    color: "#000"
+    color: "#333333"
     line-height: 1.5
     notes: This is a note
     html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -70,15 +70,6 @@ colors:
   - hex_code: "#5db6d0"
   - hex_code: "#196c95"
   interactive_palettes:
-  - palette_name: Bar Chart 2
-    colors:
-    - color: "#a483a8"
-    - color: "#7a6796"
-    - color: "#69518d"
-    hex_code:
-    - color: "#69518d"
-    - color: "#7a6796"
-    - color: "#a483a8"
   - palette_name: Bar Chart 1
     colors:
     - color: "#8cc4b4"
@@ -88,6 +79,15 @@ colors:
     - color: "#459178"
     - color: "#58a897"
     - color: "#8cc4b4"
+  - palette_name: Bar Chart 2
+    colors:
+    - color: "#a483a8"
+    - color: "#7a6796"
+    - color: "#69518d"
+    hex_code:
+    - color: "#69518d"
+    - color: "#7a6796"
+    - color: "#a483a8"
 links:
 - group_name: Body Links
   description: Default links in the post body
@@ -220,7 +220,7 @@ initial_styles:
   - notes: This is a note
     upload_file: "/uploads/2018/02/05/logo-large-light.svg"
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
-    bg_color: #004165
+    bg_color: 
     height: 100px
   show_this_section: false
 program_partners: Aerospace Security Program
