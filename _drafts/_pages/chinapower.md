@@ -28,7 +28,7 @@ typography:
   - heading_name: Heading 2
     font-family: Roboto
     font-size: 30px
-    text-transform: normal
+    text-transform: ''
     color: "#728c99"
   - font-family: Roboto
     text-transform: Bold 700
