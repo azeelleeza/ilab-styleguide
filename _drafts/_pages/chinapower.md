@@ -24,7 +24,8 @@ typography:
     font-size: 48px
     color: "#000"
     heading_name: Heading 1
-    font-weight: Bold 700
+    font-weight: 700
+    text-transform: Bold
   - heading_name: Heading 2
     font-family: Roboto
     font-size: 30px
