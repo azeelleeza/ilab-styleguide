@@ -72,19 +72,23 @@ typography:
     font-size: 14px
     color: "#808081"
     line-height: 1.5
-  - html_text: "&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/blockquote&gt;"
+  - html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
     font-family: Hind, sans-serif
     font-weight: ''
     color: "#333333"
     line-height: 1.5
     element_name: Blockquote
     font-size: 18px
-  - html_text: ''
-    font-family: Georgia
-    font-weight: normal
+    border-top: '2px solid #ed392a'
+  - html_text: "- THE AUTHOR"
+    font-family: Hind, sans-serif
+    font-weight: ''
     color: "#000"
     line-height: 1.5
+    element_name: Author
+    font-size: 16px
+    extra_css: 'text-align: right;'
   - html_text: ''
     font-family: Georgia
     font-weight: normal
