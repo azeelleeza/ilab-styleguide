@@ -66,6 +66,27 @@ typography:
     font-size: 18px
     color: "#333333"
     line-height: 1.5
+  - element_name: Image caption
+    html_text: This is an image caption.&nbsp;<br>(BIJU BORO/AFP/Getty Images)
+    font-family: Hind, sans-serif
+    font-size: 14px
+    color: "#808081"
+    line-height: 1.5
+  - html_text: ''
+    font-family: Georgia
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
+  - html_text: ''
+    font-family: Georgia
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
+  - html_text: ''
+    font-family: Georgia
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
 colors:
   primary_colors: []
   secondary_color: []
