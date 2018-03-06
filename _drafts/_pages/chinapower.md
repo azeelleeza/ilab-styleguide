@@ -142,7 +142,14 @@ colors:
     - hex_code: "#83badc"
     - hex_code: "#69a5c4"
     - hex_code: "#4591bc"
-  - {}
+  - palette_name: Bar Chart 4
+    colors:
+    - hex_code: "#d2672a"
+    - hex_code: "#f7890e"
+    - hex_code: "#eeb25a"
+    - hex_code: "#ed9e48"
+    - hex_code: "#f4d28d"
+    - hex_code: "#fdc177"
   - {}
   - {}
 links: []
