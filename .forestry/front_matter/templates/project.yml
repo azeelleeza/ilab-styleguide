@@ -23,7 +23,7 @@ fields:
   name: initial_styles
   label: Initial Styles
   description: Only for use during project development
-  hidden: false
+  hidden: true
   fields:
   - type: text
     name: import_fonts
