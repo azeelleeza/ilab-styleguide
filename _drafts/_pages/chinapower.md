@@ -134,6 +134,17 @@ colors:
     - hex_code: "#a483a8"
     - hex_code: "#97729e"
     - hex_code: "#7a6796"
+  - palette_name: Bar Chart 3
+    colors:
+    - hex_code: "#3b75bb"
+    - hex_code: "#275ca7"
+    - hex_code: "#5599d1"
+    - hex_code: "#83badc"
+    - hex_code: "#69a5c4"
+    - hex_code: "#4591bc"
+  - {}
+  - {}
+  - {}
 links: []
 buttons: []
 logos: []
