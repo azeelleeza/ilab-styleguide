@@ -55,7 +55,17 @@ typography:
     font-weight: 600
     color: "#1c2e36"
     text-transform: uppercase
-  elements: []
+  elements:
+  - element_name: Body Text
+    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua.
+    font-family: Hind
+    font-size: 18px
+    color: "#333333"
+    line-height: 1.5
 colors:
   primary_colors: []
   secondary_color: []
