@@ -106,7 +106,17 @@ colors:
   - hex_code: "#dbd9d7"
   - hex_code: "#455a64"
   - hex_code: "#ed392a"
-  secondary_color: []
+  secondary_color:
+  - hex_code: "#58a897"
+  - hex_code: "#83badc"
+  - hex_code: "#3b75bb"
+  - hex_code: "#a483a8"
+  - hex_code: "#69518d"
+  - hex_code: "#ed392a"
+  - hex_code: "#f7890e"
+  - hex_code: "#f7d768"
+  - hex_code: "#8cb561"
+  - hex_code: "#808081"
   interactive_palettes: []
 links: []
 buttons: []
