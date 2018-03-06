@@ -1,7 +1,12 @@
 <article class="">
 	<div class="section-notes">
 		<div class="section-subtitle">
-			{{ i.element_name }}
+			{% if i.form_element_name %}
+			{{ i.form_element_name }}
+			{% endif %}
+			{% if i.table_name %}
+			{{ i.table_name }}
+			{% endif %}
 		</div>
 		<div class="section-notes notes">
 			{{ i.element_description }}
