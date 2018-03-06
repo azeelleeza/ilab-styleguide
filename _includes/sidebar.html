@@ -7,7 +7,7 @@
 	<nav id="menu" class="mobile-menu">
 		<!-- List of Pages -->
 
-		<div class="sidebar-title"><span>iIdeas Lab</span>
+		<div class="sidebar-title"><span>iDeas Lab</span>
 			<br> Style Guides</div>
 		{% assign current_page = page.title %}
 
@@ -20,7 +20,7 @@
 
 			{% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout != "home" %} {% if page.title == current_page %}
 			<a href="{{ page.url | prepend: site.baseurl }}">
-				<li ><span class="class="selected">{{ page.title }}</span></li>
+				<li class="selected">{{ page.title }}</li>
 			</a>
 			<ul id="subitems">
 
@@ -30,13 +30,12 @@
 				<li><a href="#typography">Typography</a></li>
 				<li><a href="#colors">Colors</a></li>
 				<li><a href="#logos">Logos</a></li>
-
 				{% else %} {% if page.typography %}
 				<li><a href="#typography">Typography</a></li>
 				{% endif %} {% if page.colors %}
 				<li><a href="#colors">Colors</a></li>
 				{% endif %} {% if page.links %}
-				<li><a href="#links">{Links</a></li>
+				<li><a href="#links">Links</a></li>
 				{% endif %} {% if page.buttons %}
 				<li><a href="#buttons">Buttons</a></li>
 				{% endif %} {% if page.tables %}

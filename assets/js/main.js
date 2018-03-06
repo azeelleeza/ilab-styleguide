@@ -155,11 +155,8 @@ function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
 
 
 
-
+//Open mobile Nav
     $(document).ready(function(){
-
-
-
 	 /* Menu fade/in out on mobile */
     $(".open-button").click(function(e){
         e.preventDefault();

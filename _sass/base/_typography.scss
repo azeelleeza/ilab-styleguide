@@ -22,17 +22,29 @@
  	}
  }
 
-h1 {
-	font-size: 2rem;
-	margin-bottom: 0;
-	@include breakpoint("medium") {
-	font-size: 3rem;
-}
-}
+ h1 {
+ 	font-size: 1.8rem;
+ 	margin-bottom: 0;
+ 	font-weight: normal;
 
-.program-name {
-	font-size: 1.4rem;
-}
+ 	@include breakpoint("medium") {
+ 		font-size: 1.8em;
+
+ 	}
+ }
+
+
+
+ .program-name {
+ 	font-size: 1.2rem;
+ }
+
+ .header-label {
+ 	color: gray;
+ 	text-transform: uppercase;
+ 	font-size: 1rem;
+
+ }
 
  .note {
  	color: dark-gray;
@@ -40,7 +52,6 @@ h1 {
  	@include fontSize(16px);
  	line-height: 1.5;
  } //Sidebar
- 
  .section-title {
  	font-size: 25px; //border-top: 2px solid $color__background-hr;
  	border-bottom: 2px solid $color__background-pre;
@@ -86,8 +97,8 @@ h1 {
  .section-notes {
  	margin-bottom: .5rem;
  	@include breakpoint("medium") {
-margin-bottom: 1rem;
- }
+ 		margin-bottom: 1rem;
+ 	}
  	.section-subtitle {
  		margin-bottom: 0rem;
  	}
@@ -113,11 +124,11 @@ margin-bottom: 1rem;
  	}
  	.alphabet {
  		word-wrap: break-word;
-
  		flex: grow;
  		font-size: 18px;
  		letter-spacing: 1px;
  		line-height: 1.3;
+ 		display: block;
  		@include breakpoint("medium") {
  			font-size: 20px;
  		}
@@ -164,7 +175,6 @@ margin-bottom: 1rem;
 
  .initial-headings {
  	@include breakpoint("medium") {
- 	margin-right:2rem;
+ 		margin-right: 2rem;
+ 	}
  }
- }
-

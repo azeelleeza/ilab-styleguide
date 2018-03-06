@@ -38,13 +38,20 @@ body {}
 
 section {
 	padding: 1rem 2rem;
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
+	@include breakpoint("medium") {
+		margin-bottom: 6rem;
+	}
 }
 
 .subsection {
 	display: block; //padding: 2rem 4rem;
 	margin: 2rem 0rem 4rem;
 	background-color: $color__background-section;
+
+	&:last-of-type {
+		margin: 2rem 0rem 0rem;
+	}
 }
 
 article {
@@ -96,7 +103,10 @@ article {
 
 #fonts {
 	background-color: $color__background-box;
-	padding: 2rem 4rem;
+	padding: 1rem 2rem;
+	@include breakpoint("medium") {
+			padding: 2rem 4rem;
+		}
 }
 
 
@@ -130,6 +140,11 @@ article {
 	.section-notes {
 		padding-right: 1rem;
 	}
+}
+
+section#home-header{
+	padding: 1rem 2rem;
+		margin-bottom: 1rem;
 }
 
 section#page-header {
