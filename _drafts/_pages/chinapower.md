@@ -44,8 +44,10 @@ typography:
     font-size: 22px
     font-weight: Bold 600
   - font-family: Roboto
-    text-transform: normal
+    text-transform: uppercase
     color: "#000"
+    heading_name: Heading 5
+    font-size: 22px
   elements: []
 colors:
   primary_colors: []
