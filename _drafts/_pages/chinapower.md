@@ -117,7 +117,15 @@ colors:
   - hex_code: "#f7d768"
   - hex_code: "#8cb561"
   - hex_code: "#808081"
-  interactive_palettes: []
+  interactive_palettes:
+  - palette_name: Bar Chart 1
+    colors:
+    - hex_code: "#8cb561"
+    - hex_code: "#4fa678"
+    - hex_code: "#459178"
+    - hex_code: "#58a897"
+    - hex_code: "#38997d"
+    - hex_code: "#69aa87"
 links: []
 buttons: []
 logos: []
