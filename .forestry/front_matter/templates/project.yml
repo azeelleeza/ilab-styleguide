@@ -23,7 +23,7 @@ fields:
   name: initial_styles
   label: Initial Styles
   description: Only for use during project development
-  hidden: true
+  hidden: false
   fields:
   - type: text
     name: import_fonts
@@ -201,6 +201,7 @@ fields:
   - type: boolean
     name: show_this_section
     label: Show this section
+    default: false
 - type: field_group
   name: typography
   label: Typography
