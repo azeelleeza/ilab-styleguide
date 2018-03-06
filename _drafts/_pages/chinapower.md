@@ -20,7 +20,7 @@ typography:
     link_to_homepage: https://fonts.google.com/specimen/Hind
     css_input: "'Hind', sans-serif"
   headings:
-  - font-family: Roboto
+  - font-family: Roboto, sans-serif
     font-size: 48px
     color: "#000"
     heading_name: Heading 1
