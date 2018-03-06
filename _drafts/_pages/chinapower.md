@@ -81,7 +81,7 @@ typography:
     element_name: Blockquote
     font-size: 18px
     border-top: '2px solid #ed392a'
-    padding: 10 0 0 0
+    padding: 10px 0 0 0
   - html_text: "- THE AUTHOR"
     font-family: Hind, sans-serif
     font-weight: ''
