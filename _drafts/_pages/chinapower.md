@@ -93,10 +93,12 @@ typography:
     border-bottom: '2px solid #ed392a'
     padding: 0 0 10px 0
   - html_text: ''
-    font-family: Georgia
-    font-weight: normal
-    color: "#000"
+    font-family: Hind, sans-serif
+    font-weight: ''
+    color: "#333333"
     line-height: 1.5
+    element_name: List
+    font-size: 16px
 colors:
   primary_colors: []
   secondary_color: []
