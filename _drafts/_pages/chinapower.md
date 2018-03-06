@@ -39,11 +39,11 @@ typography:
     font-size: 25px
     font-weight: 700
   - font-family: Roboto
-    text-transform: ''
+    text-transform: Bold
     color: "#000"
     heading_name: Heading 4
     font-size: 22px
-    font-weight: Bold 600
+    font-weight: 600
   - font-family: Roboto
     text-transform: uppercase
     color: "#000"
