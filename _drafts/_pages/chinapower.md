@@ -19,7 +19,26 @@ typography:
   - name: Roboto
     css_input: "'Roboto', sans-serif"
     link_to_homepage: https://fonts.google.com/specimen/Roboto
-  headings: []
+  headings:
+  - font-family: Roboto
+    font-size: 48px
+    color: "#000"
+    heading_name: H1
+    font-weight: Bold 700
+  - heading_name: Heading 2
+    font-family: Roboto
+    font-size: 30px
+    text-transform: normal
+    color: "#728c99"
+  - font-family: Roboto
+    text-transform: normal
+    color: "#000"
+  - font-family: Roboto
+    text-transform: normal
+    color: "#000"
+  - font-family: Roboto
+    text-transform: normal
+    color: "#000"
   elements: []
 colors:
   primary_colors: []
