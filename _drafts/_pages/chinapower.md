@@ -62,7 +62,7 @@ typography:
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem
       ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua.
-    font-family: Hind
+    font-family: Hind, sans-serif
     font-size: 18px
     color: "#333333"
     line-height: 1.5
