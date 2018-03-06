@@ -88,9 +88,9 @@ typography:
     line-height: 1.5
     element_name: Author
     font-size: 16px
-    extra_css: 'text-align: right;'
+    extra_css: 'text-align: ''right'';'
     border-bottom: '2px solid #ed392a'
-    padding: '0,0,10,0'
+    padding: 0,0,10px,0
   - html_text: ''
     font-family: Georgia
     font-weight: normal
