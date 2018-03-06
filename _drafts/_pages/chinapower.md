@@ -30,6 +30,7 @@ typography:
     font-size: 30px
     text-transform: ''
     color: "#728c99"
+    font-weight: Regular 400
   - font-family: Roboto
     text-transform: Bold 700
     color: "#000"
