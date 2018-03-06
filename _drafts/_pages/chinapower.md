@@ -27,30 +27,30 @@ typography:
     font-weight: 700
     text-transform: Bold
   - heading_name: Heading 2
-    font-family: Roboto
+    font-family: Roboto, sans-serif
     font-size: 30px
     text-transform: Regular
     color: "#728c99"
     font-weight: 400
-  - font-family: Roboto
+  - font-family: Roboto, sans-serif
     text-transform: Bold
     color: "#000"
     heading_name: Heading 3
     font-size: 25px
     font-weight: 700
-  - font-family: Roboto
+  - font-family: Roboto, sans-serif
     text-transform: Bold
     color: "#000"
     heading_name: Heading 4
     font-size: 22px
     font-weight: 600
-  - font-family: Roboto
+  - font-family: Roboto, sans-serif
     text-transform: uppercase
     color: "#000"
     heading_name: Heading 5
     font-size: 22px
   - heading_name: Heading 6
-    font-family: Roboto
+    font-family: Roboto, sans-serif
     font-size: 18px
     font-weight: 600
     color: "#1c2e36"
