@@ -100,7 +100,12 @@ typography:
     element_name: List
     font-size: 16px
 colors:
-  primary_colors: []
+  primary_colors:
+  - hex_code: "#728c99"
+  - hex_code: "#f1f1f1"
+  - hex_code: "#dbd9d7"
+  - hex_code: "#455a64"
+  - hex_code: "#ed392a"
   secondary_color: []
   interactive_palettes: []
 links: []
