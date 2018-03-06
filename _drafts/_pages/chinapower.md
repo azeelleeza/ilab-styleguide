@@ -150,7 +150,14 @@ colors:
     - hex_code: "#ed9e48"
     - hex_code: "#f4d28d"
     - hex_code: "#fdc177"
-  - {}
+  - palette_name: Bar Chart 5
+    colors:
+    - hex_code: "#455a64"
+    - hex_code: "#88a3aa"
+    - hex_code: "#728c99"
+    - hex_code: "#b9cdd6"
+    - hex_code: "#97b0bf"
+    - hex_code: "#a6c0c9"
   - {}
 links: []
 buttons: []
