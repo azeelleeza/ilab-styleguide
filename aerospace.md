@@ -66,6 +66,17 @@ typography:
     padding: 0 0 0 8px
     border-left: '3px solid #DEDEDE'
     html_text: This is an image caption.&nbsp;<br>(BIJU BORO/AFP/Getty Images)
+  - element_name: Blockquote
+    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    font-family: Georgia
+    font-size: 26px
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
+    padding: 16px 0px
+    border-top: '2px solid #d66e42'
+    border-bottom: '2px solid #d66e42'
 colors:
   primary_colors:
   - hex_code: "#d66e42"
