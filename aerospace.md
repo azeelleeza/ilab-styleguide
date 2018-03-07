@@ -69,7 +69,7 @@ typography:
   - element_name: Blockquote
     html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-    font-family: Georgia
+    font-family: Abel, sans-serif
     font-size: 26px
     font-weight: normal
     color: "#000"
