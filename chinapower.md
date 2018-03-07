@@ -246,7 +246,26 @@ buttons:
     color: "#fff"
     background-color: "#728C99"
     padding: 5px 15px 7px
-logos: []
-tables: []
-form_elements: []
+logos:
+- {}
+tables:
+- {}
+form_elements:
+- element_name: 'Highcharts: Footer Branding'
+- element_name: Expand data button
+- element_name: Scroll Directions
+- element_name: Graph/Chart Key
+  element_description: 'Note: China should be colored red.'
+- element_name: Tooltips
+  element_description: 'Note: For the small highcharts tooltips, the background should
+    be semi-transparent (as it default)'
+- element_name: 'Forms: Range Slider'
+- element_name: 'Forms: Radio'
+- element_name: 'Forms: Checkboxes'
+- element_name: 'Forms: Dropdown'
+- element_name: 'Forms: Text Input'
+- element_description: 'Note: Developer can choose between colored and grayscale watermarks.
+    Watermark should, when possible, be positioned in the bottom-right corner on the
+    interactive.'
+  element_name: 'Interactives: Footer Branding'
 ---
