@@ -202,8 +202,9 @@ buttons:
     color: "#000"
     background-color: "#D6D6D6"
     padding: 5px 15px 7px
-  group_name: Button 1
-- group_name: Button 2
+  group_name: Graphic Links
+  description: 'Note: Used for general purpose'
+- group_name: ''
   base:
     font-family: Roboto
     padding: 5px 15px 7px
@@ -224,7 +225,7 @@ buttons:
     line-height: 1
     letter-spacing: 1px
     padding: 5px 15px 7px
-- group_name: Button 3
+- group_name: ''
   base:
     font-family: Roboto
     font-size: 16px
