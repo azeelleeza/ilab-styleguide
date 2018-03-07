@@ -271,6 +271,7 @@ form_elements:
     be semi-transparent (as it default)'
 - element_name: Graph/Chart Key
   element_description: 'Note: China should be colored red.'
+  image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.24.17 PM.png"
 - element_name: Scroll Directions
 - element_name: Expand data button
 - element_description: 'Note: Developer can choose between colored and grayscale watermarks.
