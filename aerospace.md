@@ -43,27 +43,29 @@ typography:
     color: "#000"
     font-family: Abel, sans-serif
   elements:
-  - element_name: Body Text
-    font-family: Georgia
+  - element_name: Body text
+    font-family: Source Sans Pro, sans-serif
     font-size: 18px
-    font-weight: normal
-    color: "#333333"
-    line-height: 1.5
-    notes: This is a note
-    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua.
-  - element_name: Caption
-    font-family: Roboto
-    font-size: 15px
     font-weight: normal
     color: "#000"
     line-height: 1.5
+    notes: This is a note
+    html_text: "<strong>THE FIRST FEW WORDS IN THE FIRST SENTENCE OF A POST</strong>&nbsp;are
+      bolded and uppercase. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The
+      final line in the post has the aircraft icon after it."
+  - element_name: Image caption
+    font-family: Source Sans Pro, sans-serif
+    font-size: 14px
+    font-weight: normal
+    color: "#8c8c8c"
+    line-height: 1.5
     padding: ".5 0 1rem 1rem"
     border-left: '2px solid #b5bdc1'
-    html_text: This is an image caption.&nbsp;(BIJU BORO/AFP/Getty Images)
+    html_text: This is an image caption.&nbsp;<br>(BIJU BORO/AFP/Getty Images)
 colors:
   primary_colors:
   - hex_code: "#d66e42"
