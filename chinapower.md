@@ -169,8 +169,12 @@ links:
   link:
   - base:
       color: "#ed392a"
-      font-family: Hind, sans-serif
-      font-size: 18px
+      font-family: ''
+      font-size: ''
+    hover:
+      color: "#ed392a"
+    visited:
+      color: "#C42D21"
 buttons: []
 logos: []
 tables: []
