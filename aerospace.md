@@ -2,17 +2,17 @@
 title: Aerospace
 date: 2018-02-02 10:38:17 +0000
 typography:
-  import_fonts: <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+  import_fonts: <link href="https://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro:300,400,600"
     rel="stylesheet">
   fonts:
-  - name: Roboto
+  - name: Abel
     notes: This is a note
-    css_input: "'Roboto', sans-serif"
-    link_to_homepage: https://fonts.google.com/specimen/Roboto?selection.family=Roboto
-  - name: Roboto
+    css_input: "'Abel', sans-serif"
+    link_to_homepage: https://fonts.google.com/specimen/Abel
+  - name: Source Sans Pro
     notes: This is a note
-    css_input: "'Roboto', sans-serif"
-    link_to_homepage: https://fonts.google.com/specimen/Roboto?selection.family=Roboto
+    css_input: "'Source Sans Pro', sans-serif"
+    link_to_homepage: https://fonts.google.com/specimen/Source+Sans+Pro
   headings:
   - heading_name: Heading 1
     font-family: Roboto
