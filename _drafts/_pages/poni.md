@@ -17,14 +17,17 @@ typography:
     name: PT Sans
   headings:
   - heading_name: Heading 1
-    font-family: Lato
-    font-size: 60px
-    font-weight: 700
-    color: "#f1c161"
-    text-transform: Bold
-  - font-family: Roboto
-    text-transform: normal
+    font-family: Lato, sans-serif
+    font-size: 50px
+    font-weight: ''
+    color: "#235d94"
+    text-transform: ''
+  - font-family: Lato, sans-serif
+    font-size: 26px
+    font-weight: 300
+    text-transform: ''
     color: "#000"
+    heading_name: Heading 2
   - font-family: Roboto
     text-transform: normal
     color: "#000"
