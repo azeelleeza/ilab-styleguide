@@ -64,7 +64,7 @@ typography:
     color: "#8c8c8c"
     line-height: 1.5
     padding: 0 0 0 8px
-    border-left: '2px solid #b5bdc1'
+    border-left: '3px solid #DEDEDE'
     html_text: This is an image caption.&nbsp;<br>(BIJU BORO/AFP/Getty Images)
 colors:
   primary_colors:
