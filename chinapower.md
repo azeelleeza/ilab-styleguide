@@ -164,13 +164,13 @@ colors:
     - hex_code: "#feeaab"
     - hex_code: "#e5c576"
 links:
-- group_name: Body Links
+- group_name: Text Links
   description: Default links in the post body
   link:
   - base:
       color: "#ed392a"
-      font-family: ''
-      font-size: ''
+      font-family: Hind, sans-serif
+      font-size: 18px
     hover:
       color: "#ed392a"
       font-family: Hind, sans-serif
@@ -179,7 +179,19 @@ links:
       background-size: 4px 7px
     visited:
       color: "#C42D21"
-buttons: []
+      font-family: Hind, sans-serif
+      font-size: 18px
+buttons:
+- base:
+    font-family: Roboto
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-transform: upppercase
+    text-align: Center
+    color: "#4a4a4a"
+    background-color: "#f1f1f1"
+    padding: 5px 15px 7px
 logos: []
 tables: []
 form_elements: []
