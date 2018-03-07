@@ -78,11 +78,14 @@ typography:
     element_name: Blockquote
     font-size: 20px
     margins: 0 1em
-  - html_text: ''
-    font-family: Georgia
+  - html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    font-family: PT Sans, sans-serif
     font-weight: normal
     color: "#000"
     line-height: 1.5
+    element_name: Post Footer and Sidebar Text
+    font-size: 16px
   - html_text: ''
     font-family: Georgia
     font-weight: normal
