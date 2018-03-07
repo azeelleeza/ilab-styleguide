@@ -252,11 +252,14 @@ tables:
 - element_name: Table
   element_description: 'Note: Headings are Roboto, table body is Hind.   The class
     `colorBG` can be applied to any table cell to color the cell gray.'
+  image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.13.56 PM.png"
 - element_name: 'Table: Striped'
   element_description: 'Note: Headings and body text are Roboto.'
+  image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.14.37 PM.png"
 - element_name: 'Table: Striped Mobile'
   element_description: Use the `showData` class on the table and table cell elements
     to show the table headers on mobile.
+  image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.14.58 PM.png"
 form_elements:
 - element_name: 'Forms: Text Input'
 - element_name: 'Forms: Dropdown'
