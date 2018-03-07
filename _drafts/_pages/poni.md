@@ -86,11 +86,14 @@ typography:
     line-height: 1.5
     element_name: Post Footer and Sidebar Text
     font-size: 16px
-  - html_text: ''
-    font-family: Georgia
+  - html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    font-family: PT Sans, sans-serif
     font-weight: normal
-    color: "#000"
+    color: "#cbdce5"
     line-height: 1.5
+    element_name: Site Footer
+    font-size: 16px
 initial_styles:
   import_fonts: ''
   typography: []
@@ -98,7 +101,13 @@ initial_styles:
   logos: []
   show_this_section: false
 colors:
-  primary_colors: []
+  primary_colors:
+  - hex_code: "#163553"
+  - hex_code: "#f1f1f1"
+  - hex_code: "#6d6d6d"
+  - hex_code: "#235d94"
+  - hex_code: "#3873ab"
+  - hex_code: "#f1c161"
   secondary_color: []
   interactive_palettes: []
 links: []
