@@ -273,6 +273,7 @@ form_elements:
   element_description: 'Note: China should be colored red.'
   image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.24.17 PM.png"
 - element_name: Scroll Directions
+  image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.25.17 PM.png"
 - element_name: Expand data button
 - element_description: 'Note: Developer can choose between colored and grayscale watermarks.
     Watermark should, when possible, be positioned in the bottom-right corner on the
