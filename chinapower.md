@@ -224,6 +224,17 @@ buttons:
     line-height: 1
     letter-spacing: 1px
     padding: 5px 15px 7px
+- group_name: Button 3
+  base:
+    font-family: Roboto
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-transform: uppercase
+    text-align: Center
+    color: "#fff"
+    background-color: "#455a64"
+    padding: 5px 15px 7px
 logos: []
 tables: []
 form_elements: []
