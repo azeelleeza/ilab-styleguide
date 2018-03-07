@@ -15,22 +15,33 @@ typography:
     link_to_homepage: https://fonts.google.com/specimen/Source+Sans+Pro
   headings:
   - heading_name: Heading 1
-    font-family: Roboto
-    font-size: 48px
+    font-family: Abel, sans-serif
+    font-size: 52px
     font-weight: normal
-    color: "#000"
+    color: "#18384f"
   - heading_name: Heading 2
-    font-family: Roboto
-    font-size: 30px
+    font-family: Abel, sans-serif
+    font-size: 36px
     font-weight: normal
     color: "#185271"
-    letter-spacing: 1px
-  - heading_name: H3
-    font-family: Roboto
-    font-size: 24px
-    font-weight: bold
+    letter-spacing: ''
+  - heading_name: Heading 3
+    font-family: Abel, sans-serif
+    font-size: 28px
+    font-weight: ''
     color: "#000"
-    text-transform: uppercase
+    text-transform: ''
+  - heading_name: Heading 4
+    font-size: 20px
+    font-weight: 600
+    color: "#000"
+    font-family: Source Sans Pro, sans-serif
+    text-transform: Semi-Bold
+  - heading_name: Heading 5
+    font-size: 18px
+    font-weight: normal
+    color: "#000"
+    font-family: Abel, sans-serif
   elements:
   - element_name: Body Text
     font-family: Georgia
