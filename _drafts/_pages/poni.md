@@ -39,12 +39,17 @@ typography:
     heading_name: Heading 4
     font-size: 25px
     font-weight: 300
-  - font-family: Roboto
+  - font-family: Lato, sans-serif
     text-transform: normal
     color: "#000"
-  - font-family: Roboto
+    heading_name: Heading 5
+    font-size: 18px
+  - font-family: Lato, sans-serif
     text-transform: normal
     color: "#000"
+    heading_name: Heading 6
+    font-size: 16px
+    font-weight: 300
   elements: []
 initial_styles:
   import_fonts: ''
