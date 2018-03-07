@@ -69,11 +69,14 @@ typography:
     line-height: 1.5
     element_name: Image caption
     font-size: 14px
-  - html_text: ''
-    font-family: Georgia
+  - html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    font-family: Lato, sans-serif
     font-weight: normal
     color: "#000"
     line-height: 1.5
+    element_name: Blockquote
+    font-size: 20px
   - html_text: ''
     font-family: Georgia
     font-weight: normal
