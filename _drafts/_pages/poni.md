@@ -77,6 +77,7 @@ typography:
     line-height: 1.5
     element_name: Blockquote
     font-size: 20px
+    margins: 0 1em
   - html_text: ''
     font-family: Georgia
     font-weight: normal
