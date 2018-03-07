@@ -50,7 +50,40 @@ typography:
     heading_name: Heading 6
     font-size: 16px
     font-weight: 300
-  elements: []
+  elements:
+  - element_name: Body text
+    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua.
+    font-family: PT Sans, sans-serif
+    font-size: 18px
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
+  - html_text: This is an image caption.&nbsp;<br>(BIJU BORO/AFP/Getty Images)
+    font-family: PT Sans, sans-serif
+    font-weight: normal
+    color: "#6d6d6d"
+    line-height: 1.5
+    element_name: Image caption
+    font-size: 14px
+  - html_text: ''
+    font-family: Georgia
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
+  - html_text: ''
+    font-family: Georgia
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
+  - html_text: ''
+    font-family: Georgia
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
 initial_styles:
   import_fonts: ''
   typography: []
