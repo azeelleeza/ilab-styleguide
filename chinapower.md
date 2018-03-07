@@ -192,6 +192,16 @@ buttons:
     color: "#4a4a4a"
     background-color: "#f1f1f1"
     padding: 5px 15px 7px
+  hover:
+    font-family: Roboto
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-transform: uppercase
+    text-align: Center
+    color: "#000"
+    background-color: "#D6D6D6"
+    padding: 5px 15px 7px
 logos: []
 tables: []
 form_elements: []
