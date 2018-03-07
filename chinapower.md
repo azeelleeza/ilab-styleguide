@@ -249,23 +249,30 @@ buttons:
 logos:
 - {}
 tables:
-- {}
+- element_name: Table
+  element_description: 'Note: Headings are Roboto, table body is Hind.   The class
+    `colorBG` can be applied to any table cell to color the cell gray.'
+- element_name: 'Table: Striped'
+  element_description: 'Note: Headings and body text are Roboto.'
+- element_name: 'Table: Striped Mobile'
+  element_description: Use the `showData` class on the table and table cell elements
+    to show the table headers on mobile.
 form_elements:
-- element_name: 'Highcharts: Footer Branding'
-- element_name: Expand data button
-- element_name: Scroll Directions
-- element_name: Graph/Chart Key
-  element_description: 'Note: China should be colored red.'
+- element_name: 'Forms: Text Input'
+- element_name: 'Forms: Dropdown'
+- element_name: 'Forms: Checkboxes'
+- element_name: 'Forms: Radio'
+- element_name: 'Forms: Range Slider'
 - element_name: Tooltips
   element_description: 'Note: For the small highcharts tooltips, the background should
     be semi-transparent (as it default)'
-- element_name: 'Forms: Range Slider'
-- element_name: 'Forms: Radio'
-- element_name: 'Forms: Checkboxes'
-- element_name: 'Forms: Dropdown'
-- element_name: 'Forms: Text Input'
+- element_name: Graph/Chart Key
+  element_description: 'Note: China should be colored red.'
+- element_name: Scroll Directions
+- element_name: Expand data button
 - element_description: 'Note: Developer can choose between colored and grayscale watermarks.
     Watermark should, when possible, be positioned in the bottom-right corner on the
     interactive.'
   element_name: 'Interactives: Footer Branding'
+- element_name: 'Highcharts: Footer Branding'
 ---
