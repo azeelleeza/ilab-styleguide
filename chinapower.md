@@ -176,7 +176,7 @@ links:
       font-family: Hind, sans-serif
       font-size: 18px
       background: "#fff linear-gradient(#fff 50%, #dbd9d7 50%) repeat-x 0 100%"
-      background-size: 4px 6px
+      background-size: 4px 7px
     visited:
       color: "#C42D21"
 buttons: []
