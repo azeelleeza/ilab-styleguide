@@ -163,7 +163,14 @@ colors:
     - hex_code: "#f7d768"
     - hex_code: "#feeaab"
     - hex_code: "#e5c576"
-links: []
+links:
+- group_name: Body Links
+  description: Default links in the post body
+  link:
+  - base:
+      color: "#ed392a"
+      font-family: Hind, sans-serif
+      font-size: 18px
 buttons: []
 logos: []
 tables: []
