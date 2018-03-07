@@ -202,6 +202,28 @@ buttons:
     color: "#000"
     background-color: "#D6D6D6"
     padding: 5px 15px 7px
+  group_name: Button 1
+- group_name: Button 2
+  base:
+    font-family: Roboto
+    padding: 5px 15px 7px
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-transform: uppercase
+    text-align: Center
+    background-color: "#ed392a"
+    color: "#fff"
+  hover:
+    background-color: "#C42D21"
+    color: "#fff"
+    text-align: Center
+    text-transform: uppercase
+    font-family: Roboto
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    padding: 5px 15px 7px
 logos: []
 tables: []
 form_elements: []
