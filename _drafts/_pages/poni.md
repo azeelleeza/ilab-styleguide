@@ -119,7 +119,7 @@ links:
   - base:
       font-family: PT Sans, sans-serif
       font-size: 18px
-      background: "#fff linear-gradient(#fff 50%, #3873AB 50%) repeat-x 0 100%"
+      background: "#fff linear-gradient(#fff 97%, #3873AB 50%) repeat-x 0 100%"
       background-size: 4px 4px
 buttons:
 - group_name: Graphic Links
