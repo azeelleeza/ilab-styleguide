@@ -79,6 +79,7 @@ typography:
     font-size: 20px
     margins: ''
     padding: 0 1em
+    extra_css: 'max-width: 66%;'
   - html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     font-family: PT Sans, sans-serif
