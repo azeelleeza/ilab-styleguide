@@ -39,9 +39,6 @@ typography:
     heading_name: Heading 5
     font-size: 13px
     font-weight: 700
-  - font-family: Roboto
-    text-transform: normal
-    color: "#000"
   elements: []
 initial_styles:
   import_fonts: ''
