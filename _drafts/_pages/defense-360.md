@@ -65,7 +65,18 @@ colors:
   - hex_code: "#707268"
   interactive_palettes: []
 links: []
-buttons: []
+buttons:
+- group_name: Graphic Links
+  description: 'Note: Used for general purpose'
+  base:
+    font-family: Source Sans Pro, sans-serif
+    font-size: 12px
+    text-align: Center
+    line-height: 1
+    letter-spacing: 1px
+    padding: 8px 48px
+    color: "#fff"
+    background-color: "#36605a"
 logos: []
 tables: []
 form_elements: []
