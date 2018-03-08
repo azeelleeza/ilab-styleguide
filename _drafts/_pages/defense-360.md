@@ -53,7 +53,16 @@ colors:
   - hex_code: "#9b9b9b"
   - hex_code: "#4a4a4a"
   - hex_code: "#000000"
-  secondary_color: []
+  secondary_color:
+  - hex_code: "#26615a"
+  - hex_code: "#00909f"
+  - hex_code: "#8eb781"
+  - hex_code: "#e4b350"
+  - hex_code: "#e79650"
+  - hex_code: "#877aa7"
+  - hex_code: "#d05133"
+  - hex_code: "#415e99"
+  - hex_code: "#707268"
   interactive_palettes: []
 links: []
 buttons: []
