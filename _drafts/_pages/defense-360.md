@@ -58,11 +58,13 @@ typography:
     font-weight: normal
     color: "#4a4a4a"
     line-height: 1.5
-  - html_text: ''
-    font-family: Georgia
+  - html_text: <img src="/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.55.49 PM.png">
+    font-family: Source Sans Pro, sans-serif
     font-weight: normal
-    color: "#000"
+    color: "#4a4a4a"
     line-height: 1.5
+    element_name: List
+    font-size: 16px
 initial_styles:
   import_fonts: ''
   typography: []
