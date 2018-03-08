@@ -125,6 +125,15 @@ buttons:
     background-color: "#235D94"
     color: "#fff"
     padding: 0.3em 0.5rem
+  hover:
+    font-family: Lato, sans-serif
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-align: Center
+    color: "#fff"
+    background-color: "#6E9DCA"
+    padding: 0.3em 0.5rem
 - {}
 logos: []
 tables: []
