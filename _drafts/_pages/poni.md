@@ -23,7 +23,7 @@ typography:
     color: "#235d94"
     text-transform: ''
   - font-family: Lato, sans-serif
-    font-size: 26px
+    font-size: 30px
     font-weight: 300
     text-transform: ''
     color: "#000"
