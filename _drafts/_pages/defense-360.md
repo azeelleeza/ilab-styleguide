@@ -64,7 +64,14 @@ colors:
   - hex_code: "#415e99"
   - hex_code: "#707268"
   interactive_palettes: []
-links: []
+links:
+- group_name: Text Links
+  description: Default links in the post body
+  link:
+  - base:
+      font-family: Source Sans Pro, sans-serif
+      font-size: 16px
+      color: "#008e9d"
 buttons:
 - group_name: Graphic Links
   description: 'Note: Used for general purpose'
