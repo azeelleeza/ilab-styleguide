@@ -134,7 +134,15 @@ buttons:
     color: "#fff"
     background-color: "#6E9DCA"
     padding: 0.3em 0.5rem
-- {}
+- base:
+    font-family: Lato, sans-serif
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-align: Center
+    background-color: "#F1C161"
+    color: "#fff"
+    padding: 0.3em 0.5rem
 logos: []
 tables: []
 form_elements: []
