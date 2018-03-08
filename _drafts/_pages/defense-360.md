@@ -47,7 +47,12 @@ initial_styles:
   logos: []
   show_this_section: false
 colors:
-  primary_colors: []
+  primary_colors:
+  - hex_code: "#36605a"
+  - hex_code: "#008e9d"
+  - hex_code: "#9b9b9b"
+  - hex_code: "#4a4a4a"
+  - hex_code: "#000000"
   secondary_color: []
   interactive_palettes: []
 links: []
