@@ -88,7 +88,10 @@ buttons:
     color: "#fff"
     background-color: "#36605a"
     padding: 8px 48px
-logos: []
+logos:
+- logo_name: Main site logo
+  dark_background: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.35.15 PM.png"
+  upload_logo: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.36.04 PM.png"
 tables: []
 form_elements: []
 ---
