@@ -150,7 +150,7 @@ buttons:
     letter-spacing: 1px
     text-align: Center
     color: "#fff"
-    background-color: "#F1C161"
+    background-color: "#D09827"
     padding: 0.3em 0.5rem
 logos: []
 tables: []
