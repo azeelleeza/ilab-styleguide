@@ -9,7 +9,7 @@ typography:
   fonts:
   - name: Lato
     notes: This is a note
-    css_input: "'Lato', sans-serif"
+    css_input: Lato, sans-serif
     link_to_homepage: https://fonts.google.com/specimen/Lato
   - notes: This is a note
     css_input: "'PT Sans', sans-serif"
