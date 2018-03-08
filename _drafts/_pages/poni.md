@@ -169,6 +169,8 @@ buttons:
     background-color: "#D09827"
     padding: 0.3em 0.5rem
 logos: []
-tables: []
+tables:
+- element_name: Table
+  image: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.01.18 PM.png"
 form_elements: []
 ---
