@@ -65,6 +65,12 @@ typography:
     font-weight: normal
     color: "#000"
     line-height: 1.5
+  - element_name: Author
+    html_text: "- The author"
+    font-family: Georgia
+    font-weight: normal
+    color: "#000"
+    line-height: 1.5
   - html_text: <img src="/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.55.49 PM.png">
     font-family: Source Sans Pro, sans-serif
     font-weight: normal
