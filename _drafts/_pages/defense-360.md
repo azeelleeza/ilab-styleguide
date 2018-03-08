@@ -28,12 +28,17 @@ typography:
     color: "#9b9b9b"
     heading_name: Heading 3
     font-size: 18px
-  - font-family: Roboto
+  - font-family: Source Sans Pro
     text-transform: normal
     color: "#000"
-  - font-family: Roboto
-    text-transform: normal
+    heading_name: Heading 4
+    font-size: 16px
+  - font-family: Source Sans Pro, sans-serif
+    text-transform: Bold
     color: "#000"
+    heading_name: Heading 5
+    font-size: 13px
+    font-weight: 700
   - font-family: Roboto
     text-transform: normal
     color: "#000"
