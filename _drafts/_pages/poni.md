@@ -26,7 +26,7 @@ typography:
     font-size: 30px
     font-weight: 300
     text-transform: ''
-    color: "#000"
+    color: "#235d94"
     heading_name: Heading 2
   - font-family: Lato, sans-serif
     text-transform: normal
