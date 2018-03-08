@@ -39,7 +39,18 @@ typography:
     heading_name: Heading 5
     font-size: 13px
     font-weight: 700
-  elements: []
+  elements:
+  - element_name: Body text
+    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua.
+    font-family: Source Sans Pro
+    font-size: 16px
+    font-weight: normal
+    color: "#333333"
+    line-height: 1.5
 initial_styles:
   import_fonts: ''
   typography: []
@@ -110,5 +121,6 @@ logos:
 - logo_name: Square logo
   upload_logo: "/uploads/2018/03/08/Defense360_logo_thumbnail-02.png"
 tables: []
-form_elements: []
+form_elements:
+- {}
 ---
