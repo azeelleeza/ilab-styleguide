@@ -113,7 +113,19 @@ colors:
   secondary_color: []
   interactive_palettes: []
 links: []
-buttons: []
+buttons:
+- group_name: Graphic Links
+  description: 'Note: Used for general purpose'
+  base:
+    font-family: Lato, sans-serif
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-align: Center
+    background-color: "#235D94"
+    color: "#fff"
+    padding: 0.3em 0.5rem
+- {}
 logos: []
 tables: []
 form_elements: []
