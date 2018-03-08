@@ -72,6 +72,14 @@ links:
       font-family: Source Sans Pro, sans-serif
       font-size: 16px
       color: "#008e9d"
+    hover:
+      font-family: Source Sans Pro, sans-serif
+      font-size: 16px
+      color: "#36605a"
+    visited:
+      color: "#008e9d"
+      font-family: Source Sans Pro, sans-serif
+      font-size: 16px
 buttons:
 - group_name: Graphic Links
   description: 'Note: Used for general purpose'
