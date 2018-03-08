@@ -125,6 +125,10 @@ links:
       color: "#3873AB"
       font-family: PT Sans, sans-serif
       font-size: 18px
+    visited:
+      font-family: PT Sans, sans-serif
+      font-size: 18px
+      background: "#fff linear-gradient(#fff 94%, #3873AB 50%) repeat-x 0 100%"
 buttons:
 - group_name: Graphic Links
   description: 'Note: Used for general purpose'
