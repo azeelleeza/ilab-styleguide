@@ -12,7 +12,7 @@ typography:
     css_input: Lato, sans-serif
     link_to_homepage: https://fonts.google.com/specimen/Lato
   - notes: This is a note
-    css_input: "'PT Sans', sans-serif"
+    css_input: PT Sans, sans-serif
     link_to_homepage: https://fonts.google.com/specimen/PT+Sans
     name: PT Sans
   headings:
