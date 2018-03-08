@@ -77,6 +77,17 @@ buttons:
     padding: 8px 48px
     color: "#fff"
     background-color: "#36605a"
+    text-transform: uppercase
+  hover:
+    font-family: Source Sans Pro, sans-serif
+    font-size: 12px
+    line-height: 1
+    letter-spacing: 1px
+    text-align: Center
+    text-transform: uppercase
+    color: "#fff"
+    background-color: "#36605a"
+    padding: 8px 48px
 logos: []
 tables: []
 form_elements: []
