@@ -18,12 +18,16 @@ typography:
     font-weight: 600
     color: "#000"
     text-transform: semi-bold
-  - font-family: Roboto
+  - font-family: Source Sans Pro, sans-serif
     text-transform: normal
-    color: "#000"
-  - font-family: Roboto
+    color: "#008e9d"
+    heading_name: Heading 2
+    font-size: 21px
+  - font-family: Source Sans Pro, sans-serif
     text-transform: normal
-    color: "#000"
+    color: "#9b9b9b"
+    heading_name: Heading 3
+    font-size: 18px
   - font-family: Roboto
     text-transform: normal
     color: "#000"
