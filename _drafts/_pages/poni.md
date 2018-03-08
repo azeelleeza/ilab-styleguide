@@ -124,6 +124,7 @@ links:
     hover:
       color: "#3873AB"
       font-family: PT Sans, sans-serif
+      font-size: 18px
 buttons:
 - group_name: Graphic Links
   description: 'Note: Used for general purpose'
