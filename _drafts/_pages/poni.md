@@ -119,8 +119,8 @@ links:
   - base:
       font-family: PT Sans, sans-serif
       font-size: 18px
-      background: "#fff linear-gradient(#fff 92%, #3873AB 50%) repeat-x 0 100%"
-      background-size: 4px 4px
+      background: "#fff linear-gradient(#fff 94%, #3873AB 50%) repeat-x 0 100%"
+      background-size: ''
     hover:
       color: "#3873AB"
       font-family: PT Sans, sans-serif
