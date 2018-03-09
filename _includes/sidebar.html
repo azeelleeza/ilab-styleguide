@@ -9,7 +9,7 @@
 		<div class="backhome">
 {% if page.layout != "home" %}
 		<a href="{{ site.baseurl | remove: " index.html " }}/">
-			<i class="icon-arrow-left"></i><span>{{ page.title }}</span>
+			<i class="icon-arrow-left"></i><span> HOME</span>
 				
 			</a>
 {% endif %}
@@ -21,12 +21,6 @@
 		<ul id="sidebarlinks">
 			{% for page in site.html_pages %} {% if page.layout != "home" %} {% if page.title == current_page %}
 
-
-
-			
-
-			
-
 			<a href="{{ page.url | prepend: site.baseurl }}">
 				<li class="selected">{{ page.title }}</li>
 			</a>
@@ -35,25 +29,25 @@
 				{% if page.initial_styles.show_this_section == true %}
 
 
-				<li><a href="#typography">Typography</a></li>
-				<li><a href="#colors">Colors</a></li>
-				<li><a href="#logos">Logos</a></li>
+				<a href="#typography"><li>Typography</li></a>
+				<a href="#colors"><li>Colors</li></a>
+				<a href="#logos"><li>Logos</li></a>
 				{% else %} {% if page.typography %}
-				<li><a href="#typography">Typography</a></li>
+				<a href="#typography"><li>Typography</li></a>
 				{% endif %} {% if page.colors %}
-				<li><a href="#colors">Colors</a></li>
+				<a href="#colors"><li>Colors</li></a>
 				{% endif %} {% if page.links %}
-				<li><a href="#links">Links</a></li>
+				<a href="#links"><li>Links</li></a>
 				{% endif %} {% if page.buttons %}
-				<li><a href="#buttons">Buttons</a></li>
+				<a href="#buttons"><li>Buttons</li></a>
 				{% endif %} {% if page.tables %}
-				<li><a href="#tables">Tables</a></li>
+				<a href="#tables"><li>Tables</li></a>
 				{% endif %} {% if page.logos %}
-				<li><a href="#forms">Form Elements</a></li>
+				<a href="#forms"><li>Form Elements</li></a>
 				{% endif %} {% endif %}
 			</ul>
 			{% else %}
-			<li class="page-links"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+			<a href="{{ page.url | prepend: site.baseurl }}"><li class="page-links">{{ page.title }}</li></a>
 			{% endif %}{% endif %} {% endfor %}
 		</ul>
 

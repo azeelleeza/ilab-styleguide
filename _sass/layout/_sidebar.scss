@@ -79,10 +79,10 @@ aside#sidebar {
 ul#sidebarlinks {
 	padding-left: 0px;
 	a {
-		color: $color__link-sidebar;
+		color:  #A2ABB2;
 		text-decoration: none;
 		font-size: 1.1rem;
-		color: white;
+
 		opacity: .7;
 		&:hover {}
 		&:visited {}
@@ -105,12 +105,14 @@ ul#sidebarlinks {
 		a {
 			font-size: .9rem;
 			opacity: 1;
+			color: white;
+			//padding: .1rem 0rem .5rem;
 
 		}
 		li {
-	
-			padding: .1em .5em 0rem;
-
+	padding: .5rem 1rem;
+margin-bottom: .5rem;
+			
 			&:first-of-type {
 				padding-top: 0rem;
 			}
@@ -196,4 +198,25 @@ padding-bottom: 0rem;
 	transform: rotate(-45deg);
 	top: 19px;
 	left: 8px;
+}
+
+.backhome {
+	@media (min-width: $breakpoint-medium) {
+		text-align: right;
+		padding: 1rem 2rem;
+		font-size: .8rem;
+		height: 50px;
+		transition: .25s ease-in-out;
+		span, i {
+		color: $color__footer;
+		transition: .25s ease-in-out;
+	}
+	&:hover {
+		span, i {
+color: white;
+transition: .25s ease-in-out;
+		}
+	}
+	}
+
 }
