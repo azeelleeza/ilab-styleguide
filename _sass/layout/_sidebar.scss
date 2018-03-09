@@ -208,13 +208,22 @@ padding-bottom: 0rem;
 		height: 50px;
 		transition: .25s ease-in-out;
 		span, i {
-		color: $color__footer;
+		color:  #A2ABB2;
 		transition: .25s ease-in-out;
+
+	}
+	i:before {
+		padding-right: 0px;
+		transition: padding .25s ease-in-out;
+
 	}
 	&:hover {
 		span, i {
 color: white;
 transition: .25s ease-in-out;
+		}
+		i:before { 
+			padding-right: 10px;
 		}
 	}
 	}
