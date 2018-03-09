@@ -6,23 +6,27 @@
 	</div>
 	<nav id="menu" class="mobile-menu">
 		<!-- List of Pages -->
-
+		<div class="backhome">
+{% if page.layout != "home" %}
+		<a href="{{ site.baseurl | remove: " index.html " }}/">
+			<i class="icon-arrow-left"></i><span>{{ page.title }}</span>
+				
+			</a>
+{% endif %}
+</div>
 		<div class="sidebar-title"><span>iDeas Lab</span>
 			<br> Style Guides</div>
 		{% assign current_page = page.title %}
 
 		<ul id="sidebarlinks">
-			{% for page in site.html_pages %} {% if page.layout == "home" %}
+			{% for page in site.html_pages %} {% if page.layout != "home" %} {% if page.title == current_page %}
 
-			<a href="{{ page.url | prepend: site.baseurl | remove: " index.html " }}">
-				{% if page.title == "home" %}
-				<li class="page-links selected">Sup{{ page.title }}</li>
-				{% else %}
-				<li class="page-links">{{ page.title }}</li>
-				{% endif %}
-			</a>
 
-			{% endif %} {% endfor %} {% for page in site.html_pages %} {% if page.layout != "home" %} {% if page.title == current_page %}
+
+			
+
+			
+
 			<a href="{{ page.url | prepend: site.baseurl }}">
 				<li class="selected">{{ page.title }}</li>
 			</a>
