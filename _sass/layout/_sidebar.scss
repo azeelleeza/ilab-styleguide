@@ -22,7 +22,7 @@ aside#sidebar {
 	}
 	#sidebarlinks li {
 		padding: .5em 2em;
-		
+
 		&.page-links:hover {
 
 			@include transition(background-color 0.3s);
@@ -81,7 +81,7 @@ ul#sidebarlinks {
 	a {
 		color: $color__link-sidebar;
 		text-decoration: none;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		color: white;
 		opacity: .7;
 		&:hover {}
@@ -93,20 +93,30 @@ ul#sidebarlinks {
 		//border-bottom: 1px solid $color__background-box;
 		padding-bottom: 0 !important;
 		color: $color__background-header;
-		background-color: $color-medblue;
+		//background-color: $color-medblue;
 	}
 	ul#subitems {
-		padding-left: 1rem;
-		padding-bottom: 1rem;
+		margin-left: 2.6rem;
+		padding-left: .5rem;
+		margin-bottom: 1rem;
 		text-transform: uppercase;
-		background-color: $color-medblue;
+		//background-color: $color-medblue;
+		border-left: 1px solid $color-ltbluegray;
 		a {
-			font-size: 1rem;
+			font-size: .9rem;
 			opacity: 1;
 
 		}
 		li {
-			padding-bottom: 0;
+	
+			padding: .1em .5em 0rem;
+
+			&:first-of-type {
+				padding-top: 0rem;
+			}
+			&:last-of-type {
+padding-bottom: 0rem;
+			}
 
 			&:hover {
 				font-weight: normal;

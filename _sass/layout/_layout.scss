@@ -37,7 +37,7 @@ body {}
 
 
 section {
-	padding: 1rem 2rem;
+	padding: 0rem 1rem 2rem;
 	margin-bottom: 3rem;
 	@include breakpoint("medium") {
 		margin-bottom: 6rem;
@@ -46,19 +46,20 @@ section {
 
 .subsection {
 	display: block; //padding: 2rem 4rem;
-	margin: 2rem 0rem 4rem;
+	margin: 0rem 0rem 4rem;
 	background-color: $color__background-section;
 
 	&:last-of-type {
-		margin: 2rem 0rem 0rem;
+		margin: 0rem 0rem 0rem;
 	}
 }
 
 article {
 	//border-bottom: 1px solid lightgray;
-	padding: 1rem 0;
+	padding: 0rem 0;
+	margin-bottom: 2rem;
 	&:first-of-type {
-		margin-top: 0px;
+		margin-top: 1rem;
 	}
 }
 

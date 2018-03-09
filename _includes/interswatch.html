@@ -1,18 +1,18 @@
- {% for hex_code in i.hex_code %}
-
+{% for colors in i.colors %}
+{% if colors %}
 	<div class="barcontainer">
 
 
-		<div class="swatch swatchsquare" data-copy="{{ hex_code.color }}">
-			<div class="swatch-color" style="background-color: {{ hex_code.color }}">
+		<div class="swatch swatchsquare" data-copy="{{ colors.hex_code }}">
+			<div class="swatch-color" style="background-color: {{ colors.hex_code }}">
 				<div class="copybutton"><i class='icon-docs'></i></div>
 			</div>
 			<div class="swatch-info meta">
-				<span class="label">HEX: </span><span class="hex">{{ hex_code.color }}</span>
+				<span class="label">HEX: </span><span class="hex">{{ colors.hex_code }}</span>
 				<br>
 				<span class="label">RGB: </span><span class="rgb"></span>
 			</div>
 		</div>
-	
+	{% endif %}
 </div>
 {% endfor %}

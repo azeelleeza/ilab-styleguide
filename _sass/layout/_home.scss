@@ -41,14 +41,26 @@ margin-top: 1rem;
 }
 
 .tiles {
-	article:hover {
-		background-color: $color__background-box;
+	article {
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+}
 
-		hr {
-			border-color: $color-bluegray;
-		}
-		.show-initial-styles {
-			background-color: white;
-		}
-	}
+	article:after {
+  content: '';
+  position: absolute;
+  z-index:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+  }
+  article:hover:after {
+  	opacity: 1;
+  }
 }

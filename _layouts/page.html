@@ -59,14 +59,16 @@
 						{% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch.html %} {% endfor %}
 					</div>
 				</div>
-
+				{% if page.colors.secondary_color != empty %}
 				<div class="subsection">
 					<div class="section-subtitle">Secondary Colors</div>
 					<div class="colorrow row">
 						{% for color in page.colors.secondary_color %} {% assign size = page.colors.secondary_color | size %} {% include swatch.html %} {% endfor %}
 					</div>
-
+					
 				</div>
+				{% endif %}
+				{% if page.colors.interactive_palettes != empty %}
 				<div class="subsection">
 					<div class="section-subtitle">Interactive Color Palettes</div>
 					<div class="interswatches row">
@@ -80,6 +82,7 @@
 						</div>
 						{% endfor %}
 					</div>
+					{% endif %}
 					</article>
 			</section>
 			<section id="links">
@@ -90,7 +93,6 @@
 						<h2>03</h2></div>
 				</div>
 				<article class="links row subsection">
-
 					{% for i in page.links %} {% include links.html %} {% endfor %}
 
 
@@ -125,6 +127,7 @@
 				</div>
 			</section>
 			<section id="tables">
+				{% if page.tables != empty %}
 				<div class="section-title row ">
 					<div class="col-sm-10">
 						<h2>Tables</h2></div>
@@ -133,8 +136,10 @@
 				</div>
 
 				{% for i in page.tables %} {% include tablesforms.html %} {% endfor %}
+			{% endif %}
 			</section>
 			<section id="forms">
+				{% if page.form_elements != empty %}
 				<div class="section-title row">
 					<div class="col-sm-10">
 						<h2>Forms</h2></div>
@@ -143,7 +148,7 @@
 				</div>
 
 				{% for i in page.form_elements %} {% include tablesforms.html %} {% endfor %}
-
+{% endif %}
 			</section>
 			{% endif %}
 			</div>

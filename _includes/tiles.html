@@ -1,6 +1,6 @@
 <section id="one" class="tiles">
-        {% for page in site.pages | sort  %}
-        {% if page.title != "Home" and page.title != "" %}
+        {% for page in site.html_pages | sort  %}
+        {% if page.title != "Home" %}
         <a href="{{ site.baseurl }}{{ page.url }}" class="link"><article>
                 <h2>{{ page.title }}</h2>
                 <hr>

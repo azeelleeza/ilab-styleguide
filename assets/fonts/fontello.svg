@@ -6,9 +6,21 @@
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="home" unicode="&#xe800;" d="M888 336q16-16 11-27t-27-11l-84 0 0-310q0-14-1-21t-8-13-23-6l-204 0 0 310-204 0 0-310-194 0q-28 0-35 10t-7 30l0 310-84 0q-22 0-27 11t11 27l400 402q16 16 38 16t38-16z" horiz-adv-x="900" />
+
 <glyph glyph-name="eye" unicode="&#xe803;" d="M488 695c291 0 487-340 487-340s-196-339-487-339-488 339-488 339 196 340 488 340z m0-579c131 0 238 108 238 239s-107 239-238 239-239-108-239-239 107-239 239-239z m107 239c0-59-50-106-107-106-59 0-107 47-107 106 0 57 48 107 107 107 57 0 107-50 107-107z" horiz-adv-x="975" />
 
 <glyph glyph-name="icon_check" unicode="&#xe878;" d="M431 50c1-1 2-2 3-3 2-1 4-1 6-2 3-1 5-2 7-3 3-1 5-1 8-1 3-1 7-1 10 0 2 0 3 0 4 1 5 1 9 3 13 5 0 0 1 1 2 1 2 2 5 3 7 6 2 1 2 4 4 6 0 0 0 0 0 0l372 597c14 20 8 47-12 60s-48 8-61-12l-344-552-190 185c-18 17-46 16-62-2-16-18-15-46 2-62l229-223c1 0 1 0 2-1z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-down" unicode="&#xe99c;" d="M933 329l-433-432-433 432 42 42 362-362v782h58v-782l362 362 42-42z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-left" unicode="&#xe99d;" d="M941 322h-752l361-361-41-42-433 433 433 432 41-41-361-362h752v-59z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-right" unicode="&#xe99e;" d="M924 352l-433-433-41 42 361 361h-752v59h752l-361 362 41 41 433-432z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-up" unicode="&#xe9a1;" d="M891 329l-362 362v-782h-58v782l-362-362-42 42 433 432 433-432-42-42z" horiz-adv-x="1000" />
+
+<glyph glyph-name="clipboard" unicode="&#xe9bc;" d="M941 732v-882h-882v882h132v-58h-73v-765h764v765h-75v58h134z m-176-176h-530v235h182c12 34 45 59 83 59s71-25 83-59h182v-235z m-59 176h-177v30c0 16-13 29-29 29s-29-13-29-29v-30h-177v-117h412v117z" horiz-adv-x="1000" />
 
 <glyph glyph-name="files" unicode="&#xe9e7;" d="M735 850h-382v-118h59v59h294v-235h235v-471h-236v-58h295v577l-265 246z m30-108l137-127h-137v127z m-765-68v-824h647v578l-265 246h-382z m412-108l137-128h-137v128z m-353-657v706h294v-236h235v-470h-529z" horiz-adv-x="1000" />
 
