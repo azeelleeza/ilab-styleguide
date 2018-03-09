@@ -1,7 +1,7 @@
 ---
 pages:
-- defense-360.md
 - poni.md
+- defense-360.md
 - chinapower.md
 - aerospace.md
 hide_body: true
@@ -675,14 +675,20 @@ fields:
     label: Logo Description
   - type: file
     name: upload_logo
-    label: Upload logo
+    label: 'Upload Logo: SVG'
+  - type: file
+    label: 'Upload Logo: PNG'
+    name: upload_logo__png
   - type: file
     name: dark_background
-    label: Optional Dark Background
+    label: 'Optional Dark Background: SVG'
     description: Include a version of the logo with a dark background
+  - type: file
+    label: 'Optional Dark Background: PNG'
+    name: dark_background__png
   - type: text
     name: bg-color
-    label: Background Color
+    label: Background Color for Dark Backgrounds
     description: For stylesheet only.
   - type: text
     name: height
