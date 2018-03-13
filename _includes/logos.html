@@ -1,55 +1,53 @@
-
-{% if i.height %}
-{% assign height = i.height %}
-{% endif %}
-
+ {% if i.height %} {% assign height = i.height %} {% endif %}
 
 
 <div class="section-subtitle">
-{{ i.logo_name }}
+	{{ i.logo_name }}
 </div>
 <div class="row {% if i.dark_background %}
 padded
 {% endif %}">
-<div class="col-sm-12 col-md-12 col-lg-6 logo"><a href="{{ i.upload_logo | relative_url }}" download="{{ i.logo_name }}">
-	<div class="download-capable">
-<img src="{{ i.upload_logo | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %}></div></a>
-</div>
-<div class="img-download row">
-<div class="col-sm-12 col-md-6">
-	<a href="{{ i.upload_logo | relative_url }}" download="{{ i.logo_name }} SVG">
-PNG
-</a>
-</div>
-<div class="col-sm-12 col-md-6">
-<a href="{{ i.upload_logo__png | relative_url }}" download="{{ i.logo_name }} PNG">
-PNG
-</a>
-	</div>
-</div>
-
-{% if i.dark_background %}
-<div class="col-sm-12 col-md-12 col-lg-6 logo">
+	<div class="col-sm-12 col-md-12 col-lg-6 logo">
 	
+			<div class="download-capable">
+				<img src="{{ i.upload_logo | relative_url }}" {% if i.height %}height="{{ height }}" {% endif %}></div>
 	
-<div style="background-color: {{ i.bg-color }};" class="download-capable">
-<img src="{{ i.dark_background | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %} >
-</div>
 
-
-<div class="img-download row">
-<div class="col-sm-12 col-md-6">
-	<a href="{{ i.dark_background | relative_url }}" download="{{ i.logo_name }} SVG">
-PNG
-</a>
-</div>
-<div class="col-sm-12 col-md-6">
-<a href="{{ i.dark_background__png | relative_url }}" download="{{ i.logo_name }} PNG">
-PNG
-</a>
+		<div class="img-download row">
+			{% if i.upload_logo %}
+			<div class="col-sm-12 col-md-6 download-btn">
+				<a href="{{ i.upload_logo | relative_url }}" download="{{ i.logo_name }} SVG">SVG</a>
+			</div>
+			{% endif %} {% if i.upload_logo__png %}
+			<div class="col-sm-12 col-md-6 download-btn">
+				<a href="{{ i.upload_logo__png | relative_url }}" download="{{ i.logo_name }} PNG">PNG</a>
+			</div>
+			{% endif %}
+		</div>
+		
 	</div>
-</div>
 
-</div>
-{% endif %}
-</div>
+	{% if i.dark_background %}
+	<div class="col-sm-12 col-md-12 col-lg-6 logo">
+
+
+		<div style="background-color: {{ i.bg-color }};" class="download-capable">
+			<img src="{{ i.dark_background | relative_url }}" {% if i.height %}height="{{ height }}" {% endif %}>
+
+
+			<div class="img-download row">
+				{% if i.dark_background %}
+				<div class="col-sm-12 col-md-6 download-btn">
+					<a href="{{ i.dark_background | relative_url }}" download="{{ i.logo_name }} SVG">SVG</a>
+				</div>
+				{% endif %} {% if i.dark_background__png %}
+
+				<div class="col-sm-12 col-md-6 download-btn">
+					<a href="{{ i.dark_background__png | relative_url }}" download="{{ i.logo_name }} PNG">PNG</a>
+				</div>
+				{% endif %}
+			</div>
+
+		</div>
+		{% endif %}
+	</div>
