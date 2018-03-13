@@ -1,28 +1,24 @@
-
-
 <article class="subsection">
 
-<div class="row {% if i.dark_bg_logo %}
+	<div class="row {% if i.dark_bg_logo %}
 padded
 {% endif %} {% if i.discard == true %}
 	discard
 	{% endif %}">
-<div class="col-sm-12 col-md-9 logo">
+		<div class="col-sm-12 col-md-9 logo">
 
-<img src="{{ i.upload_file| relative_url }}" {% if i.height 
- 
-{% if i.dark_bg_logo %}>
+			<img src="{{ i.upload_file| relative_url }}" {%  if i.height %} height="{{  i.height }}" {% endif %}> {% if i.dark_bg_logo %}
 
-<div style="background-color: {{ i.bg-color }};">
-<img src="{{ i.dark_bg_logo | relative_url }}" {% if i.height %}height="{{ height }}"{% endif %} >
-</div>
-</div>
-<div class="col-sm-12 col-md-3 initial-info">
-	<div class="section-heading">
-{{ i.logo_name }}
-</div>
-<div class="note">{{ i.notes }}</div>
-</div>
-{% endif %}
-</div>
+			<div style="background-color: {{ i.bg_color }};">
+				<img src="{{ i.dark_bg_logo | relative_url }}" {% if i.height %} height="{{  i.height }}" >
+			</div>{% endif %}
+		</div>
+		<div class="col-sm-12 col-md-3 initial-info">
+			<div class="section-heading">
+				{{ i.logo_name }}
+			</div>
+			<div class="note">{{ i.notes }}</div>
+		</div>
+		{% endif %}
+	</div>
 </article>
