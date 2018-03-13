@@ -56,7 +56,6 @@
 			$(this).addClass('copyview');
 			$('.copybutton', this).html("<i class='icon-docs'></i>");
 
-
 		});
 		$('.swatch').mouseleave(function() {
 			$(this).removeClass('copyview');
@@ -65,106 +64,117 @@
 
 	$('.swatch').each(function() {
 		$rgb = hexToRgb($(this).attr("data-copy"));
-			$('.rgb', this).text($rgb);
-			$contrast = getContrastYIQ($(this).attr("data-copy"));
-			$('.swatch-color', this).addClass($contrast);
+		$('.rgb', this).text($rgb);
+		$contrast = getContrastYIQ($(this).attr("data-copy"));
+		$('.swatch-color', this).addClass($contrast);
 		//isDark($(this).attr("data-copy"));
 		//$(this).css("color", hextorgb($(this).css("background-color")) ? 'white' : 'black');
 	});
 
-	function hexToRgb(h)
-{
-    var r = parseInt((cutHex(h)).substring(0,2),16), g = ((cutHex(h)).substring(2,4),16), b = parseInt((cutHex(h)).substring(4,6),16)
-    return  + r+', '+b+', '+b;
-}
-function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
+	function hexToRgb(h) {
+		var r = parseInt((cutHex(h)).substring(0, 2), 16),
+			g = ((cutHex(h)).substring(2, 4), 16),
+			b = parseInt((cutHex(h)).substring(4, 6), 16)
+		return +r + ', ' + b + ', ' + b;
+	}
 
+	function cutHex(h) { return (h.charAt(0) == "#") ? h.substring(1, 7) : h }
 
-// Determine if the background color of an element is light or dark
- function getContrastYIQ(hex){
- 	var hexcolor = cutHex(hex)
-	var r = parseInt(hexcolor.substr(0,2),16);
-	var g = parseInt(hexcolor.substr(2,2),16);
-	var b = parseInt(hexcolor.substr(4,2),16);
-	var yiq = ((r*299)+(g*587)+(b*114))/1000;
-	return (yiq >= 128) ? 'darktext' : 'lighttext';
+	// Determine if the background color of an element is light or dark
+	function getContrastYIQ(hex) {
+		var hexcolor = cutHex(hex)
+		var r = parseInt(hexcolor.substr(0, 2), 16);
+		var g = parseInt(hexcolor.substr(2, 2), 16);
+		var b = parseInt(hexcolor.substr(4, 2), 16);
+		var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+		return (yiq >= 128) ? 'darktext' : 'lighttext';
 
+	}
 
-}
+	// Smooth Scroll Anchor Links
 
+	// Add smooth scrolling to all links
+	$("a").on('click', function(event) {
 
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
 
+			if ($(this.hash).length) {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+			}
 
-// Smooth Scroll Anchor Links
+			// Store hash
+			var hash = this.hash;
 
+			if ($(".post-nav").length) {
+				var headerHeight = parseInt($(".site-header").css("top")) - 125;
+				var postNav = $(".post-nav").height();
+				var scrollTo = $(hash).offset().top - headerHeight - postNav;
+			} else {
+				var scrollTo = $(hash).offset().top - 20;
+			}
 
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
+			function runOnce(fn) {
+				var count = 0;
+				return function() {
+					if (++count == 1)
+						fn.apply(this, arguments);
+				};
+			};
 
-            if ($(this.hash).length) {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-            }
+			$('body, html').animate({ scrollTop: scrollTo }, 800, runOnce(function() {
+				// Remove currentScroll class from ToC link
+				$(".post-nav-toc a.currentScroll").removeClass("currentScroll");
 
-            // Store hash
-            var hash = this.hash;
+				// Update URL Hash
+				if (history.replaceState) {
+					history.replaceState(null, null, hash);
+				} else {
+					location.hash = hash;
+				}
+			}));
+		} // End if
+	});
 
-            if ($(".post-nav").length) {
-                var headerHeight = parseInt($(".site-header").css("top")) - 125;
-                var postNav = $(".post-nav").height();
-                var scrollTo = $(hash).offset().top - headerHeight - postNav;
-            } else {
-                var scrollTo = $(hash).offset().top - 20;
-            }
+	// Toggle Color Blind Filters
+	$(".colorblindbutton").on('click', function(event) {
+		$('#colorblindradios').toggleClass('open');
+		//console.log();
+	});
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	//Open mobile Nav
+	$(document).ready(function() {
+		/* Menu fade/in out on mobile */
+		$(".open-button").click(function(e) {
+			e.preventDefault();
+			$("#sidebar, .content-wrapper").toggleClass('mobile-open');
+		});
 
-            function runOnce(fn) {
-                var count = 0;
-                return function() {
-                    if (++count == 1)
-                        fn.apply(this, arguments);
-                };
-            };
+	});
 
-            $('body, html').animate({ scrollTop: scrollTo }, 800, runOnce(function() {
-                // Remove currentScroll class from ToC link
-                $(".post-nav-toc a.currentScroll").removeClass("currentScroll");
+	$(document).ready(function() {
+		$('.logo').on('click', function() {
+			//$('.download-capable:after', this).css({'color': 'red'});
+			$(this).addClass('show-download');
+		});
+		$('.logo').on('mouseenter', function() {
+			$(this).addClass('show-bg');
 
-                // Update URL Hash
-                if (history.replaceState) {
-                    history.replaceState(null, null, hash);
-                } else {
-                    location.hash = hash;
-                }
-            }));
-        } // End if
-});
+		});
+		$('.logo').on('mouseleave', function() {
+			if ($(this).hasClass('show-download')) {
+				$(this).removeClass('show-download');
+			}
+			if ($(this).hasClass('show-bg')) {
+				$(this).removeClass('show-bg');
+			}
 
+		});
 
-
-    // Toggle Color Blind Filters
-    $(".colorblindbutton").on('click', function(event) {
-    	$('#colorblindradios').toggleClass('open');
-//console.log();
-    	});
-
-
-
-//Open mobile Nav
-    $(document).ready(function(){
-	 /* Menu fade/in out on mobile */
-    $(".open-button").click(function(e){
-        e.preventDefault();
-        $("#sidebar, .content-wrapper").toggleClass('mobile-open');
-    });
-	
-});
-
-
+	});
 
 })(jQuery);
