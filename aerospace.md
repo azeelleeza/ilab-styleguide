@@ -248,8 +248,9 @@ initial_styles:
   - notes: This is a note
     upload_file: "/uploads/2018/02/05/logo-large-light.svg"
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
-    bg_color: "#18384f"
+    bg_color: 
     height: 100px
+    logo_title: Font Group 1
   show_this_section: true
 program_partners: Aerospace Security Program
 ---
