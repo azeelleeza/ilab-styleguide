@@ -250,6 +250,6 @@ initial_styles:
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
     bg_color: 
     height: 100px
-  show_this_section: false
+  show_this_section: true
 program_partners: Aerospace Security Program
 ---
