@@ -185,6 +185,9 @@ fields:
       name: discard
       label: Discard
     - type: text
+      label: logo_title
+      name: logo_title
+    - type: text
       name: notes
       label: Notes
     - type: file
@@ -201,6 +204,8 @@ fields:
     - type: text
       name: height
       label: Height
+    config:
+      labelField: logo_title
   - type: boolean
     name: show_this_section
     label: Show this section
