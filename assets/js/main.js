@@ -55,7 +55,7 @@
 		});
 		$('.swatch').mouseenter(function() {
 			$(this).addClass('copyview');
-			$('.copybutton', this).html("<i class='icon-docs'></i>");
+			$('.copybutton', this).html("COPY<br>HEX");
 
 		});
 		$('.swatch').mouseleave(function() {
