@@ -250,7 +250,7 @@ initial_styles:
     dark_bg_logo: "/uploads/2018/02/05/logo-large-dark.svg"
     bg_color: 
     height: 100px
-    logo_title: Font Group 1
+    logo_title: Logo Group 1
   show_this_section: true
 program_partners: Aerospace Security Program
 ---
