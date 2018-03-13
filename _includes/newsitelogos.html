@@ -15,9 +15,9 @@ padded
 		</div>
 		<div class="col-sm-12 col-md-3 initial-info">
 			<div class="section-heading">
-				{{ i.logo_name }}
+				Logo Group {{ forloop.index }}
 			</div>
-			<div class="note">{{ i.notes }}</div>
+			<div class="note">{% if i.logo_titl %}{{ i.logo_title }}--<br>{% endif %}{{ i.notes }}</div>
 		</div>
 		{% endif %}
 	</div>
