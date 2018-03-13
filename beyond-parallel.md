@@ -9,7 +9,7 @@ typography:
   fonts:
   - name: Alternate Gothic
     notes: Use for headings and captions
-    css_input: alternate-gothic-no-3-d
+    css_input: "'alternate-gothic-no-3-d', sans-serif"
     link_to_homepage: https://typekit.com/fonts/alternate-gothic
   - name: Museo Sans
     notes: Used for body text.
