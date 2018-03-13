@@ -207,6 +207,7 @@ initial_styles:
     heading_1:
       font-size: 43px
       font-family: "'Abel', sans-serif"
+    discard: true
   - heading_font: "'Abel', sans-serif"
     body_font: "'Source Sans Pro', sans-serif"
     heading_1:
