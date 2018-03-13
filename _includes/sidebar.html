@@ -6,19 +6,22 @@
 	</div>
 	<nav id="menu" class="mobile-menu">
 		<!-- List of Pages -->
+		{% if page.layout != "home" %}
 		<div class="backhome">
-{% if page.layout != "home" %}
-		<a href="{{ site.baseurl | remove: " index.html " }}/">
+
+			<a href="{{ site.baseurl | remove: " index.html " }}/">
 			<i class="icon-arrow-left"></i><span> HOME</span>
-				
 			</a>
-{% endif %}
-</div>
-		<div class="sidebar-title"><span>iDeas Lab</span>
-			<br> Style Guides</div>
+
+
+		</div>
+		{% endif %}
+		<a href="{{ site.baseurl | remove: " index.html " }}/"><div class="sidebar-title"><span>iDeas Lab</span>
+			<br> Style Guides</div></a>
 		{% assign current_page = page.title %}
 
 		<ul id="sidebarlinks">
+
 			{% for page in site.html_pages %} {% if page.layout != "home" %} {% if page.title == current_page %}
 
 			<a href="{{ page.url | prepend: site.baseurl }}">
@@ -29,30 +32,51 @@
 				{% if page.initial_styles.show_this_section == true %}
 
 
-				<a href="#typography"><li>Typography</li></a>
-				<a href="#colors"><li>Colors</li></a>
-				<a href="#logos"><li>Logos</li></a>
+				<a href="#typography">
+					<li>Typography</li>
+				</a>
+				<a href="#colors">
+					<li>Colors</li>
+				</a>
+				<a href="#logos">
+					<li>Logos</li>
+				</a>
 				{% else %} {% if page.typography %}
-				<a href="#typography"><li>Typography</li></a>
+				<a href="#typography">
+					<li>Typography</li>
+				</a>
 				{% endif %} {% if page.colors %}
-				<a href="#colors"><li>Colors</li></a>
+				<a href="#colors">
+					<li>Colors</li>
+				</a>
 				{% endif %} {% if page.links %}
-				<a href="#links"><li>Links</li></a>
+				<a href="#links">
+					<li>Links</li>
+				</a>
 				{% endif %} {% if page.buttons %}
-				<a href="#buttons"><li>Buttons</li></a>
+				<a href="#buttons">
+					<li>Buttons</li>
+				</a>
 				{% endif %} {% if page.tables %}
-				<a href="#tables"><li>Tables</li></a>
+				<a href="#tables">
+					<li>Tables</li>
+				</a>
 				{% endif %} {% if page.logos %}
-				<a href="#forms"><li>Form Elements</li></a>
+				<a href="#forms">
+					<li>Form Elements</li>
+				</a>
 				{% endif %} {% endif %}
 			</ul>
 			{% else %}
-			<a href="{{ page.url | prepend: site.baseurl }}"><li class="page-links">{{ page.title }}</li></a>
+			<a href="{{ page.url | prepend: site.baseurl }}">
+				<li class="page-links">{{ page.title }}</li>
+			</a>
 			{% endif %}{% endif %} {% endfor %}
 		</ul>
 
 		<!-- List of sections -->
 		<ul class="links">
+		
 			{% for page in site.pages %} {% if page.layout == "page" %} {% endif %} {% endfor %}
 		</ul>
 
