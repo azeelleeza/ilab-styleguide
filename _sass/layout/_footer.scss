@@ -5,6 +5,7 @@
 footer {
 	background-color: $color__footer;
 	display: block;
+	position: relative;
 	clear: both;
 	@include fullWidthBackground($color__footer);
 		margin-left: 0%;

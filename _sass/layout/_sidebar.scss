@@ -15,7 +15,6 @@ aside#sidebar {
 	@include breakpoint("medium") {
 		width: $size__sidebar-md;
 		left: unset;
-
 	}
 	@include breakpoint("large") {
 		width: $size__sidebar-lg;
@@ -50,9 +49,7 @@ aside#sidebar {
 			width: $size__sidebar-md;
 		}
 	}
-	&.content-wrapper {
-		
-	}
+	&.content-wrapper {}
 }
 
 .sidebar-title {
@@ -65,8 +62,8 @@ aside#sidebar {
 	line-height: 1.2;
 
 	@include breakpoint("medium") {
-			margin: 2rem 0;
-		}
+		margin: 2rem 0;
+	}
 
 	span {
 		font-size: 1.2rem;
@@ -79,45 +76,48 @@ aside#sidebar {
 ul#sidebarlinks {
 	padding-left: 0px;
 	a {
-		color:  #A2ABB2;
+		color: #A2ABB2;
 		text-decoration: none;
-		font-size: 1.1rem;
+		font-size: 1.4rem;
+		@media (min-width: $breakpoint-medium) {
+			font-size: 1.1rem;
+		}
 
 		opacity: .7;
-		&:hover {}
+		&:hover {
+			color: white;
+		}
 		&:visited {}
-			
-
 	}
 	li.selected {
 		//border-bottom: 1px solid $color__background-box;
 		padding-bottom: 0 !important;
-		color: $color__background-header;
-		//background-color: $color-medblue;
+		color: $color__background-header; //background-color: $color-medblue;
 	}
 	ul#subitems {
 		margin-left: 2.6rem;
 		padding-left: .5rem;
+		margin-top: .5rem;
 		margin-bottom: 1rem;
-		text-transform: uppercase;
-		//background-color: $color-medblue;
+		text-transform: uppercase; //background-color: $color-medblue;
 		border-left: 1px solid $color-ltbluegray;
 		a {
-			font-size: .9rem;
+			font-size: 1.1rem;
+			@media (min-width: $breakpoint-medium) {
+				font-size: .9rem;
+			}
 			opacity: 1;
-			color: white;
-			//padding: .1rem 0rem .5rem;
-
+			color: white; //padding: .1rem 0rem .5rem;
 		}
 		li {
-	padding: .5rem 1rem;
-margin-bottom: .5rem;
-			
+			padding: .5rem 1rem;
+			margin-bottom: .5rem;
+
 			&:first-of-type {
 				padding-top: 0rem;
 			}
 			&:last-of-type {
-padding-bottom: 0rem;
+				padding-bottom: 0rem;
 			}
 
 			&:hover {
@@ -137,7 +137,7 @@ padding-bottom: 0rem;
 	cursor: pointer;
 	border-bottom: 0;
 	top: 1.5rem;
-    left: 1.5rem;
+	left: 1.5rem;
 	z-index: 9999;
 	border-bottom: 0;
 	position: fixed;
@@ -201,31 +201,32 @@ padding-bottom: 0rem;
 }
 
 .backhome {
+	display: none;
 	@media (min-width: $breakpoint-medium) {
+		display: block;
 		text-align: right;
 		padding: 1rem 2rem;
 		font-size: .8rem;
 		height: 50px;
 		transition: .25s ease-in-out;
-		span, i {
-		color:  #A2ABB2;
-		transition: .25s ease-in-out;
-
-	}
-	i:before {
-		padding-right: 0px;
-		transition: padding .25s ease-in-out;
-
-	}
-	&:hover {
-		span, i {
-color: white;
-transition: .25s ease-in-out;
+		span,
+		i {
+			color: #A2ABB2;
+			transition: .25s ease-in-out;
 		}
-		i:before { 
-			padding-right: 10px;
+		i:before {
+			padding-right: 0px;
+			transition: padding .25s ease-in-out;
+		}
+		&:hover {
+			span,
+			i {
+				color: white;
+				transition: .25s ease-in-out;
+			}
+			i:before {
+				padding-right: 10px;
+			}
 		}
 	}
-	}
-
 }
