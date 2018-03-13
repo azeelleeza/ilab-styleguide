@@ -49,6 +49,7 @@
 		$('.swatch').click(function() {
 			var text = $(this).attr('data-copy');
 			var el = $(this);
+			console.log(text);
 			copyToClipboard(text, el);
 			$('.copybutton', this).html("<i class='icon-icon_check'></i>");
 		});
@@ -63,19 +64,32 @@
 	});
 
 	$('.swatch').each(function() {
-		$rgb = hexToRgb($(this).attr("data-copy"));
+		var rgb1 = $('.swatch-color', this).css('background-color');
+
+		//console.log(rgb1);
+		$rgb = rgb1.replace(/[^\d,]/g, '').split(',');
+
+		//console.log($rgb);
+		//$rgbarray = $rgb;
+		//console.log($rgbarray);
+		
+		$cmyk = rgb2cmyk($rgb);
 		$('.rgb', this).text($rgb);
+		$('.cmyk', this).text($cmyk);
 		$contrast = getContrastYIQ($(this).attr("data-copy"));
 		$('.swatch-color', this).addClass($contrast);
+
 		//isDark($(this).attr("data-copy"));
 		//$(this).css("color", hextorgb($(this).css("background-color")) ? 'white' : 'black');
 	});
 
-	function hexToRgb(h) {
-		var r = parseInt((cutHex(h)).substring(0, 2), 16),
-			g = ((cutHex(h)).substring(2, 4), 16),
-			b = parseInt((cutHex(h)).substring(4, 6), 16)
-		return +r + ', ' + b + ', ' + b;
+	function hexToRgb(hex) {
+		hex = hex.replace(/[^0-9A-F]/gi, '');
+		var bigint = parseInt(hex, 16);
+		var r = (bigint >> 16) & 255;
+		var g = (bigint >> 8) & 255;
+		var b = bigint & 255;
+		return + r + ', ' + b + ', ' + b;
 	}
 
 	function cutHex(h) { return (h.charAt(0) == "#") ? h.substring(1, 7) : h }
@@ -88,6 +102,35 @@
 		var b = parseInt(hexcolor.substr(4, 2), 16);
 		var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
 		return (yiq >= 128) ? 'darktext' : 'lighttext';
+
+	}
+
+	function rgb2cmyk(arrayrgb) {
+		var computedC = 0;
+		var computedM = 0;
+		var computedY = 0;
+		var computedK = 0;
+
+		var r1 = arrayrgb[0];
+		var g1 = arrayrgb[1];
+		var b1 = arrayrgb[2];
+		
+		var r = parseInt(('' + r1).replace(/\s/g, ''), 10);
+		var g = parseInt(('' + g1).replace(/\s/g, ''), 10);
+		var b = parseInt(('' + b1).replace(/\s/g, ''), 10);
+
+		r = r / 255;
+		g = g / 255;
+		b = b / 255;
+		k = Math.min(1 - r, 1 - g, 1 - b);
+		c = (1 - r - k) / (1 - k);
+		m = (1 - g - k) / (1 - k);
+		y = (1 - b - k) / (1 - k);
+		c = Math.round(c * 100);
+		m = Math.round(m * 100);
+		y = Math.round(y * 100);
+		k = Math.round(k * 100);
+		return  c + ', ' +  m + ', ' +  y + ', ' +  k;
 
 	}
 
