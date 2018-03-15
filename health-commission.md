@@ -71,7 +71,13 @@ initial_styles:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 16px
     font_pair: Libre Franklin, Alegreya
-  colors: []
+  colors:
+  - notes: Blue, Orange/Red
+    hex_code1: "#10354B"
+    hex_code2: "#27728E"
+    hex_code3: "#D3DCD5"
+    hex_code4: "#f1f1f1"
+    hex_code5: "#B55D46"
   logos: []
   show_this_section: true
 program_partners: ''
