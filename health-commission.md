@@ -8,7 +8,7 @@ initial_styles:
   typography:
   - heading_1:
       font-family: "'Libre Franklin', sans-serif;"
-      font-size: 40
+      font-size: 40px
     heading_2:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 30px
