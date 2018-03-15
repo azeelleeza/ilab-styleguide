@@ -24,7 +24,7 @@ initial_styles:
       line-height: 1.8
     meta_data:
       font-family: "'Nunito', sans-serif;"
-    font_pair: Nunito/Amiri
+    font_pair: Nunito, Amiri
   - heading_1:
       font-family: "'Archivo Narrow', sans-serif;"
       font-size: 40px
@@ -38,7 +38,7 @@ initial_styles:
     body_text:
       font-family: "'Source Serif Pro', serif;"
       line-height: 1.8
-    font_pair: Archivo Narrow/Source Serif Pro
+    font_pair: Archivo Narrow, Source Serif Pro
   - heading_1:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 40px
@@ -55,7 +55,7 @@ initial_styles:
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 16px
-    font_pair: Libre Franklin/Alegreya
+    font_pair: Libre Franklin, Alegreya
   colors: []
   logos: []
   show_this_section: true
