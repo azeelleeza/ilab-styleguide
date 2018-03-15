@@ -16,6 +16,7 @@ initial_styles:
     body_text:
       font-family: "'Amiri', serif;"
       font-size: 20px
+      line-height: 1.8
     meta_data:
       font-family: "'Nunito', sans-serif;"
   - heading_1:
@@ -30,6 +31,7 @@ initial_styles:
       font-size: 16px
     body_text:
       font-family: "'Source Serif Pro', serif;"
+      line-height: 1.8
   - heading_1:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 40px
@@ -42,6 +44,7 @@ initial_styles:
     body_text:
       font-family: "'Libre Baskerville', serif;"
       font-size: 18px
+      line-height: 1.8
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 16px
