@@ -3,7 +3,7 @@ title: Health Commission
 layout: page
 date: 2018-03-15 10:54:01 +0000
 initial_styles:
-  import_fonts: <link href="https://fonts.googleapis.com/css?family=Amiri|Archivo+Narrow|Cormorant+Garamond|Libre+Baskerville|Libre+Franklin|Nunito|Poppins|Source+Serif+Pro"
+  import_fonts: <link href="https://fonts.googleapis.com/css?family=Alegreya|Amiri|Archivo+Narrow|Cormorant+Garamond|Libre+Baskerville|Nunito|Poppins|Source+Serif+Pro"
     rel="stylesheet">
   typography:
   - heading_1:
@@ -42,7 +42,7 @@ initial_styles:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 20px
     body_text:
-      font-family: "'Libre Baskerville', serif;"
+      font-family: 'font-family: ''Alegreya'', serif;'
       font-size: 18px
       line-height: 1.8
     meta_data:
