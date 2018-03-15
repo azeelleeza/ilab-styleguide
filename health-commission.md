@@ -15,6 +15,7 @@ initial_styles:
       font-family: "'Nunito', sans-serif;"
     body_text:
       font-family: "'Amiri', serif;"
+      font-size: 20px
     meta_data:
       font-family: "'Nunito', sans-serif;"
   - heading_1:
