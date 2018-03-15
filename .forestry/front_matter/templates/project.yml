@@ -38,6 +38,9 @@ fields:
     name: typography
     label: Typography
     fields:
+    - type: text
+      name: font_pair
+      label: group name
     - type: boolean
       name: discard
       label: Discard
