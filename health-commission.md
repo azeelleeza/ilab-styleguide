@@ -7,6 +7,17 @@ initial_styles:
     rel="stylesheet">
   typography:
   - heading_1:
+      font-family: "'Nunito', sans-serif;"
+      font-size: 40px
+    heading_2:
+      font-family: "'Nunito', sans-serif;"
+    heading_3:
+      font-family: "'Nunito', sans-serif;"
+    body_text:
+      font-family: "'Amiri', serif;"
+    meta_data:
+      font-family: "'Nunito', sans-serif;"
+  - heading_1:
       font-family: "'Archivo Narrow', sans-serif;"
       font-size: 40px
     heading_2:
@@ -17,7 +28,7 @@ initial_styles:
       font-family: "'Archivo Narrow', sans-serif;"
       font-size: 16px
     body_text:
-      font-family: "'Libre Baskerville', serif;"
+      font-family: "'Source Serif Pro', serif;"
   - heading_1:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 40px
@@ -28,7 +39,7 @@ initial_styles:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 20px
     body_text:
-      font-family: "'Source Serif Pro', serif;"
+      font-family: "'Libre Baskerville', serif;"
       font-size: 18px
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
