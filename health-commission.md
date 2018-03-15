@@ -78,6 +78,7 @@ initial_styles:
     hex_code3: "#D3DCD5"
     hex_code4: "#f1f1f1"
     hex_code5: "#B55D46"
+    hex_code6: "#D05632"
   logos: []
   show_this_section: true
 program_partners: ''
