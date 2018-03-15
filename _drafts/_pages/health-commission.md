@@ -7,15 +7,16 @@ initial_styles:
     rel="stylesheet">
   typography:
   - heading_1:
-      font-family: "'Source Serif Pro', serif;"
-    heading_2:
-      font-family: "'Source Serif Pro', serif;"
-    heading_3:
-      font-family: "'Source Serif Pro', serif;"
-    body_text:
       font-family: "'Amiri', serif;"
-    meta_data:
+      font-size: 40
+    heading_2:
+      font-family: "'Amiri', serif;"
+    heading_3:
+      font-family: "'Amiri', serif;"
+    body_text:
       font-family: "'Source Serif Pro', serif;"
+    meta_data:
+      font-family: "'Amiri', serif;"
   colors: []
   logos: []
   show_this_section: true
