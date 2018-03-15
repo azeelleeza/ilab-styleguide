@@ -163,6 +163,8 @@ fields:
       - type: text
         name: letter-spacing
         label: Letter Spacing
+    config:
+      labelField: font_pair
   - type: field_group_list
     name: colors
     label: Colors
