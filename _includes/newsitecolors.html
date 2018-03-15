@@ -4,8 +4,11 @@
 	{% endif %}">
 		<div class="col-xs-12 col-sm-12 col-md-9 article-ex row">
 			{% for t in i %}
+			{% if t[0] != 'discard' and t[0] != 'notes' %}
 			<div class="col-xs-6 col-md-2">
-				{% if t[0] != 'discard' && if t[0] != 'notes' %}
+			
+				
+
 				<div class="swatch swatchround" data-copy="{{ t[1] }}">
 					<div class="swatch-container">
 						<div class="swatch-color" style="background-color: {{ t[1] }}">
@@ -13,15 +16,16 @@
 						</div>
 
 					</div>
-					<div class="swatch-info">
-						<span class="label">HEX: </span><span class="hex">{{ t[1] }}</span>
-						<br>
-						<span class="label">RGB: </span><span class="rgb"></span>
+					<div class="swatch-info" style="text-align: center;">
+						<span class="hex" >{{ t[1] }}</span>
+			
+		
 					</div>
 				</div>
-				{% endif %}
+				
 
 			</div>
+			{% endif %}
 			{% endfor %}
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-3 initial-info">

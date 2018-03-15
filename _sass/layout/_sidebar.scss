@@ -112,7 +112,11 @@ ul#sidebarlinks {
 		li {
 			padding: .5rem 1rem;
 			margin-bottom: .5rem;
-
+			//opacity:0;
+			@include transition(opacity 0.3s);
+			&.showthis {
+				opacity: 1;
+			}
 			&:first-of-type {
 				padding-top: 0rem;
 			}

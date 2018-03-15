@@ -72,7 +72,7 @@
 		//console.log($rgb);
 		//$rgbarray = $rgb;
 		//console.log($rgbarray);
-		
+
 		$cmyk = rgb2cmyk($rgb);
 		$('.rgb', this).text($rgb);
 		$('.cmyk', this).text($cmyk);
@@ -89,7 +89,7 @@
 		var r = (bigint >> 16) & 255;
 		var g = (bigint >> 8) & 255;
 		var b = bigint & 255;
-		return + r + ', ' + b + ', ' + b;
+		return +r + ', ' + b + ', ' + b;
 	}
 
 	function cutHex(h) { return (h.charAt(0) == "#") ? h.substring(1, 7) : h }
@@ -114,7 +114,7 @@
 		var r1 = arrayrgb[0];
 		var g1 = arrayrgb[1];
 		var b1 = arrayrgb[2];
-		
+
 		var r = parseInt(('' + r1).replace(/\s/g, ''), 10);
 		var g = parseInt(('' + g1).replace(/\s/g, ''), 10);
 		var b = parseInt(('' + b1).replace(/\s/g, ''), 10);
@@ -130,7 +130,7 @@
 		m = Math.round(m * 100);
 		y = Math.round(y * 100);
 		k = Math.round(k * 100);
-		return  c + ', ' +  m + ', ' +  y + ', ' +  k;
+		return c + ', ' + m + ', ' + y + ', ' + k;
 
 	}
 
@@ -217,7 +217,22 @@
 			}
 
 		});
+		/*$(document).ready(function() {
+			$("#subitems a li").css('opacity', '0');
+			$("#subitems a li").each(function(i) {
+				var time = 300 * i;
+				$(this).delay(time).animate({
+					opacity: 1
+				}, 'fast');
 
+			});
+		});*/
+
+		$(document).ready(function() {
+
+			$("#subitems a li").slideDown("slow");
+		
+
+		});
 	});
-
 })(jQuery);
