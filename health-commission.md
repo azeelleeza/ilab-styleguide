@@ -7,16 +7,16 @@ initial_styles:
     rel="stylesheet">
   typography:
   - heading_1:
-      font-family: "'Amiri', serif;"
+      font-family: "'Libre Franklin', sans-serif;"
       font-size: 40
     heading_2:
-      font-family: "'Amiri', serif;"
+      font-family: "'Libre Franklin', sans-serif;"
     heading_3:
-      font-family: "'Amiri', serif;"
+      font-family: "'Libre Franklin', sans-serif;"
     body_text:
-      font-family: "'Source Serif Pro', serif;"
+      font-family: "'Cormorant Garamond', serif;"
     meta_data:
-      font-family: "'Amiri', serif;"
+      font-family: "'Libre Franklin', sans-serif;"
   colors: []
   logos: []
   show_this_section: true
