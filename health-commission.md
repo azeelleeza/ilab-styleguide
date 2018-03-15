@@ -6,6 +6,7 @@ initial_styles:
   import_fonts: <link href="https://fonts.googleapis.com/css?family=Amiri|Archivo+Narrow|Cormorant+Garamond|Libre+Baskerville|Libre+Franklin|Nunito|Poppins|Source+Serif+Pro"
     rel="stylesheet">
   typography:
+  - {}
   - heading_1:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 40px
@@ -16,7 +17,7 @@ initial_styles:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 20px
     body_text:
-      font-family: "'Cormorant Garamond', serif;"
+      font-family: "'Source Serif Pro', serif;"
       font-size: 20px
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
