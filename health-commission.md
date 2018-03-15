@@ -72,6 +72,11 @@ initial_styles:
       font-size: 16px
     font_pair: Libre Franklin, Alegreya
   colors:
+  - notes: Rust/Purple
+    hex_code1: "#2E2830"
+    hex_code2: "#3F4755"
+    hex_code3: "#f1f1f1"
+    hex_code4: "#B7410E"
   - notes: Slate/Rust
     hex_code1: "#546E7A"
     hex_code2: "#37474F"
