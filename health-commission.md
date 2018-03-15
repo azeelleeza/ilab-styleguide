@@ -8,15 +8,19 @@ initial_styles:
   typography:
   - heading_1:
       font-family: "'Libre Franklin', sans-serif;"
-      font-size: 40px
+      font-size: 40
     heading_2:
       font-family: "'Libre Franklin', sans-serif;"
+      font-size: 30px
     heading_3:
       font-family: "'Libre Franklin', sans-serif;"
+      font-size: 20px
     body_text:
       font-family: "'Amiri', serif;"
+      font-size: 18px
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
+      font-size: 16px
   colors: []
   logos: []
   show_this_section: true
