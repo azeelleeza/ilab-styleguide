@@ -29,7 +29,7 @@ initial_styles:
       font-size: 20px
     body_text:
       font-family: "'Source Serif Pro', serif;"
-      font-size: 20px
+      font-size: 18px
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 16px
