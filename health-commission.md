@@ -17,7 +17,7 @@ initial_styles:
       font-size: 20px
     body_text:
       font-family: "'Cormorant Garamond', serif;"
-      font-size: 18px
+      font-size: 20px
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 16px
