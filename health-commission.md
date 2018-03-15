@@ -14,7 +14,7 @@ initial_styles:
     heading_3:
       font-family: "'Libre Franklin', sans-serif;"
     body_text:
-      font-family: "'Cormorant Garamond', serif;"
+      font-family: "'Amiri', serif;"
     meta_data:
       font-family: "'Libre Franklin', sans-serif;"
   colors: []
