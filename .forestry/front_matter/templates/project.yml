@@ -53,12 +53,14 @@ fields:
       - type: text
         name: font-size
         label: Font Size
+        default: 40px
       - type: text
         name: font-weight
         label: Font Weight
       - type: text
         name: line-height
         label: Line Height
+        default: '1.5'
       - type: text
         name: letter-spacing
         label: Letter Spacing
@@ -76,12 +78,14 @@ fields:
       - type: text
         name: font-size
         label: Font Size
+        default: 30px
       - type: text
         name: font-weight
         label: Font Weight
       - type: text
         name: line-height
         label: Line Height
+        default: '1.5'
       - type: text
         name: letter-spacing
         label: Letter Spacing
@@ -99,12 +103,14 @@ fields:
       - type: text
         name: font-size
         label: Font Size
+        default: 20px
       - type: text
         name: font-weight
         label: Font Weight
       - type: text
         name: line-height
         label: Line Height
+        default: '1.5'
       - type: text
         name: letter-spacing
         label: Letter Spacing
@@ -122,12 +128,14 @@ fields:
       - type: text
         name: font-size
         label: Font Size
+        default: 18px
       - type: text
         name: font-weight
         label: Font Weight
       - type: text
         name: line-height
         label: Line Height
+        default: '1.8'
       - type: text
         name: letter-spacing
         label: Letter Spacing
@@ -142,6 +150,7 @@ fields:
       - type: text
         name: font-size
         label: Font Size
+        default: 16px
       - type: text
         name: font-weight
         label: Font Weight
