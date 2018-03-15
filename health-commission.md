@@ -9,6 +9,7 @@ initial_styles:
   - body_text:
       font-family: "'Lora', serif;"
       font-size: 18px
+      line-height: 1.8
   - heading_1:
       font-family: "'Nunito', sans-serif;"
       font-size: 40px
@@ -45,7 +46,7 @@ initial_styles:
       font-family: "'Libre Franklin', sans-serif;"
       font-size: 20px
     body_text:
-      font-family: 'font-family: ''Alegreya'', serif;'
+      font-family: "'Alegreya', serif;"
       font-size: 18px
       line-height: 1.8
     meta_data:
