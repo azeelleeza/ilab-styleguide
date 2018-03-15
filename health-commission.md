@@ -72,28 +72,23 @@ initial_styles:
       font-size: 16px
     font_pair: Libre Franklin, Alegreya
   colors:
-  - notes: Rust/Purple
-    hex_code1: "#2E2830"
-    hex_code2: "#3F4755"
-    hex_code3: "#f1f1f1"
-    hex_code4: "#B7410E"
-  - notes: Slate/Rust
-    hex_code1: "#546E7A"
-    hex_code2: "#37474F"
-    hex_code3: "#B0BEC5"
-    hex_code4: "#CE5934"
-  - notes: Blue, Yellow
-    hex_code1: "#0A354F"
-    hex_code2: "#0E678C"
-    hex_code3: "#f1f1f1"
-    hex_code4: "#ECE293"
-  - notes: Blue, Orange/Red
-    hex_code1: "#10354B"
-    hex_code2: "#27728E"
-    hex_code3: "#D3DCD5"
-    hex_code4: "#f1f1f1"
-    hex_code5: "#B55D46"
-    hex_code6: "#D05632"
+  - notes: Blues, Gold
+    hex_code1: "#143459"
+    hex_code2: "#143459"
+    hex_code3: "#143459"
+    hex_code4: "#143459"
+  - notes: Bright Blue, Yellow
+    hex_code1: "#225d7c"
+    hex_code2: "#628fa7"
+    hex_code3: "#f7f7fa"
+    hex_code4: "#e9be4d"
+  - notes: Gray, Orange/Red
+    hex_code1: "#4d4e4e"
+    hex_code2: "#e3e3e3"
+    hex_code3: "#f2f1f1"
+    hex_code4: "#ce5932"
+    hex_code5: ''
+    hex_code6: ''
   logos: []
   show_this_section: true
 program_partners: ''
