@@ -193,6 +193,8 @@ fields:
     - type: text
       name: hex_code6
       label: Hex Code6
+    config:
+      labelField: notes
   - type: field_group_list
     name: logos
     label: Logos
