@@ -74,7 +74,7 @@ initial_styles:
   colors:
   - notes: Blues, Gold
     hex_code1: "#143459"
-    hex_code2: "#3067B2"
+    hex_code2: "#B3BABA"
     hex_code3: "#EEEDEE"
     hex_code4: "#B89E69"
   - notes: Bright Blue, Yellow
