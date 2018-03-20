@@ -71,8 +71,8 @@ fields:
         name: text-transform
         label: Text Transform
     - type: field_group
-      name: heading_2
-      label: Heading 2
+      name: meta_data
+      label: Meta Data
       fields:
       - type: text
         name: font-family
@@ -81,45 +81,16 @@ fields:
       - type: text
         name: font-size
         label: Font Size
-        default: 30px
+        default: 16px
       - type: text
         name: font-weight
         label: Font Weight
       - type: text
         name: line-height
         label: Line Height
-        default: '1.5'
       - type: text
         name: letter-spacing
         label: Letter Spacing
-      - type: text
-        name: text-transform
-        label: Text Transform
-    - type: field_group
-      name: heading_3
-      label: Heading 3
-      fields:
-      - type: text
-        name: font-family
-        label: Font Family
-        description: Use CSS format
-      - type: text
-        name: font-size
-        label: Font Size
-        default: 20px
-      - type: text
-        name: font-weight
-        label: Font Weight
-      - type: text
-        name: line-height
-        label: Line Height
-        default: '1.5'
-      - type: text
-        name: letter-spacing
-        label: Letter Spacing
-      - type: text
-        name: text-transform
-        label: Text Transform
     - type: field_group
       name: body_text
       label: Body Text
@@ -139,27 +110,6 @@ fields:
         name: line-height
         label: Line Height
         default: '1.8'
-      - type: text
-        name: letter-spacing
-        label: Letter Spacing
-    - type: field_group
-      name: meta_data
-      label: Meta Data
-      fields:
-      - type: text
-        name: font-family
-        label: Font Family
-        description: Use CSS format
-      - type: text
-        name: font-size
-        label: Font Size
-        default: 16px
-      - type: text
-        name: font-weight
-        label: Font Weight
-      - type: text
-        name: line-height
-        label: Line Height
       - type: text
         name: letter-spacing
         label: Letter Spacing
