@@ -12,7 +12,7 @@ initial_styles:
       line-height: 1.5
       font-family: "'Libre Franklin', sans-serif;"
     heading_3:
-      line-height: 1.5
+      line-height: '1.5'
       font-size: 20px
       font-family: "'Libre Franklin', sans-serif;"
     body_text:
@@ -23,7 +23,7 @@ initial_styles:
       font-size: 16px
       font-family: "'Libre Franklin', sans-serif;"
     heading_2:
-      line-height: 1.5
+      line-height: '1.5'
       font-size: 30px
       font-family: "'Libre Franklin', sans-serif;"
   - heading_1:
@@ -34,26 +34,12 @@ initial_styles:
     heading_3:
       font-family: "'Nunito', sans-serif;"
     body_text:
-      font-family: "'Amiri', serif;"
+      font-family: "'Source Serif Pro', serif;"
       font-size: 20px
       line-height: 1.8
     meta_data:
       font-family: "'Nunito', sans-serif;"
-    font_pair: Nunito, Amiri
-  - heading_1:
-      font-family: "'Archivo Narrow', sans-serif;"
-      font-size: 40px
-    heading_2:
-      font-family: "'Archivo Narrow', sans-serif;"
-    heading_3:
-      font-family: "'Archivo Narrow', sans-serif;"
-    meta_data:
-      font-family: "'Archivo Narrow', sans-serif;"
-      font-size: 16px
-    body_text:
-      font-family: "'Source Serif Pro', serif;"
-      line-height: 1.8
-    font_pair: Archivo Narrow, Source Serif Pro
+    font_pair: Nunito, Source Sans Pro
   - heading_1:
       font-family: europa, sans-serif;
       font-size: 40px
