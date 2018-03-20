@@ -10,15 +10,10 @@
 {% endfor %}">
 				The Quick Brown Fox Jumps
 			</div>
-			<div class="heading2" style="{% for t in i.heading_2 %}
+			<div class="metadata" style="{% for t in i.meta_data %}
 {{ t[0] }}: {{ t[1] | remove: ";" }};
 {% endfor %}">
-				The Quick Brown Fox Jumps
-			</div>
-			<div class="heading3" style="{% for t in i.heading_3 %}
-{{ t[0] }}: {{ t[1] }};
-{% endfor %}">
-				The Quick Brown Fox Jumps
+				Posted February 30, 2018
 			</div>
 			<div class="bodytext" >
 				<p style="{% for t in i.body_text %}
@@ -28,11 +23,6 @@
 				<p style="{% for t in i.body_text %}
 {{ t[0] }}: {{ t[1] | remove: ";" }};
 {% endfor %}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-			<div class="metadata" style="{% for t in i.meta_data %}
-{{ t[0] }}: {{ t[1] | remove: ";" }};
-{% endfor %}">
-				Posted February 30, 2018
 			</div>
 		</div>
 		</div>

@@ -26,14 +26,25 @@
  	font-size: 1.8em;
  	margin-bottom: 0;
  	font-weight: 200;
-line-height: 1;
+ 	line-height: 1;
  	@include breakpoint("medium") {
  		font-size: 2.8em;
-
  	}
  }
 
+.bodytext {
+	font-size: 18px;
+	line-height: 1.8;
+}
 
+.metadata {
+	font-size: 16px;
+}
+
+.heading1 {
+	font-size: 40px;
+	line-height: 1.2;
+}
 
  .program-name {
  	font-size: 1rem;
@@ -44,7 +55,6 @@ line-height: 1;
  	text-transform: uppercase;
  	font-size: 1.3rem;
  	letter-spacing: 1px;
-
  }
 
  .note {
@@ -61,8 +71,7 @@ line-height: 1;
  	margin: .5rem;
  	h2 {
  		margin: .5rem 0;
- 		font-family: $font__roboto;
- 		//text-transform: uppercase;
+ 		font-family: $font__roboto; //text-transform: uppercase;
  		font-weight: 300;
  	}
  	.sec-num {
@@ -187,6 +196,6 @@ line-height: 1;
 
 
  .label {
-		font-size: 90%;
-		color: gray;
-	}
+ 	font-size: 90%;
+ 	color: gray;
+ }
