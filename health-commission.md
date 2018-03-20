@@ -69,8 +69,8 @@ initial_styles:
     hex_code3: "#f7f7fa"
     hex_code4: "#e9be4d"
   - notes: Gray, Orange/Red
-    hex_code1: "#B3BABA"
-    hex_code2: "#e3e3e3"
+    hex_code1: "#4D4E4E"
+    hex_code2: "#B3BABA"
     hex_code3: "#f2f1f1"
     hex_code4: "#ce5932"
     hex_code5: ''
