@@ -55,22 +55,22 @@ initial_styles:
       line-height: 1.8
     font_pair: Archivo Narrow, Source Serif Pro
   - heading_1:
-      font-family: "'Libre Franklin', sans-serif;"
+      font-family: europa, sans-serif;
       font-size: 40px
     heading_2:
-      font-family: "'Libre Franklin', sans-serif;"
+      font-family: europa, sans-serif;
       font-size: 30px
     heading_3:
-      font-family: "'Libre Franklin', sans-serif;"
+      font-family: europa, sans-serif;
       font-size: 20px
     body_text:
-      font-family: "'Alegreya', serif;"
-      font-size: 20px
+      font-family: adobe-garamond-pro, serif;
+      font-size: 18px
       line-height: 1.8
     meta_data:
-      font-family: "'Libre Franklin', sans-serif;"
+      font-family: europa, sans-serif;
       font-size: 16px
-    font_pair: Libre Franklin, Alegreya
+    font_pair: Europa, Adobe Garamond
   colors:
   - notes: Blues, Gold
     hex_code1: "#143459"
