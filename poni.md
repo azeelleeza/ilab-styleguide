@@ -174,10 +174,12 @@ tables:
   image: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.01.18 PM.png"
 form_elements:
 - element_name: 'Forms: Checkboxes'
-  element_description: ''
-- element_name: Interactives/Forms
+  element_description: 'Forms: Checkboxes'
+  image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.20.45 PM.png"
+- element_name: 'Forms: Text Input'
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.13.57 PM.png"
   element_description: 'Forms: Text Input'
 - element_name: 'Forms: Archive Dropdown'
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.16.08 PM.png"
+  element_description: 'Forms: Archive Dropdown'
 ---
