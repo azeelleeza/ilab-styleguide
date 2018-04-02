@@ -173,6 +173,9 @@ tables:
 - element_name: Table
   image: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.01.18 PM.png"
 form_elements:
+- element_name: 'Forms: Radio'
+  element_description: 'Forms: Radio'
+  image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.22.21 PM.png"
 - element_name: 'Forms: Checkboxes'
   element_description: 'Forms: Checkboxes'
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.20.45 PM.png"
