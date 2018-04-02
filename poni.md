@@ -171,7 +171,8 @@ buttons:
 logos: []
 tables:
 - element_name: Table
-  image: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.01.18 PM.png"
+  image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.27.10 PM.png"
+  element_description: Table
 form_elements:
 - element_name: 'Forms: Text Input'
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.13.57 PM.png"
