@@ -176,4 +176,6 @@ form_elements:
 - element_name: Interactives/Forms
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.13.57 PM.png"
   element_description: 'Forms: Text Input'
+- element_name: 'Forms: Archive Dropdown'
+  image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.16.08 PM.png"
 ---
