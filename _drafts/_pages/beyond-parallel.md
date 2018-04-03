@@ -41,6 +41,18 @@ typography:
     text-transform: normal
     color: "#ACABAB"
   elements:
+  - element_name: Blockquote
+    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    font-family: museo, sans-serif
+    font-size: 18px
+    font-weight: 300
+    color: "#333"
+    line-height: 1.5
+    margins: 0px,0px,0px,50px
+    border-top: "#ffc726 2px solid"
+    border-bottom: "#ffc726 2px solid"
+    extra_css: 'content: url(/wp-content/uploads/2016/10/Screen-Shot-2016-10-26-at-1.56.04-PM.png)'
   - element_name: Site Footer
     html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
