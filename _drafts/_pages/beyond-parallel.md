@@ -113,7 +113,7 @@ buttons:
   description: 'Note: Used for general purpose'
   base:
     font-family: museo-sans, sans-serif
-    font-size: 24px
+    font-size: 16px
     font-weight: 300
     line-height: 1
     letter-spacing: 1px
