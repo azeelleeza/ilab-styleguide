@@ -131,7 +131,7 @@ buttons:
     text-transform: uppercase
     text-align: Center
     color: "#10355F"
-    background-color: "#FFC726"
+    background-color: "#EEB631"
     padding: 0.3em 0.7rem
 logos: []
 tables: []
