@@ -103,7 +103,7 @@ links:
       color: "#10355F"
       font-weight: 500
     hover:
-      background: "#fff linear-gradient(#fff 94%, #FFC726 50%) repeat-x 0 100%"
+      background: "#fff linear-gradient(#fff 92%, #FFC726 50%) repeat-x 0 100%"
       font-family: museo-sans, sans-serif
       font-size: 20px
       font-weight: 500
