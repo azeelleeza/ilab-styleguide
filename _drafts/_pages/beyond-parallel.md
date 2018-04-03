@@ -108,7 +108,20 @@ links:
       font-size: 20px
       font-weight: 500
       color: "#10355F"
-buttons: []
+buttons:
+- group_name: Graphic Links
+  description: 'Note: Used for general purpose'
+  base:
+    font-family: museo-sans, sans-serif
+    font-size: 24px
+    font-weight: 300
+    line-height: 1
+    letter-spacing: 1px
+    text-transform: uppercase
+    text-align: Center
+    color: "#10355F"
+    background-color: "#FFC726"
+    padding: 0px 0.7rem
 logos: []
 tables: []
 form_elements: []
