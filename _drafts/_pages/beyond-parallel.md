@@ -16,6 +16,12 @@ typography:
     css_input: museo-sans
     link_to_homepage: https://typekit.com/fonts/museo-sans
   headings:
+  - heading_name: Heading 2
+    font-family: alternate-gothic-no-3-d, sans-serif
+    font-size: 36px
+    font-weight: 400
+    text-transform: normal
+    color: "#103558"
   - heading_name: Heading 1
     font-family: alternate-gothic-no-3-d, sans-serif
     font-size: 48px
