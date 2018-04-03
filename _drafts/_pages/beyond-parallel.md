@@ -122,6 +122,17 @@ buttons:
     color: "#10355F"
     background-color: "#FFC726"
     padding: 0.3rem 0.7rem
+  hover:
+    font-family: museo-sans, sans-serif
+    font-size: 16px
+    font-weight: 300
+    line-height: 1
+    letter-spacing: 1px
+    text-transform: uppercase
+    text-align: Center
+    color: "#10355F"
+    background-color: "#FFC726"
+    padding: 0.3em 0.7rem
 logos: []
 tables: []
 form_elements: []
