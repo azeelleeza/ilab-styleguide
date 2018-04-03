@@ -41,6 +41,13 @@ typography:
     text-transform: normal
     color: "#ACABAB"
   elements:
+  - element_name: Image caption
+    html_text: "<em>This is an image caption. <br>(BIJU BORO/AFP/Getty Images)</em>"
+    font-family: museo-sans, sans-serif
+    font-size: 15px
+    font-weight: 300
+    color: "#333"
+    line-height: 1.5
   - element_name: Blockquote
     html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
