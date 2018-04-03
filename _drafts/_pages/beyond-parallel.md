@@ -15,7 +15,13 @@ typography:
     notes: Used for body text.
     css_input: museo-sans
     link_to_homepage: https://typekit.com/fonts/museo-sans
-  headings: []
+  headings:
+  - heading_name: Heading 1
+    font-family: alternate-gothic-no-3-d, sans-serif
+    font-size: 48px
+    font-weight: 400
+    text-transform: normal
+    color: "#10355F"
   elements: []
 initial_styles:
   import_fonts: ''
