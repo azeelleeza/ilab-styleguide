@@ -94,6 +94,14 @@ colors:
   secondary_color: []
   interactive_palettes: []
 links:
+- group_name: Title Links
+  description: Post title links in the page
+  link:
+  - base:
+      font-family: alternate-gothic-no-3-d, sans-serif
+      font-size: 36px
+      font-weight: 400
+      color: "#10355F"
 - group_name: Text Links
   description: Default links in the post body
   link:
