@@ -41,6 +41,17 @@ typography:
     text-transform: normal
     color: "#ACABAB"
   elements:
+  - element_name: Body text
+    html_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua.
+    font-family: museo-sans, sans-serif
+    font-size: 20px
+    font-weight: 300
+    color: "#333"
+    line-height: 1.5
   - element_name: Image caption
     html_text: "<em>This is an image caption. <br>(BIJU BORO/AFP/Getty Images)</em>"
     font-family: museo-sans, sans-serif
@@ -75,10 +86,28 @@ initial_styles:
   logos: []
   show_this_section: false
 colors:
-  primary_colors: []
+  primary_colors:
+  - hex_code: "#333"
+  - hex_code: "#10355F"
+  - hex_code: "#ACABAB"
+  - hex_code: "#FFC726"
   secondary_color: []
   interactive_palettes: []
-links: []
+links:
+- group_name: Text Links
+  description: Default links in the post body
+  link:
+  - base:
+      font-family: museo-sans, sans-serif
+      font-size: 20px
+      color: "#10355F"
+      font-weight: 500
+    hover:
+      background: "#fff linear-gradient(#fff 94%, #FFC726 50%) repeat-x 0 100%"
+      font-family: museo-sans, sans-serif
+      font-size: 20px
+      font-weight: 500
+      color: "#10355F"
 buttons: []
 logos: []
 tables: []
