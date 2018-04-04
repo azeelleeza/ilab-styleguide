@@ -151,6 +151,14 @@ buttons:
     color: "#10355F"
     background-color: "#F2F2F2"
     padding: 5px 15px
+  hover:
+    color: "#EFB715"
+    font-family: museo-sans, sans-serif
+    font-size: 16px
+    line-height: 1
+    letter-spacing: 1px
+    text-align: Center
+    padding: 5px 15px
 logos: []
 tables: []
 form_elements: []
