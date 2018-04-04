@@ -161,7 +161,10 @@ buttons:
     padding: 5px 15px
     font-weight: 500
     background-color: "#FFF"
-logos: []
+logos:
+- logo_name: Main site logo
+  dark_background__png: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.11.15 AM.png"
+  upload_logo: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.10.14 AM.png"
 tables: []
 form_elements: []
 ---
