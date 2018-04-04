@@ -150,7 +150,7 @@ buttons:
     text-align: Center
     color: "#10355F"
     background-color: "#F2F2F2"
-    padding: 0.3em 0.5rem
+    padding: 5px 15px
 logos: []
 tables: []
 form_elements: []
