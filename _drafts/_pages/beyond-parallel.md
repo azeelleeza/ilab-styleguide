@@ -129,7 +129,7 @@ buttons:
     text-align: Center
     color: "#10355F"
     background-color: "#FFC726"
-    padding: 0.3rem 0.7rem
+    padding: 5px 15px
   hover:
     font-family: museo-sans, sans-serif
     font-size: 16px
@@ -140,7 +140,7 @@ buttons:
     text-align: Center
     color: "#10355F"
     background-color: "#EEB631"
-    padding: 0.3em 0.7rem
+    padding: 5px 15px
 - base:
     font-family: museo-sans, sans-serif
     font-size: 16px
