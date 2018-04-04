@@ -171,6 +171,9 @@ logos:
 - logo_name: Small accent logo at end of article
   upload_logo__png: "/uploads/2018/04/04/BP_bookend (1)-1.png"
   height: 18px
-tables: []
+tables:
+- element_name: Table
+  element_description: Table
+  image: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.30.21 AM.png"
 form_elements: []
 ---
