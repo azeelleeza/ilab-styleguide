@@ -170,6 +170,7 @@ logos:
   bg-color: "#10355F"
 - logo_name: Small accent logo at end of article
   upload_logo__png: "/uploads/2018/04/04/BP_bookend (1)-1.png"
+  height: 18px
 tables: []
 form_elements: []
 ---
