@@ -160,6 +160,7 @@ buttons:
     text-align: Center
     padding: 5px 15px
     font-weight: 300
+    background-color: "#FFF"
 logos: []
 tables: []
 form_elements: []
