@@ -163,8 +163,11 @@ buttons:
     background-color: "#FFF"
 logos:
 - logo_name: Main site logo
-  dark_background__png: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.11.15 AM.png"
-  upload_logo: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.10.14 AM.png"
+  dark_background__png: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.10.14 AM.png"
+  upload_logo: "/uploads/2018/04/04/beyond-parallel-logo_color (1).svg"
+  upload_logo__png: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.11.15 AM.png"
+  dark_background: "/uploads/2018/04/04/beyond-parallel-logo.svg"
+  bg-color: "#10355F"
 tables: []
 form_elements: []
 ---
