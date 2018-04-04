@@ -159,7 +159,7 @@ buttons:
     letter-spacing: 1px
     text-align: Center
     padding: 5px 15px
-    font-weight: 300
+    font-weight: 500
     background-color: "#FFF"
 logos: []
 tables: []
