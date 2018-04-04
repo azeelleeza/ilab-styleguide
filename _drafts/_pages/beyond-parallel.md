@@ -159,6 +159,7 @@ buttons:
     letter-spacing: 1px
     text-align: Center
     padding: 5px 15px
+    font-weight: 300
 logos: []
 tables: []
 form_elements: []
