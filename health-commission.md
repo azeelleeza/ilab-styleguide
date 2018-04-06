@@ -17,7 +17,7 @@ initial_styles:
       font-size: 20px
     body_text:
       font-family: "'Lora', serif;"
-      font-size: 18px
+      font-size: 20px
       line-height: 1.8
     meta_data:
       font-family: europa, sans-serif;
@@ -34,7 +34,7 @@ initial_styles:
       font-family: "'Libre Franklin', sans-serif;"
     body_text:
       font-family: adobe-garamond-pro, serif;
-      font-size: 18px
+      font-size: 20px
       line-height: 1.8
     meta_data:
       font-size: 16px
