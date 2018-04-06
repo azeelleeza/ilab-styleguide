@@ -16,13 +16,13 @@ initial_styles:
       font-family: europa, sans-serif;
       font-size: 20px
     body_text:
-      font-family: "'PT Serif', serif;"
+      font-family: Georgia, serif
       font-size: 19px
       line-height: 1.8
     meta_data:
       font-family: europa, sans-serif;
       font-size: 16px
-    font_pair: Europa, Lora
+    font_pair: Europa, Georgia
   - font_pair: Libre Franklin, Adobe Garamond Pro
     heading_1:
       font-size: 40px
