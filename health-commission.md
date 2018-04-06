@@ -76,8 +76,10 @@ initial_styles:
     height: 150px
   - upload_file: "/uploads/2018/04/06/star eagle shield.png"
     logo_title: Eagle and Star on Shield
+    height: 200px
   - logo_title: Seal
     upload_file: "/uploads/2018/04/06/star eagle shield seal.png"
+    height: 200px
   - logo_title: Shield EKG
     upload_file: "/uploads/2018/04/06/shield ekg.png"
     height: 150px
