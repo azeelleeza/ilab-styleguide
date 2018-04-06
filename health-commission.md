@@ -17,7 +17,7 @@ initial_styles:
       font-size: 20px
     body_text:
       font-family: "'Lora', serif;"
-      font-size: 22px
+      font-size: 18px
       line-height: 1.8
     meta_data:
       font-family: europa, sans-serif;
