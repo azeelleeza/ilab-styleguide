@@ -90,6 +90,11 @@
 }
 
 
-.initial-styles .logo div{
-	//height: calc(100% - 2rem);
+.initial-styles .logo img{
+	width:auto !important;
+	margin: 0;
+}
+
+#logos .subsection{
+	margin: 0rem 0rem 1rem;
 }
