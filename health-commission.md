@@ -19,7 +19,7 @@ initial_styles:
       font-family: Georgia, serif
       font-size: 19px
       line-height: 1.8
-      letter-spacing: ".02em"
+      letter-spacing: ".01em"
     meta_data:
       font-family: europa, sans-serif;
       font-size: 16px
