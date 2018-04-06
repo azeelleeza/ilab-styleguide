@@ -43,20 +43,6 @@ initial_styles:
       line-height: '1.5'
       font-size: 30px
       font-family: "'Libre Franklin', sans-serif;"
-  - heading_1:
-      font-family: "'Nunito', sans-serif;"
-      font-size: 40px
-    heading_2:
-      font-family: "'Nunito', sans-serif;"
-    heading_3:
-      font-family: "'Nunito', sans-serif;"
-    body_text:
-      font-family: "'Source Serif Pro', serif;"
-      font-size: 20px
-      line-height: 1.8
-    meta_data:
-      font-family: "'Nunito', sans-serif;"
-    font_pair: Nunito, Source Serif Pro
   - font_pair: Source Sans Pro, Expo Serif
     meta_data:
       font-family: "'Source Sans Pro', sans-serif;"
