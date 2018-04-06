@@ -43,7 +43,7 @@ initial_styles:
       line-height: '1.5'
       font-size: 30px
       font-family: "'Libre Franklin', sans-serif;"
-  - font_pair: Source Sans Pro, Expo Serif
+  - font_pair: 'CSIS website fonts: Source Sans Pro, Expo Serif'
     meta_data:
       font-family: "'Source Sans Pro', sans-serif;"
     body_text:
