@@ -23,6 +23,15 @@ initial_styles:
       font-family: europa, sans-serif;
       font-size: 16px
     font_pair: Europa, Georgia
+  - font_pair: 'CSIS website fonts: Source Sans Pro, Expo Serif'
+    meta_data:
+      font-family: "'Source Sans Pro', sans-serif;"
+    body_text:
+      font-family: expo-serif-pro, serif;
+      font-size: 20px
+    heading_1:
+      font-family: "'Source Sans Pro', sans-serif;"
+      font-size: 40px
   - font_pair: Libre Franklin, Adobe Garamond Pro
     heading_1:
       font-size: 40px
@@ -43,15 +52,6 @@ initial_styles:
       line-height: '1.5'
       font-size: 30px
       font-family: "'Libre Franklin', sans-serif;"
-  - font_pair: 'CSIS website fonts: Source Sans Pro, Expo Serif'
-    meta_data:
-      font-family: "'Source Sans Pro', sans-serif;"
-    body_text:
-      font-family: expo-serif-pro, serif;
-      font-size: 20px
-    heading_1:
-      font-family: "'Source Sans Pro', sans-serif;"
-      font-size: 40px
   colors:
   - notes: Blues, Gold
     hex_code1: "#143459"
