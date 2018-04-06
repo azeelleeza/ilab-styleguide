@@ -80,6 +80,7 @@ initial_styles:
     upload_file: "/uploads/2018/04/06/star eagle shield seal.png"
   - logo_title: Shield EKG
     upload_file: "/uploads/2018/04/06/shield ekg.png"
+    height: 150px
   show_this_section: true
 program_partners: ''
 typography:
