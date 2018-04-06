@@ -6,7 +6,24 @@ initial_styles:
   import_fonts: <link href="https://fonts.googleapis.com/css?family=Alegreya|Amiri|Archivo+Narrow|Cormorant+Garamond|Libre+Baskerville|Libre+Franklin|Lora|Montserrat|Nunito|Poppins|Source+Serif+Pro"
     rel="stylesheet">
   typography:
-  - font_pair: Libre Franklin, Lora
+  - heading_1:
+      font-family: europa, sans-serif;
+      font-size: 40px
+    heading_2:
+      font-family: europa, sans-serif;
+      font-size: 30px
+    heading_3:
+      font-family: europa, sans-serif;
+      font-size: 20px
+    body_text:
+      font-family: "'Lora', serif;"
+      font-size: 22px
+      line-height: 1.8
+    meta_data:
+      font-family: europa, sans-serif;
+      font-size: 16px
+    font_pair: Europa, Lora
+  - font_pair: Libre Franklin, Adobe Garamond Pro
     heading_1:
       font-size: 40px
       line-height: 1.5
@@ -16,7 +33,7 @@ initial_styles:
       font-size: 20px
       font-family: "'Libre Franklin', sans-serif;"
     body_text:
-      font-family: "'Lora', serif;"
+      font-family: adobe-garamond-pro, serif;
       font-size: 18px
       line-height: 1.8
     meta_data:
@@ -40,23 +57,6 @@ initial_styles:
     meta_data:
       font-family: "'Nunito', sans-serif;"
     font_pair: Nunito, Source Sans Pro
-  - heading_1:
-      font-family: europa, sans-serif;
-      font-size: 40px
-    heading_2:
-      font-family: europa, sans-serif;
-      font-size: 30px
-    heading_3:
-      font-family: europa, sans-serif;
-      font-size: 20px
-    body_text:
-      font-family: adobe-garamond-pro, serif;
-      font-size: 22px
-      line-height: 1.8
-    meta_data:
-      font-family: europa, sans-serif;
-      font-size: 16px
-    font_pair: Europa, Adobe Garamond
   colors:
   - notes: Blues, Gold
     hex_code1: "#143459"
