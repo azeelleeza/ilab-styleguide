@@ -1,11 +1,11 @@
 ---
 pages:
+- aerospace.md
 - health-commission.md
 - beyond-parallel.md
 - poni.md
 - defense-360.md
 - chinapower.md
-- aerospace.md
 hide_body: true
 fields:
 - type: select

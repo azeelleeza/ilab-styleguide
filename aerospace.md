@@ -253,6 +253,6 @@ initial_styles:
     height: 100px
     logo_title: Logo Group 1
     bg-color: "#18384f"
-  show_this_section: true
+  show_this_section: false
 program_partners: Aerospace Security Program
 ---
