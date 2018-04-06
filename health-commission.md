@@ -3,7 +3,7 @@ title: Health Commission
 layout: page
 date: 2018-03-15 10:54:01 +0000
 initial_styles:
-  import_fonts: <link href="https://fonts.googleapis.com/css?family=Alegreya|Amiri|Archivo+Narrow|Cormorant+Garamond|Libre+Baskerville|Libre+Franklin|Lora|Montserrat|Nunito|Poppins|Source+Serif+Pro"
+  import_fonts: <link href="https://fonts.googleapis.com/css?family=Alegreya|Amiri|Archivo+Narrow|Cormorant+Garamond|Libre+Baskerville|Libre+Franklin|Lora|Montserrat|Nunito|Poppins|Source+Serif+Pro|Source+Sans+Pro"
     rel="stylesheet">
   typography:
   - heading_1:
@@ -56,7 +56,16 @@ initial_styles:
       line-height: 1.8
     meta_data:
       font-family: "'Nunito', sans-serif;"
-    font_pair: Nunito, Source Sans Pro
+    font_pair: Nunito, Source Serif Pro
+  - font_pair: Source Sans Pro, Expo Serif
+    meta_data:
+      font-family: "'Source Sans Pro', sans-serif;"
+    body_text:
+      font-family: expo-serif-pro, serif;
+      font-size: 22px
+    heading_1:
+      font-family: "'Source Sans Pro', sans-serif;"
+      font-size: 40px
   colors:
   - notes: Blues, Gold
     hex_code1: "#143459"
@@ -75,7 +84,8 @@ initial_styles:
     hex_code4: "#ce5932"
     hex_code5: ''
     hex_code6: ''
-  logos: []
+  logos:
+  - {}
   show_this_section: true
 program_partners: ''
 typography:
