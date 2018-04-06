@@ -71,7 +71,14 @@ initial_styles:
     hex_code5: ''
     hex_code6: ''
   logos:
-  - {}
+  - logo_title: Shield EKG
+    upload_file: "/uploads/2018/04/06/shield ekg.png"
+  - logo_title: Seal
+    upload_file: "/uploads/2018/04/06/star eagle shield seal.png"
+  - upload_file: "/uploads/2018/04/06/star eagle shield.png"
+    logo_title: Eagle and Star on Shield
+  - logo_title: Star and Eagle
+    upload_file: "/uploads/2018/04/06/star eagle_1.png"
   show_this_section: true
 program_partners: ''
 typography:
