@@ -23,7 +23,7 @@ initial_styles:
       font-family: europa, sans-serif;
       font-size: 16px
     font_pair: Europa, Georgia
-  - font_pair: 'CSIS website fonts: Source Sans Pro, Expo Serif'
+  - font_pair: Source Sans Pro, Expo Serif
     meta_data:
       font-family: "'Source Sans Pro', sans-serif;"
     body_text:
@@ -32,6 +32,7 @@ initial_styles:
     heading_1:
       font-family: "'Source Sans Pro', sans-serif;"
       font-size: 40px
+    notes: These are the fonts used on CSIS.org
   - font_pair: Libre Franklin, Adobe Garamond Pro
     heading_1:
       font-size: 40px
