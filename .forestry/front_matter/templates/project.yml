@@ -113,6 +113,9 @@ fields:
       - type: text
         name: letter-spacing
         label: Letter Spacing
+    - type: text
+      name: notes
+      label: notes
     config:
       labelField: font_pair
   - type: field_group_list
