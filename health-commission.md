@@ -34,7 +34,7 @@ initial_styles:
       font-family: "'Source Sans Pro', sans-serif;"
       font-size: 40px
     notes: These are the fonts used on CSIS.org
-  - font_pair: Libre Franklin, Adobe Garamond Pro
+  - font_pair: Libre Franklin, ALora
     heading_1:
       font-size: 40px
       line-height: 1.5
@@ -44,8 +44,8 @@ initial_styles:
       font-size: 20px
       font-family: "'Libre Franklin', sans-serif;"
     body_text:
-      font-family: adobe-garamond-pro, serif;
-      font-size: 21px
+      font-family: "'Lora', serif;"
+      font-size: 19px
       line-height: 1.8
     meta_data:
       font-size: 16px
