@@ -117,6 +117,7 @@ colors:
   - hex_code: "#f7d768"
   - hex_code: "#8cb561"
   - hex_code: "#808081"
+  - hex_code: "#EF9A9A"
   interactive_palettes:
   - palette_name: Bar Chart 1
     colors:
