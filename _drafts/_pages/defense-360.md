@@ -142,11 +142,21 @@ buttons:
     background-color: "#36605a"
     padding: 8px 48px
 logos:
+- logo_name: Favicon
+  upload_logo: "/uploads/2018/04/20/favicon.svg"
+  upload_logo__png: "/uploads/2018/04/20/360_favicon-1.png"
+  dark_background: ''
+  height: 20px
 - logo_name: Main site logo
-  dark_background: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.35.15 PM.png"
-  upload_logo: "/uploads/2018/03/08/Screen Shot 2018-03-08 at 3.36.04 PM.png"
+  dark_background: "/uploads/2018/04/20/Defense360_logos_1.26.16_FINAL_WHITE.svg"
+  upload_logo: "/uploads/2018/04/20/Defense360_LOGO_FINAL.svg"
+  upload_logo__png: "/uploads/2018/04/20/Defense360_logos_1.26.16_FINAL.png"
+  dark_background__png: "/uploads/2018/04/20/Defense360_logos_1.26.16_FINAL_WHITE.png"
+  bg-color: "#555"
 - logo_name: Square logo
-  upload_logo: "/uploads/2018/03/08/Defense360_logo_thumbnail-02.png"
+  upload_logo: "/uploads/2018/04/20/Defense360_logo_thumbnail-02-1.svg"
+  upload_logo__png: "/uploads/2018/04/20/Defense360_logo_thumbnail-02-1.png"
+  height: 150px
 tables: []
 form_elements:
 - {}
