@@ -168,7 +168,20 @@ buttons:
     color: "#fff"
     background-color: "#D09827"
     padding: 0.3em 0.5rem
-logos: []
+logos:
+- logo_description: Small logo used when the header shrinks
+  upload_logo: "/uploads/2018/04/20/NGNN-logo-small-light.svg"
+  upload_logo__png: "/uploads/2018/04/20/NGNN-logo-small-light.png"
+  dark_background: "/uploads/2018/04/20/NGNN-logo-small-dark2.svg"
+  dark_background__png: "/uploads/2018/04/20/NGNN-logo-small-dark.png"
+  bg-color: "#163553"
+  logo_name: NGNN Small Logo
+- logo_name: NGNN Main Logo
+  upload_logo: "/uploads/2018/04/20/NGNN-logo-light.svg"
+  upload_logo__png: "/uploads/2018/04/20/NGNN-logo-light.png"
+  dark_background: "/uploads/2018/04/20/NGNN-logo-dark.png"
+  dark_background__png: "/uploads/2018/04/20/NGNN-logo-dark-1.png"
+  bg-color: "#163553"
 tables:
 - element_name: Table
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.27.10 PM.png"
