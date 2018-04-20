@@ -166,6 +166,8 @@ logos:
   bg-color: "#18384f"
   upload_logo__png: "/uploads/2018/03/09/logo-small-light.png"
   dark_background__png: "/uploads/2018/03/09/logo-small-dark.png"
+- logo_name: Header, Single Line
+  upload_logo: "/uploads/2018/04/20/footer_logo@2x.png"
 tables:
 - table_name: Basic table
   image: "/uploads/2018/02/02/Screen Shot 2018-02-02 at 11.23.18 AM.png"
