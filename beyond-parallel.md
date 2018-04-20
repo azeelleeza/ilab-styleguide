@@ -169,9 +169,11 @@ logos:
   dark_background: "/uploads/2018/04/20/beyond_parallel_final_logo_color_darkbackground
     copy-1.svg"
   bg-color: "#10355F"
-- logo_name: Small accent logo at end of article
-  upload_logo__png: "/uploads/2018/04/04/BP_bookend (1)-1.png"
+- logo_name: Small logo
+  upload_logo__png: "/uploads/2018/04/20/BP_bookend.png"
   height: 18px
+  upload_logo: "/uploads/2018/04/20/bp-bookend.svg"
+  logo_description: Used at the end of articles and as favicon
 tables:
 - element_name: Table
   element_description: Table
