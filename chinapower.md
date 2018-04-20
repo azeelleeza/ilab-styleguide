@@ -248,9 +248,6 @@ buttons:
     background-color: "#728C99"
     padding: 5px 15px 7px
 logos:
-- logo_name: Social Media Logo
-  upload_logo: "/uploads/2018/04/20/china_power_social_media.svg"
-  upload_logo__png: "/uploads/2018/04/20/Podcast_ChinaPower_logo-1.png"
 - logo_name: Main Logo
   upload_logo: "/uploads/2018/04/20/chinapower_black_text_logo-1.svg"
   dark_background__png: "/uploads/2018/04/20/chinapower_white_text_logo-1.png"
@@ -260,8 +257,14 @@ logos:
 - logo_name: Podcast Logo
   upload_logo: "/uploads/2018/04/20/Podcast_ChinaPower_logo.svg"
   upload_logo__png: "/uploads/2018/04/20/Podcast_ChinaPower_logo.png"
+  height: 150px
 - upload_logo: "/uploads/2018/04/20/china-power-symbol.svg"
   logo_name: Square Graphic
+  height: 150px
+- logo_name: Social Media Logo
+  upload_logo: "/uploads/2018/04/20/china_power_social_media.svg"
+  upload_logo__png: "/uploads/2018/04/20/Podcast_ChinaPower_logo-1.png"
+  height: 150px
 tables:
 - element_name: Table
   element_description: 'Note: Headings are Roboto, table body is Hind.   The class
