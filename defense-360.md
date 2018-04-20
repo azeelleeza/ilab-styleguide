@@ -142,11 +142,6 @@ buttons:
     background-color: "#36605a"
     padding: 8px 48px
 logos:
-- logo_name: Favicon
-  upload_logo: "/uploads/2018/04/20/favicon.svg"
-  upload_logo__png: "/uploads/2018/04/20/360_favicon-1.png"
-  dark_background: ''
-  height: 20px
 - logo_name: Main site logo
   dark_background: "/uploads/2018/04/20/Defense360_logos_1.26.16_FINAL_WHITE.svg"
   upload_logo: "/uploads/2018/04/20/Defense360_LOGO_FINAL.svg"
@@ -157,6 +152,11 @@ logos:
   upload_logo: "/uploads/2018/04/20/Defense360_logo_thumbnail-02-1.svg"
   upload_logo__png: "/uploads/2018/04/20/Defense360_logo_thumbnail-02-1.png"
   height: 150px
+- logo_name: Favicon
+  upload_logo: "/uploads/2018/04/20/favicon.svg"
+  upload_logo__png: "/uploads/2018/04/20/360_favicon-1.png"
+  dark_background: ''
+  height: 20px
 tables: []
 form_elements:
 - {}
