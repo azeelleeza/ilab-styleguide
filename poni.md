@@ -176,6 +176,7 @@ logos:
   dark_background__png: "/uploads/2018/04/20/NGNN-logo-small-dark.png"
   bg-color: "#163553"
   logo_name: NGNN Small Logo
+  height: 75px
 - logo_name: NGNN Main Logo
   upload_logo: "/uploads/2018/04/20/NGNN-logo-light.svg"
   upload_logo__png: "/uploads/2018/04/20/NGNN-logo-light.png"
