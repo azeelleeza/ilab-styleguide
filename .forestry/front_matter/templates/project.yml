@@ -707,3 +707,7 @@ fields:
     label: Image
   config:
     labelField: element_name
+- type: file
+  name: screenshot
+  label: screenshot
+  default: "/uploads/2018/04/23/default browser example.png"
