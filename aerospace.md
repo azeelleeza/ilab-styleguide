@@ -257,4 +257,5 @@ initial_styles:
     bg-color: "#18384f"
   show_this_section: false
 program_partners: Aerospace Security Program
+screenshot: "/uploads/2018/04/23/Screen Shot 2018-04-23 at 11.05.57 AM.png"
 ---
