@@ -203,4 +203,5 @@ form_elements:
 - element_name: 'Forms: Radio'
   element_description: 'Forms: Radio'
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.22.21 PM.png"
+screenshot: "/uploads/2018/04/23/Screen Shot 2018-04-23 at 11.07.26 AM.png"
 ---
