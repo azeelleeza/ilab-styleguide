@@ -297,4 +297,5 @@ form_elements:
     interactive.'
   element_name: 'Interactives: Footer Branding'
 - element_name: 'Highcharts: Footer Branding'
+screenshot: "/uploads/2018/04/23/default browser example.png"
 ---
