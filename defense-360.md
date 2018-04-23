@@ -103,6 +103,8 @@ colors:
   - hex_code: "#707268"
   interactive_palettes:
   - colors:
+    - hex_code: "#A2786A"
+    - hex_code: "#75657A"
     - hex_code: "#9B9B9B"
     - hex_code: "#83373E"
     - hex_code: "#D05F4C"
