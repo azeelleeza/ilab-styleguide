@@ -67,3 +67,26 @@
 		opacity: 1;
 	}
 }
+
+
+.homepage-screenshot {
+width: 300px;
+
+}
+
+.screenshot-container {
+	display: none;
+	@include breakpoint("small") {
+	display: block;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+}
+
+.site-info {
+	max-width: calc(100% - 280px);
+}

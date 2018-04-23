@@ -2,17 +2,24 @@
         {% for page in site.html_pages | sort  %}
         {% if page.title != "Home" %}
         <a href="{{ site.baseurl }}{{ page.url }}" class="link"><article>
+            <div class="site-info">
                 <h2>{{ page.title }}</h2>
                 <hr>
                 <div class="clearfix"></div>
+                {% if page.program_partners %}
                 <div class="meta">{{ page.program_partners }}</div>
+                {% endif %}
                 <div class="meta"><span class="label">LAST UPDATED: </span>{{ page.date | date: "%B %-d, %Y" }}</div>
                 {% if page.initial_styles.show_this_section == true %}
 			<div class="show-initial-styles">
 				In Development
 			</div>
-			
-		{% endif %}
+            {% endif %}
+        </div>
+            <div class="screenshot-container">
+			<img class="homepage-screenshot" alt="{{ page.title }} Screenshot" src="{{ page.screenshot | relative_url }}">
+            </div>
+		
         </article>
         </a>
          {% endif %}
