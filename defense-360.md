@@ -101,7 +101,10 @@ colors:
   - hex_code: "#d05133"
   - hex_code: "#415e99"
   - hex_code: "#707268"
-  interactive_palettes: []
+  interactive_palettes:
+  - colors:
+    - hex_code: "#3E8E9D"
+    - hex_code: "#365F5A"
 links:
 - group_name: Text Links
   description: Default links in the post body
