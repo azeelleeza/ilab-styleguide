@@ -22,7 +22,9 @@ Initial Design Styles
 {% endif %}
 								</div>
 								<hr>
-				<div class="program-name">{{ page.program_partners }} // Last Updated {{ page.date | date: "%B %-d, %Y" }}</div>
+				<div class="program-name">{{ page.program_partners }} 
+				{% if page.program_partner and page.date %}//
+				{% endif %} Last Updated {{ page.date | date: "%B %-d, %Y" }}</div>
 			</div>
 			</section>
 			<div class="content-wrapper">

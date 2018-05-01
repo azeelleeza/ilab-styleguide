@@ -6,7 +6,7 @@
 @import "footer";
 @import "sidebar";
 @import "home";
-
+@import "print";
 html {
 	overflow-x: hidden;
 }
@@ -118,8 +118,9 @@ article {
 		padding: 0;
 	}
 	.article-ex {
-		padding: 2rem 0;
+		padding: .5rem 0 2rem;
 		order: 2;
+		padding-left: 1rem;
 		@include breakpoint("medium") {
 			order: 1;
 		}

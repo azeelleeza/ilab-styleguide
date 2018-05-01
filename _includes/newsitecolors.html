@@ -5,6 +5,7 @@
 		<div class="col-xs-12 col-sm-12 col-md-9 article-ex row">
 			{% for t in i %}
 			{% if t[0] != 'discard' and t[0] != 'notes' %}
+			{% if t[1] != '' %}
 			<div class="col-xs-6 col-md-2">
 			
 				
@@ -25,6 +26,7 @@
 				
 
 			</div>
+			{% endif %}
 			{% endif %}
 			{% endfor %}
 		</div>
