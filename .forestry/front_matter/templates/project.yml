@@ -1,15 +1,15 @@
 ---
 pages:
-- reconnecting-asia.md
-- missile-threat.md
-- amti.md
-- engaging-indian-states.md
-- aerospace.md
-- health-commission.md
-- beyond-parallel.md
-- poni.md
-- defense-360.md
 - chinapower.md
+- defense-360.md
+- poni.md
+- beyond-parallel.md
+- health-commission.md
+- aerospace.md
+- engaging-indian-states.md
+- amti.md
+- missile-threat.md
+- reconnecting-asia.md
 hide_body: true
 is_partial: false
 fields:
