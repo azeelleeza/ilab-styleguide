@@ -90,7 +90,7 @@ initial_styles:
     height: 200px
     discard: true
   - logo_title: Shield EKG
-    upload_file: "/uploads/2018/04/06/shield ekg.png"
+    upload_file: "/uploads/2018/05/07/shield ekg v2.png"
     height: 150px
   show_this_section: true
 program_partners: ''
