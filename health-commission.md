@@ -34,6 +34,7 @@ initial_styles:
       font-family: "'Source Sans Pro', sans-serif;"
       font-size: 40px
     notes: These are the fonts used on CSIS.org
+    discard: true
   - font_pair: Libre Franklin, ALora
     heading_1:
       font-size: 40px
@@ -54,6 +55,7 @@ initial_styles:
       line-height: '1.5'
       font-size: 30px
       font-family: "'Libre Franklin', sans-serif;"
+    discard: true
   colors:
   - notes: Blues, Gold
     hex_code1: "#143459"
@@ -65,6 +67,7 @@ initial_styles:
     hex_code2: "#628fa7"
     hex_code3: "#f7f7fa"
     hex_code4: "#e9be4d"
+    discard: true
   - notes: Gray, Orange/Red
     hex_code1: "#4D4E4E"
     hex_code2: "#B3BABA"
@@ -72,16 +75,20 @@ initial_styles:
     hex_code4: "#ce5932"
     hex_code5: ''
     hex_code6: ''
+    discard: true
   logos:
   - logo_title: Star and Eagle
     upload_file: "/uploads/2018/04/06/star eagle_1.png"
     height: 150px
+    discard: true
   - upload_file: "/uploads/2018/04/06/star eagle shield.png"
     logo_title: Eagle and Star on Shield
     height: 200px
+    discard: true
   - logo_title: Seal
     upload_file: "/uploads/2018/04/06/seal.png"
     height: 200px
+    discard: true
   - logo_title: Shield EKG
     upload_file: "/uploads/2018/04/06/shield ekg.png"
     height: 150px
@@ -101,4 +108,5 @@ buttons: []
 logos: []
 tables: []
 form_elements: []
+screenshot: "/uploads/2018/04/23/default browser example.png"
 ---
