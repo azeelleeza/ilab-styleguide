@@ -125,15 +125,13 @@
  #fonts {
  	.font {}
  	.letters {
-
  		display: block;
- 		float: left;
  		font-size: 100px;
  		padding-right: 2rem;
  		line-height: 1;
  	}
  	.alphabet {
- 		word-wrap: break-word;
+ 		//word-wrap: break-word;
  		flex: grow;
  		font-size: 18px;
  		letter-spacing: 1px;

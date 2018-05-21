@@ -64,6 +64,9 @@ article {
 }
 
 
+#fonts article:first-of-type {
+ 		margin-top: 0px;
+ }
 .article-info-left {
 	height: 100%;
 	display: block;
@@ -86,8 +89,7 @@ article {
 	margin-right: 2rem;
 	@include breakpoint("medium") {
 		border-top: unset;
-		
-			border-right: 2px solid $color__background-pre;
+		border-right: 2px solid $color__background-pre;
 
 	}
 }

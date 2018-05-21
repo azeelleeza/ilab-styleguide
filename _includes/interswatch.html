@@ -1,5 +1,6 @@
 {% for colors in i.colors %}
-{% if colors %}
+{% if colors.hex_code %}
+{% if colors.hex_code != '' %}
 	<div class="barcontainer">
 
 
@@ -14,6 +15,8 @@
 			
 			</div>
 		</div>
-	{% endif %}
+
 </div>
+	{% endif %}
+	{% endif %}
 {% endfor %}
