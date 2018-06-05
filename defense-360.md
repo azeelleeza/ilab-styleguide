@@ -94,15 +94,15 @@ colors:
   secondary_color: []
   interactive_palettes:
   - colors:
-    - hex_code: "#A2786A"
-    - hex_code: "#75657A"
-    - hex_code: "#9B9B9B"
-    - hex_code: "#83373E"
-    - hex_code: "#D05F4C"
-    - hex_code: "#DDB460"
-    - hex_code: "#96B586"
-    - hex_code: "#3E8E9D"
     - hex_code: "#365F5A"
+    - hex_code: "#96B586"
+    - hex_code: "#DDB460"
+    - hex_code: "#D05F4C"
+    - hex_code: "#83373E"
+    - hex_code: "#9B9B9B"
+    - hex_code: "#3E8E9D"
+    - hex_code: "#75657A"
+    - hex_code: "#A2786A"
     palette_name: Interactive Colors
 links:
 - group_name: Text Links
