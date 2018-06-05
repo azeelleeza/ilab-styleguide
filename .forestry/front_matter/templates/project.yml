@@ -1,15 +1,4 @@
 ---
-pages:
-- chinapower.md
-- defense-360.md
-- poni.md
-- beyond-parallel.md
-- health-commission.md
-- aerospace.md
-- engaging-indian-states.md
-- amti.md
-- missile-threat.md
-- reconnecting-asia.md
 hide_body: true
 is_partial: false
 fields:
@@ -713,3 +702,14 @@ fields:
   name: screenshot
   label: screenshot
   default: "/uploads/2018/04/23/default browser example.png"
+pages:
+- defense-360.md
+- chinapower.md
+- poni.md
+- beyond-parallel.md
+- health-commission.md
+- aerospace.md
+- engaging-indian-states.md
+- amti.md
+- missile-threat.md
+- reconnecting-asia.md
