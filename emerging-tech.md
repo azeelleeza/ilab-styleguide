@@ -29,9 +29,9 @@ initial_styles:
     heading_1:
       font-family: InconsolataLGCMarkupRegular
     meta_data:
-      font-family: Inconsolata
-    body_text:
       font-family: InconsolataLGCMarkupRegular
+    body_text:
+      font-family: Roboto
   colors:
   - notes: NGNN Colors
     hex_code1: "#163553"
