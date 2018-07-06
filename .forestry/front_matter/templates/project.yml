@@ -703,13 +703,14 @@ fields:
   label: screenshot
   default: "/uploads/2018/04/23/default browser example.png"
 pages:
-- defense-360.md
-- chinapower.md
-- poni.md
-- beyond-parallel.md
+- emerging-tech.md
 - health-commission.md
-- aerospace.md
+- defense-360.md
+- beyond-parallel.md
+- poni.md
+- chinapower.md
 - engaging-indian-states.md
-- amti.md
 - missile-threat.md
+- aerospace.md
+- amti.md
 - reconnecting-asia.md
