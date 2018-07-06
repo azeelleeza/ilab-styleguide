@@ -47,5 +47,4 @@ buttons: []
 logos: []
 tables: []
 form_elements: []
-published: false
 ---
