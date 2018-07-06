@@ -10,7 +10,7 @@ initial_styles:
   typography:
   - font_pair: Monospace
     heading_1:
-      font-family: Inconsolata
+      font-family: Lato
     meta_data:
       font-family: Inconsolata
     body_text:
