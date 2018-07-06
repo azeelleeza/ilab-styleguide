@@ -33,6 +33,16 @@ initial_styles:
     body_text:
       font-family: Roboto
   colors:
+  - notes: Green
+    hex_code1: "#163553"
+    hex_code2: "#005E7D"
+    hex_code3: "#f1f1f1"
+    hex_code4: "#00B590"
+  - notes: Orange
+    hex_code1: "#00394A"
+    hex_code2: "#708081"
+    hex_code3: "#DEDED2"
+    hex_code4: "#F78718"
   - notes: NGNN Colors
     hex_code1: "#163553"
     hex_code2: "#f1f1f1"
