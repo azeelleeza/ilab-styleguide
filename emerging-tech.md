@@ -11,6 +11,10 @@ initial_styles:
   - font_pair: Monospace
     heading_1:
       font-family: Inconsolata
+    meta_data:
+      font-family: Inconsolata
+    body_text:
+      font-family: Lato
   - font_pair: NGNN Fonts
     heading_1:
       font-family: Lato
