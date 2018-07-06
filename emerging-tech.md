@@ -7,14 +7,16 @@ program_partners: ''
 initial_styles:
   import_fonts: <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans|Inconsolata"
     rel="stylesheet"><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/inconsolata-lgc-markup"
-    type="text/css"/><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt"
+    type="text/css"/><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular"
     type="text/css"/>
   typography:
   - font_pair: Sans
     heading_1:
-      font-family: CooperHewittBold
+      font-family: GidoleRegular
     body_text:
       font-family: proxima-nova
+    meta_data:
+      font-family: GidoleRegular
   - font_pair: Monospace
     heading_1:
       font-family: InconsolataLGCMarkupRegular
