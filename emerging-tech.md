@@ -5,7 +5,7 @@ screenshot: "/uploads/2018/04/23/default browser example.png"
 date: 2018-07-06 17:40:17 +0000
 program_partners: ''
 initial_styles:
-  import_fonts: <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans|Inconsolata"
+  import_fonts: <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans|Inconsolata|Hind+Vadodara"
     rel="stylesheet"><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/inconsolata-lgc-markup"
     type="text/css"/><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular"
     type="text/css"/>
@@ -31,7 +31,7 @@ initial_styles:
     meta_data:
       font-family: InconsolataLGCMarkupRegular
     body_text:
-      font-family: Roboto
+      font-family: Hind Vadodara
   colors:
   - notes: Green
     hex_code1: "#163553"
