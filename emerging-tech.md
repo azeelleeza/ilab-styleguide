@@ -30,7 +30,14 @@ initial_styles:
     body_text:
       font-family: PT Sans
     notes: This font combination is active on the NGNN site
-  colors: []
+  colors:
+  - notes: NGNN Colors
+    hex_code1: "#163553"
+    hex_code2: "#f1f1f1"
+    hex_code3: "#6d6d6d"
+    hex_code4: "#235d94"
+    hex_code5: "#3873ab"
+    hex_code6: "#f1c161"
   logos: []
   show_this_section: true
 typography:
