@@ -5,7 +5,7 @@ screenshot: "/uploads/2018/04/23/default browser example.png"
 date: 2018-07-06 17:40:17 +0000
 program_partners: ''
 initial_styles:
-  import_fonts: <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans|Inconsolata|Hind+Vadodara|Cairo"
+  import_fonts: <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans|Inconsolata|Hind+Vadodara|Cairo|Cousine"
     rel="stylesheet"><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/inconsolata-lgc-markup"
     type="text/css"/><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular"
     type="text/css"/>
@@ -30,7 +30,7 @@ initial_styles:
       font-family: GidoleRegular
   - font_pair: Monospace
     heading_1:
-      font-family: InconsolataLGCMarkupRegular
+      font-family: Cousine
     meta_data:
       font-family: InconsolataLGCMarkupRegular
     body_text:
