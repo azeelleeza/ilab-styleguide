@@ -27,7 +27,7 @@ initial_styles:
       font-family: Cairo
   - font_pair: Monospace
     heading_1:
-      font-family: Hind Vadodara
+      font-family: proxima-nova
     meta_data:
       font-family: InconsolataLGCMarkupRegular
     body_text:
