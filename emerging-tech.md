@@ -5,10 +5,10 @@ screenshot: "/uploads/2018/04/23/default browser example.png"
 date: 2018-07-06 17:40:17 +0000
 program_partners: ''
 initial_styles:
-  import_fonts: ''
+  import_fonts: <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans"
+    rel="stylesheet">
   typography:
-  - font_pair: <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans"
-      rel="stylesheet">
+  - font_pair: NGNN Fonts
     heading_1:
       font-family: Lato
     meta_data:
