@@ -10,6 +10,14 @@ initial_styles:
     type="text/css"/><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular"
     type="text/css"/>
   typography:
+  - font_pair: NGNN Fonts
+    heading_1:
+      font-family: Lato
+    meta_data:
+      font-family: Lato
+    body_text:
+      font-family: PT Sans
+    notes: This font combination is active on the NGNN site
   - font_pair: Sans
     heading_1:
       font-family: GidoleRegular
@@ -24,14 +32,6 @@ initial_styles:
       font-family: Inconsolata
     body_text:
       font-family: InconsolataLGCMarkupRegular
-  - font_pair: NGNN Fonts
-    heading_1:
-      font-family: Lato
-    meta_data:
-      font-family: Lato
-    body_text:
-      font-family: PT Sans
-    notes: This font combination is active on the NGNN site
   colors:
   - notes: NGNN Colors
     hex_code1: "#163553"
