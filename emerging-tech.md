@@ -10,6 +10,9 @@ initial_styles:
     type="text/css"/><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular"
     type="text/css"/>
   typography:
+  - font_pair: Cairo
+    heading_1:
+      font-family: Cairo
   - font_pair: NGNN Fonts
     heading_1:
       font-family: Lato
