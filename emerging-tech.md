@@ -10,9 +10,6 @@ initial_styles:
     type="text/css"/><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular"
     type="text/css"/>
   typography:
-  - font_pair: Cairo
-    heading_1:
-      font-family: Cairo
   - font_pair: NGNN Fonts
     heading_1:
       font-family: Lato
@@ -23,11 +20,11 @@ initial_styles:
     notes: This font combination is active on the NGNN site
   - font_pair: Sans
     heading_1:
-      font-family: GidoleRegular
+      font-family: Cairo
     body_text:
       font-family: proxima-nova
     meta_data:
-      font-family: GidoleRegular
+      font-family: Cairo
   - font_pair: Monospace
     heading_1:
       font-family: Cousine
