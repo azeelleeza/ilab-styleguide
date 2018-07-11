@@ -37,6 +37,8 @@ initial_styles:
     hex_code2: "#267998"
     hex_code3: "#EFEFCF"
     hex_code4: "#ED7650"
+    hex_code5: "#da844e"
+    hex_code6: "#DF7344"
   - notes: Orange2
     hex_code1: "#00394A"
     hex_code2: "#21999e"
