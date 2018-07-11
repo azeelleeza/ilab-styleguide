@@ -38,28 +38,12 @@ initial_styles:
     hex_code3: "#32A9D9"
     hex_code4: "#F2F2F2"
     hex_code5: "#F27127"
-  - hex_code1: "#163553"
-    hex_code2: "#267998"
-    hex_code3: "#EFEFCF"
-    hex_code4: "#ED7650"
-    hex_code5: "#da844e"
-    hex_code6: "#DF7344"
-  - notes: Orange2
-    hex_code1: "#00394A"
-    hex_code2: "#21999e"
-    hex_code3: "#f1f1f1"
-    hex_code4: "#CF5F35"
+    notes: Orange
   - notes: Green
     hex_code1: "#163553"
     hex_code2: "#005E7D"
     hex_code3: "#f1f1f1"
     hex_code4: "#00B590"
-  - notes: Orange
-    hex_code1: "#00394A"
-    hex_code2: "#708081"
-    hex_code3: "#DEDED2"
-    hex_code4: "#F07818"
-    hex_code5: "#F0A830"
   - notes: NGNN Colors
     hex_code1: "#163553"
     hex_code2: "#f1f1f1"
