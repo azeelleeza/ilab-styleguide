@@ -33,6 +33,11 @@ initial_styles:
     body_text:
       font-family: Hind Vadodara
   colors:
+  - hex_code1: "#163A59"
+    hex_code2: "#2A86BF"
+    hex_code3: "#32A9D9"
+    hex_code4: "#F2F2F2"
+    hex_code5: "#F2712"
   - hex_code1: "#163553"
     hex_code2: "#267998"
     hex_code3: "#EFEFCF"
