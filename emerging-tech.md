@@ -36,7 +36,7 @@ initial_styles:
     notes: The heading font looks a bit square and 'techno'
   colors:
   - hex_code1: "#163A59"
-    hex_code2: "#22738D"
+    hex_code2: "#247590"
     hex_code3: "#F2F2F2"
     hex_code4: "#F05E39"
     hex_code5: ''
