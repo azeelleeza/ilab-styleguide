@@ -18,20 +18,22 @@ initial_styles:
     body_text:
       font-family: PT Sans
     notes: This font combination is active on the NGNN site
-  - font_pair: Sans
+  - font_pair: Functional Monospace
+    heading_1:
+      font-family: Hind
+    meta_data:
+      font-family: InconsolataLGCMarkupRegular
+    body_text:
+      font-family: Hind
+    notes: The monospace font would be used for buttons and meta information.
+  - font_pair: Sans Serifs
     heading_1:
       font-family: Cairo
     body_text:
       font-family: proxima-nova
     meta_data:
       font-family: Cairo
-  - font_pair: Monospace
-    heading_1:
-      font-family: "'Pragati Narrow', sans-serif;"
-    meta_data:
-      font-family: InconsolataLGCMarkupRegular
-    body_text:
-      font-family: Hind Vadodara
+    notes: The heading font looks a bit square and 'techno'
   colors:
   - hex_code1: "#163A59"
     hex_code2: "#2A86BF"
