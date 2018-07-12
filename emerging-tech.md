@@ -45,7 +45,7 @@ initial_styles:
     hex_code1: "#163553"
     hex_code2: "#005E7D"
     hex_code3: "#f1f1f1"
-    hex_code4: "#00B590"
+    hex_code4: "#00b57a"
   - notes: NGNN Colors
     hex_code1: "#163553"
     hex_code2: "#f1f1f1"
