@@ -17,11 +17,11 @@ initial_styles:
       font-family: Roboto
   - font_pair: ''
     heading_1:
-      font-family: petersburg-web, serif;
+      font-family: museo-sans-condensed
     meta_data:
-      font-family: Source Sans Pro
+      font-family: ff-dagny-web-pro
     body_text:
-      font-family: Source Sans Pro
+      font-family: ff-dagny-web-pro
   - font_pair: Serif, Sans
     heading_1:
       font-family: 'Frank Ruhl Libre '
