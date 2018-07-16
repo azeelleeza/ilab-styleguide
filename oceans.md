@@ -17,7 +17,7 @@ initial_styles:
     font_pair: Thin Sans, Serif Body
   colors: []
   logos: []
-  show_this_section: false
+  show_this_section: true
 typography:
   import_fonts: ''
   fonts: []
