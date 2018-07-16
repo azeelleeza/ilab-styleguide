@@ -8,6 +8,13 @@ initial_styles:
   import_fonts: <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Montserrat:400,500|Open+Sans|Oswald|PT+Serif"
     rel="stylesheet">
   typography:
+  - font_pair: Montserrat
+    heading_1:
+      font-family: Montserrat
+    meta_data:
+      font-family: Roboto
+    body_text:
+      font-family: Roboto
   - font_pair: ''
     heading_1:
       font-family: petersburg-web, serif;
