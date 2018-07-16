@@ -8,6 +8,11 @@ initial_styles:
   import_fonts: <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Montserrat|Open+Sans|Oswald|PT+Serif|Pathway+Gothic+One"
     rel="stylesheet">
   typography:
+  - font_pair: Serif, Sans
+    heading_1:
+      font-family: 'Frank Ruhl Libre '
+    body_text:
+      font-family: Open sans
   - heading_1:
       font-family: Pathway Gothic One
     meta_data:
