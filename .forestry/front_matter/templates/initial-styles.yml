@@ -41,3 +41,23 @@ fields:
     template: initial-styles-partial
     label: Button
     name: button
+- type: field_group_list
+  fields:
+  - type: text
+    name: group_description
+    label: Group Description
+  - type: list
+    label: Colors
+    name: colors
+    config:
+      use_select: false
+      source:
+        type: datafiles
+- type: field_group_list
+  fields:
+  - type: text
+    name: group_description
+    label: Group Description
+  - type: file
+    name: logo_img_file
+    label: Logo Img File
