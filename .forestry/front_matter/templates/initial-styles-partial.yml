@@ -1,0 +1,13 @@
+---
+label: Initial Styles Partial
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: font_family
+  label: Font Family
+- type: textarea
+  name: css
+  label: CSS
+  description: font-size, font-weight, line-height, letter-spacing, text-transform,
+    etc
