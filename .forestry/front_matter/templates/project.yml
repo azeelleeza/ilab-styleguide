@@ -703,6 +703,15 @@ fields:
   name: screenshot
   label: screenshot
   default: "/uploads/2018/04/23/default browser example.png"
+- type: blocks
+  label: TEst block
+  name: test_block
+  template_types:
+  - example-partial
+- type: include
+  name: test_template
+  label: Test template
+  template: example-partial
 pages:
 - oceans.md
 - emerging-tech.md
