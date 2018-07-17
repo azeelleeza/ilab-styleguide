@@ -1,9 +1,10 @@
 ---
-label: Example Partial
+label: Add Fonts
 hide_body: false
 is_partial: true
 fields:
 - type: text
-  label: Text
-  name: text
+  label: Import Fonts
+  name: import-fonts
   hidden: false
+  description: Use standard HTML embed layout
