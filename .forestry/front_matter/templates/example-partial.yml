@@ -1,0 +1,9 @@
+---
+label: Example Partial
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: Text
+  name: text
+  hidden: false
