@@ -3,6 +3,13 @@ label: Initial Styles
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  name: test
-  label: Test
+- type: textarea
+  name: import_fonts
+  label: Import Fonts
+- type: field_group_list
+  name: typography
+  label: Typography
+  fields:
+  - type: text
+    name: group_description
+    label: Group Description
