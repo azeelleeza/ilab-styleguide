@@ -1,13 +1,7 @@
-
-
-<div class="section-heading"> {{ i.group_name }} </div>
-<div class="links-group">
-	
-<div class="button" style="{% for t in i.base %}{{ t[0] }}: {{ t[1] }};{% endfor %}">BUTTON</div>
- 	
-
- 		
-<div class="button" style="{% for t in i.base %}{{ t[0] }}: {{ t[1] }};{% endfor %}{% for t in i.hover %}{{ t[0] }}: {{ t[1] }};{% endfor %}">HOVER</div>
-</div>
-
-
+<article class="subsection">
+    <div class="elem-title"> {{ i.group_name }} </div>
+    <div class="group">
+        <div class="button" style="{% for t in i.base %}{{ t[0] }}: {{ t[1] }};{% endfor %}">BUTTON</div>
+        <div class="button" style="{% for t in i.base %}{{ t[0] }}: {{ t[1] }};{% endfor %}{% for t in i.hover %}{{ t[0] }}: {{ t[1] }};{% endfor %}">HOVER</div>
+    </div>
+</article>

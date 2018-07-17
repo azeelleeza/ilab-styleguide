@@ -1,34 +1,22 @@
  {% for i in page.typography.elements %} {% assign my_array = "" | split: ',' %} {% for t in i %} {% if t[0] != "element_name" and t[0] != "notes" and t[0] != "html_text" and t[0] != "extra_css" %} {% assign my_array = my_array | push: t %} {% endif %} {% endfor %}
-<article class="heading row">
-	<div class="col-sm-12 col-md-8 article-ex">
-		<div class="html-item" style="
-	{% for item in my_array %}
-		
-			{{ item[0] }}: {{ item[1] }};
-		
-	{% endfor %}">
-			{{ i.html_text }}
-		</div>
-	</div>
-	<div class="col-sm-12 col-md-3 ">
-		<div class="article-info-left">
-		<div class="section-heading">
-			{{ i.element_name }}
-		</div>
-		{% if i.notes %}
-		<div class="section-notes notes">
-			{{ i.notes }}
-		</div>
-		{% endif %}
-		<div class="section-data meta">
-			<span class="label">Font Family:</span> {{ i.font-family }}<br> 
-			<span class="label">Font Size:</span> {{ i.font-size }}<br> 
-			<span class="label">Line Height:</span> {{ i.line-height }}<br> 
-			<span class="label">Color:</span> {{ i.color}}<br> 
-		</div>
-
-</div>
-	</div>
+<article>
+    <div style="
+	{% for item in my_array %}{{ item[1] }};{% endfor %}">
+        {{ i.html_text }}
+    </div>
+    <div class="elem-desc">
+        <span class="elem-title-sm">
+				{{ i.element_name }}&ensp;</span>
+        <span class="elem-meta">
+				 {{ i.font-size }} </span>
+        <span class="elem-meta"> {{ i.font-size }} </span>
+        <span class="elem-meta">{{ i.line-height }} </span>
+        <span class="elem-meta">{{ i.color}} 
+		</span> {% if i.notes %}
+        <div class="elem-notes">
+            {{ i.notes }}
+        </div>
+        {% endif %}
+    </div>
 </article>
-
 {% endfor %}

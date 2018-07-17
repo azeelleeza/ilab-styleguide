@@ -4,15 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license
 -->
 <html>
-
 {% include head.html %}
 
 <body>
-	{% include sidebar.html %} 
-
-	<div class="content-wrapper">{{ content }}</div>
-
-{% include footer.html %}
+    {% include header.html %}
+    <div class="content-wrapper">{{ content }}</div>
+    {% include footer.html %}
 </body>
 
 </html>

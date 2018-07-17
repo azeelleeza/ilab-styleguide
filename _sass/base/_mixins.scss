@@ -92,3 +92,6 @@ $breakpoint-xsmall: 36em;
         left: calc(100% - 1px);
     }
 }
+
+
+$randomNumber: random(5) + px;
