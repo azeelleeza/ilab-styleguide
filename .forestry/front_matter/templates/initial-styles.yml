@@ -2,4 +2,7 @@
 label: Initial Styles
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: test
+  label: Test
