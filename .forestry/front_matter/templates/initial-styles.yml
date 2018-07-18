@@ -41,6 +41,8 @@ fields:
     template: initial-styles-partial
     label: Button
     name: button
+  config:
+    labelField: group_notes
 - type: field_group_list
   fields:
   - type: text
