@@ -17,6 +17,7 @@ fields:
     template: initial-styles-partial
     label: Title
     name: title
+    description: Title
   - type: include
     template: initial-styles-partial
     label: Meta
@@ -41,6 +42,9 @@ fields:
     template: initial-styles-partial
     label: Button
     name: button
+  - type: field_group
+    name: test
+    label: Test
   config:
     labelField: group_notes
 - type: field_group_list
