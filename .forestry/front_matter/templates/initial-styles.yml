@@ -21,9 +21,48 @@ fields:
     label: Title
     fields:
     - type: include
-      name: title
-      label: Title
+      name: css
+      label: css
       template: initial-styles-partial
+  - type: field_group
+    fields:
+    - type: include
+      template: initial-styles-partial
+      label: css
+      name: css
+    name: meta
+    label: Meta
+  - type: field_group
+    name: heading
+    label: Heading
+    fields:
+    - type: include
+      name: css
+      label: css
+      template: initial-styles-partial
+  - type: field_group
+    label: Body Text
+    name: body_text
+    fields:
+    - type: include
+      template: initial-styles-partial
+      label: css
+      name: css
+  - type: field_group
+    name: img_title
+    label: Img Title
+    fields:
+    - type: include
+      template: initial-styles-partial
+      label: css
+      name: css
+  - type: field_group
+    name: img_description
+    label: Img Description
+    fields:
+    - type: include
+      name: css
+      label: css
   config:
     labelField: group_title
 - type: field_group_list
