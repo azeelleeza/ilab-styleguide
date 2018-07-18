@@ -1,7 +1,7 @@
 ---
 label: Initial Styles
 hide_body: false
-is_partial: false
+is_partial: true
 fields:
 - type: textarea
   name: import_fonts
@@ -11,8 +11,8 @@ fields:
   label: Typography
   fields:
   - type: text
-    name: group_description
-    label: Group Description
+    name: group_notes
+    label: Group Notes
   - type: include
     template: initial-styles-partial
     label: Title
@@ -44,8 +44,8 @@ fields:
 - type: field_group_list
   fields:
   - type: text
-    name: group_description
-    label: Group Description
+    name: group_notes
+    label: Group Notes
   - type: list
     label: Colors
     name: colors
@@ -56,8 +56,8 @@ fields:
 - type: field_group_list
   fields:
   - type: text
-    name: group_description
-    label: Group Description
+    name: group_notes
+    label: Group Notes
   - type: file
     name: logo_img_file
     label: Logo Img File
