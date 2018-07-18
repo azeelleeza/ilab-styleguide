@@ -63,6 +63,7 @@ fields:
     - type: include
       name: css
       label: css
+      template: initial-styles-partial
   config:
     labelField: group_title
 - type: field_group_list
