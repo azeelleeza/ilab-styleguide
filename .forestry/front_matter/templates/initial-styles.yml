@@ -44,8 +44,8 @@ fields:
 - type: field_group_list
   fields:
   - type: text
-    name: group_description
-    label: Group Description
+    name: group_notes
+    label: Group Notes
   - type: list
     label: Colors
     name: colors
