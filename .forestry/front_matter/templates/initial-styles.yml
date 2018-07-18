@@ -1,7 +1,7 @@
 ---
 label: Initial Styles
 hide_body: false
-is_partial: false
+is_partial: true
 fields:
 - type: textarea
   name: import_fonts
