@@ -561,8 +561,8 @@ fields:
   label: screenshot
   default: "/uploads/2018/04/23/default browser example.png"
 pages:
-- oceans.md
 - emerging-tech.md
+- oceans.md
 - health-commission.md
 - defense-360.md
 - beyond-parallel.md
