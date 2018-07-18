@@ -11,8 +11,8 @@ fields:
   label: Typography
   fields:
   - type: text
-    name: group_description
-    label: Group Description
+    name: group_notes
+    label: Group Notes
   - type: include
     template: initial-styles-partial
     label: Title
