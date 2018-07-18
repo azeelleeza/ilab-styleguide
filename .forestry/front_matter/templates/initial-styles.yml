@@ -56,8 +56,8 @@ fields:
 - type: field_group_list
   fields:
   - type: text
-    name: group_description
-    label: Group Description
+    name: group_notes
+    label: Group Notes
   - type: file
     name: logo_img_file
     label: Logo Img File
