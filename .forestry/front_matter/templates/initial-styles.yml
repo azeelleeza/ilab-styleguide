@@ -11,8 +11,11 @@ fields:
   label: Typography
   fields:
   - type: text
-    name: group_notes
-    label: Group Notes
+    name: group_title
+    label: Group Title
+  - type: text
+    name: notes
+    label: Notes
   - type: field_group
     name: title
     label: Title
@@ -26,8 +29,11 @@ fields:
 - type: field_group_list
   fields:
   - type: text
-    name: group_notes
-    label: Group Notes
+    name: group_title
+    label: Group Title
+  - type: text
+    name: notes
+    label: Notes
   - type: list
     label: Colors
     name: colors
@@ -35,11 +41,16 @@ fields:
       use_select: false
       source:
         type: datafiles
+  config:
+    labelField: group_title
 - type: field_group_list
   fields:
   - type: text
-    name: group_notes
-    label: Group Notes
+    name: group_title
+    label: Group Title
+  - type: text
+    name: notes
+    label: Notes
   - type: file
     name: logo_img_file
     label: Logo Img File
