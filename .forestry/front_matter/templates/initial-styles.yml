@@ -83,6 +83,8 @@ fields:
         type: datafiles
   config:
     labelField: group_title
+  label: Colors
+  name: colors
 - type: field_group_list
   fields:
   - type: text
@@ -96,3 +98,5 @@ fields:
     label: Logo Img File
   config:
     labelField: group_title
+  label: Logos
+  name: logos
