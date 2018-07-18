@@ -176,6 +176,10 @@ fields:
     name: show_this_section
     label: Show this section
     default: false
+  - type: include
+    name: initial_styles
+    label: Initial Styles
+    template: initial-styles
 - type: field_group
   name: typography
   label: Typography
