@@ -13,38 +13,13 @@ fields:
   - type: text
     name: group_notes
     label: Group Notes
-  - type: include
-    template: initial-styles-partial
-    label: Title
-    name: title
-    description: Title
-  - type: include
-    template: initial-styles-partial
-    label: Meta
-    name: meta
-  - type: include
-    name: heading
-    label: Heading
-    template: initial-styles-partial
-  - type: include
-    name: body_text
-    label: Body Text
-    template: initial-styles-partial
-  - type: include
-    name: image_caption_title
-    label: Image Caption Title
-    template: initial-styles-partial
-  - type: include
-    name: image_caption_description
-    label: Image Caption Description
-    template: initial-styles-partial
-  - type: include
-    template: initial-styles-partial
-    label: Button
-    name: button
   - type: field_group
     name: test
     label: Test
+    fields:
+    - type: include
+      name: title
+      label: Title
   config:
     labelField: group_notes
 - type: field_group_list
