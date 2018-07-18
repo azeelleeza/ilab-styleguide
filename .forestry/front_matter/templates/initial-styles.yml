@@ -14,12 +14,13 @@ fields:
     name: group_notes
     label: Group Notes
   - type: field_group
-    name: test
-    label: Test
+    name: title
+    label: Title
     fields:
     - type: include
       name: title
       label: Title
+      template: initial-styles-partial
   config:
     labelField: group_notes
 - type: field_group_list
