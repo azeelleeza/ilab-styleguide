@@ -109,7 +109,10 @@ initial_styles:
     - "#f1f1f1"
     - "#005E7D"
     - "#163553"
-  logos: []
+  logos:
+  - group_title: Logo 1
+    notes: Notes
+    logo_img_file: "/uploads/2018/04/20/_sF5ExUK_400x400.png"
   show_this_section: true
   undefined:
   - group_title: Green
