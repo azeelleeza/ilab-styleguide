@@ -25,7 +25,7 @@ fields:
       label: Title
       template: initial-styles-partial
   config:
-    labelField: group_notes
+    labelField: group_title
 - type: field_group_list
   fields:
   - type: text
@@ -54,3 +54,5 @@ fields:
   - type: file
     name: logo_img_file
     label: Logo Img File
+  config:
+    labelField: group_title
