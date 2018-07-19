@@ -208,16 +208,19 @@
 }
 
 #sidebar {
-    width: 30%;
-    max-width: 500px;
-    margin: 50px 10px 50px 50px;
-float: left;
+    width: 100%;
+   
+    
+
          @include breakpoint("medium") {
+         float: left;
+         padding: 50px 10px 50px 50px;
+          max-width: 400px;
     width: 20%;
  }
 
   @include breakpoint("large") {
-    width: 30%;
+    width: 15%;
 }
 }
 
