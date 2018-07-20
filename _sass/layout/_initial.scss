@@ -113,6 +113,7 @@
         height: 80px;
         width: 80px;
         border-radius: 50%;
+        margin-bottom:.5rem;
         @include breakpoint("medium") {
             height: 100px;
             width: 100px;
@@ -125,7 +126,7 @@
 
     .color {
         float: left;
-        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .elem-meta {
