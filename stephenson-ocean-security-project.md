@@ -70,7 +70,7 @@ initial_styles:
       font_family: din-2014
       css: 'font-size: .9rem; letter-spacing: 2px;'
   colors:
-  - group_title: Blue and Orange/Yellow
+  - group_title: Bright Blue and Orange/Yellow
     colors:
     - "#344A61"
     - "#1861BF"
