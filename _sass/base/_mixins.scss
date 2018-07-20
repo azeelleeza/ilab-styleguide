@@ -19,10 +19,8 @@ $browser-context: 16px;
 // Breakpoints
 $breakpoint-xlarge: 62em;
 $breakpoint-large: 90em;
-$breakpoint-medium: 62em;
-$breakpoint-small: 46em;
-// $breakpoint-xsmall: 25em;
-$breakpoint-xsmall: 36em;
+$breakpoint-medium: 900px;
+$breakpoint-small: 767px;
 
 @mixin breakpoint($break) {
     @if $break==xlarge {
@@ -92,3 +90,6 @@ $breakpoint-xsmall: 36em;
         left: calc(100% - 1px);
     }
 }
+
+
+$randomNumber: random(5) + px;

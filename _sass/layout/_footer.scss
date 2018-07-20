@@ -2,22 +2,3 @@
 =            Footer            					=
 ===============================================*/
 
-footer {
-	background-color: $color__footer;
-	display: block;
-	position: relative;
-	clear: both;
-	@include fullWidthBackground($color__footer);
-		margin-left: 0%;
-	padding: 2rem 2rem;
-	@include breakpoint("medium") {
-		margin-left: $size__sidebar-md;
-		padding: 2rem 3rem;
-
-	}
-	@include breakpoint("large") {
-		margin-left: $size__sidebar-lg;
-		padding: 2rem 4rem;
-		max-width: $size__container-max-width;
-	}
-}

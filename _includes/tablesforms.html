@@ -1,20 +1,12 @@
 
 {% if i.image %}
-<article class="">
-	<div class="section-notes">
-		<div class="section-subtitle">
-			{% if i.form_element_name %}
-			{{ i.form_element_name }}
-			{% endif %}
-			{% if i.table_name %}
-			{{ i.table_name }}
-			{% endif %}
+<article class="subsection">
+		<div class="elem-title">
+			{% if i.form_element_name %}{{ i.form_element_name }}{% endif %}{% if i.table_name %}{{ i.table_name }}{% endif %}
 		</div>
-		<div class="section-notes notes">
+		<div class="elem-notes">
 			{{ i.element_description }}
 		</div>
-	</div>
-	<img src="{{ i.image | relative_url }}">
-
+	<img src="{{ i.image | relative_url }}" alt="{% if i.form_element_name %}{{ i.form_element_name }}{% endif %}{% if i.table_name %}{{ i.table_name }}{% endif %}">
 </article>
 {% endif %}

@@ -1,0 +1,32 @@
+<article>
+    <div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="elem-title">
+            {{ iswatches.palette_name }}</div>
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <div class="color-group row">
+            {% for colors in iswatches.colors %} {% if colors.hex_code != '' %}
+            <div class="col-sm-6">
+            <div class="color" data-copy="{{ colors.hex_code }}">
+                <div class="swatch" style="background-color: {{ colors.color }}">
+                    <div class="copybutton">COPY HEX</div>
+                </div>
+                <div class="elem-meta">
+                    HEX: <span class="hex">{{ colors.color }}</span>
+                    <br> RGB: <span class="rgb"></span>
+                </div>
+            </div>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+    
+    <div class="bar-graph col-xs-12 col-md-3">
+        {% for colors in iswatches.colors %} {% if colors.hex_code != '' %} {% assign min = 0 %} {% assign max = 1000 %} {% assign diff = max | minus: min %} {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+        <div class="bar" style="background-color: {{ colors.color }}; ">
+        </div>
+        {% endif %} {% endfor %}
+    </div>
+</div>
+</article>

@@ -1,0 +1,19 @@
+<div id="inner-menu">
+    <nav id="main-nav">
+        <!-- List of Pages -->
+        <div class="subsection-title light">Projects</div>
+        <ul>
+            {% for page in site.html_pages %} {% if page.title != 'home' %}
+            
+                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %} {% endfor %}
+        </ul>
+    </nav>
+    <div class="menu-toggle">
+        <div class="menu-button">
+            <span> </span>
+            <span> </span>
+        </div>
+        <div class="menu-label">MENU</div>
+    </div>
+</div>

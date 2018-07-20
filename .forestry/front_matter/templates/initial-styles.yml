@@ -64,6 +64,14 @@ fields:
       name: css
       label: css
       template: initial-styles-partial
+  - type: field_group
+    name: button
+    label: Button
+    fields:
+    - type: include
+      template: initial-styles-partial
+      label: css
+      name: css
   config:
     labelField: group_title
 - type: field_group_list

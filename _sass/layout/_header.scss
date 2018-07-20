@@ -1,0 +1,40 @@
+header {
+    background: #4A5657;
+    height: 300px;
+    color: white;
+    position: relative;
+    .inner-head {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+        justify-content: flex-end;
+        height: 100%;
+        margin: 0 $mobile-margin;
+        @include breakpoint("medium") {
+            margin: 0 auto;
+        }
+
+        .header-label {
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 1rem 0;
+            font-size: 32px;
+            font-weight: 300;
+             @include breakpoint("medium") {
+             font-size: 48px;
+         }
+        }
+
+        .project-program {
+            color: #f1f1f1
+        }
+        .project-date {
+            color: #A9A9A9
+        }
+    }
+}

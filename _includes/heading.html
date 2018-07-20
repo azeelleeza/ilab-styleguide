@@ -1,35 +1,29 @@
  {% for i in page.typography.headings %}
- 
-<article class="heading row">
-	<div class="col-sm-12 col-md-8 article-ex" style=" {% for t in i %}
-		 {% if t[0] != "heading_name" %}
+<article>
+    <div style=" {% for t in i %}
+		 {% if t[0] != " heading_name " %}
 		  {{ t[0] }}: {{t[1] }};
 		  	 {% endif %}
 		 {% endfor %}">
-		The quick brown fox jumps over the lazy dog
-	</div>
-	<div class="col-sm-12 col-md-3">
-			<div class="article-info-left">
-		<div class="section-heading">
-			{{ i.heading_name }}
-		</div>
-			{% if i.notes %}
-		<div class="section-notes notes">
-			{{ i.notes }}
-		</div>
-		{% endif %}
-		<div class="section-data meta">
-
-			 {% for t in i %}
-		 {% if t[0] != "heading_name" %}
-		  <span class="label">{{ t[0] }}:</span> {{ t[1] }}<br>
-		  	 {% endif %}
-		 {% endfor %}
-
-		</div>
-			
-	</div>
-</div>
+        The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="elem-desc">
+        <span class="elem-title-sm">
+				{{ i.heading_name }}
+			</span>&ensp;
+				 {% for t in i %}
+			 {% if t[0] != "heading_name" %}
+			 {% if t[1] != "" %}
+			 <span class="elem-meta">
+			   {{ t[1] }} </span>
+			  	 {% endif %}
+			  	 {% endif %}
+			 {% endfor %}
+		 {% if i.notes %}
+        <div class="elem-notes">
+            {{ i.notes }}
+        </div>
+        {% endif %}
+    </div>
 </article>
-
 {% endfor %}

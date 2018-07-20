@@ -99,6 +99,9 @@ colors:
     - color: "#8cc4b4"
     - color: "#58a897"
     - color: "#459178"
+    - color: "#a483a8"
+    - color: "#7a6796"
+    - color: "#69518d"
     hex_code:
     - color: "#459178"
     - color: "#58a897"

@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.content-wrapper {
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#section-container,
+#sidebar {
+    height: 100%;
+}
+
+#section-container {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    padding: 0 $mobile-margin 50px $mobile-margin;
+    @include breakpoint("medium") {
+        padding: 50px 5%;
+    }
+
+    @include breakpoint("large") {
+        padding: 50px 10%;
+       
+    }
+}
+
+.project-styles {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    
+    position: relative;
+@include breakpoint("medium") {
+        float: left;
+    }
+    @include breakpoint("medium") {
+        width: 80%;
+    }
+
+    @include breakpoint("large") {
+        width: 85%;
+
+    }
+}
+
+
+article {
+    padding-bottom: 3rem;
+    height: 100%;
+    width: 100%;
+}
+
+#colors {
+    article {
+        padding-bottom: 1rem;
+    }
+}
+
+
+$s-min: 20;
+$s-max: 100;
+
+@for $i from 1 through 7 {
+    .bar:nth-child(#{$i}) {
+        height: $s-min+random($s-max+-$s-min) + px;
+    }
+}
+
+section {
+    padding: 0px 0px;
+    margin-bottom: 3rem;
+}
+
+section:last-of-type {
+    border-bottom: 1px solid white;
+    margin-bottom: 0px;
+}
+
+
+
+.subsection {
+    border-bottom: 1px solid #DAD7DB;
+    padding: 2rem 0 1rem 0;
+    @include breakpoint("medium") {
+padding: 2rem 50px 1rem 50px;
+}
+}
+
+.subsection:last-of-type {
+    border-bottom: 0px solid #DAD7DB;
+}
+
+
+.bar {
+    display: block;
+    min-width: 30px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.swatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primary-colors .swatch {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+
+#primary-colors .color {
+    height: 125px;
+}
+
+.copybutton {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    display: none;
+}
+
+#colors .elem-meta {
+    margin-top: .5rem;
+}
+
+.swatch:hover .copybutton {
+    display: block;
+}
+
+#secondary-colors .swatch {
+    height: 70px;
+}
+
+#interactive-colors {
+    article {
+        margin-bottom: 2rem;
+    }
+    .color {
+        height: 50px;
+    }
+
+    .swatch {
+        height: 100%;
+        width: 50px;
+        float: left;
+        margin-right: 1rem;
+        display: block;
+
+    }
+}
+
+.bar-graph {
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    /* Safari */
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    align-items: flex-end;
+    max-width: 300px;
+
+    .bar {
+        margin: 0 3px;
+    }
+}
+
+
+.color-group {
+    //display: flex;
+    //flex-direction: column;
+//flex-wrap: wrap;
+    //width: 100%;
+
+        .color {
+            margin-bottom: .5rem;
+        }
+}
+
+.font-aside {}
+
+article {}
+
+
+
+
+#colorblindradios {
+    margin-bottom: 2rem;
+    i {
+        font-size: 2rem;
+        color: $color-text-gray;
+        @include transition(color 250ms);
+        &:before {
+            margin-left: 0;
+        }
+        &:after {
+            content: "Color Blind Filter";
+            display: inline-block; //font-family: $font__roboto;
+            font-size: 1.1rem;
+            color: $color-text-gray;
+            padding-bottom: .1rem;
+            opacity: 0;
+            @include transition(opacity 250ms);
+        }
+
+        &:hover {
+            color: $color-dkblue;
+            @include transition(color 250ms);
+            &:after {
+                opacity: 1;
+                @include transition(opacity 250ms);
+            }
+        }
+    }
+
+
+    .colorblindbutton {
+        line-height: 1.5rem;
+    }
+
+    .radiopair {}
+
+
+    .radio-group {
+        height: 0px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+
+        justify-content: space-between;
+
+        @include transition(height 250ms);
+    }
+
+    &.open {
+        .radio-group {
+            height: 2rem;
+            @include transition(height 250ms);
+        }
+        i {
+
+            color: $color-dkblue;
+        }
+    }
+}
+
+
+img {
+    width: 100%;
+}
+
+
+.lt-logo,
+.dk-logo {
+    padding: 40px 20px;
+}
+
+.lt-logo {
+    border: 1px solid #DAD7DB;
+}
+
+#forms,
+#tables {
+    img {
+        width: auto;
+        max-width: 100%;
+    }
+}
+

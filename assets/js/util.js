@@ -1,5 +1,11 @@
 (function($) {
 
+// Toggle Color Blind Filters
+	$(".colorblindbutton").on('click', function(event) {
+		$('#colorblindradios').toggleClass('open');
+		//console.log();
+	});
+
 	/*
 
 	    The Color Blindness Simulation function is
@@ -61,10 +67,10 @@
 
 	$('input[name = "colorblind"]').on('change', function() {
 		var cbType = String(this.value);
-		$(".swatch").each(function(index) {
+		$(".color").each(function(index) {
 			$hex = $(this).attr("data-copy");
 			var rgb = hexToRgb($hex);
-			//console.log(rgb);
+			console.log(rgb);
 			//$hex = rgbToHex(rgb);
 			var rgbfix = hexToRgb($hex);
 			//console.log(blindType);
@@ -91,8 +97,8 @@
 				var B1 = typeblind.B;
 				var hexcode = rgbToHex(typeblind.R, typeblind.G, typeblind.B);
 			};
-			$(this).children(".swatch-color").css("background-color", hexcode);
-			$(this).children(".swatch-container").children(".swatch-color").css("background-color", hexcode);
+			$(this).children(".swatch").css("background-color", hexcode);
+			$(this).children(".color").children(".swatch").css("background-color", hexcode);
 
 		});
 	})
