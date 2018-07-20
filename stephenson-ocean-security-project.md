@@ -13,7 +13,7 @@ initial_styles:
       font_family: neuzeit-grotesk
     meta:
       font_family: Inconsolata
-      css: 'text-transform: uppercase;'
+      css: 'text-transform: uppercase; font-size: 1rem;'
     heading:
       font_family: neuzeit-grotesk
       css: 'font-weight: 200;'
