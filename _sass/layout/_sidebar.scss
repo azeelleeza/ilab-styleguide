@@ -33,13 +33,14 @@
 
     background-color: white;
     z-index: 5;
-    background-color: white;
+    
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     width: 100%;
     position: fixed;
     @include breakpoint("medium") {
+    background-color: unset;
         width: 15%;
         bottom: unset;
         padding: 1rem;
