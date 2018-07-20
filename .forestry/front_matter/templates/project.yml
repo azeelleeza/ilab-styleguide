@@ -561,15 +561,11 @@ fields:
   label: screenshot
   default: "/uploads/2018/04/23/default browser example.png"
 pages:
-- emerging-tech.md
 - oceans.md
-- health-commission.md
+- emerging-tech.md
 - defense-360.md
+- health-commission.md
 - beyond-parallel.md
-- reconnecting-asia.md
 - poni.md
 - chinapower.md
-- engaging-indian-states.md
-- missile-threat.md
 - aerospace.md
-- amti.md
