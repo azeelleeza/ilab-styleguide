@@ -13,8 +13,10 @@ initial_styles:
       font_family: neuzeit-grotesk
     meta:
       font_family: Inconsolata
+      css: 'text-transform: uppercase;'
     heading:
       font_family: neuzeit-grotesk
+      css: 'font-weight: 200;'
     body_text:
       font_family: acumin-pro
       css: 'font-weight: 100'
@@ -28,6 +30,7 @@ initial_styles:
   - group_title: Serif and Sans Serif
     title:
       font_family: proxima-nova
+      css: 'font-weight: 200;'
     meta:
       font_family: proxima-nova
     heading:
@@ -40,6 +43,7 @@ initial_styles:
       font_family: proxima-nova
     button:
       font_family: proxima-nova
+      css: 'font-size: .9rem; letter-spacing: 1px;'
   - group_title: Modern
     title:
       font_family: din-2014
