@@ -72,9 +72,9 @@ initial_styles:
   colors:
   - group_title: Blues and Yellow
     colors:
-    - "#012E5B"
-    - "#1F5A94"
-    - "#2A8FC4"
+    - "#224976"
+    - "#0081C1"
+    - "#00AADA"
     - "#f1f1f1"
     - "#F9C535"
   - colors:
