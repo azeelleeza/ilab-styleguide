@@ -70,11 +70,12 @@ initial_styles:
       font_family: din-2014
       css: 'font-size: .9rem; letter-spacing: 2px;'
   colors:
-  - group_title: Blue Hues
+  - group_title: Blue and Orange/Yellow
     colors:
-    - "#224976"
-    - "#0081C1"
-    - "#00AADA"
+    - "#344A61"
+    - "#1861BF"
+    - "#FFA700"
+    - "#CFE1F1"
   - group_title: Blues and Yellow
     colors:
     - "#1A414F"
