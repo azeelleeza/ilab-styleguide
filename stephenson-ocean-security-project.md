@@ -80,7 +80,7 @@ initial_styles:
     - "#1A414F"
     - "#21547B"
     - "#2673AE"
-    - AED3E2
+    - "#AED3E2"
     - "#F9C535"
   - colors:
     - "#012E5B"
