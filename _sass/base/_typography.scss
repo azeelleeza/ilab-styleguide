@@ -124,7 +124,14 @@ margin: unset;
  }
 
 
- .copybutton {}
+
+ .lightbg .swatch{
+color: black;
+}
+
+.darkbg .swatch {
+color: white;
+}
 
  #typogprahy .elem-meta {
      &:after {

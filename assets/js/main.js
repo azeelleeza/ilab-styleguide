@@ -77,9 +77,15 @@
 
 
         $('.rgb', this).text($rgb);
-        $contrast = getContrastYIQ($(this).attr("data-copy"));
+        var hex = $(this).attr("data-copy");
+        $contrast = getContrastYIQ(hex);
         $(this).addClass($contrast);
 
+
+		n_match  = ntc.name(hex);
+    n_name       = n_match[1]; // This is the text string for the name of the match
+
+    $('.elem-subtitle', this).text(n_name);
         //isDark($(this).attr("data-copy"));
         //$(this).css("color", hextorgb($(this).css("background-color")) ? 'white' : 'black');
     });
@@ -102,8 +108,10 @@
         var g = parseInt(hexcolor.substr(2, 2), 16);
         var b = parseInt(hexcolor.substr(4, 2), 16);
         var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-
+    return (yiq >= 131.5) ? 'lightbg' : 'darkbg';
     }
+
+
 
 
 
