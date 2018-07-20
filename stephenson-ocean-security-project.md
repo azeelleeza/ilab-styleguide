@@ -27,6 +27,7 @@ initial_styles:
       css: 'font-weight: 100'
     button:
       font_family: Inconsolata
+      css: 'letter-spacing: 2px;'
   - group_title: Serif and Sans Serif
     title:
       font_family: proxima-nova
