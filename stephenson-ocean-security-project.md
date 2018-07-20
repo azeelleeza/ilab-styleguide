@@ -55,15 +55,16 @@ initial_styles:
       css: 'font-weight: normal; font-size: 38px;'
     meta:
       font_family: din-2014
+      css: 'font-size: 1rem;'
     heading:
       font_family: din-2014
       css: 'font-weight: 200; font-size: 30px;'
     body_text:
-      font_family: minion-pro
+      font_family: acumin-pro
     img_title:
       font_family: din-2014
     img_description:
-      font_family: minion-pro
+      font_family: acumin-pro
       css: 'font-size: 1rem;'
     button:
       font_family: din-2014
