@@ -78,7 +78,7 @@ initial_styles:
     - "#f1f1f1"
     - "#F9C535"
   - colors:
-    - "#022B6F"
+    - "#012E5B"
     - "#0663A1"
     - "#2E96C7"
     - "#f2f2f2"
