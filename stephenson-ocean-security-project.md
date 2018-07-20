@@ -11,17 +11,19 @@ initial_styles:
   - group_title: Round Sans Serif
     title:
       font_family: neuzeit-grotesk
+      css: 'line-height: 1.1;'
     meta:
       font_family: Inconsolata
       css: 'text-transform: uppercase; font-size: 1rem;'
     heading:
       font_family: neuzeit-grotesk
-      css: 'font-weight: 200;'
+      css: 'font-weight: 200; font-size: 30px;'
     body_text:
       font_family: acumin-pro
       css: 'font-weight: 100'
     img_title:
       font_family: Inconsolata
+      css: 'font-size: 1rem;'
     img_description:
       font_family: acumin-pro
       css: 'font-weight: 100'
@@ -36,10 +38,12 @@ initial_styles:
       font_family: proxima-nova
     heading:
       font_family: le-monde-livre-std
+      css: 'font-size: 28px;'
     body_text:
       font_family: proxima-nova
     img_title:
       font_family: le-monde-livre-std
+      css: 'font-size: 1.3rem;'
     img_description:
       font_family: proxima-nova
     button:
@@ -48,12 +52,12 @@ initial_styles:
   - group_title: Modern
     title:
       font_family: din-2014
-      css: 'font-weight: normal;'
+      css: 'font-weight: normal; font-size: 38px;'
     meta:
       font_family: din-2014
     heading:
       font_family: din-2014
-      css: 'font-weight: 200'
+      css: 'font-weight: 200; font-size: 30px;'
     body_text:
       font_family: minion-pro
     img_title:
