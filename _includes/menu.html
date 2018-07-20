@@ -4,9 +4,9 @@
         <div class="subsection-title light">Projects</div>
         <ul>
             {% for page in site.html_pages %} {% if page.title != 'home' %}
-            <a href="{{ page.url | prepend: site.baseurl }}">
-                <li>{{ page.title }}</li>
-            </a>{% endif %} {% endfor %}
+            
+                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %} {% endfor %}
         </ul>
     </nav>
     <div class="menu-toggle">

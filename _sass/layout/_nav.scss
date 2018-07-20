@@ -1,24 +1,31 @@
 #menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: block;
-    width: 70px; //width: 70px;
+    width: 70px; 
     //overflow: hidden;
     height: 100%;
-    z-index: 2;
-
+    z-index: 7;
+    @include transition(width .5s ease-in-out);
+    @include breakpoint("medium") {
+        position: absolute;
+        width: 70px;
+    }
     #inner-menu {
         display: block;
         position: absolute;
-        width: 100%;
         height: 100%;
         overflow: hidden;
-        background-color: #6E7879;
+
         z-index: 3;
         width: 70px;
         right: 0px;
         @include transition(width .5s ease-in-out);
+        @include breakpoint("medium") {
+
+            background-color: #6E7879;
+        }
     }
     &:before {
         background-color: rgba(67, 72, 72, .75);
@@ -34,17 +41,22 @@
 
     .menu-toggle {
         position: absolute;
-        height: 100%;
+        height: 55px;
         padding: 20px;
         right: 0;
         top: 0;
         width: 70px;
         z-index: 3;
         background-color: #6E7879;
+        @include breakpoint("medium") {
+
+            height: 100%;
+        }
     }
 
 
     .menu-label {
+        display: none;
         font-weight: 500;
         letter-spacing: 2px;
         -ms-transform: rotate(-90deg);
@@ -54,6 +66,9 @@
         transform: rotate(-90deg);
         /* Standard syntax */
         margin-top: 2.5rem;
+        @include breakpoint("medium") {
+            display: block;
+        }
     }
     .menu-button {
         width: 30px;
@@ -108,81 +123,87 @@
         display: block;
         position: absolute;
         height: 100%;
-        left: 50px;
+        left: 70px;
         top: 0; //left: 100%;
-        padding: 20px;
-        width: calc(60vw - 70px); //transition(.25s ease-in-out);
-        //background-color: #6E7879;
-        $duration: .2s;
-        $distance: 8px;
-        $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-
+        padding: 0px;
+        width: 100%;
+        background-color: #6E7879;
+    min-width: 300px;
+    overflow: hidden;
+        @include breakpoint("medium") {
+            width: calc(60vw - 70px);
+            background-color: unset;
+            left: 50px;
+            overflow: unset;
+             padding: 20px;
+        }
         ul {
             height: 100%;
             margin: 0;
-            padding: 20px;
+            padding: 0px 0px 0px 0px;
+font-size: 1.3rem;
             @include breakpoint("medium") {
-                columns: 2;
+                //columns: 2;
+                font-size: unset;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0px 20px 40px 20px;
             }
             a {
                 text-decoration: none;
                 color: white;
-                padding-bottom: 8px;
+                padding: 3px 20px;
                 position: relative;
                 display: block;
+                height: 100%;
+                background: linear-gradient(to right, mint 50%, yellow 50%);
+                background: linear-gradient(90deg, 50%, #6E7879 50%);
+                background: -moz-linear-gradient(90deg, $color-dkblue 50%, #6E7879 50%);
+                background: -webkit-linear-gradient(180deg, $color-dkblue 50%, #6E7879 50%);
+                background-position: 0; // make the background twice as big
+                background-size: 200%;
+                transition: all 0.4s;
+                background-position: 0%;
+@include breakpoint("medium") {
+display: inline-block;
+padding: 3px 5px;
+}
 
-                li {
-                    display: inline-block;
-
-                    margin: 10px 0 0;
-                    padding: 0px 7px;
-                    &:before,
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        bottom: 2px;
-                        left: 0;
-                        right: 0;
-                        height: 2px;
-                        background-color: red;
-                    }
-                    &:before {
-                        opacity: 0;
-                        transform: translateY(- $distance);
-                        transition: transform 0s $easeOutBack, opacity 0s;
-                    }
-                    &:after {
-                        opacity: 0;
-                        transform: translateY($distance/2);
-                        transition: transform $duration $easeOutBack, opacity $duration;
-                    }
-                    &:hover,
-                    &:focus {
-                        &:before,
-                        &:after {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-                        &:before {
-                            transition: transform $duration $easeOutBack, opacity $duration;
-                        }
-                        &:after {
-                            transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-                        }
-                    }
+                &:hover,
+                &:focus {
+                    background-position: -100%;
                 }
+            }
+            li {
+                //display: inline-block;
+                margin: 10px 0 0;
+               
+                 @include breakpoint("medium") {
+ padding: 0px 7px;
+             }
             }
         }
     }
+
+
     &.open {
         width: 100%;
+
         &:before {
-            opacity: 1;
-            @include transition(opacity .25s ease-in-out);
+
+            @include breakpoint("medium") {
+                opacity: 1;
+                @include transition(opacity .25s ease-in-out);
+            }
         }
         #inner-menu {
-            width: calc(60vw + 70px);
+            width: 100%;
             @include transition(width .5s ease-in-out);
+
+            @include breakpoint("medium") {
+                width: calc(60vw + 70px);
+            }
         }
         .menu-button {
             span:nth-child(1) {
@@ -203,100 +224,12 @@
                 left: 0px;
             }
         }
-        nav#main-nav {}
-    }
-}
+        nav#main-nav {
+            left: 0;
 
-#sidebar {
-    width: 100%;
-   
-    
-
-         @include breakpoint("medium") {
-         float: left;
-         padding: 50px 10px 50px 50px;
-          max-width: 400px;
-    width: 20%;
- }
-
-  @include breakpoint("large") {
-    width: 15%;
-}
-}
-
-#sidebar{
-	padding-top: 100px;
-}
-
-#side-fixed {
-    display: block;
-    position:absolute;
-    background-color: white;
-   	
-    nav {}
-
-    ul {
-        margin-bottom: 0;
-        padding-left: 1rem;
-        a {
-            color: #A9A9A9;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-decoration: none;
-            @include transition(color .25s ease-in-out);
-            &.active {
-                color: black;
-                @include transition(color .25s ease-in-out);
+            @include breakpoint("medium") {
+                left: 70px;
             }
         }
-
-        li {
-            padding-bottom: .5rem;
-        }
     }
-}
-
-.sec-track {
-    -ms-transform: rotate(-90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-90deg);
-    /* Safari */
-    transform: rotate(-90deg);
-    /* Standard syntax */
-    display: block;
-    top: -50px;
-    left: -1.1rem;
-    position: absolute;
-    font-weight: 500;
-    color: #A9A9A9;
-    .track {
-        color: black;
-    }
-}
-
-.progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    border-radius: 5px;
-    background-color: #A9A9A9;
-}
-
-.progress-bar--increment {
-    background-color: #E74C5B;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 0;
-    border-radius: 5px;
-    @include transition(height .05s ease-in-out);
-}
-
-.fixed #side-fixed {
-	position: fixed;
-	top: 100px;
 }

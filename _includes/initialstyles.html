@@ -1,11 +1,12 @@
 <div id="initial-styles">
-    <div class="section-container" id="typography">
+    <div class="section-container" id="init-typography">
         <div class="section-title">
-            <h2><span class="section-num">01</span><span class="section-name">Typography</span></h2>
+            <h2><span class="section-num">01 </span><span class="section-name"> Typography</span></h2>
         </div>
         {% for i in page.initial_styles.typography %}
+        {{  }}
         <!-- typography -->
-        <div class="subsection-title">Group 1{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
+        <div class="subsection-title">Group {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
         <div class="initial-fonts">
             <!-- get fonts via font_family -->
             {% assign my_array = "" | split: ',' %} {% for t in i %}{% for image in t %}{% if image.font_family %} {% assign my_array = my_array | push: image.font_family %} {% endif %} {% endfor %} {% endfor %} <strong>FONTS:</strong> {{ my_array | uniq | join: ', ' }}</div>
@@ -27,18 +28,21 @@
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat.</p>
                     <div class="clearfix"></div>
+                    <div class="button-container"><div class="button" style="font-family: {% if i.button.font_family %}{{ i.button.font_family }}{% endif %}; {% if i.button.css %}{{ i.button.css }}{% endif %};">BUTTON
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
         {% endfor %}
     </div>
-    <div class="section-container" id="colors">
+    <div class="section-container" id="init-colors">
         <div class="section-title">
-            <h2><span class="section-num">02</span><span class="section-name">Colors</span></h2>
+            <h2><span class="section-num">02</span><span class="section-name"> Colors</span></h2>
         </div>
-        {% for i in page.initial_styles.colors %}
+        {% include colorblindfilter.html %} {% for i in page.initial_styles.colors %}
         <!-- typography -->
-        <div class="subsection-title">Group 1{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
+        <div class="subsection-title">Group {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
         <div class="elem-notes">{% if i.notes %}{{ i.notes }} {% endif %}</div>
         <section id="initial-colors" class="subsection">
             <article>
@@ -58,19 +62,18 @@
         </section>
         {% endfor %}
     </div>
-    <div class="section-container" id="logos">
+    <div class="section-container" id="init-logos">
         <div class="section-title">
-            <h2><span class="section-num">03</span><span class="section-name">Logos</span></h2>
+            <h2><span class="section-num">03</span><span class="section-name"> Logos</span></h2>
         </div>
         {% for i in page.initial_styles.logos %}
         <!-- typography -->
-        <div class="subsection-title">Logo 1{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
+        <div class="subsection-title"> Logo {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
         <div class="elem-notes">{% if i.notes %}{{ i.notes }} {% endif %}</div>
         <section id="initial-logos" class="subsection">
             <article>
-            	{% for i in page.initial_styles.logos %}
-            	<img src="{{ i.logo_img_file | relative_url }}">
-            	{% endfor %}
+                {% for i in page.initial_styles.logos %}
+                <img src="{{ i.logo_img_file | relative_url }}"> {% endfor %}
             </article>
         </section>
         {% endfor %}

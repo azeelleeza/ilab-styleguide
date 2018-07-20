@@ -1,0 +1,170 @@
+#sidebar {
+
+    padding-top: 100px;
+    @include breakpoint("medium") {
+        float: left;
+        padding: 0px 10px 50px 50px;
+        max-width: 400px;
+        width: 20%;
+    }
+
+    @include breakpoint("large") {
+        width: 15%;
+    }
+}
+
+.fixed #side-fixed {
+    position: fixed;
+    bottom: 0px;
+    @include breakpoint("medium") {
+        top: 100px;
+        bottom: unset;
+    }
+}
+
+#side-fixed {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    
+    bottom: 0px;
+    display: block;
+
+    background-color: white;
+    z-index: 5;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    position: fixed;
+    @include breakpoint("medium") {
+        width: 15%;
+        bottom: unset;
+        padding: 1rem;
+        display: block;
+        flex-wrap: unset;
+    overflow-x: unset;
+        position: relative;
+        padding: unset;
+        top: 100px;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    nav {
+        flex-grow: 2;
+
+        @include breakpoint("medium") {
+            flex-grow: unset;
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+        padding: 1rem 1rem 1rem 75px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+        @include breakpoint("medium") {
+            display: block;
+            margin-top: unset;
+            padding: 0 0 0 1rem;
+        }
+        a {
+            color: #A9A9A9;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            @include transition(color .25s ease-in-out);
+            &.active {
+                color: black;
+                @include transition(color .25s ease-in-out);
+            }
+        }
+
+        li {
+            padding: 0 1rem 0 1rem;
+            @include breakpoint("medium") {
+                padding: 0 0 .5rem 0;
+            }
+        }
+    }
+}
+
+.sec-track {
+
+    display: block;
+    padding: 1rem;
+    background-color: white;
+    position: fixed;
+    font-weight: 500;
+    color: #A9A9A9;
+
+    @include breakpoint("medium") {
+        position: absolute;
+         background-color: unset;
+        display: block;
+        padding: unset;
+        top: -50px;
+        left: -1.1rem;
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari */
+        transform: rotate(-90deg);
+        /* Standard syntax */
+    }
+
+
+
+    .track {
+        color: black;
+    }
+}
+
+
+
+
+.progress-bar {
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #A9A9A9;
+    @include breakpoint("medium") {
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: unset;
+    }
+}
+
+.progress-bar--increment {
+    position: fixed;
+    background-color: black;
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    @include transition(width .05s ease-in-out);
+
+    @include breakpoint("medium") {
+        width: 2px;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        bottom: unset;
+        @include transition(height .05s ease-in-out);
+    }
+}

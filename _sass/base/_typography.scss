@@ -1,5 +1,5 @@
  /*===============================================
-=            		Typography      	      =
+=                   Typography                =
 ===============================================*/
 
  body {
@@ -10,16 +10,20 @@
 
 
 
- .letters {
-     font-size: 80px;
+ .font-name {
+     font-size: 40px;
      display: block;
-     float: left;
-     margin-right: 1rem;
+ 
+ }
+
+ .font-source {
+    display: block;
+    width: 100%;
+    margin-top: .5rem;
  }
 
  .alphabet {
      display: block;
-     float: left;
      font-size: 20px;
  }
 
@@ -28,34 +32,42 @@
      font-weight: 300;
      font-size: 32px;
      border-bottom: 1px solid #A9A9A9;
- text-align: center;
- margin-top: 5rem;
+     text-align: center;
+     margin-top: 5rem;
      .section-num {
          color: #A9A9A9;
      }
+ }
 
-}
  .subsection-title {
      font-weight: 500;
      font-size: 22px;
-     margin-left: 25px;
+     
+     @include breakpoint("medium") {
+margin-left: 25px;
+ }
      &:after {
-     	display: block;
-     	content: '';
-     		width: 50px;
-     		height: 8px;
-     		border-bottom: 3px solid black;
-     		//margin-bottom: 2rem;
+         display: block;
+         content: '';
+         width: 50px;
+         height: 8px;
+         margin-bottom: .5rem;
+         border-bottom: 3px solid black; //margin-bottom: 2rem;
      }
      &.light {
-     	color:white;
-     	font-weight: 400;
-     	text-transform: uppercase;
-     	letter-spacing: 1px;
-     	font-size: 20px;
-     	&:after {
-     		border-bottom: 3px solid #9B9B9B;
-     	}
+         color: white;
+         font-weight: 400;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         font-size: 20px;
+         margin: 20px;
+
+            @include breakpoint("medium") {
+margin: unset;
+        }
+         &:after {
+             border-bottom: 3px solid #9B9B9B;
+         }
      }
  }
 
@@ -69,28 +81,28 @@
 
 
  .elem-subtitle {
- 	font-weight: 500;
- 	font-size: 16;
- 	letter-spacing: 1px;
- 	text-transform: uppercase;
+     font-weight: 500;
+     font-size: 16;
+     letter-spacing: 1px;
+     text-transform: uppercase;
 
- 	padding-top: .5rem;
+     padding-top: .5rem;
  }
+
  .elem-title-sm {
      font-weight: normal;
      font-size: 18px;
-
  }
 
  .elem-desc {
- 	padding-top: .5rem;
+     padding-top: .5rem;
  }
 
  #typography .elem-meta {
      &:after {
          display: inline-block;
          content: "|";
-         color: #A9A9A9;
+         color: $color-text-gray;
      }
      &:last-child:after {
          content: "";
@@ -99,25 +111,26 @@
 
  .elem-notes {
      font-weight: normal;
-     color: #A9A9A9;
+     color: $color-text-gray;
  }
 
-.font-aside {
-	border-left: 2px solid #DAD7DB;
-	.elem-title, .elem-notes {
-	     margin-bottom: .5rem;
-	padding-left: 1rem;
-}
-}
+ .font-aside {
+     border-left: 2px solid #DAD7DB;
+     .elem-title,
+     .elem-notes {
+         margin-bottom: .5rem;
+         padding-left: 1rem;
+     }
+ }
 
 
  .copybutton {}
 
-#typogprahy .elem-meta {
+ #typogprahy .elem-meta {
      &:after {
          display: inline-block;
          content: "|";
-         color: #A9A9A9;
+         color: $color-text-gray;
      }
      &:last-child:after {
          content: "";
@@ -125,19 +138,19 @@
  }
 
 
- .img-download .elem-meta {
- 	display: block;
- 	float: left;
- 	margin-right: 1rem;
- 	a{
- 		color: black;
- 		text-decoration: none;
- 	}
- 	a:hover {
- 		color: #C54628;
- 	}
- }	
+ .img-download .elem-meta, .font-source {
+     display: block;
+     float: left;
+     margin-right: 1rem;
+     a {
+         color: black;
+         text-decoration: none;
+     }
+     a:hover {
+         color: #C54628;
+     }
+ }
 
  .button {
- 	display: inline-block;
+     display: inline-block;
  }

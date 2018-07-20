@@ -51,7 +51,10 @@ initial_styles:
     img_title:
       font_family: Cairo
     img_description:
-      font_family: roxima-nova
+      font_family: proxima-nova
+    button:
+      font_family: proxima-nova
+      css: 'letter-spacing: 1px;'
   colors:
   - group_title: NGNN Colors
     notes: ''

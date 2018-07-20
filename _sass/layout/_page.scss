@@ -7,6 +7,11 @@ html {
 body {}
 
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 .content-wrapper {
     height: 100%;
     display: -ms-flexbox;
@@ -29,22 +34,33 @@ body {}
     -moz-box-flex: 1;
     -ms-box-flex: 1;
     box-flex: 1;
-    padding: 50px 50px 50px 50px;
+    padding: 0 $mobile-margin 50px $mobile-margin;
+    @include breakpoint("medium") {
+        padding: 50px 5%;
+    }
+
+    @include breakpoint("large") {
+        padding: 50px 10%;
+       
+    }
 }
 
 .project-styles {
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
-    float: right;
+    
     position: relative;
-
+@include breakpoint("medium") {
+        float: left;
+    }
     @include breakpoint("medium") {
         width: 80%;
     }
 
     @include breakpoint("large") {
-        width: 70%;
+        width: 85%;
+
     }
 }
 
@@ -72,7 +88,7 @@ $s-max: 100;
 }
 
 section {
-    padding: 0px 50px;
+    padding: 0px 0px;
     margin-bottom: 3rem;
 }
 
@@ -85,7 +101,10 @@ section:last-of-type {
 
 .subsection {
     border-bottom: 1px solid #DAD7DB;
-    padding-top: 3rem;
+    padding: 2rem 0 1rem 0;
+    @include breakpoint("medium") {
+padding: 2rem 50px 1rem 50px;
+}
 }
 
 .subsection:last-of-type {
@@ -137,12 +156,22 @@ section:last-of-type {
     height: 70px;
 }
 
+#interactive-colors {
+    article {
+        margin-bottom: 2rem;
+    }
+    .color {
+        height: 50px;
+    }
 
-#interactive-colors .swatch {
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin-right: 1rem;
+    .swatch {
+        height: 100%;
+        width: 50px;
+        float: left;
+        margin-right: 1rem;
+        display: block;
+
+    }
 }
 
 .bar-graph {
@@ -154,6 +183,7 @@ section:last-of-type {
     height: 100px;
     width: 100%;
     align-items: flex-end;
+    max-width: 300px;
 
     .bar {
         margin: 0 3px;
@@ -162,21 +192,79 @@ section:last-of-type {
 
 
 .color-group {
-    columns: 2;
+    //display: flex;
+    //flex-direction: column;
+//flex-wrap: wrap;
+    //width: 100%;
+
+        .color {
+            margin-bottom: .5rem;
+        }
 }
 
 .font-aside {}
 
 article {}
 
+
+
+
 #colorblindradios {
+    margin-bottom: 2rem;
+    i {
+        font-size: 2rem;
+        color: $color-text-gray;
+        @include transition(color 250ms);
+        &:before {
+            margin-left: 0;
+        }
+        &:after {
+            content: "Color Blind Filter";
+            display: inline-block; //font-family: $font__roboto;
+            font-size: 1.1rem;
+            color: $color-text-gray;
+            padding-bottom: .1rem;
+            opacity: 0;
+            @include transition(opacity 250ms);
+        }
+
+        &:hover {
+            color: $color-dkblue;
+            @include transition(color 250ms);
+            &:after {
+                opacity: 1;
+                @include transition(opacity 250ms);
+            }
+        }
+    }
+
+
+    .colorblindbutton {
+        line-height: 1.5rem;
+    }
+
+    .radiopair {}
+
 
     .radio-group {
-        display: none;
+        height: 0px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+
+        justify-content: space-between;
+
+        @include transition(height 250ms);
     }
+
     &.open {
         .radio-group {
-            display: block;
+            height: 2rem;
+            @include transition(height 250ms);
+        }
+        i {
+
+            color: $color-dkblue;
         }
     }
 }
@@ -200,75 +288,7 @@ img {
 #tables {
     img {
         width: auto;
+        max-width: 100%;
     }
 }
 
-
-///Inital Styles
-
-#initial-styles {
-    .subsection {
-        padding-top: .5rem;
-    }
-    .initial-fonts {
-            margin-top: .5rem;
-    }
-    .elem-notes, .initial-fonts{
-            margin-left: 25px;
-   
-    }
-}
-#initial-typography {
-
-    h1,
-    h2 {
-        margin-bottom: 0;
-        line-height: 1.3;
-        font-weight: normal;
-    }
-    .meta, .img-desc {
-        font-size: .9rem;
-        margin-top: .5rem;
-    }
-    h2 {}
-    .body-text {
-        line-height: 1.5;
-        font-size: 18px;
-        p{
-            margin-top: .5rem;
-        }
-    }
-    .side-image {
-        display: block;
-
-        @include breakpoint("medium") {
-            width: 50%;
-            float: right;
-            padding-left: 2rem;
-        }
-        img{
-            padding-bottom: .5rem;
-        }
-        .img-title {}
-        .img-desc {
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-    }
-}
-
-#initial-colors {
-    .swatch {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-
-    }
-    .color {
-        float: left;
-        padding-left: 10px;
-    }
-    .elem-meta {
-        text-align: center;
-    }
-}

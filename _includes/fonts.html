@@ -1,23 +1,22 @@
- {% for i in page.typography.fonts %}
-<article>
-    <div class="row">
-    <div class="col-sm-8">
-        <div class="letters" style="font-family: {{ i.css_input }}">
-            Aa
-        </div>
-        <div class="alphabet" style="font-family: {{ i.css_input }}">
-            ABCDEFGHIJKLMNOPQRSTUVWXYZ
-            <br>abcdefghijklmnopqrstuvwxyz
-            <br>1234567890!@#$%^&*()
-        </div>
+<div class="row">
+    {% for i in page.typography.fonts %}
+    <div class="col-sm-6">
+        <article>
+            <div class="font-name" style="font-family: {{ i.css_input }}">
+                {{ i.name }}
+            </div>
+            <div class="alphabet" style="font-family: {{ i.css_input }}">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                <br>abcdefghijklmnopqrstuvwxyz
+                <br>1234567890!@#$%^&*()
+            </div>
+            <div class="font-source">
+                <a href="{{ i.link_to_homepage }}" alt="{{ i.name }} homepage"> SOURCE <i class="icon-external-open"></i></a>
+            </div>
+            <div class="elem-notes">
+                {{ i.notes }}
+            </div>
+        </article>
     </div>
-    <div class="font-aside col-sm-4">
-        <div class="elem-title">
-            {{ i.name }} <a href="{{ i.link_to_homepage }}" alt="{{ i.name }} homepage"><i class="icon-external-open"></i></a>
-        </div>
-        <div class="elem-notes">
-            {{ i.notes }}
-        </div>
-    </div>
+    {% endfor %}
 </div>
-</article>{% endfor %}

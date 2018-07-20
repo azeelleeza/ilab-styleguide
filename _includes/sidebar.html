@@ -1,49 +1,50 @@
 <aside id="sidebar">
-	<div id="side-fixed">
-    <div class="sec-track">
-        <span class="track">01</span>/04
-    </div>
-    <nav>
-        <div class="progress-bar"></div>
-        <div class="progress-bar--increment"></div>
-        <ul>
+    <div id="side-fixed">
+        <div class="sec-track">
+            <span class="track">01</span>/04
+        </div>
+        <nav>
+            <div class="progress-bar"></div>
+            <div class="progress-bar--increment"></div>
             {% if page.initial_styles.show_this_section == true %}
-           
-            <a href="#typography" data-secn="01" >
-                <li>Typography</li>
-            </a>
-            <a href="#colors" data-secn="02">
-                <li>Colors</li>
-            </a>
-            <a href="#logos" data-secn="03">
-                <li>Logos</li>
-            </a>
-            {% else %} {% if page.typography %}
-            <a href="#typography" data-secn="01">
-                <li>Typography</li>
-            </a>
-            {% endif %} {% if page.colors %}
-            <a href="#colors" data-secn="02">
-                <li>Colors</li>
-            </a>
-            {% endif %} {% if page.logos %}
-            <a href="#logos" data-secn="03">
-                <li>Logos</li>
-            </a>
-            {% endif %}{% if page.buttons %}
-            <a href="#buttons" data-secn="04">
-                <li>Buttons</li>
-            </a>
-            {% endif %} {% if page.tables %}
-            <a href="#tables" data-secn="05">
-                <li>Tables</li>
-            </a>
-            {% endif %} {% if page.form_elements %}
-            <a href="#forms" data-secn="06">
-                <li>Form Elements</li >
-            </a>
-            {% endif %} {% endif %}
-        </ul>
-    </nav>
-</div>
+            <ul class="init-sidebar">
+                <a href="#init-typography" data-secn="01">
+                    <li>Typography</li>
+                </a>
+                <a href="#init-colors" data-secn="02">
+                    <li>Colors</li>
+                </a>
+                <a href="#init-logos" data-secn="03">
+                    <li>Logos</li>
+                </a>
+            </ul>
+            {% else %}
+            <ul> {% if page.typography %}
+                <a href="#typography" data-secn="01">
+                    <li>Typography</li>
+                </a>
+                {% endif %} {% if page.colors %}
+                <a href="#colors" data-secn="02">
+                    <li>Colors</li>
+                </a>
+                {% endif %} {% if page.logos %}
+                <a href="#logos" data-secn="03">
+                    <li>Logos</li>
+                </a>
+                {% endif %}{% if page.buttons %}
+                <a href="#buttons" data-secn="04">
+                    <li>Buttons</li>
+                </a>
+                {% endif %} {% if page.tables %}
+                <a href="#tables" data-secn="05">
+                    <li>Tables</li>
+                </a>
+                {% endif %} {% if page.form_elements %}
+                <a href="#forms" data-secn="06">
+                    <li>Form Elements</li>
+                </a>
+                {% endif %}
+            </ul>{% endif %}
+        </nav>
+    </div>
 </aside>
