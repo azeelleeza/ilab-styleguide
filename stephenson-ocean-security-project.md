@@ -8,7 +8,7 @@ initial_styles:
   show_this_section: true
   import_fonts: ''
   typography:
-  - group_title: Round Sans Serif
+  - group_title: Round Sans Serif and Monospace
     title:
       font_family: neuzeit-grotesk
       css: 'line-height: 1.1;'
@@ -23,7 +23,7 @@ initial_styles:
       css: 'font-weight: 100'
     img_title:
       font_family: Inconsolata
-      css: 'font-size: 1rem;'
+      css: 'font-size: 1.2rem; '
     img_description:
       font_family: acumin-pro
       css: 'font-weight: 100'
