@@ -63,6 +63,7 @@ initial_styles:
       font_family: acumin-pro
     img_title:
       font_family: din-2014
+      css: 'font-size: 1.3rem;'
     img_description:
       font_family: acumin-pro
       css: 'font-size: 1rem;'
