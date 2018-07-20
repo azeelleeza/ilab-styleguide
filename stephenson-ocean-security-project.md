@@ -8,37 +8,6 @@ initial_styles:
   show_this_section: true
   import_fonts: ''
   typography:
-  - group_title: Modern
-    title:
-      font_family: din-2014
-    meta:
-      font_family: din-2014
-    heading:
-      font_family: din-2014
-      css: '200'
-    body_text:
-      font_family: minion-pro
-    img_title:
-      font_family: din-2014
-    img_description:
-      font_family: minion-pro
-    button:
-      font_family: din-2014
-  - group_title: Serif and Sans Serif
-    title:
-      font_family: proxima-nova
-    meta:
-      font_family: proxima-nova
-    heading:
-      font_family: le-monde-livre-std
-    body_text:
-      font_family: proxima-nova
-    img_title:
-      font_family: le-monde-livre-std
-    img_description:
-      font_family: proxima-nova
-    button:
-      font_family: proxima-nova
   - group_title: Round Sans Serif
     title:
       font_family: neuzeit-grotesk
@@ -56,6 +25,40 @@ initial_styles:
       css: 'font-weight: 100'
     button:
       font_family: Inconsolata
+  - group_title: Serif and Sans Serif
+    title:
+      font_family: proxima-nova
+    meta:
+      font_family: proxima-nova
+    heading:
+      font_family: le-monde-livre-std
+    body_text:
+      font_family: proxima-nova
+    img_title:
+      font_family: le-monde-livre-std
+    img_description:
+      font_family: proxima-nova
+    button:
+      font_family: proxima-nova
+  - group_title: Modern
+    title:
+      font_family: din-2014
+      css: 'font-weight: normal;'
+    meta:
+      font_family: din-2014
+    heading:
+      font_family: din-2014
+      css: 'font-weight: 200'
+    body_text:
+      font_family: minion-pro
+    img_title:
+      font_family: din-2014
+    img_description:
+      font_family: minion-pro
+      css: 'font-size: 1rem;'
+    button:
+      font_family: din-2014
+      css: 'font-size: .9rem; letter-spacing: 2px;'
   colors:
   - group_title: Blues and Yellow
     colors:
