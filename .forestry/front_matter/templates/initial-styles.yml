@@ -109,10 +109,13 @@ fields:
     name: notes
     label: Notes
     default: NGNN Placeholder image
+  - type: boolean
+    name: selected
+    label: Selected
   - type: file
     name: logo_img_file
     label: Logo Img File
-    default: "/uploads/2018/04/20/NGNN-logo-light.png"
+    default: ''
   config:
     labelField: group_title
   label: Logos
