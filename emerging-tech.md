@@ -33,6 +33,7 @@ initial_styles:
     button:
       font_family: Lato
       css: 'text-transform: uppercase; letter-spacing: 1px;'
+    selected: true
   - font_pair: Functional Monospace
     heading_1:
       font-family: Hind
@@ -107,6 +108,7 @@ initial_styles:
     - "#F2F2F2"
     - "#247590"
     - "#163A59"
+    selected: true
   - notes: ''
     hex_code1: "#163553"
     hex_code2: "#005E7D"

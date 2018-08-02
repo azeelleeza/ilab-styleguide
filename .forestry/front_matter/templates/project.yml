@@ -561,8 +561,8 @@ fields:
   label: screenshot
   default: "/uploads/2018/04/23/default browser example.png"
 pages:
-- stephenson-ocean-security-project.md
 - emerging-tech.md
+- stephenson-ocean-security-project.md
 - defense-360.md
 - health-commission.md
 - beyond-parallel.md
