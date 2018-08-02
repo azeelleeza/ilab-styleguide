@@ -89,6 +89,9 @@ fields:
       use_select: false
       source:
         type: datafiles
+  - type: boolean
+    name: selected
+    label: Selected
   config:
     labelField: group_title
   label: Colors
