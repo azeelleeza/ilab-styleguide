@@ -62,6 +62,7 @@ typography:
     font-weight: normal
     color: "#000"
     line-height: 1.5
+    body_text: true
   - html_text: This is an image caption.&nbsp;<br>(BIJU BORO/AFP/Getty Images)
     font-family: PT Sans, sans-serif
     font-weight: normal
