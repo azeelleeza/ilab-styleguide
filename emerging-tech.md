@@ -3,7 +3,7 @@ title: Emerging Tech
 layout: page
 screenshot: "/uploads/2018/04/23/default browser example.png"
 date: 2018-07-06 17:40:17 +0000
-program_partners: ''
+program_partners: PONI
 initial_styles:
   import_fonts: ' <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans|Inconsolata|Hind+Vadodara|Cairo|Cousine|Pragati+Narrow"
     rel="stylesheet"><link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/inconsolata-lgc-markup"
