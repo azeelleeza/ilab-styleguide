@@ -182,6 +182,10 @@ links:
       color: "#C42D21"
       font-family: Hind, sans-serif
       font-size: 18px
+  base: 'color: #ed392a;'
+  hover: 'color: #ed392a; background: #fff linear-gradient(#fff 50%, #3873AB 50%)
+    repeat-x 0 100%;     background-size: 4px 7px;'
+  visited: 'color: #C42D21;'
 buttons:
 - base:
     font-family: Roboto
