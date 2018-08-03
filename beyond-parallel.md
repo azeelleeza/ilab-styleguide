@@ -100,22 +100,11 @@ links:
   - base:
       font-family: alternate-gothic-no-3-d, sans-serif
       font-size: auto
-      font-weight: 400
+      font-weight: '400'
       color: "#10355F"
-- group_name: Text Links
-  description: Default links in the post body
-  link:
-  - base:
-      font-family: museo-sans, sans-serif
-      font-size: 20px
-      color: "#10355F"
-      font-weight: 500
-    hover:
-      background: "#fff linear-gradient(#fff 92%, #FFC726 50%) repeat-x 0 100%"
-      font-family: museo-sans, sans-serif
-      font-size: 20px
-      font-weight: 500
-      color: "#10355F"
+  base: 'color: #10355F; font-weight: bold;'
+  hover: 'color: #10355F; font-weight: bold;'
+  visited: 'color: #10355F; font-weight: bold;'
 buttons:
 - group_name: Graphic Links
   description: 'Note: Used for general purpose'
