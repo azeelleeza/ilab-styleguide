@@ -14,21 +14,21 @@
         <div id="section-container">
             {% if page.initial_styles.show_this_section == true %} {% include initialstyles.html %} {% else %}
             <div class="section-container" id="typography">
-                <div class="section-title">
+                <div class="section-title subsection-header">
                     <h2><span class="section-num">01</span><span class="section-name">Typography</span></h2>
                 </div>
                 <!-- fonts -->
-                <div class="subsection-title">Fonts</div>
+                <div class="subsection-title subsection-header">Fonts</div>
                 <section id="fonts" class="subsection">
                     {% include fonts.html %}
                 </section>
                 <!-- Text -->
-                <div class="subsection-title">Text</div>
+                <div class="subsection-title subsection-header">Text</div>
                 <section id="text" class="subsection">
                     {% include heading.html %} {% include type.html %}
                 </section>
                 <!-- links -->
-                <div class="subsection-title">Inline Links</div>
+                <div class="subsection-title subsection-header">Inline Links</div>
                 <section id="links" class="subsection">
                     {% for i in page.links %} {% include links.html %} {% endfor %}
                 </section>
@@ -38,21 +38,21 @@
                     <h2><span class="section-num">02</span><span class="section-name"> Colors</span></h2>
                 </div>
                 {% include colorblindfilter.html %}
-                <div class="subsection-title">Primary Colors</div>
+                <div class="subsection-title subsection-header">Primary Colors</div>
                 <section id="primary-colors" class="subsection">
                     <div class="row">
                         {% for color in page.colors.primary_colors %} {% assign size = page.colors.primary_colors | size %} {% include swatch-primary.html %} {% endfor %}
                     </div>
                 </section>
                 {% if page.colors.secondary_color != empty %}
-                <div class="subsection-title">Secondary Colors</div>
+                <div class="subsection-title subsection-header">Secondary Colors</div>
                 <section id="secondary-colors" class="subsection">
                     <div class="row">
                         {% for color in page.colors.secondary_color %} {% assign size = page.colors.secondary_color | size %} {% include swatch-secondary.html %} {% endfor %}
                     </div>
                 </section>
                 {% endif %} {% if page.colors.interactive_palettes != empty %}
-                <div class="subsection-title">Interactive Color Palettes</div>
+                <div class="subsection-title subsection-header">Interactive Color Palettes</div>
                 <section id="interactive-colors" class="subsection">
                     <div class="row">
                         {% for iswatches in page.colors.interactive_palettes %} {% include swatch-interactive.html %} {% endfor %}
@@ -61,7 +61,7 @@
                 {% endif %}
             </div>
             <div id="logos" class="section-container">
-                <div class="section-title">
+                <div class="section-title subsection-header">
                     <h2><span class="section-num">03</span><span class="section-name"> Logos</span></h2>
                 </div>
                 <section>
@@ -69,7 +69,7 @@
                 </section>
             </div>
             <div id="buttons" class="section-container">
-                <div class="section-title">
+                <div class="section-title subsection-header">
                     <h2><span class="section-num">04</span><span class="section-name"> Buttons</span></h2>
                 </div>
                 <section>
@@ -78,7 +78,7 @@
             </div>
             <div id="tables" class="section-container">
                 {% if page.tables != empty %}
-                <div class="section-title">
+                <div class="section-title subsection-header">
                     <h2><span class="section-num">05</span><span class="section-name"> Tables</span></h2>
                 </div>
                 <section>
@@ -87,7 +87,7 @@
             </div>
             <div id="forms" class="section-container">
                 {% if page.form_elements != empty %}
-                <div class="section-title">
+                <div class="section-title subsection-header">
                     <h2><span class="section-num">06</span><span class="section-name"> Form Elements</span></h2>
                 </div>
                 <section>

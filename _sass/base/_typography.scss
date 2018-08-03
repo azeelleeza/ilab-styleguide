@@ -13,13 +13,12 @@
  .font-name {
      font-size: 40px;
      display: block;
- 
  }
 
  .font-source {
-    display: block;
-    width: 100%;
-    margin-top: .5rem;
+     display: block;
+     width: 100%;
+     margin-top: .5rem;
  }
 
  .alphabet {
@@ -39,13 +38,16 @@
      }
  }
 
+.subsection-header {
+     @include breakpoint("medium") {
+         margin-left: 25px;
+     }
+}
  .subsection-title {
      font-weight: 500;
      font-size: 22px;
-     
-     @include breakpoint("medium") {
-margin-left: 25px;
- }
+
+    
      &:after {
          display: block;
          content: '';
@@ -62,9 +64,9 @@ margin-left: 25px;
          font-size: 20px;
          margin: 20px;
 
-            @include breakpoint("medium") {
-margin: unset;
-        }
+         @include breakpoint("medium") {
+             margin: unset;
+         }
          &:after {
              border-bottom: 3px solid #9B9B9B;
          }
@@ -125,17 +127,17 @@ margin: unset;
 
 
 
- .lightbg .swatch{
-color: black;
-}
+ .lightbg .swatch {
+     color: black;
+ }
 
-.darkbg .swatch {
-color: white;
-}
+ .darkbg .swatch {
+     color: white;
+ }
 
-.copybutton {
-    line-height: 1;
-}
+ .copybutton {
+     line-height: 1;
+ }
 
  #typogprahy .elem-meta {
      &:after {
@@ -149,7 +151,8 @@ color: white;
  }
 
 
- .img-download .elem-meta, .font-source {
+ .img-download .elem-meta,
+ .font-source {
      display: block;
      float: left;
      margin-right: 1rem;

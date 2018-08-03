@@ -1,50 +1,65 @@
 <div id="initial-styles">
-    <div class="section-container" id="init-typography">
+    {% assign selected_font = "" %} {% for i in page.initial_styles.typography %} {% if i.selected %} {% assign selected_font = "select_on" %} {% endif %} {% endfor %}
+    <div class="section-container {{ selected_font }}" id="init-typography">
         <div class="section-title">
             <h2><span class="section-num">01 </span><span class="section-name"> Typography</span></h2>
         </div>
+        <!-- apply select styles if there if one is toggled on-->
         {% for i in page.initial_styles.typography %}
-        {{  }}
-        <!-- typography -->
-        <div class="subsection-title">Group {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
-        <div class="initial-fonts">
-            <!-- get fonts via font_family -->
-            {% assign my_array = "" | split: ',' %} {% for t in i %}{% for image in t %}{% if image.font_family %} {% assign my_array = my_array | push: image.font_family %} {% endif %} {% endfor %} {% endfor %} <strong>FONTS:</strong> {{ my_array | uniq | join: ', ' }}</div>
-        <div class="elem-notes">{% if i.notes %}{{ i.notes }} {% endif %}</div>
-        <section id="initial-typography" class="subsection">
-            <article>
-                <h1 style="font-family: {% if i.title.font_family %}{{ i.title.font_family }}{% endif %}; {% if i.title.css %}{{ i.title.css }}{% endif %};">The intersection between ocean conservation and national security</h1>
-                <div class="meta" style="font-family: {% if i.meta.font_family %}{{ i.meta.font_family }}{% endif %}; {% if i.meta.css %}{{ i.meta.css }}{% endif %};">By John Doe and Jane Dough on February 31, 2024</div>
-                <h2 style="font-family: {% if i.heading.font_family %}{{ i.heading.font_family }}{% endif %}; {% if i.heading.css %}{{ i.heading.css }}{% endif %};">Construction Global Conservation Priorities</h2>
-                <div class="body-text" style="font-family: {% if i.body_text.font_family %}{{ i.body_text.font_family }}{% endif %}; {% if i.body_text.css %}{{ i.body_text.css }}{% endif %};">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat.</p>
-                    <div class="side-image">
-                        <img src="./assets/images/demo-wave-img.png">
-                        <div class="img-title" style="font-family: {% if i.img_title.font_family %}{{ i.img_title.font_family }}{% endif %}; {% if i.img_title.css %}{{ i.img_title.css }}{% endif %};">A wave in the Indian Ocean
+        <!-- typography group-->
+        <div class="subsection-header">
+            <div class="subsection-title">Group {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
+            {% assign my_array = "" | split: ',' %}
+            <div class="initial-fonts">
+                <!-- get fonts via font_family -->
+                {% for t in i %}{% for image in t %}{% if image.font_family %} {% assign my_array = my_array | push: image.font_family %} {% endif %} {% endfor %} {% endfor %} <strong>FONTS:</strong> {{ my_array | uniq | join: ', ' }}</div>
+            {% if i.notes %}
+            <div class="elem-notes">{{ i.notes }} </div>{% endif %}
+        </div>
+        <section class="subsection">
+            <div class="init-group {% if i.selected == true %}selected{% endif %}">
+                <article>
+                    <h1 style="font-family: {% if i.title.font_family %}{{ i.title.font_family }}{% endif %}; {% if i.title.css %}{{ i.title.css }}{% endif %};">The intersection between ocean conservation and national security</h1>
+                    <div class="meta" style="font-family: {% if i.meta.font_family %}{{ i.meta.font_family }}{% endif %}; {% if i.meta.css %}{{ i.meta.css }}{% endif %};">By John Doe and Jane Dough on February 31, 2024</div>
+                    <h2 style="font-family: {% if i.heading.font_family %}{{ i.heading.font_family }}{% endif %}; {% if i.heading.css %}{{ i.heading.css }}{% endif %};">Construction Global Conservation Priorities</h2>
+                    <div class="body-text" style="font-family: {% if i.body_text.font_family %}{{ i.body_text.font_family }}{% endif %}; {% if i.body_text.css %}{{ i.body_text.css }}{% endif %};">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat.</p>
+                        <div class="side-image">
+                            <img src="./assets/images/demo-wave-img.png">
+                            <div class="img-title" style="font-family: {% if i.img_title.font_family %}{{ i.img_title.font_family }}{% endif %}; {% if i.img_title.css %}{{ i.img_title.css }}{% endif %};">A wave in the Indian Ocean
+                            </div>
+                            <div class="img-desc" style="font-family: {% if i.img_description.font_family %}{{ i.img_description.font_family }}{% endif %}; {% if i.img_description.css %}{{ i.img_description.css }}{% endif %};">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Photo by John Doe, GETTY
+                            </div>
                         </div>
-                        <div class="img-desc" style="font-family: {% if i.img_description.font_family %}{{ i.img_description.font_family }}{% endif %}; {% if i.img_description.css %}{{ i.img_description.css }}{% endif %};">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Photo by John Doe, GETTY
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="clearfix"></div>
+                        <div class="button-container">
+                            <div class="button" style="font-family: {% if i.button.font_family %}{{ i.button.font_family }}{% endif %}; {% if i.button.css %}{{ i.button.css }}{% endif %};">BUTTON
+                            </div>
                         </div>
                     </div>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="clearfix"></div>
-                    <div class="button-container"><div class="button" style="font-family: {% if i.button.font_family %}{{ i.button.font_family }}{% endif %}; {% if i.button.css %}{{ i.button.css }}{% endif %};">BUTTON
-                        </div>
-                    </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
         {% endfor %}
     </div>
-    <div class="section-container" id="init-colors">
+    {% assign selected_color = "" %} {% for i in page.initial_styles.colors %} {% if i.selected %} {% assign selected_color = "select_on" %} {% endif %} {% endfor %}
+    <div class="section-container {{ selected_font }}" id="init-colors">
         <div class="section-title">
             <h2><span class="section-num">02</span><span class="section-name"> Colors</span></h2>
         </div>
         {% include colorblindfilter.html %} {% for i in page.initial_styles.colors %}
-        <!-- typography -->
-        <div class="subsection-title">Group {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
-        <div class="elem-notes">{% if i.notes %}{{ i.notes }} {% endif %}</div>
-        <section id="initial-colors" class="subsection">
+        <!-- colors -->
+        <div class="subsection-header">
+            
+                <div class="subsection-title">Group {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
+                {% if i.notes %}
+                <div class="elem-notes">{{ i.notes }} </div>{% endif %}
+         
+        </div>
+        <section class="subsection">
+        	<div class="init-group {% if i.selected == true %}selected{% endif %}">
             <article>
                 <div class="row">
                     {% for c in i.colors %}
@@ -59,22 +74,31 @@
                     {% endfor %}
                 </div>
             </article>
+        </div>
         </section>
         {% endfor %}
     </div>
-    <div class="section-container" id="init-logos">
+    {% assign selected_logo = "" %} {% for i in page.initial_styles.logos %} {% if i.selected %} {% assign selected_logo = "select_on" %} {% endif %} {% endfor %}
+    <div class="section-container {{ selected_font }}" id="init-logos">
         <div class="section-title">
             <h2><span class="section-num">03</span><span class="section-name"> Logos</span></h2>
         </div>
+
         {% for i in page.initial_styles.logos %}
-        <!-- typography -->
-        <div class="subsection-title"> Logo {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
-        <div class="elem-notes">{% if i.notes %}{{ i.notes }} {% endif %}</div>
-        <section id="initial-logos" class="subsection">
-            <article>
+        <div class="subsection-header">
+            
+                <div class="subsection-title"> Logo {{ forloop.index }}{% if i.group_title %}: {{ i.group_title }} {% endif %}</div>
+                {% if i.notes %}
+                <div class="elem-notes">{{ i.notes }} </div>{% endif %}
+         
+        </div>
+        <section class="subsection">
+        	<div class="init-group {% if i.selected == true %}selected{% endif %}">
+            <article class="{% if i.selected == true %} selected {% endif %}">
                 {% for i in page.initial_styles.logos %}
                 <img src="{{ i.logo_img_file | relative_url }}"> {% endfor %}
             </article>
+        </div>
         </section>
         {% endfor %}
     </div>
