@@ -196,7 +196,10 @@ form_elements:
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.24.32 PM.png"
 - element_name: 'Forms: Checkboxes'
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.20.45 PM.png"
+  height: 150px
 - element_name: 'Forms: Radio'
   image: "/uploads/2018/04/02/Screen Shot 2018-04-02 at 12.22.21 PM.png"
+  height: 150px
 screenshot: "/uploads/2018/04/23/Screen Shot 2018-04-23 at 11.07.26 AM.png"
+
 ---
