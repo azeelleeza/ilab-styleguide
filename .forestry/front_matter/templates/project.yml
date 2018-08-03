@@ -542,6 +542,7 @@ fields:
   - type: text
     name: height
     label: height
+    default: 300px
   config:
     labelField: element_name
 - type: field_group_list
