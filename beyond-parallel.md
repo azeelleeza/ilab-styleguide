@@ -102,9 +102,13 @@ links:
       font-size: auto
       font-weight: '400'
       color: "#10355F"
-  base: 'color: #10355F; font-weight: bold;'
-  hover: 'color: #10355F; font-weight: bold;'
-  visited: 'color: #10355F; font-weight: bold;'
+  base: 'color: #10355F; font-weight: 500;'
+  hover: 'color: #10355F; font-weight: bold; height: 100%;     position: relative;     background-image:
+    -webkit-linear-gradient(top, #FFC726 0, #FFC726 100%);     background-image: linear-gradient(to
+    bottom, #FFC726 0, #FFC726 100%);     background-position: 0 94%;     background-repeat:
+    repeat-x;     background-size: 2px 2px;     border-bottom: 0;     text-decoration:
+    none;'
+  visited: 'color: #10355F; font-weight: 500;'
 buttons:
 - group_name: Graphic Links
   description: 'Note: Used for general purpose'
