@@ -557,6 +557,7 @@ fields:
   - type: text
     name: height
     label: height
+    default: 300px
   - type: file
     name: image
     label: Image
