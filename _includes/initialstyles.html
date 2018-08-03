@@ -95,8 +95,8 @@
         <section class="subsection">
         	<div class="init-group {% if i.selected == true %}selected{% endif %}">
             <article class="{% if i.selected == true %} selected {% endif %}">
-                {% for i in page.initial_styles.logos %}
-                <img src="{{ i.logo_img_file | relative_url }}"> {% endfor %}
+                
+                <img src="{{ i.logo_img_file | relative_url }}" style="height:{{ i.height }}" > 
             </article>
         </div>
         </section>

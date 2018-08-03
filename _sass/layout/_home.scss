@@ -1,0 +1,81 @@
+.site-info {
+    .sitelink {
+
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 200;
+        marign-bottom: .5rem;
+        text-decoration: none;
+        padding: 3px 20px;
+        position: relative;
+        display: block;
+        height: 100%;
+        background: linear-gradient(to right, mint 50%, yellow 50%);
+        background: linear-gradient(90deg, 50%, white 50%);
+        background: -moz-linear-gradient(90deg, $color-dkblue 50%, white 50%);
+        background: -webkit-linear-gradient(180deg, $color-dkblue 50%, white 50%);
+        background-position: 0; // make the background twice as big
+        background-size: 200%;
+        transition: all 0.4s;
+        background-position: 0%;
+        @include breakpoint("medium") {
+            display: inline-block;
+            padding: 3px 5px;
+        }
+
+        &:hover,
+        &:focus {
+            background-position: -100%;
+            transition: all 0.4s;
+        }
+    }
+
+    a {
+        color: red;
+        text-decoration: none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(90deg, white, white 50%, $color-dkblue 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: all 0.4s;
+
+        &:hover {
+            transition: all 0.4s;
+            background-position: 0%;
+        }
+    }
+    .project-program,
+    .project-date,
+    .initial-styles-label {
+        margin-left: 6px;
+    }
+
+    .project-program {
+        font-size: 1.1rem;
+        color: black;
+    }
+
+    .project-date {
+        color: #333;
+    }
+
+    .initial-styles-label {
+        background: $color-dkblue;
+        color: white;
+        margin-bottom: .5rem;
+    }
+}
+
+.screenshot-container {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+
+.two-col {
+    @include breakpoint("medium") {
+        columns: 2;
+    }
+}

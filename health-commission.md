@@ -57,40 +57,39 @@ initial_styles:
       font-family: "'Libre Franklin', sans-serif;"
     discard: true
   colors:
-  - notes: Blues, Gold
-    hex_code1: "#143459"
-    hex_code2: "#3067b2"
-    hex_code3: "#EEEDEE"
-    hex_code4: "#B89E69"
-  - notes: Bright Blue, Yellow
-    hex_code1: "#225d7c"
-    hex_code2: "#628fa7"
-    hex_code3: "#f7f7fa"
-    hex_code4: "#e9be4d"
-    discard: true
-  - notes: Gray, Orange/Red
-    hex_code1: "#4D4E4E"
-    hex_code2: "#B3BABA"
-    hex_code3: "#f2f1f1"
-    hex_code4: "#ce5932"
-    hex_code5: ''
-    hex_code6: ''
-    discard: true
+  - group_title: Blues, Gold
+    colors:
+    - "#143459"
+    - "#3067b2"
+    - "#EEEDEE"
+    - "#B89E69"
+    selected: true
+  - group_title: Bright Blue and Yellow
+    colors:
+    - "#225d7c"
+    - "#628fa7"
+    - "#f7f7fa"
+    - "#e9be4d"
+  - group_title: Gray, Orange/Red
+    colors:
+    - "#4D4E4E"
+    - "#B3BABA"
+    - "#f2f1f1"
+    - "#ce5932"
   logos:
-  - logo_title: Star and Eagle
-    upload_file: "/uploads/2018/04/06/star eagle_1.png"
+  - group_title: Star and Eagle
+    notes: This is a note
+    logo_img_file: "/uploads/2018/04/06/star eagle_1.png"
     height: 150px
-    discard: true
-  - upload_file: "/uploads/2018/04/06/star eagle shield.png"
-    logo_title: Eagle and Star on Shield
+  - logo_img_file: "/uploads/2018/04/06/star eagle shield.png"
+    group_title: Eagle and Star on Shield
+    height: 150px
+  - group_title: Seal
+    logo_img_file: "/uploads/2018/04/06/seal.png"
     height: 200px
-    discard: true
-  - logo_title: Seal
-    upload_file: "/uploads/2018/04/06/seal.png"
-    height: 200px
-    discard: true
-  - logo_title: Shield EKG
-    upload_file: "/uploads/2018/05/07/shield ekg v2.png"
+    selected: true
+  - group_title: Shield EKG
+    logo_img_file: "/uploads/2018/05/07/shield ekg v2.png"
     height: 150px
   show_this_section: true
 program_partners: ''

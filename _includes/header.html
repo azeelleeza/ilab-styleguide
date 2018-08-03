@@ -1,21 +1,20 @@
 <header>
-	<div class="inner-head">
-    {% if page.layout!="home" %}
-    <div class="header-label">
-    	{% if page.initial_styles.show_this_section == true %} <span class="initial-styles-label">In Development</span> {% endif %}
-        <span>Website Style Guide</span>
+    <div class="inner-head">
+        {% if page.layout!="home" %}
+        <div class="header-label">
+            {% if page.initial_styles.show_this_section == true %} <span class="initial-styles-label">In Development</span> {% endif %}
+            <span>Website Style Guide</span>
+        </div>
+        <h1>{{ page.title }}</h1> {% if page.program_partners %}
+        <div class="project-program">
+            {{ page.program_partners }} </div>
+        {% endif %} {% if page.date %}
+        <div class="project-date">Last Updated {{ page.date | date: "%B %-d, %Y" }}</div>{% endif %} {% endif %} {% if page.layout=="home" %}
+        <h1>iLab Style Guides</h1>
+        <p class="project-program">The Andreas C. Dracopoulos iDeas Lab is CSIS's internal digital agency, responsible for combining the best of web development, imagery, audio, and design to communicate our world-class policy guidance to a wide audience.</p>
+        {% endif %}
     </div>
-    <h1>{{ page.title }}</h1>
-    {% if page.program_partners %}
-    <div class="project-program">
-    {{ page.program_partners }} </div>
-    {% endif %} {% if page.date %}
-    <div class="project-date">Last Updated {{ page.date | date: "%B %-d, %Y" }}</div>{% endif %}
-    
-    {% endif %} {% if page.layout=="home" %} Home {% endif %}
-   
-</div>
- <aside id="menu">
+    <aside id="menu">
         {% include menu.html %}
     </aside>
 </header>

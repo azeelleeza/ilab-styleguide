@@ -82,12 +82,6 @@ initial_styles:
       css: ''
   colors:
   - notes: ''
-    hex_code1: "#163553"
-    hex_code2: "#f1f1f1"
-    hex_code3: "#6d6d6d"
-    hex_code4: "#235d94"
-    hex_code5: "#3873ab"
-    hex_code6: "#f1c161"
     group_title: NGNN Colors
     colors:
     - "#f1c161"
@@ -96,12 +90,7 @@ initial_styles:
     - "#6d6d6d"
     - "#f1f1f1"
     - "#163553"
-  - hex_code1: "#163A59"
-    hex_code2: "#247590"
-    hex_code3: "#F2F2F2"
-    hex_code4: "#F05E39"
-    hex_code5: ''
-    notes: ''
+  - notes: ''
     group_title: Orange
     colors:
     - "#F05E39"
@@ -110,10 +99,6 @@ initial_styles:
     - "#163A59"
     selected: true
   - notes: ''
-    hex_code1: "#163553"
-    hex_code2: "#005E7D"
-    hex_code3: "#f1f1f1"
-    hex_code4: "#00b57a"
     group_title: Green
     colors:
     - "#00b57a"

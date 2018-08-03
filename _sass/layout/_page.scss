@@ -7,7 +7,7 @@ html {
 body {}
 
 
-img{
+img {
     width: 100%;
     height: auto;
 }
@@ -41,7 +41,6 @@ img{
 
     @include breakpoint("large") {
         padding: 50px 10%;
-       
     }
 }
 
@@ -49,9 +48,9 @@ img{
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
-    
+
     position: relative;
-@include breakpoint("medium") {
+    @include breakpoint("medium") {
         float: left;
     }
     @include breakpoint("medium") {
@@ -60,7 +59,6 @@ img{
 
     @include breakpoint("large") {
         width: 85%;
-
     }
 }
 
@@ -103,8 +101,8 @@ section:last-of-type {
     border-bottom: 1px solid #DAD7DB;
     padding: 2rem 0 1rem 0;
     @include breakpoint("medium") {
-padding: 2rem 50px 1rem 50px;
-}
+        padding: 2rem 50px 1rem 50px;
+    }
 }
 
 .subsection:last-of-type {
@@ -170,7 +168,6 @@ padding: 2rem 50px 1rem 50px;
         float: left;
         margin-right: 1rem;
         display: block;
-
     }
 }
 
@@ -194,12 +191,11 @@ padding: 2rem 50px 1rem 50px;
 .color-group {
     //display: flex;
     //flex-direction: column;
-//flex-wrap: wrap;
+    //flex-wrap: wrap;
     //width: 100%;
-
-        .color {
-            margin-bottom: .5rem;
-        }
+    .color {
+        margin-bottom: .5rem;
+    }
 }
 
 .font-aside {}
@@ -291,4 +287,3 @@ img {
         max-width: 100%;
     }
 }
-
