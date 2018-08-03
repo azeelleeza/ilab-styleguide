@@ -52,6 +52,7 @@ typography:
     font-weight: 300
     color: "#333"
     line-height: 1.5
+    body_text: true
   - element_name: Image caption
     html_text: "<em>This is an image caption. <br>(BIJU BORO/AFP/Getty Images)</em>"
     font-family: museo-sans, sans-serif
