@@ -279,17 +279,10 @@ tables:
     to show the table headers on mobile.
   image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.14.58 PM.png"
 form_elements:
-- element_name: 'Forms: Text Input'
-- element_name: 'Forms: Dropdown'
-- element_name: 'Forms: Checkboxes'
-- element_name: 'Forms: Radio'
-- element_name: 'Forms: Range Slider'
-- element_name: Tooltips
-  element_description: 'Note: For the small highcharts tooltips, the background should
-    be semi-transparent (as it default)'
 - element_name: Graph/Chart Key
   element_description: 'Note: China should be colored red.'
   image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.24.17 PM.png"
+  height: 400px
 - element_name: Scroll Directions
   image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.25.17 PM.png"
 - element_name: Expand data button
