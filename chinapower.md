@@ -66,6 +66,7 @@ typography:
     font-size: 18px
     color: "#333333"
     line-height: 1.5
+    body_text: true
   - element_name: Image caption
     html_text: This is an image caption.&nbsp;<br>(BIJU BORO/AFP/Getty Images)
     font-family: Hind, sans-serif
