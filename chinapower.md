@@ -285,6 +285,7 @@ form_elements:
   height: 400px
 - element_name: Scroll Directions
   image: "/uploads/2018/03/07/Screen Shot 2018-03-07 at 12.25.17 PM.png"
+  height: 50px
 - element_name: Expand data button
 - element_description: 'Note: Developer can choose between colored and grayscale watermarks.
     Watermark should, when possible, be positioned in the bottom-right corner on the
