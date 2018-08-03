@@ -199,9 +199,6 @@ fields:
         description: Use HEX codes
     config:
       labelField: palette_name
-  - type: field_group
-    name: primary
-    label: Primary Colors
 - type: field_group_list
   name: links
   label: Links
