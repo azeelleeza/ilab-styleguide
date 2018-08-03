@@ -128,11 +128,11 @@ links:
       background: "#fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%"
       background-size: 4px 4px
       color: "#196c94"
-  base: "    background: #fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%;
-    \    background-size: 4px 4px;"
+  base: 'background: #fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%;     background-size:
+    4px 4px;'
   hover: 'color: #d66e42'
-  visited: "    background: #fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0
-    100%;     background-size: 4px 4px;     color: #196c94;"
+  visited: 'background: #fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%;     background-size:
+    4px 4px;     color: #196c94;'
 buttons:
 - group_name: Orange Button
   button:
