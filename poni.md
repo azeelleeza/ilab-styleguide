@@ -129,6 +129,9 @@ links:
       font-family: PT Sans, sans-serif
       font-size: 18px
       background: "#fff linear-gradient(#fff 92%, #3873AB 50%) repeat-x 0 100%"
+  base: " background: #fff linear-gradient(#fff 94%, #3873AB 50%) repeat-x 0 100%;"
+  hover: 'color: #3873AB;'
+  visited: " background: #fff linear-gradient(#fff 92%, #3873AB 50%) repeat-x 0 100%;"
 buttons:
 - group_name: Graphic Links
   description: 'Note: Used for general purpose'
