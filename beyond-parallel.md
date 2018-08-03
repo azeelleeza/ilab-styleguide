@@ -99,7 +99,7 @@ links:
   link:
   - base:
       font-family: alternate-gothic-no-3-d, sans-serif
-      font-size: 36px
+      font-size: auto
       font-weight: 400
       color: "#10355F"
 - group_name: Text Links
@@ -176,12 +176,12 @@ logos:
   logo_description: Used at the end of articles and as favicon
 tables:
 - element_name: Table
-  element_description: Table
+  element_description: ''
   image: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.56.17 AM.png"
 form_elements:
-- element_name: 'Forms: Text Input'
+- element_name: Text Input
   image: "/uploads/2018/04/04/Screen Shot 2018-04-04 at 10.40.37 AM.png"
-  element_description: 'Forms: Text Input'
-- {}
+  element_description: ''
 screenshot: "/uploads/2018/04/23/Screen Shot 2018-04-23 at 11.07.17 AM.png"
+
 ---
