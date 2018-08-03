@@ -562,9 +562,9 @@ fields:
   default: "/uploads/2018/04/23/default browser example.png"
 pages:
 - emerging-tech.md
+- health-commission.md
 - stephenson-ocean-security-project.md
 - defense-360.md
-- health-commission.md
 - beyond-parallel.md
 - poni.md
 - chinapower.md
