@@ -107,6 +107,9 @@ fields:
     - type: textarea
       label: Notes
       name: notes
+    - type: boolean
+      name: body_text
+      label: Is this is body text?
     - type: text
       name: font-family
       label: Font Family
