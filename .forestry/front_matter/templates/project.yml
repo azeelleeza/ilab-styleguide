@@ -456,6 +456,7 @@ fields:
   default: "/uploads/2018/04/23/default browser example.png"
 pages:
 - on-the-radar.md
+- _posts/test.md
 - health-commission.md
 - stephenson-ocean-security-project.md
 - defense-360.md
