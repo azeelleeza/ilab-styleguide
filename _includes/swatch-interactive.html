@@ -9,11 +9,11 @@
             {% for colors in iswatches.colors %} {% if colors.hex_code != '' %}
             <div class="col-sm-6">
             <div class="color" data-copy="{{ colors.hex_code }}">
-                <div class="swatch" style="background-color: {{ colors.color }}">
+                <div class="swatch" style="background-color: {{ colors.hex_code }}">
                     <div class="copybutton">COPY HEX</div>
                 </div>
                 <div class="elem-meta">
-                    HEX: <span class="hex">{{ colors.color }}</span>
+                    HEX: <span class="hex">{{ colors.hex_code }}</span>
                     <br> RGB: <span class="rgb"></span>
                 </div>
             </div>
@@ -24,7 +24,7 @@
     
     <div class="bar-graph col-xs-12 col-md-3">
         {% for colors in iswatches.colors %} {% if colors.hex_code != '' %} {% assign min = 0 %} {% assign max = 1000 %} {% assign diff = max | minus: min %} {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
-        <div class="bar" style="background-color: {{ colors.color }}; ">
+        <div class="bar" style="background-color: {{ colors.hex_code }}; ">
         </div>
         {% endif %} {% endfor %}
     </div>
