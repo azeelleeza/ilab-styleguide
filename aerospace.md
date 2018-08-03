@@ -128,6 +128,11 @@ links:
       background: "#fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%"
       background-size: 4px 4px
       color: "#196c94"
+  base: "    background: #fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0 100%;
+    \    background-size: 4px 4px;"
+  hover: 'color: #d66e42'
+  visited: "    background: #fff linear-gradient(#fff 50%, #B5BDC1 50%) repeat-x 0
+    100%;     background-size: 4px 4px;     color: #196c94;"
 buttons:
 - group_name: Orange Button
   button:
@@ -261,4 +266,5 @@ initial_styles:
   show_this_section: false
 program_partners: Aerospace Security Program
 screenshot: "/uploads/2018/04/23/Screen Shot 2018-04-23 at 11.05.57 AM.png"
+
 ---
