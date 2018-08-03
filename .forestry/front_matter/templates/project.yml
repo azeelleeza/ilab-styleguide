@@ -551,6 +551,9 @@ fields:
   - type: text
     name: element_description
     label: Form Element Description
+  - type: text
+    name: height
+    label: height
   - type: file
     name: image
     label: Image
