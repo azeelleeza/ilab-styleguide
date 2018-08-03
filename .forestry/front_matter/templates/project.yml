@@ -539,6 +539,9 @@ fields:
   - type: file
     label: Image
     name: image
+  - type: text
+    name: height
+    label: height
   config:
     labelField: element_name
 - type: field_group_list
