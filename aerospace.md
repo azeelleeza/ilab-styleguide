@@ -57,6 +57,7 @@ typography:
       commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing
       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The
       final line in the post has the aircraft icon after it."
+    body_text: true
   - element_name: Image caption
     font-family: Source Sans Pro, sans-serif
     font-size: 14px
