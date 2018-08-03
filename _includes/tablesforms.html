@@ -7,6 +7,6 @@
 		<div class="elem-notes">
 			{{ i.element_description }}
 		</div>
-	<img src="{{ i.image | relative_url }}" alt="{% if i.form_element_name %}{{ i.form_element_name }}{% endif %}{% if i.table_name %}{{ i.table_name }}{% endif %}">
+	<img src="{{ i.image | relative_url }}" alt="{% if i.form_element_name %}{{ i.form_element_name }}{% endif %}{% if i.table_name %}{{ i.table_name }}{% endif %}" style="height:{% if i.height %}{{ i.height }}{% endif %}">
 </article>
 {% endif %}

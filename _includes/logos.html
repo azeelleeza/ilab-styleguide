@@ -8,7 +8,7 @@ padded
 {% endif %}">
         <div class="col-sm-12 col-md-6">
             <div class="lt-logo">
-                <img src="{{ i.upload_logo | relative_url }}" {% if i.height %}height="{{ height }}" {% endif %}>
+                <img src="{{ i.upload_logo | relative_url }}" {% if i.height %}style="height:{{ height }}" {% endif %}>
             </div>
             <div class="img-download">
                 <div class="elem-subtitle">Light Background</div>
@@ -26,7 +26,7 @@ padded
         {% if i.dark_background %}
         <div class="col-sm-12 col-md-6">
             <div class="dk-logo" style="background-color: {{ i.bg-color }};">
-                <img src="{{ i.dark_background | relative_url }}" {% if i.height %}height="{{ height }}" {% endif %}>
+                <img src="{{ i.dark_background | relative_url }}" {% if i.height %}style="height:{{ height }}" {% endif %}>
             </div>
             <div class="img-download">
                 <div class="elem-subtitle">Dark Background</div>
